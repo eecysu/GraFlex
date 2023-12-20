@@ -1,0 +1,17 @@
+
+*** Running vivado
+    with args -log custom_m_axi_s_step_to_pulse_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source custom_m_axi_s_step_to_pulse_0_1.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source custom_m_axi_s_step_to_pulse_0_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/chunyou/Xilinx/GraphHBM/UTIL_IP'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/chunyou/Xilinx/GraphHBM/UTIL_IP' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi/cus_m_axi_s.runs/custom_m_axi_s_step_to_pulse_0_1_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/chunyou/Xilinx/2020_2/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP custom_m_axi_s_step_to_pulse_0_1, cache-ID = d7e35bd1be3e7bef.
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 28 20:59:26 2022...

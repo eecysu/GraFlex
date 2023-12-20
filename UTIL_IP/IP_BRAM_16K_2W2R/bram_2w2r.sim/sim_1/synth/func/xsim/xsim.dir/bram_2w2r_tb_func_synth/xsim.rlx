@@ -1,0 +1,12 @@
+
+{ 
+    crc :  12717795634620563788  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto d61ba0d35cb6408bab601cc3d6d79e03 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L secureip --snapshot bram_2w2r_tb_func_synth xil_defaultlib.bram_2w2r_tb xil_defaultlib.glbl" , 
+    buildDate : "Nov 18 2020" , 
+    buildTime : "09:20:35" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/bram_2w2r_tb_func_synth/xsimk\"   \"xsim.dir/bram_2w2r_tb_func_synth/obj/xsim_0.lnx64.o\" \"xsim.dir/bram_2w2r_tb_func_synth/obj/xsim_1.lnx64.o\" -L\"/home/chunyou/Xilinx/2020_2/Vivado/2020.2/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

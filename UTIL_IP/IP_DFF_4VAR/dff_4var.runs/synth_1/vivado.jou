@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan  6 16:33:55 2022
+# Process ID: 4092
+# Current directory: /home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_DFF_4VAR/dff_4var.runs/synth_1
+# Command line: vivado -log dff_4var.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dff_4var.tcl
+# Log file: /home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_DFF_4VAR/dff_4var.runs/synth_1/dff_4var.vds
+# Journal file: /home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_DFF_4VAR/dff_4var.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source dff_4var.tcl -notrace

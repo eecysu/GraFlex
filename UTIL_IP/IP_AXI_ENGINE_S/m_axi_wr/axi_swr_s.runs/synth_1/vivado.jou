@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jan  6 16:43:53 2023
+# Process ID: 3357185
+# Current directory: /Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_wr/axi_swr_s.runs/synth_1
+# Command line: vivado -log swr_engine.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source swr_engine.tcl
+# Log file: /Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_wr/axi_swr_s.runs/synth_1/swr_engine.vds
+# Journal file: /Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_wr/axi_swr_s.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source swr_engine.tcl -notrace

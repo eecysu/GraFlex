@@ -1,0 +1,7 @@
+uram_2w_2r_we.v,verilog,xil_defaultlib,../../../bd/uram_wex4/ipshared/ec9b/uram_2w_2r_we.v,
+uram_wex4_uram_2w_2r_we_0_0.v,verilog,xil_defaultlib,../../../bd/uram_wex4/ip/uram_wex4_uram_2w_2r_we_0_0/sim/uram_wex4_uram_2w_2r_we_0_0.v,
+uram_wex4_uram_2w_2r_we_0_1.v,verilog,xil_defaultlib,../../../bd/uram_wex4/ip/uram_wex4_uram_2w_2r_we_0_1/sim/uram_wex4_uram_2w_2r_we_0_1.v,
+uram_wex4_uram_2w_2r_we_1_0.v,verilog,xil_defaultlib,../../../bd/uram_wex4/ip/uram_wex4_uram_2w_2r_we_1_0/sim/uram_wex4_uram_2w_2r_we_1_0.v,
+uram_wex4_uram_2w_2r_we_0_2.v,verilog,xil_defaultlib,../../../bd/uram_wex4/ip/uram_wex4_uram_2w_2r_we_0_2/sim/uram_wex4_uram_2w_2r_we_0_2.v,
+uram_wex4.v,verilog,xil_defaultlib,../../../bd/uram_wex4/sim/uram_wex4.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

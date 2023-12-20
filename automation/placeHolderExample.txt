@@ -1,0 +1,12 @@
+void (volatile bool *dummyParam)
+{
+#pragma HLS inline off
+  volatile uint8_t exist;
+
+  if (*dummyParam != true)
+    exist = 0;
+  else
+    exist = 255 - *dummyParam;
+
+  return;
+}

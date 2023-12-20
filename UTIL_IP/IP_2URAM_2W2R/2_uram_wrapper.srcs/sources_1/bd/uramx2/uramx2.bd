@@ -1,0 +1,294 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x1C0988A8F908FAE4",
+      "device": "xcu280-fsvh2892-2L-e",
+      "gen_directory": "../../../../2_uram_wrapper.gen/sources_1/bd/uramx2",
+      "name": "uramx2",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "uram_2w_2r_0": "",
+      "uram_2w_2r_1": ""
+    },
+    "ports": {
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "uramx2_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst_n_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "ce0_0": {
+        "direction": "I"
+      },
+      "ce1_0": {
+        "direction": "I"
+      },
+      "we0_0": {
+        "direction": "I"
+      },
+      "we1_0": {
+        "direction": "I"
+      },
+      "addr0_0": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "addr1_0": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "rdata0_0": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata1_0": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "wdata0_0": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "wdata1_0": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "addr1_1": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "addr0_1": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "wdata1_1": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "ce1_1": {
+        "direction": "I"
+      },
+      "wdata0_1": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "ce0_1": {
+        "direction": "I"
+      },
+      "rdata1_1": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata0_1": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "we1_1": {
+        "direction": "I"
+      },
+      "we0_1": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "uram_2w_2r_0": {
+        "vlnv": "user.org:user:uram_2w_2r:1.0",
+        "xci_name": "uramx2_uram_2w_2r_0_0",
+        "xci_path": "ip/uramx2_uram_2w_2r_0_0/uramx2_uram_2w_2r_0_0.xci",
+        "inst_hier_path": "uram_2w_2r_0"
+      },
+      "uram_2w_2r_1": {
+        "vlnv": "user.org:user:uram_2w_2r:1.0",
+        "xci_name": "uramx2_uram_2w_2r_0_1",
+        "xci_path": "ip/uramx2_uram_2w_2r_0_1/uramx2_uram_2w_2r_0_1.xci",
+        "inst_hier_path": "uram_2w_2r_1"
+      }
+    },
+    "nets": {
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "uram_2w_2r_0/clk",
+          "uram_2w_2r_1/clk"
+        ]
+      },
+      "rst_n_0_1": {
+        "ports": [
+          "rst_n_0",
+          "uram_2w_2r_0/rst_n",
+          "uram_2w_2r_1/rst_n"
+        ]
+      },
+      "ce0_0_1": {
+        "ports": [
+          "ce0_0",
+          "uram_2w_2r_0/ce0"
+        ]
+      },
+      "ce1_0_1": {
+        "ports": [
+          "ce1_0",
+          "uram_2w_2r_0/ce1"
+        ]
+      },
+      "we0_0_1": {
+        "ports": [
+          "we0_0",
+          "uram_2w_2r_0/we0"
+        ]
+      },
+      "we1_0_1": {
+        "ports": [
+          "we1_0",
+          "uram_2w_2r_0/we1"
+        ]
+      },
+      "addr0_0_1": {
+        "ports": [
+          "addr0_0",
+          "uram_2w_2r_0/addr0"
+        ]
+      },
+      "addr1_0_1": {
+        "ports": [
+          "addr1_0",
+          "uram_2w_2r_0/addr1"
+        ]
+      },
+      "uram_2w_2r_0_rdata0": {
+        "ports": [
+          "uram_2w_2r_0/rdata0",
+          "rdata0_0"
+        ]
+      },
+      "uram_2w_2r_0_rdata1": {
+        "ports": [
+          "uram_2w_2r_0/rdata1",
+          "rdata1_0"
+        ]
+      },
+      "wdata0_0_1": {
+        "ports": [
+          "wdata0_0",
+          "uram_2w_2r_0/wdata0"
+        ]
+      },
+      "wdata1_0_1": {
+        "ports": [
+          "wdata1_0",
+          "uram_2w_2r_0/wdata1"
+        ]
+      },
+      "addr1_1_1": {
+        "ports": [
+          "addr1_1",
+          "uram_2w_2r_1/addr1"
+        ]
+      },
+      "addr0_1_1": {
+        "ports": [
+          "addr0_1",
+          "uram_2w_2r_1/addr0"
+        ]
+      },
+      "wdata1_1_1": {
+        "ports": [
+          "wdata1_1",
+          "uram_2w_2r_1/wdata1"
+        ]
+      },
+      "ce1_1_1": {
+        "ports": [
+          "ce1_1",
+          "uram_2w_2r_1/ce1"
+        ]
+      },
+      "wdata0_1_1": {
+        "ports": [
+          "wdata0_1",
+          "uram_2w_2r_1/wdata0"
+        ]
+      },
+      "ce0_1_1": {
+        "ports": [
+          "ce0_1",
+          "uram_2w_2r_1/ce0"
+        ]
+      },
+      "uram_2w_2r_1_rdata1": {
+        "ports": [
+          "uram_2w_2r_1/rdata1",
+          "rdata1_1"
+        ]
+      },
+      "uram_2w_2r_1_rdata0": {
+        "ports": [
+          "uram_2w_2r_1/rdata0",
+          "rdata0_1"
+        ]
+      },
+      "we1_1_1": {
+        "ports": [
+          "we1_1",
+          "uram_2w_2r_1/we1"
+        ]
+      },
+      "we0_1_1": {
+        "ports": [
+          "we0_1",
+          "uram_2w_2r_1/we0"
+        ]
+      }
+    }
+  }
+}

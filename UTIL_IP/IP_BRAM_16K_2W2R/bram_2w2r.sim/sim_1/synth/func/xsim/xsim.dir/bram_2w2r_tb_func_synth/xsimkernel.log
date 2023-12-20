@@ -1,0 +1,7 @@
+Running: xsim.dir/bram_2w2r_tb_func_synth/xsimk -simmode gui -wdb bram_2w2r_tb_func_synth.wdb -simrunnum 0 -socket 33275
+Design successfully loaded
+Design Loading Memory Usage: 44852 KB (Peak: 44852 KB)
+Design Loading CPU Usage: 50 ms
+Simulation completed
+Simulation Memory Usage: 131208 KB (Peak: 184120 KB)
+Simulation CPU Usage: 60 ms

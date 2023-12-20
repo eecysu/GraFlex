@@ -1,0 +1,2790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2020.2 (64-bit)              -->
+<!--                                                         -->
+<!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
+
+<Project Version="7" Minor="54" Path="/Orion/GraphHBM/UTIL_IP/IP_64URAM_2W2R_WE/64_uram_we_wrapper.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="13143aea49ea4b2981d28bb6cf4d53e5"/>
+    <Option Name="Part" Val="xcu280-fsvh2892-2L-e"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="CompiledLibDirXSim" Val=""/>
+    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirXcelium" Val="$PCACHEDIR/compile_simlib/xcelium"/>
+    <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
+    <Option Name="SimulatorInstallDirModelSim" Val=""/>
+    <Option Name="SimulatorInstallDirQuesta" Val=""/>
+    <Option Name="SimulatorInstallDirIES" Val=""/>
+    <Option Name="SimulatorInstallDirXcelium" Val=""/>
+    <Option Name="SimulatorInstallDirVCS" Val=""/>
+    <Option Name="SimulatorInstallDirRiviera" Val=""/>
+    <Option Name="SimulatorInstallDirActiveHdl" Val=""/>
+    <Option Name="SimulatorGccInstallDirModelSim" Val=""/>
+    <Option Name="SimulatorGccInstallDirQuesta" Val=""/>
+    <Option Name="SimulatorGccInstallDirIES" Val=""/>
+    <Option Name="SimulatorGccInstallDirXcelium" Val=""/>
+    <Option Name="SimulatorGccInstallDirVCS" Val=""/>
+    <Option Name="SimulatorGccInstallDirRiviera" Val=""/>
+    <Option Name="SimulatorGccInstallDirActiveHdl" Val=""/>
+    <Option Name="BoardPart" Val="xilinx.com:au280:part0:1.1"/>
+    <Option Name="ActiveSimSet" Val="sim_1"/>
+    <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../UTIL_IP"/>
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
+    <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
+    <Option Name="IPCachePermission" Val="read"/>
+    <Option Name="IPCachePermission" Val="write"/>
+    <Option Name="EnableCoreContainer" Val="FALSE"/>
+    <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
+    <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
+    <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
+    <Option Name="EnableBDX" Val="FALSE"/>
+    <Option Name="DSABoardId" Val="au280"/>
+    <Option Name="WTXSimLaunchSim" Val="0"/>
+    <Option Name="WTModelSimLaunchSim" Val="0"/>
+    <Option Name="WTQuestaLaunchSim" Val="0"/>
+    <Option Name="WTIesLaunchSim" Val="0"/>
+    <Option Name="WTVcsLaunchSim" Val="0"/>
+    <Option Name="WTRivieraLaunchSim" Val="0"/>
+    <Option Name="WTActivehdlLaunchSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="0"/>
+    <Option Name="WTModelSimExportSim" Val="0"/>
+    <Option Name="WTQuestaExportSim" Val="0"/>
+    <Option Name="WTIesExportSim" Val="0"/>
+    <Option Name="WTVcsExportSim" Val="0"/>
+    <Option Name="WTRivieraExportSim" Val="0"/>
+    <Option Name="WTActivehdlExportSim" Val="0"/>
+    <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
+    <Option Name="XSimRadix" Val="hex"/>
+    <Option Name="XSimTimeUnit" Val="ns"/>
+    <Option Name="XSimArrayDisplayLimit" Val="1024"/>
+    <Option Name="XSimTraceLimit" Val="65536"/>
+    <Option Name="SimTypes" Val="rtl"/>
+    <Option Name="SimTypes" Val="bfm"/>
+    <Option Name="SimTypes" Val="tlm"/>
+    <Option Name="SimTypes" Val="tlm_dpi"/>
+    <Option Name="MEMEnableMemoryMapGeneration" Val="TRUE"/>
+    <Option Name="DcpsUptoDate" Val="TRUE"/>
+  </Configuration>
+  <FileSets Version="1" Minor="31">
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/bd/uram_wex64/uram_wex64.bd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_4_3/uram_wex64_uram_2w_2r_we_4_3.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_4_3"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_6_6/uram_wex64_uram_2w_2r_we_6_6.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_6_6"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_1_2/uram_wex64_uram_2w_2r_we_1_2.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_1_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_4_6/uram_wex64_uram_2w_2r_we_4_6.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_4_6"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_6_2/uram_wex64_uram_2w_2r_we_6_2.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_6_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_7_1/uram_wex64_uram_2w_2r_we_7_1.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_7_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_3_0/uram_wex64_uram_2w_2r_we_3_0.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_3_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_0_4/uram_wex64_uram_2w_2r_we_0_4.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_0_4"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_2_6/uram_wex64_uram_2w_2r_we_2_6.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_2_6"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_7_3/uram_wex64_uram_2w_2r_we_7_3.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_7_3"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_6_5/uram_wex64_uram_2w_2r_we_6_5.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_6_5"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_0_10/uram_wex64_uram_2w_2r_we_0_10.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_0_10"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_5_3/uram_wex64_uram_2w_2r_we_5_3.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_5_3"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_3_5/uram_wex64_uram_2w_2r_we_3_5.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_3_5"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_1_6/uram_wex64_uram_2w_2r_we_1_6.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_1_6"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_5_6/uram_wex64_uram_2w_2r_we_5_6.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_5_6"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_4_2/uram_wex64_uram_2w_2r_we_4_2.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_4_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_7_6/uram_wex64_uram_2w_2r_we_7_6.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_7_6"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_2_7/uram_wex64_uram_2w_2r_we_2_7.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_2_7"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_3_6/uram_wex64_uram_2w_2r_we_3_6.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_3_6"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_0_1/uram_wex64_uram_2w_2r_we_0_1.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_2_0/uram_wex64_uram_2w_2r_we_2_0.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_2_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_1_0/uram_wex64_uram_2w_2r_we_1_0.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_5_4/uram_wex64_uram_2w_2r_we_5_4.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_5_4"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_5_2/uram_wex64_uram_2w_2r_we_5_2.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_5_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_3_7/uram_wex64_uram_2w_2r_we_3_7.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_3_7"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_1_4/uram_wex64_uram_2w_2r_we_1_4.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_1_4"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_3_4/uram_wex64_uram_2w_2r_we_3_4.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_3_4"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_1_5/uram_wex64_uram_2w_2r_we_1_5.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_1_5"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_7_5/uram_wex64_uram_2w_2r_we_7_5.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_7_5"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_3_3/uram_wex64_uram_2w_2r_we_3_3.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_3_3"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_4_5/uram_wex64_uram_2w_2r_we_4_5.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_4_5"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_7_2/uram_wex64_uram_2w_2r_we_7_2.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_7_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_1_7/uram_wex64_uram_2w_2r_we_1_7.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_1_7"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_1_8/uram_wex64_uram_2w_2r_we_1_8.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_1_8"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_0_9/uram_wex64_uram_2w_2r_we_0_9.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_0_9"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_5_5/uram_wex64_uram_2w_2r_we_5_5.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_5_5"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_6_4/uram_wex64_uram_2w_2r_we_6_4.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_6_4"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_2_5/uram_wex64_uram_2w_2r_we_2_5.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_2_5"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_0_6/uram_wex64_uram_2w_2r_we_0_6.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_0_6"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_4_4/uram_wex64_uram_2w_2r_we_4_4.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_4_4"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_6_1/uram_wex64_uram_2w_2r_we_6_1.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_6_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_2_1/uram_wex64_uram_2w_2r_we_2_1.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_2_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_3_1/uram_wex64_uram_2w_2r_we_3_1.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_3_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_5_0/uram_wex64_uram_2w_2r_we_5_0.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_5_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_0_2/uram_wex64_uram_2w_2r_we_0_2.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_0_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_3_2/uram_wex64_uram_2w_2r_we_3_2.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_3_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_5_1/uram_wex64_uram_2w_2r_we_5_1.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_5_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_7_4/uram_wex64_uram_2w_2r_we_7_4.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_7_4"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_0_8/uram_wex64_uram_2w_2r_we_0_8.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_0_8"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_1_1/uram_wex64_uram_2w_2r_we_1_1.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_1_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_2_4/uram_wex64_uram_2w_2r_we_2_4.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_2_4"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_0_5/uram_wex64_uram_2w_2r_we_0_5.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_0_5"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_4_0/uram_wex64_uram_2w_2r_we_4_0.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_4_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_0_7/uram_wex64_uram_2w_2r_we_0_7.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_0_7"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_6_3/uram_wex64_uram_2w_2r_we_6_3.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_6_3"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_6_0/uram_wex64_uram_2w_2r_we_6_0.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_6_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_4_1/uram_wex64_uram_2w_2r_we_4_1.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_4_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_2_2/uram_wex64_uram_2w_2r_we_2_2.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_2_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_0_0/uram_wex64_uram_2w_2r_we_0_0.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_0_3/uram_wex64_uram_2w_2r_we_0_3.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_0_3"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_7_0/uram_wex64_uram_2w_2r_we_7_0.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_7_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_1_3/uram_wex64_uram_2w_2r_we_1_3.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_1_3"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="uram_wex64.bd" FileRelPathName="ip/uram_wex64_uram_2w_2r_we_2_3/uram_wex64_uram_2w_2r_we_2_3.xci">
+          <Proxy FileSetName="uram_wex64_uram_2w_2r_we_2_3"/>
+        </CompFileExtendedInfo>
+      </File>
+      <File Path="$PGENDIR/sources_1/bd/uram_wex64/hdl/uram_wex64_wrapper.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/sixtyfour_uram_we.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/component.xml">
+        <FileInfo SFType="IPXACT"/>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="uram_2w_2r_we_x64"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+      <Filter Type="Constrs"/>
+      <Config>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="uram_2w_2r_we_x64"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="TransportPathDelay" Val="0"/>
+        <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SelectedSimModel" Val="rtl"/>
+        <Option Name="PamDesignTestbench" Val=""/>
+        <Option Name="PamDutBypassFile" Val="xil_dut_bypass"/>
+        <Option Name="PamSignalDriverFile" Val="xil_bypass_driver"/>
+        <Option Name="PamPseudoTop" Val="pseudo_tb"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="utils_1" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+      <Filter Type="Utils"/>
+      <Config>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_4_3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_4_3" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_4_3">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_4_3"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_6_6" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_6_6" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_6_6">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_6_6"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_1_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_1_2" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_1_2">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_1_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_4_6" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_4_6" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_4_6">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_4_6"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_6_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_6_2" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_6_2">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_6_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_7_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_7_1" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_7_1">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_7_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_3_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_3_0" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_3_0">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_3_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_0_4" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_0_4" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_0_4">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_0_4"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_2_6" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_2_6" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_2_6">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_2_6"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_7_3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_7_3" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_7_3">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_7_3"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_6_5" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_6_5" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_6_5">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_6_5"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_0_10" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_0_10" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_0_10">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_0_10"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_5_3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_5_3" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_5_3">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_5_3"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_3_5" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_3_5" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_3_5">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_3_5"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_1_6" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_1_6" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_1_6">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_1_6"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_5_6" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_5_6" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_5_6">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_5_6"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_4_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_4_2" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_4_2">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_4_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_7_6" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_7_6" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_7_6">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_7_6"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_2_7" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_2_7" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_2_7">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_2_7"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_3_6" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_3_6" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_3_6">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_3_6"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_0_1" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_0_1">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_2_0" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_2_0">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_2_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_1_0" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_1_0">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_5_4" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_5_4" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_5_4">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_5_4"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_5_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_5_2" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_5_2">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_5_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_3_7" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_3_7" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_3_7">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_3_7"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_1_4" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_1_4" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_1_4">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_1_4"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_3_4" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_3_4" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_3_4">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_3_4"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_1_5" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_1_5" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_1_5">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_1_5"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_7_5" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_7_5" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_7_5">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_7_5"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_3_3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_3_3" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_3_3">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_3_3"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_4_5" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_4_5" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_4_5">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_4_5"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_7_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_7_2" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_7_2">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_7_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_1_7" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_1_7" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_1_7">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_1_7"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_1_8" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_1_8" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_1_8">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_1_8"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_0_9" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_0_9" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_0_9">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_0_9"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_5_5" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_5_5" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_5_5">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_5_5"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_6_4" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_6_4" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_6_4">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_6_4"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_2_5" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_2_5" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_2_5">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_2_5"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_0_6" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_0_6" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_0_6">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_0_6"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_4_4" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_4_4" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_4_4">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_4_4"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_6_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_6_1" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_6_1">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_6_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_2_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_2_1" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_2_1">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_2_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_3_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_3_1" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_3_1">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_3_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_5_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_5_0" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_5_0">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_5_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_0_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_0_2" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_0_2">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_0_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_3_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_3_2" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_3_2">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_3_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_5_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_5_1" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_5_1">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_5_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_7_4" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_7_4" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_7_4">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_7_4"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_0_8" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_0_8" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_0_8">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_0_8"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_1_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_1_1" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_1_1">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_1_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_2_4" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_2_4" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_2_4">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_2_4"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_0_5" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_0_5" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_0_5">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_0_5"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_4_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_4_0" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_4_0">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_4_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_0_7" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_0_7" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_0_7">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_0_7"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_6_3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_6_3" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_6_3">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_6_3"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_6_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_6_0" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_6_0">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_6_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_4_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_4_1" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_4_1">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_4_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_2_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_2_2" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_2_2">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_2_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_0_0" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_0_0">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_0_3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_0_3" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_0_3">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_0_3"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_7_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_7_0" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_7_0">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_7_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_1_3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_1_3" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_1_3">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_1_3"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="uram_wex64_uram_2w_2r_we_2_3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uram_wex64_uram_2w_2r_we_2_3" RelGenDir="$PGENDIR/uram_wex64_uram_2w_2r_we_2_3">
+      <Config>
+        <Option Name="TopModule" Val="uram_wex64_uram_2w_2r_we_2_3"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Simulators>
+    <Simulator Name="XSim">
+      <Option Name="Description" Val="Vivado Simulator"/>
+      <Option Name="CompiledLib" Val="0"/>
+    </Simulator>
+    <Simulator Name="ModelSim">
+      <Option Name="Description" Val="ModelSim Simulator"/>
+    </Simulator>
+    <Simulator Name="Questa">
+      <Option Name="Description" Val="Questa Advanced Simulator"/>
+    </Simulator>
+    <Simulator Name="IES">
+      <Option Name="Description" Val="Incisive Enterprise Simulator (IES)"/>
+    </Simulator>
+    <Simulator Name="Xcelium">
+      <Option Name="Description" Val="Xcelium Parallel Simulator"/>
+    </Simulator>
+    <Simulator Name="VCS">
+      <Option Name="Description" Val="Verilog Compiler Simulator (VCS)"/>
+    </Simulator>
+    <Simulator Name="Riviera">
+      <Option Name="Description" Val="Riviera-PRO Simulator"/>
+    </Simulator>
+  </Simulators>
+  <Runs Version="1" Minor="15">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xcu280-fsvh2892-2L-e" ConstrsSet="constrs_1" Description="Performs optimizations which creates alternative logic technology mapping, including disabling LUT combining, forcing F7/F8/F9 to logic, increasing the threshold of shift register inference." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Flow_AlternateRoutability" Flow="Vivado Synthesis 2020">
+          <Desc>Performs optimizations which creates alternative logic technology mapping, including disabling LUT combining, forcing F7/F8/F9 to logic, increasing the threshold of shift register inference.</Desc>
+        </StratHandle>
+        <Step Id="synth_design">
+          <Option Id="NoCombineLuts">1</Option>
+          <Option Id="ShregMinSize">10</Option>
+          <Option Id="Directive">3</Option>
+        </Step>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_4_3_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_4_3" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_4_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_4_3_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_4_3_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_6_6_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_6_6" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_6_6" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_6_6_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_6_6_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_1_2_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_1_2" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_1_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_1_2_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_1_2_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_4_6_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_4_6" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_4_6" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_4_6_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_4_6_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_6_2_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_6_2" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_6_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_6_2_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_6_2_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_7_1_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_7_1" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_7_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_7_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_7_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_3_0_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_3_0" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_3_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_3_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_3_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_4_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_0_4" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_4" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_0_4_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_4_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_2_6_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_2_6" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_2_6" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_2_6_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_2_6_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_7_3_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_7_3" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_7_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_7_3_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_7_3_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_6_5_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_6_5" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_6_5" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_6_5_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_6_5_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_10_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_0_10" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_10" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_0_10_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_10_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_5_3_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_5_3" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_5_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_5_3_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_5_3_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_3_5_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_3_5" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_3_5" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_3_5_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_3_5_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_1_6_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_1_6" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_1_6" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_1_6_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_1_6_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_5_6_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_5_6" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_5_6" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_5_6_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_5_6_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_4_2_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_4_2" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_4_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_4_2_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_4_2_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_7_6_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_7_6" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_7_6" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_7_6_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_7_6_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_2_7_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_2_7" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_2_7" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_2_7_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_2_7_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_3_6_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_3_6" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_3_6" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_3_6_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_3_6_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_1_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_0_1" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_0_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_2_0_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_2_0" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_2_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_2_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_2_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_1_0_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_1_0" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_1_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_1_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_5_4_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_5_4" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_5_4" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_5_4_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_5_4_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_5_2_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_5_2" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_5_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_5_2_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_5_2_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_3_7_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_3_7" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_3_7" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_3_7_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_3_7_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_1_4_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_1_4" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_1_4" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_1_4_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_1_4_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_3_4_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_3_4" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_3_4" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_3_4_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_3_4_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_1_5_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_1_5" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_1_5" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_1_5_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_1_5_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_7_5_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_7_5" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_7_5" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_7_5_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_7_5_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_3_3_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_3_3" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_3_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_3_3_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_3_3_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_4_5_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_4_5" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_4_5" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_4_5_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_4_5_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_7_2_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_7_2" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_7_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_7_2_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_7_2_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_1_7_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_1_7" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_1_7" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_1_7_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_1_7_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_1_8_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_1_8" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_1_8" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_1_8_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_1_8_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_9_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_0_9" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_9" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_0_9_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_9_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_5_5_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_5_5" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_5_5" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_5_5_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_5_5_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_6_4_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_6_4" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_6_4" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_6_4_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_6_4_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_2_5_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_2_5" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_2_5" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_2_5_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_2_5_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_6_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_0_6" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_6" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_0_6_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_6_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_4_4_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_4_4" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_4_4" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_4_4_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_4_4_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_6_1_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_6_1" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_6_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_6_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_6_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_2_1_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_2_1" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_2_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_2_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_2_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_3_1_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_3_1" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_3_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_3_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_3_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_5_0_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_5_0" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_5_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_5_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_5_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_2_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_0_2" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_0_2_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_2_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_3_2_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_3_2" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_3_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_3_2_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_3_2_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_5_1_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_5_1" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_5_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_5_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_5_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_7_4_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_7_4" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_7_4" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_7_4_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_7_4_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_8_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_0_8" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_8" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_0_8_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_8_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_1_1_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_1_1" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_1_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_1_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_1_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_2_4_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_2_4" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_2_4" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_2_4_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_2_4_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_5_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_0_5" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_5" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_0_5_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_5_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_4_0_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_4_0" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_4_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_4_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_4_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_7_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_0_7" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_7" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_0_7_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_7_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_6_3_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_6_3" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_6_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_6_3_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_6_3_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_6_0_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_6_0" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_6_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_6_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_6_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_4_1_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_4_1" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_4_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_4_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_4_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_2_2_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_2_2" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_2_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_2_2_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_2_2_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_0_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_0_0" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_3_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_0_3" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_0_3_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_3_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_7_0_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_7_0" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_7_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_7_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_7_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_1_3_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_1_3" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_1_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_1_3_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_1_3_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_2_3_synth_1" Type="Ft3:Synth" SrcSet="uram_wex64_uram_2w_2r_we_2_3" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_2_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/uram_wex64_uram_2w_2r_we_2_3_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_2_3_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_4_3_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_4_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_4_3_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_4_3_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_6_6_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_6_6" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_6_6_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_6_6_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_1_2_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_1_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_1_2_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_1_2_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_4_6_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_4_6" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_4_6_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_4_6_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_6_2_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_6_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_6_2_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_6_2_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_7_1_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_7_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_7_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_7_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_3_0_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_3_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_3_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_3_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_4_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_4" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_0_4_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_4_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_2_6_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_2_6" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_2_6_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_2_6_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_7_3_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_7_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_7_3_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_7_3_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_6_5_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_6_5" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_6_5_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_6_5_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_10_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_10" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_0_10_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_10_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_5_3_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_5_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_5_3_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_5_3_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_3_5_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_3_5" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_3_5_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_3_5_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_1_6_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_1_6" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_1_6_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_1_6_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_5_6_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_5_6" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_5_6_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_5_6_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_4_2_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_4_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_4_2_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_4_2_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_7_6_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_7_6" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_7_6_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_7_6_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_2_7_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_2_7" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_2_7_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_2_7_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_3_6_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_3_6" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_3_6_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_3_6_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_1_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_2_0_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_2_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_2_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_2_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_1_0_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_1_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_5_4_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_5_4" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_5_4_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_5_4_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_5_2_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_5_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_5_2_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_5_2_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_3_7_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_3_7" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_3_7_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_3_7_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_1_4_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_1_4" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_1_4_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_1_4_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_3_4_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_3_4" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_3_4_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_3_4_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_1_5_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_1_5" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_1_5_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_1_5_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_7_5_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_7_5" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_7_5_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_7_5_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_3_3_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_3_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_3_3_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_3_3_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_4_5_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_4_5" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_4_5_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_4_5_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_7_2_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_7_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_7_2_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_7_2_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_1_7_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_1_7" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_1_7_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_1_7_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_1_8_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_1_8" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_1_8_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_1_8_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_9_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_9" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_0_9_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_9_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_5_5_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_5_5" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_5_5_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_5_5_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_6_4_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_6_4" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_6_4_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_6_4_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_2_5_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_2_5" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_2_5_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_2_5_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_6_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_6" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_0_6_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_6_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_4_4_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_4_4" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_4_4_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_4_4_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_6_1_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_6_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_6_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_6_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_2_1_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_2_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_2_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_2_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_3_1_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_3_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_3_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_3_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_5_0_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_5_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_5_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_5_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_2_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_0_2_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_2_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_3_2_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_3_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_3_2_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_3_2_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_5_1_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_5_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_5_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_5_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_7_4_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_7_4" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_7_4_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_7_4_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_8_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_8" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_0_8_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_8_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_1_1_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_1_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_1_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_1_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_2_4_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_2_4" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_2_4_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_2_4_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_5_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_5" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_0_5_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_5_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_4_0_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_4_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_4_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_4_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_7_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_7" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_0_7_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_7_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_6_3_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_6_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_6_3_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_6_3_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_6_0_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_6_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_6_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_6_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_4_1_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_4_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_4_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_4_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_2_2_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_2_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_2_2_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_2_2_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_0_3_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_0_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_0_3_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_0_3_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_7_0_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_7_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_7_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_7_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_1_3_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_1_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_1_3_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_1_3_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="uram_wex64_uram_2w_2r_we_2_3_impl_1" Type="Ft2:EntireDesign" Part="xcu280-fsvh2892-2L-e" ConstrsSet="uram_wex64_uram_2w_2r_we_2_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="uram_wex64_uram_2w_2r_we_2_3_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/uram_wex64_uram_2w_2r_we_2_3_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+  </Runs>
+  <Board>
+    <Jumpers/>
+  </Board>
+  <DashboardSummary Version="1" Minor="0">
+    <Dashboards>
+      <Dashboard Name="default_dashboard">
+        <Gadgets>
+          <Gadget Name="drc_1" Type="drc" Version="1" Row="2" Column="0">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_route_report_drc_0 "/>
+          </Gadget>
+          <Gadget Name="methodology_1" Type="methodology" Version="1" Row="2" Column="1">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_route_report_methodology_0 "/>
+          </Gadget>
+          <Gadget Name="power_1" Type="power" Version="1" Row="1" Column="0">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_route_report_power_0 "/>
+          </Gadget>
+          <Gadget Name="timing_1" Type="timing" Version="1" Row="0" Column="1">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_route_report_timing_summary_0 "/>
+          </Gadget>
+          <Gadget Name="utilization_1" Type="utilization" Version="1" Row="0" Column="0">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="synth_1#synth_1_synth_report_utilization_0 "/>
+            <GadgetParam Name="RUN.STEP" Type="string" Value="synth_design"/>
+            <GadgetParam Name="RUN.TYPE" Type="string" Value="synthesis"/>
+          </Gadget>
+          <Gadget Name="utilization_2" Type="utilization" Version="1" Row="1" Column="1">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_place_report_utilization_0 "/>
+          </Gadget>
+        </Gadgets>
+      </Dashboard>
+      <CurrentDashboard>default_dashboard</CurrentDashboard>
+    </Dashboards>
+  </DashboardSummary>
+</Project>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xcu280-fsvh2892-2L-e" LaunchTime="1670751633">
+  <File Type="REPORTS-TCL" Name="cus_m_axi_s_256_uram_reports.tcl"/>
+  <File Type="PA-TCL" Name="cus_m_axi_s_256_uram.tcl"/>
+  <File Type="RDS-DCP" Name="cus_m_axi_s_256_uram.dcp"/>
+  <File Type="RDS-RDS" Name="cus_m_axi_s_256_uram.vds"/>
+  <File Type="RDS-UTIL" Name="cus_m_axi_s_256_uram_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="cus_m_axi_s_256_uram_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/cus_m_axi_s_256_ultra/cus_m_axi_s_256_ultra.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/cus_m_axi_s_256_ultra/hdl/cus_m_axi_s_256_ultra_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="cus_m_axi_s_256_uram"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="cus_m_axi_s_256_ultra_swr_engine_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="cus_m_axi_s_256_ultra_step_to_pulse_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="cus_m_axi_s_256_ultra_mread_master_ultra_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="cus_m_axi_s_256_ultra_step_to_pulse_0_0"/>
+</GenRun>

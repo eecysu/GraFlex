@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun May  7 10:32:26 2023
+# Process ID: 2112535
+# Current directory: /Orion/GraphHBM/UTIL_IP/IP_16URAM_2W2R/16_uram_wrapper.runs/uramx16_uram_2w_2r_0_3_synth_1
+# Command line: vivado -log uramx16_uram_2w_2r_0_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uramx16_uram_2w_2r_0_3.tcl
+# Log file: /Orion/GraphHBM/UTIL_IP/IP_16URAM_2W2R/16_uram_wrapper.runs/uramx16_uram_2w_2r_0_3_synth_1/uramx16_uram_2w_2r_0_3.vds
+# Journal file: /Orion/GraphHBM/UTIL_IP/IP_16URAM_2W2R/16_uram_wrapper.runs/uramx16_uram_2w_2r_0_3_synth_1/vivado.jou
+#-----------------------------------------------------------
+source uramx16_uram_2w_2r_0_3.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/Orion/GraphHBM/UTIL_IP'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/Orion/GraphHBM/UTIL_IP' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/Orion/GraphHBM/UTIL_IP/IP_16URAM_2W2R/16_uram_wrapper.runs/uramx16_uram_2w_2r_0_3_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:bram_32k_2w_2r:1.0'. The one found in IP location '/Orion/GraphHBM/UTIL_IP/IP_BRAM_32K_2W2R' will take precedence over the same IP in location /Orion/GraphHBM/UTIL_IP/IP_BRAM_32K_2W2R/bram_32k_2w2r.srcs/sources_1/new
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:cycle_counter:1.0'. The one found in IP location '/Orion/GraphHBM/UTIL_IP/IP_CYCLE_CNT' will take precedence over the same IP in location /Orion/GraphHBM/UTIL_IP/IP_CYCLE_CNT/cycle_cnt.srcs/sources_1/new
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:cus_m_axi_s_256_uram:1.0'. The one found in IP location '/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_256_ultra' will take precedence over the same IP in location /Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_256_ultra/cus_m_axi_s_256_ultra.srcs/sources_1
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP uramx16_uram_2w_2r_0_3, cache-ID = 929a563146c722b7.
+INFO: [Common 17-206] Exiting Vivado at Sun May  7 10:32:35 2023...

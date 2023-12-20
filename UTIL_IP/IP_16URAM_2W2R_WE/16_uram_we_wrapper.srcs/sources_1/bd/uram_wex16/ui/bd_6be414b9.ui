@@ -1,0 +1,352 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.328444",
+   "Default View_TopLeft":"-4412,-2350",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port clk_0 -pg 1 -lvl 0 -x -20 -y -2290 -defaultsOSRD
+preplace port rst_n_0 -pg 1 -lvl 0 -x -20 -y -2270 -defaultsOSRD
+preplace port ce0_0 -pg 1 -lvl 0 -x -20 -y -2250 -defaultsOSRD
+preplace port ce1_0 -pg 1 -lvl 0 -x -20 -y -2230 -defaultsOSRD
+preplace port ce0_1 -pg 1 -lvl 0 -x -20 -y -1970 -defaultsOSRD
+preplace port ce1_1 -pg 1 -lvl 0 -x -20 -y -1950 -defaultsOSRD
+preplace port ce0_2 -pg 1 -lvl 0 -x -20 -y -1690 -defaultsOSRD
+preplace port ce1_2 -pg 1 -lvl 0 -x -20 -y -1670 -defaultsOSRD
+preplace port ce0_3 -pg 1 -lvl 0 -x -20 -y -1410 -defaultsOSRD
+preplace port ce1_3 -pg 1 -lvl 0 -x -20 -y -1390 -defaultsOSRD
+preplace port ce0_4 -pg 1 -lvl 0 -x -20 -y -1130 -defaultsOSRD
+preplace port ce1_4 -pg 1 -lvl 0 -x -20 -y -1110 -defaultsOSRD
+preplace port ce0_5 -pg 1 -lvl 0 -x -20 -y -850 -defaultsOSRD
+preplace port ce1_5 -pg 1 -lvl 0 -x -20 -y -830 -defaultsOSRD
+preplace port ce0_6 -pg 1 -lvl 0 -x -20 -y -570 -defaultsOSRD
+preplace port ce1_6 -pg 1 -lvl 0 -x -20 -y -550 -defaultsOSRD
+preplace port ce0_7 -pg 1 -lvl 0 -x -20 -y -290 -defaultsOSRD
+preplace port ce1_7 -pg 1 -lvl 0 -x -20 -y -270 -defaultsOSRD
+preplace port ce0_8 -pg 1 -lvl 0 -x -20 -y -10 -defaultsOSRD
+preplace port ce1_8 -pg 1 -lvl 0 -x -20 -y 10 -defaultsOSRD
+preplace port ce0_9 -pg 1 -lvl 0 -x -20 -y 270 -defaultsOSRD
+preplace port ce1_9 -pg 1 -lvl 0 -x -20 -y 290 -defaultsOSRD
+preplace port ce0_10 -pg 1 -lvl 0 -x -20 -y 550 -defaultsOSRD
+preplace port ce1_10 -pg 1 -lvl 0 -x -20 -y 570 -defaultsOSRD
+preplace port ce0_11 -pg 1 -lvl 0 -x -20 -y 830 -defaultsOSRD
+preplace port ce1_11 -pg 1 -lvl 0 -x -20 -y 850 -defaultsOSRD
+preplace port ce0_12 -pg 1 -lvl 0 -x -20 -y 1110 -defaultsOSRD
+preplace port ce1_12 -pg 1 -lvl 0 -x -20 -y 1130 -defaultsOSRD
+preplace port ce0_13 -pg 1 -lvl 0 -x -20 -y 1390 -defaultsOSRD
+preplace port ce1_13 -pg 1 -lvl 0 -x -20 -y 1410 -defaultsOSRD
+preplace port ce0_14 -pg 1 -lvl 0 -x -20 -y 1670 -defaultsOSRD
+preplace port ce1_14 -pg 1 -lvl 0 -x -20 -y 1690 -defaultsOSRD
+preplace port ce1_15 -pg 1 -lvl 0 -x -20 -y 1970 -defaultsOSRD
+preplace port ce0_15 -pg 1 -lvl 0 -x -20 -y 1950 -defaultsOSRD
+preplace portBus we0_0 -pg 1 -lvl 0 -x -20 -y -2210 -defaultsOSRD
+preplace portBus we1_0 -pg 1 -lvl 0 -x -20 -y -2190 -defaultsOSRD
+preplace portBus addr0_0 -pg 1 -lvl 0 -x -20 -y -2170 -defaultsOSRD
+preplace portBus addr1_0 -pg 1 -lvl 0 -x -20 -y -2150 -defaultsOSRD
+preplace portBus rdata0_0 -pg 1 -lvl 2 -x 410 -y -2210 -defaultsOSRD
+preplace portBus rdata1_0 -pg 1 -lvl 2 -x 410 -y -2190 -defaultsOSRD
+preplace portBus wdata0_0 -pg 1 -lvl 0 -x -20 -y -2130 -defaultsOSRD
+preplace portBus wdata1_0 -pg 1 -lvl 0 -x -20 -y -2110 -defaultsOSRD
+preplace portBus we0_1 -pg 1 -lvl 0 -x -20 -y -1930 -defaultsOSRD
+preplace portBus we1_1 -pg 1 -lvl 0 -x -20 -y -1910 -defaultsOSRD
+preplace portBus addr0_1 -pg 1 -lvl 0 -x -20 -y -1890 -defaultsOSRD
+preplace portBus addr1_1 -pg 1 -lvl 0 -x -20 -y -1870 -defaultsOSRD
+preplace portBus rdata0_1 -pg 1 -lvl 2 -x 410 -y -1930 -defaultsOSRD
+preplace portBus rdata1_1 -pg 1 -lvl 2 -x 410 -y -1910 -defaultsOSRD
+preplace portBus wdata0_1 -pg 1 -lvl 0 -x -20 -y -1850 -defaultsOSRD
+preplace portBus wdata1_1 -pg 1 -lvl 0 -x -20 -y -1830 -defaultsOSRD
+preplace portBus we0_2 -pg 1 -lvl 0 -x -20 -y -1650 -defaultsOSRD
+preplace portBus we1_2 -pg 1 -lvl 0 -x -20 -y -1630 -defaultsOSRD
+preplace portBus addr0_2 -pg 1 -lvl 0 -x -20 -y -1610 -defaultsOSRD
+preplace portBus addr1_2 -pg 1 -lvl 0 -x -20 -y -1590 -defaultsOSRD
+preplace portBus rdata0_2 -pg 1 -lvl 2 -x 410 -y -1650 -defaultsOSRD
+preplace portBus rdata1_2 -pg 1 -lvl 2 -x 410 -y -1630 -defaultsOSRD
+preplace portBus wdata0_2 -pg 1 -lvl 0 -x -20 -y -1570 -defaultsOSRD
+preplace portBus wdata1_2 -pg 1 -lvl 0 -x -20 -y -1550 -defaultsOSRD
+preplace portBus we0_3 -pg 1 -lvl 0 -x -20 -y -1370 -defaultsOSRD
+preplace portBus we1_3 -pg 1 -lvl 0 -x -20 -y -1350 -defaultsOSRD
+preplace portBus addr0_3 -pg 1 -lvl 0 -x -20 -y -1330 -defaultsOSRD
+preplace portBus addr1_3 -pg 1 -lvl 0 -x -20 -y -1310 -defaultsOSRD
+preplace portBus rdata0_3 -pg 1 -lvl 2 -x 410 -y -1370 -defaultsOSRD
+preplace portBus rdata1_3 -pg 1 -lvl 2 -x 410 -y -1350 -defaultsOSRD
+preplace portBus wdata0_3 -pg 1 -lvl 0 -x -20 -y -1290 -defaultsOSRD
+preplace portBus wdata1_3 -pg 1 -lvl 0 -x -20 -y -1270 -defaultsOSRD
+preplace portBus we0_4 -pg 1 -lvl 0 -x -20 -y -1090 -defaultsOSRD
+preplace portBus we1_4 -pg 1 -lvl 0 -x -20 -y -1070 -defaultsOSRD
+preplace portBus addr0_4 -pg 1 -lvl 0 -x -20 -y -1050 -defaultsOSRD
+preplace portBus addr1_4 -pg 1 -lvl 0 -x -20 -y -1030 -defaultsOSRD
+preplace portBus rdata0_4 -pg 1 -lvl 2 -x 410 -y -1090 -defaultsOSRD
+preplace portBus rdata1_4 -pg 1 -lvl 2 -x 410 -y -1070 -defaultsOSRD
+preplace portBus wdata0_4 -pg 1 -lvl 0 -x -20 -y -1010 -defaultsOSRD
+preplace portBus wdata1_4 -pg 1 -lvl 0 -x -20 -y -990 -defaultsOSRD
+preplace portBus we0_5 -pg 1 -lvl 0 -x -20 -y -810 -defaultsOSRD
+preplace portBus we1_5 -pg 1 -lvl 0 -x -20 -y -790 -defaultsOSRD
+preplace portBus addr0_5 -pg 1 -lvl 0 -x -20 -y -770 -defaultsOSRD
+preplace portBus addr1_5 -pg 1 -lvl 0 -x -20 -y -750 -defaultsOSRD
+preplace portBus rdata0_5 -pg 1 -lvl 2 -x 410 -y -810 -defaultsOSRD
+preplace portBus rdata1_5 -pg 1 -lvl 2 -x 410 -y -790 -defaultsOSRD
+preplace portBus wdata0_5 -pg 1 -lvl 0 -x -20 -y -730 -defaultsOSRD
+preplace portBus wdata1_5 -pg 1 -lvl 0 -x -20 -y -710 -defaultsOSRD
+preplace portBus we0_6 -pg 1 -lvl 0 -x -20 -y -530 -defaultsOSRD
+preplace portBus we1_6 -pg 1 -lvl 0 -x -20 -y -510 -defaultsOSRD
+preplace portBus addr0_6 -pg 1 -lvl 0 -x -20 -y -490 -defaultsOSRD
+preplace portBus addr1_6 -pg 1 -lvl 0 -x -20 -y -470 -defaultsOSRD
+preplace portBus rdata0_6 -pg 1 -lvl 2 -x 410 -y -530 -defaultsOSRD
+preplace portBus rdata1_6 -pg 1 -lvl 2 -x 410 -y -510 -defaultsOSRD
+preplace portBus wdata0_6 -pg 1 -lvl 0 -x -20 -y -450 -defaultsOSRD
+preplace portBus wdata1_6 -pg 1 -lvl 0 -x -20 -y -430 -defaultsOSRD
+preplace portBus we0_7 -pg 1 -lvl 0 -x -20 -y -250 -defaultsOSRD
+preplace portBus we1_7 -pg 1 -lvl 0 -x -20 -y -230 -defaultsOSRD
+preplace portBus addr0_7 -pg 1 -lvl 0 -x -20 -y -210 -defaultsOSRD
+preplace portBus addr1_7 -pg 1 -lvl 0 -x -20 -y -190 -defaultsOSRD
+preplace portBus rdata0_7 -pg 1 -lvl 2 -x 410 -y -250 -defaultsOSRD
+preplace portBus rdata1_7 -pg 1 -lvl 2 -x 410 -y -230 -defaultsOSRD
+preplace portBus wdata0_7 -pg 1 -lvl 0 -x -20 -y -170 -defaultsOSRD
+preplace portBus wdata1_7 -pg 1 -lvl 0 -x -20 -y -150 -defaultsOSRD
+preplace portBus we0_8 -pg 1 -lvl 0 -x -20 -y 30 -defaultsOSRD
+preplace portBus we1_8 -pg 1 -lvl 0 -x -20 -y 50 -defaultsOSRD
+preplace portBus addr0_8 -pg 1 -lvl 0 -x -20 -y 70 -defaultsOSRD
+preplace portBus addr1_8 -pg 1 -lvl 0 -x -20 -y 90 -defaultsOSRD
+preplace portBus rdata0_8 -pg 1 -lvl 2 -x 410 -y 30 -defaultsOSRD
+preplace portBus rdata1_8 -pg 1 -lvl 2 -x 410 -y 50 -defaultsOSRD
+preplace portBus wdata0_8 -pg 1 -lvl 0 -x -20 -y 110 -defaultsOSRD
+preplace portBus wdata1_8 -pg 1 -lvl 0 -x -20 -y 130 -defaultsOSRD
+preplace portBus we0_9 -pg 1 -lvl 0 -x -20 -y 310 -defaultsOSRD
+preplace portBus we1_9 -pg 1 -lvl 0 -x -20 -y 330 -defaultsOSRD
+preplace portBus addr0_9 -pg 1 -lvl 0 -x -20 -y 350 -defaultsOSRD
+preplace portBus addr1_9 -pg 1 -lvl 0 -x -20 -y 370 -defaultsOSRD
+preplace portBus rdata0_9 -pg 1 -lvl 2 -x 410 -y 310 -defaultsOSRD
+preplace portBus rdata1_9 -pg 1 -lvl 2 -x 410 -y 330 -defaultsOSRD
+preplace portBus wdata0_9 -pg 1 -lvl 0 -x -20 -y 390 -defaultsOSRD
+preplace portBus wdata1_9 -pg 1 -lvl 0 -x -20 -y 410 -defaultsOSRD
+preplace portBus we0_10 -pg 1 -lvl 0 -x -20 -y 590 -defaultsOSRD
+preplace portBus we1_10 -pg 1 -lvl 0 -x -20 -y 610 -defaultsOSRD
+preplace portBus addr0_10 -pg 1 -lvl 0 -x -20 -y 630 -defaultsOSRD
+preplace portBus addr1_10 -pg 1 -lvl 0 -x -20 -y 650 -defaultsOSRD
+preplace portBus rdata0_10 -pg 1 -lvl 2 -x 410 -y 590 -defaultsOSRD
+preplace portBus rdata1_10 -pg 1 -lvl 2 -x 410 -y 610 -defaultsOSRD
+preplace portBus wdata0_10 -pg 1 -lvl 0 -x -20 -y 670 -defaultsOSRD
+preplace portBus wdata1_10 -pg 1 -lvl 0 -x -20 -y 690 -defaultsOSRD
+preplace portBus we0_11 -pg 1 -lvl 0 -x -20 -y 870 -defaultsOSRD
+preplace portBus we1_11 -pg 1 -lvl 0 -x -20 -y 890 -defaultsOSRD
+preplace portBus addr0_11 -pg 1 -lvl 0 -x -20 -y 910 -defaultsOSRD
+preplace portBus addr1_11 -pg 1 -lvl 0 -x -20 -y 930 -defaultsOSRD
+preplace portBus rdata0_11 -pg 1 -lvl 2 -x 410 -y 870 -defaultsOSRD
+preplace portBus rdata1_11 -pg 1 -lvl 2 -x 410 -y 890 -defaultsOSRD
+preplace portBus wdata0_11 -pg 1 -lvl 0 -x -20 -y 950 -defaultsOSRD
+preplace portBus wdata1_11 -pg 1 -lvl 0 -x -20 -y 970 -defaultsOSRD
+preplace portBus we0_12 -pg 1 -lvl 0 -x -20 -y 1150 -defaultsOSRD
+preplace portBus we1_12 -pg 1 -lvl 0 -x -20 -y 1170 -defaultsOSRD
+preplace portBus addr0_12 -pg 1 -lvl 0 -x -20 -y 1190 -defaultsOSRD
+preplace portBus addr1_12 -pg 1 -lvl 0 -x -20 -y 1210 -defaultsOSRD
+preplace portBus rdata0_12 -pg 1 -lvl 2 -x 410 -y 1150 -defaultsOSRD
+preplace portBus rdata1_12 -pg 1 -lvl 2 -x 410 -y 1170 -defaultsOSRD
+preplace portBus wdata0_12 -pg 1 -lvl 0 -x -20 -y 1230 -defaultsOSRD
+preplace portBus wdata1_12 -pg 1 -lvl 0 -x -20 -y 1250 -defaultsOSRD
+preplace portBus we0_13 -pg 1 -lvl 0 -x -20 -y 1430 -defaultsOSRD
+preplace portBus we1_13 -pg 1 -lvl 0 -x -20 -y 1450 -defaultsOSRD
+preplace portBus addr0_13 -pg 1 -lvl 0 -x -20 -y 1470 -defaultsOSRD
+preplace portBus addr1_13 -pg 1 -lvl 0 -x -20 -y 1490 -defaultsOSRD
+preplace portBus rdata0_13 -pg 1 -lvl 2 -x 410 -y 1430 -defaultsOSRD
+preplace portBus rdata1_13 -pg 1 -lvl 2 -x 410 -y 1450 -defaultsOSRD
+preplace portBus wdata0_13 -pg 1 -lvl 0 -x -20 -y 1510 -defaultsOSRD
+preplace portBus wdata1_13 -pg 1 -lvl 0 -x -20 -y 1530 -defaultsOSRD
+preplace portBus we0_14 -pg 1 -lvl 0 -x -20 -y 1710 -defaultsOSRD
+preplace portBus we1_14 -pg 1 -lvl 0 -x -20 -y 1730 -defaultsOSRD
+preplace portBus addr0_14 -pg 1 -lvl 0 -x -20 -y 1750 -defaultsOSRD
+preplace portBus addr1_14 -pg 1 -lvl 0 -x -20 -y 1770 -defaultsOSRD
+preplace portBus rdata0_14 -pg 1 -lvl 2 -x 410 -y 1710 -defaultsOSRD
+preplace portBus rdata1_14 -pg 1 -lvl 2 -x 410 -y 1730 -defaultsOSRD
+preplace portBus wdata0_14 -pg 1 -lvl 0 -x -20 -y 1790 -defaultsOSRD
+preplace portBus wdata1_14 -pg 1 -lvl 0 -x -20 -y 1810 -defaultsOSRD
+preplace portBus wdata0_15 -pg 1 -lvl 0 -x -20 -y 2070 -defaultsOSRD
+preplace portBus rdata1_15 -pg 1 -lvl 2 -x 410 -y 2010 -defaultsOSRD
+preplace portBus rdata0_15 -pg 1 -lvl 2 -x 410 -y 1990 -defaultsOSRD
+preplace portBus addr1_15 -pg 1 -lvl 0 -x -20 -y 2050 -defaultsOSRD
+preplace portBus addr0_15 -pg 1 -lvl 0 -x -20 -y 2030 -defaultsOSRD
+preplace portBus we1_15 -pg 1 -lvl 0 -x -20 -y 2010 -defaultsOSRD
+preplace portBus we0_15 -pg 1 -lvl 0 -x -20 -y 1990 -defaultsOSRD
+preplace portBus wdata1_15 -pg 1 -lvl 0 -x -20 -y 2090 -defaultsOSRD
+preplace inst uram_2w_2r_we_0 -pg 1 -lvl 1 -x 140 -y -2200 -defaultsOSRD
+preplace inst uram_2w_2r_we_1 -pg 1 -lvl 1 -x 140 -y -1920 -defaultsOSRD -resize 220 256
+preplace inst uram_2w_2r_we_2 -pg 1 -lvl 1 -x 140 -y -1640 -defaultsOSRD -resize 220 256
+preplace inst uram_2w_2r_we_4 -pg 1 -lvl 1 -x 140 -y -1080 -defaultsOSRD -resize 220 256
+preplace inst uram_2w_2r_we_11 -pg 1 -lvl 1 -x 140 -y 880 -defaultsOSRD -resize 220 256
+preplace inst uram_2w_2r_we_12 -pg 1 -lvl 1 -x 140 -y 1160 -defaultsOSRD -resize 220 256
+preplace inst uram_2w_2r_we_13 -pg 1 -lvl 1 -x 140 -y 1440 -defaultsOSRD -resize 220 256
+preplace inst uram_2w_2r_we_14 -pg 1 -lvl 1 -x 140 -y 1720 -defaultsOSRD -resize 220 256
+preplace inst uram_2w_2r_we_15 -pg 1 -lvl 1 -x 140 -y 2000 -defaultsOSRD -resize 220 256
+preplace inst uram_2w_2r_we_3 -pg 1 -lvl 1 -x 140 -y -1360 -defaultsOSRD -resize 220 256
+preplace inst uram_2w_2r_we_5 -pg 1 -lvl 1 -x 140 -y -800 -defaultsOSRD -resize 220 256
+preplace inst uram_2w_2r_we_6 -pg 1 -lvl 1 -x 140 -y -520 -defaultsOSRD -resize 220 256
+preplace inst uram_2w_2r_we_7 -pg 1 -lvl 1 -x 140 -y -240 -defaultsOSRD -resize 220 256
+preplace inst uram_2w_2r_we_8 -pg 1 -lvl 1 -x 140 -y 40 -defaultsOSRD -resize 220 256
+preplace inst uram_2w_2r_we_9 -pg 1 -lvl 1 -x 140 -y 320 -defaultsOSRD -resize 220 256
+preplace inst uram_2w_2r_we_10 -pg 1 -lvl 1 -x 140 -y 600 -defaultsOSRD -resize 220 256
+preplace netloc clk_0_1 1 0 1 10 -2290n
+preplace netloc rst_n_0_1 1 0 1 0 -2270n
+preplace netloc we0_0_1 1 0 1 NJ -2210
+preplace netloc we1_0_1 1 0 1 NJ -2190
+preplace netloc addr0_0_1 1 0 1 NJ -2170
+preplace netloc addr1_0_1 1 0 1 NJ -2150
+preplace netloc uram_2w_2r_we_0_rdata0 1 1 1 NJ -2210
+preplace netloc uram_2w_2r_we_0_rdata1 1 1 1 NJ -2190
+preplace netloc wdata0_0_1 1 0 1 NJ -2130
+preplace netloc wdata1_0_1 1 0 1 NJ -2110
+preplace netloc ce0_0_1 1 0 1 NJ -2250
+preplace netloc ce1_0_1 1 0 1 NJ -2230
+preplace netloc we0_1_1 1 0 1 NJ -1930
+preplace netloc we1_1_1 1 0 1 NJ -1910
+preplace netloc addr0_1_1 1 0 1 NJ -1890
+preplace netloc addr1_1_1 1 0 1 NJ -1870
+preplace netloc uram_2w_2r_we_1_rdata0 1 1 1 NJ -1930
+preplace netloc uram_2w_2r_we_1_rdata1 1 1 1 NJ -1910
+preplace netloc wdata0_1_1 1 0 1 NJ -1850
+preplace netloc wdata1_1_1 1 0 1 NJ -1830
+preplace netloc ce0_1_1 1 0 1 NJ -1970
+preplace netloc ce1_1_1 1 0 1 NJ -1950
+preplace netloc we0_2_1 1 0 1 NJ -1650
+preplace netloc we1_2_1 1 0 1 NJ -1630
+preplace netloc addr0_2_1 1 0 1 NJ -1610
+preplace netloc addr1_2_1 1 0 1 NJ -1590
+preplace netloc uram_2w_2r_we_2_rdata0 1 1 1 NJ -1650
+preplace netloc uram_2w_2r_we_2_rdata1 1 1 1 NJ -1630
+preplace netloc wdata0_2_1 1 0 1 NJ -1570
+preplace netloc wdata1_2_1 1 0 1 NJ -1550
+preplace netloc ce0_2_1 1 0 1 NJ -1690
+preplace netloc ce1_2_1 1 0 1 NJ -1670
+preplace netloc we0_3_1 1 0 1 NJ -1370
+preplace netloc we1_3_1 1 0 1 NJ -1350
+preplace netloc addr0_3_1 1 0 1 NJ -1330
+preplace netloc addr1_3_1 1 0 1 NJ -1310
+preplace netloc uram_2w_2r_we_3_rdata0 1 1 1 NJ -1370
+preplace netloc uram_2w_2r_we_3_rdata1 1 1 1 NJ -1350
+preplace netloc wdata0_3_1 1 0 1 NJ -1290
+preplace netloc wdata1_3_1 1 0 1 NJ -1270
+preplace netloc ce0_3_1 1 0 1 NJ -1410
+preplace netloc ce1_3_1 1 0 1 NJ -1390
+preplace netloc we0_4_1 1 0 1 NJ -1090
+preplace netloc we1_4_1 1 0 1 NJ -1070
+preplace netloc addr0_4_1 1 0 1 NJ -1050
+preplace netloc addr1_4_1 1 0 1 NJ -1030
+preplace netloc uram_2w_2r_we_4_rdata0 1 1 1 NJ -1090
+preplace netloc uram_2w_2r_we_4_rdata1 1 1 1 NJ -1070
+preplace netloc wdata0_4_1 1 0 1 NJ -1010
+preplace netloc wdata1_4_1 1 0 1 NJ -990
+preplace netloc ce0_4_1 1 0 1 NJ -1130
+preplace netloc ce1_4_1 1 0 1 NJ -1110
+preplace netloc we0_5_1 1 0 1 NJ -810
+preplace netloc we1_5_1 1 0 1 NJ -790
+preplace netloc addr0_5_1 1 0 1 NJ -770
+preplace netloc addr1_5_1 1 0 1 NJ -750
+preplace netloc uram_2w_2r_we_5_rdata0 1 1 1 NJ -810
+preplace netloc uram_2w_2r_we_5_rdata1 1 1 1 NJ -790
+preplace netloc wdata0_5_1 1 0 1 NJ -730
+preplace netloc wdata1_5_1 1 0 1 NJ -710
+preplace netloc ce0_5_1 1 0 1 NJ -850
+preplace netloc ce1_5_1 1 0 1 NJ -830
+preplace netloc we0_6_1 1 0 1 NJ -530
+preplace netloc we1_6_1 1 0 1 NJ -510
+preplace netloc addr0_6_1 1 0 1 NJ -490
+preplace netloc addr1_6_1 1 0 1 NJ -470
+preplace netloc uram_2w_2r_we_6_rdata0 1 1 1 NJ -530
+preplace netloc uram_2w_2r_we_6_rdata1 1 1 1 NJ -510
+preplace netloc wdata0_6_1 1 0 1 NJ -450
+preplace netloc wdata1_6_1 1 0 1 NJ -430
+preplace netloc ce0_6_1 1 0 1 NJ -570
+preplace netloc ce1_6_1 1 0 1 NJ -550
+preplace netloc we0_7_1 1 0 1 NJ -250
+preplace netloc we1_7_1 1 0 1 NJ -230
+preplace netloc addr0_7_1 1 0 1 NJ -210
+preplace netloc addr1_7_1 1 0 1 NJ -190
+preplace netloc uram_2w_2r_we_7_rdata0 1 1 1 NJ -250
+preplace netloc uram_2w_2r_we_7_rdata1 1 1 1 NJ -230
+preplace netloc wdata0_7_1 1 0 1 NJ -170
+preplace netloc wdata1_7_1 1 0 1 NJ -150
+preplace netloc ce0_7_1 1 0 1 NJ -290
+preplace netloc ce1_7_1 1 0 1 NJ -270
+preplace netloc we0_8_1 1 0 1 NJ 30
+preplace netloc we1_8_1 1 0 1 NJ 50
+preplace netloc addr0_8_1 1 0 1 NJ 70
+preplace netloc addr1_8_1 1 0 1 NJ 90
+preplace netloc uram_2w_2r_we_8_rdata0 1 1 1 NJ 30
+preplace netloc uram_2w_2r_we_8_rdata1 1 1 1 NJ 50
+preplace netloc wdata0_8_1 1 0 1 NJ 110
+preplace netloc wdata1_8_1 1 0 1 NJ 130
+preplace netloc ce0_8_1 1 0 1 NJ -10
+preplace netloc ce1_8_1 1 0 1 NJ 10
+preplace netloc we0_9_1 1 0 1 NJ 310
+preplace netloc we1_9_1 1 0 1 NJ 330
+preplace netloc addr0_9_1 1 0 1 NJ 350
+preplace netloc addr1_9_1 1 0 1 NJ 370
+preplace netloc uram_2w_2r_we_9_rdata0 1 1 1 NJ 310
+preplace netloc uram_2w_2r_we_9_rdata1 1 1 1 NJ 330
+preplace netloc wdata0_9_1 1 0 1 NJ 390
+preplace netloc wdata1_9_1 1 0 1 NJ 410
+preplace netloc ce0_9_1 1 0 1 NJ 270
+preplace netloc ce1_9_1 1 0 1 NJ 290
+preplace netloc we0_10_1 1 0 1 NJ 590
+preplace netloc we1_10_1 1 0 1 NJ 610
+preplace netloc addr0_10_1 1 0 1 NJ 630
+preplace netloc addr1_10_1 1 0 1 NJ 650
+preplace netloc uram_2w_2r_we_10_rdata0 1 1 1 NJ 590
+preplace netloc uram_2w_2r_we_10_rdata1 1 1 1 NJ 610
+preplace netloc wdata0_10_1 1 0 1 NJ 670
+preplace netloc wdata1_10_1 1 0 1 NJ 690
+preplace netloc ce0_10_1 1 0 1 NJ 550
+preplace netloc ce1_10_1 1 0 1 NJ 570
+preplace netloc we0_11_1 1 0 1 NJ 870
+preplace netloc we1_11_1 1 0 1 NJ 890
+preplace netloc addr0_11_1 1 0 1 NJ 910
+preplace netloc addr1_11_1 1 0 1 NJ 930
+preplace netloc uram_2w_2r_we_11_rdata0 1 1 1 NJ 870
+preplace netloc uram_2w_2r_we_11_rdata1 1 1 1 NJ 890
+preplace netloc wdata0_11_1 1 0 1 NJ 950
+preplace netloc wdata1_11_1 1 0 1 NJ 970
+preplace netloc ce0_11_1 1 0 1 NJ 830
+preplace netloc ce1_11_1 1 0 1 NJ 850
+preplace netloc we0_12_1 1 0 1 NJ 1150
+preplace netloc we1_12_1 1 0 1 NJ 1170
+preplace netloc addr0_12_1 1 0 1 NJ 1190
+preplace netloc addr1_12_1 1 0 1 NJ 1210
+preplace netloc uram_2w_2r_we_12_rdata0 1 1 1 NJ 1150
+preplace netloc uram_2w_2r_we_12_rdata1 1 1 1 NJ 1170
+preplace netloc wdata0_12_1 1 0 1 NJ 1230
+preplace netloc wdata1_12_1 1 0 1 NJ 1250
+preplace netloc ce0_12_1 1 0 1 NJ 1110
+preplace netloc ce1_12_1 1 0 1 NJ 1130
+preplace netloc we0_13_1 1 0 1 NJ 1430
+preplace netloc we1_13_1 1 0 1 NJ 1450
+preplace netloc addr0_13_1 1 0 1 NJ 1470
+preplace netloc addr1_13_1 1 0 1 NJ 1490
+preplace netloc uram_2w_2r_we_13_rdata0 1 1 1 NJ 1430
+preplace netloc uram_2w_2r_we_13_rdata1 1 1 1 NJ 1450
+preplace netloc wdata0_13_1 1 0 1 NJ 1510
+preplace netloc wdata1_13_1 1 0 1 NJ 1530
+preplace netloc ce0_13_1 1 0 1 NJ 1390
+preplace netloc ce1_13_1 1 0 1 NJ 1410
+preplace netloc we0_14_1 1 0 1 NJ 1710
+preplace netloc we1_14_1 1 0 1 NJ 1730
+preplace netloc addr0_14_1 1 0 1 NJ 1750
+preplace netloc addr1_14_1 1 0 1 NJ 1770
+preplace netloc uram_2w_2r_we_14_rdata0 1 1 1 NJ 1710
+preplace netloc uram_2w_2r_we_14_rdata1 1 1 1 NJ 1730
+preplace netloc wdata0_14_1 1 0 1 NJ 1790
+preplace netloc wdata1_14_1 1 0 1 NJ 1810
+preplace netloc ce0_14_1 1 0 1 NJ 1670
+preplace netloc ce1_14_1 1 0 1 NJ 1690
+preplace netloc wdata0_15_1 1 0 1 NJ 2070
+preplace netloc uram_2w_2r_we_15_rdata1 1 1 1 NJ 2010
+preplace netloc uram_2w_2r_we_15_rdata0 1 1 1 NJ 1990
+preplace netloc addr1_15_1 1 0 1 NJ 2050
+preplace netloc ce1_15_1 1 0 1 NJ 1970
+preplace netloc addr0_15_1 1 0 1 NJ 2030
+preplace netloc ce0_15_1 1 0 1 NJ 1950
+preplace netloc we1_15_1 1 0 1 NJ 2010
+preplace netloc we0_15_1 1 0 1 NJ 1990
+preplace netloc wdata1_15_1 1 0 1 NJ 2090
+levelinfo -pg 1 -20 140 410
+pagesize -pg 1 -db -bbox -sgen -200 -2350 580 2150
+"
+}
+0

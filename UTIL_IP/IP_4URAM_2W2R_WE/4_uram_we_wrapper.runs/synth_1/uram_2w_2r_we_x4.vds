@@ -1,0 +1,239 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 20 16:16:21 2023
+# Process ID: 561395
+# Current directory: /Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.runs/synth_1
+# Command line: vivado -log uram_2w_2r_we_x4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uram_2w_2r_we_x4.tcl
+# Log file: /Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.runs/synth_1/uram_2w_2r_we_x4.vds
+# Journal file: /Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source uram_2w_2r_we_x4.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/Orion/GraphHBM/UTIL_IP'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/Orion/GraphHBM/UTIL_IP' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.runs/synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:bram_32k_2w_2r:1.0'. The one found in IP location '/Orion/GraphHBM/UTIL_IP/IP_BRAM_32K_2W2R' will take precedence over the same IP in location /Orion/GraphHBM/UTIL_IP/IP_BRAM_32K_2W2R/bram_32k_2w2r.srcs/sources_1/new
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:cycle_counter:1.0'. The one found in IP location '/Orion/GraphHBM/UTIL_IP/IP_CYCLE_CNT' will take precedence over the same IP in location /Orion/GraphHBM/UTIL_IP/IP_CYCLE_CNT/cycle_cnt.srcs/sources_1/new
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:cus_m_axi_s_256_uram:1.0'. The one found in IP location '/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_256_ultra' will take precedence over the same IP in location /Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_256_ultra/cus_m_axi_s_256_ultra.srcs/sources_1
+Command: synth_design -top uram_2w_2r_we_x4 -part xcu280-fsvh2892-2L-e -directive AlternateRoutability -no_lc -shreg_min_size 10
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 561557
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3203.836 ; gain = 173.719 ; free physical = 61221 ; free virtual = 95499
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'uram_2w_2r_we_x4' [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.srcs/sources_1/new/four_uram_we.v:4]
+INFO: [Synth 8-6157] synthesizing module 'uram_wex4_wrapper' [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.gen/sources_1/bd/uram_wex4/hdl/uram_wex4_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'uram_wex4' [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.gen/sources_1/bd/uram_wex4/synth/uram_wex4.v:13]
+INFO: [Synth 8-6157] synthesizing module 'uram_wex4_uram_2w_2r_we_0_0' [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.runs/synth_1/.Xil/Vivado-561395-noah/realtime/uram_wex4_uram_2w_2r_we_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'uram_wex4_uram_2w_2r_we_0_0' (1#1) [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.runs/synth_1/.Xil/Vivado-561395-noah/realtime/uram_wex4_uram_2w_2r_we_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'uram_wex4_uram_2w_2r_we_0_1' [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.runs/synth_1/.Xil/Vivado-561395-noah/realtime/uram_wex4_uram_2w_2r_we_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'uram_wex4_uram_2w_2r_we_0_1' (2#1) [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.runs/synth_1/.Xil/Vivado-561395-noah/realtime/uram_wex4_uram_2w_2r_we_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'uram_wex4_uram_2w_2r_we_1_0' [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.runs/synth_1/.Xil/Vivado-561395-noah/realtime/uram_wex4_uram_2w_2r_we_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'uram_wex4_uram_2w_2r_we_1_0' (3#1) [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.runs/synth_1/.Xil/Vivado-561395-noah/realtime/uram_wex4_uram_2w_2r_we_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'uram_wex4_uram_2w_2r_we_0_2' [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.runs/synth_1/.Xil/Vivado-561395-noah/realtime/uram_wex4_uram_2w_2r_we_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'uram_wex4_uram_2w_2r_we_0_2' (4#1) [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.runs/synth_1/.Xil/Vivado-561395-noah/realtime/uram_wex4_uram_2w_2r_we_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'uram_wex4' (5#1) [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.gen/sources_1/bd/uram_wex4/synth/uram_wex4.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'uram_wex4_wrapper' (6#1) [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.gen/sources_1/bd/uram_wex4/hdl/uram_wex4_wrapper.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'uram_2w_2r_we_x4' (7#1) [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.srcs/sources_1/new/four_uram_we.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3245.773 ; gain = 215.656 ; free physical = 61147 ; free virtual = 95426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3263.617 ; gain = 233.500 ; free physical = 61144 ; free virtual = 95423
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3263.617 ; gain = 233.500 ; free physical = 61144 ; free virtual = 95423
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3263.617 ; gain = 0.000 ; free physical = 61833 ; free virtual = 96112
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.gen/sources_1/bd/uram_wex4/ip/uram_wex4_uram_2w_2r_we_0_0/uram_wex4_uram_2w_2r_we_0_0/uram_wex4_uram_2w_2r_we_0_0_in_context.xdc] for cell 'inst_4uram_we/uram_wex4_i/uram_2w_2r_we_0'
+Finished Parsing XDC File [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.gen/sources_1/bd/uram_wex4/ip/uram_wex4_uram_2w_2r_we_0_0/uram_wex4_uram_2w_2r_we_0_0/uram_wex4_uram_2w_2r_we_0_0_in_context.xdc] for cell 'inst_4uram_we/uram_wex4_i/uram_2w_2r_we_0'
+Parsing XDC File [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.gen/sources_1/bd/uram_wex4/ip/uram_wex4_uram_2w_2r_we_0_1/uram_wex4_uram_2w_2r_we_0_1/uram_wex4_uram_2w_2r_we_0_0_in_context.xdc] for cell 'inst_4uram_we/uram_wex4_i/uram_2w_2r_we_1'
+Finished Parsing XDC File [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.gen/sources_1/bd/uram_wex4/ip/uram_wex4_uram_2w_2r_we_0_1/uram_wex4_uram_2w_2r_we_0_1/uram_wex4_uram_2w_2r_we_0_0_in_context.xdc] for cell 'inst_4uram_we/uram_wex4_i/uram_2w_2r_we_1'
+Parsing XDC File [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.gen/sources_1/bd/uram_wex4/ip/uram_wex4_uram_2w_2r_we_1_0/uram_wex4_uram_2w_2r_we_1_0/uram_wex4_uram_2w_2r_we_0_0_in_context.xdc] for cell 'inst_4uram_we/uram_wex4_i/uram_2w_2r_we_2'
+Finished Parsing XDC File [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.gen/sources_1/bd/uram_wex4/ip/uram_wex4_uram_2w_2r_we_1_0/uram_wex4_uram_2w_2r_we_1_0/uram_wex4_uram_2w_2r_we_0_0_in_context.xdc] for cell 'inst_4uram_we/uram_wex4_i/uram_2w_2r_we_2'
+Parsing XDC File [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.gen/sources_1/bd/uram_wex4/ip/uram_wex4_uram_2w_2r_we_0_2/uram_wex4_uram_2w_2r_we_0_2/uram_wex4_uram_2w_2r_we_0_0_in_context.xdc] for cell 'inst_4uram_we/uram_wex4_i/uram_2w_2r_we_3'
+Finished Parsing XDC File [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.gen/sources_1/bd/uram_wex4/ip/uram_wex4_uram_2w_2r_we_0_2/uram_wex4_uram_2w_2r_we_0_2/uram_wex4_uram_2w_2r_we_0_0_in_context.xdc] for cell 'inst_4uram_we/uram_wex4_i/uram_2w_2r_we_3'
+Parsing XDC File [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3367.305 ; gain = 0.000 ; free physical = 61791 ; free virtual = 96070
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3367.305 ; gain = 0.000 ; free physical = 61791 ; free virtual = 96070
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3367.305 ; gain = 337.188 ; free physical = 61870 ; free virtual = 96149
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3367.305 ; gain = 337.188 ; free physical = 61870 ; free virtual = 96149
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst_4uram_we/uram_wex4_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst_4uram_we/uram_wex4_i/uram_2w_2r_we_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst_4uram_we/uram_wex4_i/uram_2w_2r_we_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst_4uram_we/uram_wex4_i/uram_2w_2r_we_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst_4uram_we/uram_wex4_i/uram_2w_2r_we_3. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3367.305 ; gain = 337.188 ; free physical = 61870 ; free virtual = 96149
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3367.305 ; gain = 337.188 ; free physical = 61873 ; free virtual = 96152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3367.305 ; gain = 337.188 ; free physical = 61860 ; free virtual = 96143
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 3738.094 ; gain = 707.977 ; free physical = 61345 ; free virtual = 95628
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 3738.094 ; gain = 707.977 ; free physical = 61345 ; free virtual = 95627
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 3758.133 ; gain = 728.016 ; free physical = 61343 ; free virtual = 95625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 3764.070 ; gain = 733.953 ; free physical = 61366 ; free virtual = 95645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 3764.070 ; gain = 733.953 ; free physical = 61366 ; free virtual = 95645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 3764.070 ; gain = 733.953 ; free physical = 61366 ; free virtual = 95645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 3764.070 ; gain = 733.953 ; free physical = 61366 ; free virtual = 95645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 3764.070 ; gain = 733.953 ; free physical = 61366 ; free virtual = 95645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 3764.070 ; gain = 733.953 ; free physical = 61366 ; free virtual = 95645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------+----------+
+|      |BlackBox name               |Instances |
++------+----------------------------+----------+
+|1     |uram_wex4_uram_2w_2r_we_0_0 |         1|
+|2     |uram_wex4_uram_2w_2r_we_0_1 |         1|
+|3     |uram_wex4_uram_2w_2r_we_1_0 |         1|
+|4     |uram_wex4_uram_2w_2r_we_0_2 |         1|
++------+----------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------+------+
+|      |Cell                      |Count |
++------+--------------------------+------+
+|1     |uram_wex4_uram_2w_2r_we_0 |     3|
+|4     |uram_wex4_uram_2w_2r_we_1 |     1|
+|5     |IBUF                      |   682|
+|6     |OBUF                      |   512|
++------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 3764.070 ; gain = 733.953 ; free physical = 61366 ; free virtual = 95645
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 3764.070 ; gain = 630.266 ; free physical = 61404 ; free virtual = 95683
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 3764.078 ; gain = 733.953 ; free physical = 61404 ; free virtual = 95683
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3771.008 ; gain = 0.000 ; free physical = 61489 ; free virtual = 95768
+INFO: [Netlist 29-17] Analyzing 682 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'uram_2w_2r_we_x4' is not ideal for floorplanning, since the cellview 'uram_2w_2r_we_x4' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3834.281 ; gain = 0.000 ; free physical = 61388 ; free virtual = 95667
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 682 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 682 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 3834.281 ; gain = 1459.523 ; free physical = 61522 ; free virtual = 95801
+INFO: [Common 17-1381] The checkpoint '/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R_WE/4_uram_we_wrapper.runs/synth_1/uram_2w_2r_we_x4.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file uram_2w_2r_we_x4_utilization_synth.rpt -pb uram_2w_2r_we_x4_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 20 16:16:56 2023...

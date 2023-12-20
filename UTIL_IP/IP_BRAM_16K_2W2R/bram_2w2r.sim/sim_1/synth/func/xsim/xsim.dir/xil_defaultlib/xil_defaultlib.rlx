@@ -1,0 +1,6 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_BRAM_2W2R/bram_2w2r.sim/sim_1/synth/func/xsim/bram_2w2r_tb_func_synth.v,1636376214,verilog,,,,bram_2w_2r;glbl;xpm_memory_base;xpm_memory_tdpram,,uvm,,,,,,
+/home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_BRAM_2W2R/bram_2w2r.srcs/sim_1/new/bram_2w2r_tb.sv,1636376117,systemVerilog,,,,bram_2w2r_tb,,uvm,,,,,,

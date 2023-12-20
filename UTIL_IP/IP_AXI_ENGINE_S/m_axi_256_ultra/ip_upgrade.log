@@ -1,0 +1,233 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Jan  6 21:58:54 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cus_m_axi_s_256_ultra_swr_engine_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of cus_m_axi_s_256_ultra_swr_engine_0_0 (user.org:user:swr_engine:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Jan  6 18:42:15 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cus_m_axi_s_256_ultra_swr_engine_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of cus_m_axi_s_256_ultra_swr_engine_0_0 (user.org:user:swr_engine:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Jan  5 18:55:51 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cus_m_axi_s_256_ultra_swr_engine_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of cus_m_axi_s_256_ultra_swr_engine_0_0 (user.org:user:swr_engine:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Jan  5 15:09:53 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cus_m_axi_s_256_ultra_swr_engine_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of cus_m_axi_s_256_ultra_swr_engine_0_0 (user.org:user:swr_engine:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Dec 11 17:33:10 2022
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cus_m_axi_s_256_ultra_mread_master_ultra_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of cus_m_axi_s_256_ultra_mread_master_ultra_0_0 (user.org:user:mread_master_ultra:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Dec 11 16:32:48 2022
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cus_m_axi_s_256_ultra_swr_engine_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of cus_m_axi_s_256_ultra_swr_engine_0_0 (user.org:user:swr_engine:1.0 (Rev. 1)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'cus_m_axi_s_256_ultra_swr_engine_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'm_axi_WDATA' width 128 differs from original width 256
+
+-Upgraded port 'm_axi_WSTRB' width 16 differs from original width 32
+
+-Upgraded port 's_axis_tdata' width 128 differs from original width 256
+
+-Upgrade has removed port 'm_axi_BRESP'
+
+-Upgrade has removed port 'req_done'
+
+-Upgrade has removed port 'req_length'
+
+-Upgrade has removed port 'req_start'
+
+-Upgrade has added port 'ctrl_done'
+
+-Upgrade has added port 'ctrl_start'
+
+-Upgrade has added port 'req_len'
+
+
+3. Customization warnings
+-------------------------
+
+Parameter 'ADDR_WIDTH' is no longer present on the upgraded IP 'cus_m_axi_s_256_ultra_swr_engine_0_0', and cannot be set to '64'
+
+Parameter 'DATA_WIDTH' is no longer present on the upgraded IP 'cus_m_axi_s_256_ultra_swr_engine_0_0', and cannot be set to '256'
+
+Parameter 'ID_WIDTH' is no longer present on the upgraded IP 'cus_m_axi_s_256_ultra_swr_engine_0_0', and cannot be set to '6'
+
+Parameter 'C_MAX_LENGTH_WIDTH' is no longer present on the upgraded IP 'cus_m_axi_s_256_ultra_swr_engine_0_0', and cannot be set to '8'
+
+Parameter 'C_MAX_BURST_LENGTH' is no longer present on the upgraded IP 'cus_m_axi_s_256_ultra_swr_engine_0_0', and cannot be set to '16'
+
+Parameter 'C_LOG_BURST_LENGTH' is no longer present on the upgraded IP 'cus_m_axi_s_256_ultra_swr_engine_0_0', and cannot be set to '4'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv user.org:user:swr_engine:1.0 -user_name cus_m_axi_s_256_ultra_swr_engine_0_0
+set_property -dict "\
+  CONFIG.Component_Name {cus_m_axi_s_256_ultra_swr_engine_0_0} \
+  CONFIG.clk.ASSOCIATED_BUSIF {s_axis:m_axi} \
+  CONFIG.clk.ASSOCIATED_RESET {} \
+  CONFIG.clk.CLK_DOMAIN {cus_m_axi_s_256_ultra_clk_0} \
+  CONFIG.clk.FREQ_HZ {100000000} \
+  CONFIG.clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.clk.INSERT_VIP {0} \
+  CONFIG.clk.PHASE {0.000} \
+  CONFIG.m_axi.ADDR_WIDTH {64} \
+  CONFIG.m_axi.ARUSER_WIDTH {0} \
+  CONFIG.m_axi.AWUSER_WIDTH {0} \
+  CONFIG.m_axi.BUSER_WIDTH {0} \
+  CONFIG.m_axi.CLK_DOMAIN {cus_m_axi_s_256_ultra_clk_0} \
+  CONFIG.m_axi.DATA_WIDTH {256} \
+  CONFIG.m_axi.FREQ_HZ {100000000} \
+  CONFIG.m_axi.HAS_BRESP {1} \
+  CONFIG.m_axi.HAS_BURST {0} \
+  CONFIG.m_axi.HAS_CACHE {0} \
+  CONFIG.m_axi.HAS_LOCK {0} \
+  CONFIG.m_axi.HAS_PROT {0} \
+  CONFIG.m_axi.HAS_QOS {0} \
+  CONFIG.m_axi.HAS_REGION {0} \
+  CONFIG.m_axi.HAS_RRESP {0} \
+  CONFIG.m_axi.HAS_WSTRB {1} \
+  CONFIG.m_axi.ID_WIDTH {6} \
+  CONFIG.m_axi.INSERT_VIP {0} \
+  CONFIG.m_axi.MAX_BURST_LENGTH {256} \
+  CONFIG.m_axi.NUM_READ_OUTSTANDING {2} \
+  CONFIG.m_axi.NUM_READ_THREADS {1} \
+  CONFIG.m_axi.NUM_WRITE_OUTSTANDING {2} \
+  CONFIG.m_axi.NUM_WRITE_THREADS {1} \
+  CONFIG.m_axi.PHASE {0.000} \
+  CONFIG.m_axi.PROTOCOL {AXI4} \
+  CONFIG.m_axi.READ_WRITE_MODE {WRITE_ONLY} \
+  CONFIG.m_axi.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi.RUSER_WIDTH {0} \
+  CONFIG.m_axi.SUPPORTS_NARROW_BURST {1} \
+  CONFIG.m_axi.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.m_axi.WUSER_WIDTH {0} \
+  CONFIG.rst_n.INSERT_VIP {0} \
+  CONFIG.rst_n.POLARITY {ACTIVE_LOW} \
+  CONFIG.s_axis.CLK_DOMAIN {cus_m_axi_s_256_ultra_clk_0} \
+  CONFIG.s_axis.FREQ_HZ {100000000} \
+  CONFIG.s_axis.HAS_TKEEP {0} \
+  CONFIG.s_axis.HAS_TLAST {0} \
+  CONFIG.s_axis.HAS_TREADY {1} \
+  CONFIG.s_axis.HAS_TSTRB {0} \
+  CONFIG.s_axis.INSERT_VIP {0} \
+  CONFIG.s_axis.LAYERED_METADATA {undef} \
+  CONFIG.s_axis.PHASE {0.000} \
+  CONFIG.s_axis.TDATA_NUM_BYTES {32} \
+  CONFIG.s_axis.TDEST_WIDTH {0} \
+  CONFIG.s_axis.TID_WIDTH {0} \
+  CONFIG.s_axis.TUSER_WIDTH {0} " [get_ips cus_m_axi_s_256_ultra_swr_engine_0_0]
+
+

@@ -1,0 +1,19 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/XILINX/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto cc7243cdfa1d4eeb9d9f264bdbaeb774 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot uram_2w2r_tb_behav xil_defaultlib.uram_2w2r_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 1 for port 'we0' [/Orion/GraphHBM/UTIL_IP/IP_URAM_2W2R/uram_2w2r.srcs/sim_1/new/uram_2w2r.sv:267]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 1 for port 'we1' [/Orion/GraphHBM/UTIL_IP/IP_URAM_2W2R/uram_2w2r.srcs/sim_1/new/uram_2w2r.sv:268]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'BWE_A' [/Orion/GraphHBM/UTIL_IP/IP_URAM_2W2R/uram_2w2r.srcs/sources_1/new/uram_2w2r.v:108]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'BWE_B' [/Orion/GraphHBM/UTIL_IP/IP_URAM_2W2R/uram_2w2r.srcs/sources_1/new/uram_2w2r.v:109]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.URAM288_BASE(BWE_MODE_A="PARITY_...
+Compiling module xil_defaultlib.uram_2w_2r
+Compiling module xil_defaultlib.uram_2w2r_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot uram_2w2r_tb_behav

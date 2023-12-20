@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xcu280-fsvh2892-2L-e" LaunchTime="1695050862">
+  <File Type="VDS-TIMING-PB" Name="uram_2w_2r_we_x32_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="uram_2w_2r_we_x32_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="uram_2w_2r_we_x32.dcp"/>
+  <File Type="REPORTS-TCL" Name="uram_2w_2r_we_x32_reports.tcl"/>
+  <File Type="PA-TCL" Name="uram_2w_2r_we_x32.tcl"/>
+  <File Type="RDS-RDS" Name="uram_2w_2r_we_x32.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="uram_2w_2r_we_x32_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="uram_2w_2r_we_x32_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="uram_2w_2r_we_x32_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/uram_wex32/uram_wex32.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/uram_wex32/hdl/uram_wex32_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/thirtytwo_uram_we.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="uram_2w_2r_we_x32"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Flow_AlternateRoutability" Flow="Vivado Synthesis 2020">
+      <Desc>Performs optimizations which creates alternative logic technology mapping, including disabling LUT combining, forcing F7/F8/F9 to logic, increasing the threshold of shift register inference.</Desc>
+    </StratHandle>
+    <Step Id="synth_design">
+      <Option Id="NoCombineLuts">1</Option>
+      <Option Id="Directive">3</Option>
+      <Option Id="ShregMinSize">10</Option>
+    </Step>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_1_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_0_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_2_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_3_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_0_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_4_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_2_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_5_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_1_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_5_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_7_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_5_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_7_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_3_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_3_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_6_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_7_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_6_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_6_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_0_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_2_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_4_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_1_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="uram_wex32_uram_2w_2r_we_4_0"/>
+</GenRun>

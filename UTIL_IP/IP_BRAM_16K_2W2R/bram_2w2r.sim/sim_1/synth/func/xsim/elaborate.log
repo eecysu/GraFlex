@@ -1,0 +1,37 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /home/chunyou/Xilinx/2020_2/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto d61ba0d35cb6408bab601cc3d6d79e03 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L secureip --snapshot bram_2w2r_tb_func_synth xil_defaultlib.bram_2w2r_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-2861] module 'bram_2w_2r' does not have a parameter named DATA_WIDTH [/home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_BRAM_2W2R/bram_2w2r.srcs/sim_1/new/bram_2w2r_tb.sv:148]
+WARNING: [VRFC 10-2861] module 'bram_2w_2r' does not have a parameter named ADDR_RANGE [/home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_BRAM_2W2R/bram_2w2r.srcs/sim_1/new/bram_2w2r_tb.sv:149]
+WARNING: [VRFC 10-2861] module 'bram_2w_2r' does not have a parameter named ADDR_WIDTH [/home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_BRAM_2W2R/bram_2w2r.srcs/sim_1/new/bram_2w2r_tb.sv:150]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 15 for port 'addr0' [/home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_BRAM_2W2R/bram_2w2r.srcs/sim_1/new/bram_2w2r_tb.sv:158]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 15 for port 'addr1' [/home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_BRAM_2W2R/bram_2w2r.srcs/sim_1/new/bram_2w2r_tb.sv:159]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 1 for port 'rdata0' [/home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_BRAM_2W2R/bram_2w2r.srcs/sim_1/new/bram_2w2r_tb.sv:160]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 1 for port 'rdata1' [/home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_BRAM_2W2R/bram_2w2r.srcs/sim_1/new/bram_2w2r_tb.sv:161]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 1 for port 'wdata0' [/home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_BRAM_2W2R/bram_2w2r.srcs/sim_1/new/bram_2w2r_tb.sv:162]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 1 for port 'wdata1' [/home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_BRAM_2W2R/bram_2w2r.srcs/sim_1/new/bram_2w2r_tb.sv:163]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.BUFGCE(CE_TYPE="ASYNC",SIM_DEVIC...
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT5(INIT=32'b100000000000000000...
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.RAMB36E2(CLOCK_DOMAINS="COMMON",...
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module xil_defaultlib.xpm_memory_base
+Compiling module xil_defaultlib.xpm_memory_tdpram
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1(INIT=2'b01)
+Compiling module unisims_ver.LUT4(INIT=16'b010000010100000)
+Compiling module xil_defaultlib.bram_2w_2r
+Compiling module xil_defaultlib.bram_2w2r_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot bram_2w2r_tb_func_synth

@@ -1,0 +1,16 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto a2dc5905f12346a7905367114909264e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot bram_36e2_tb_behav xil_defaultlib.bram_36e2_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xpm.xpm_memory_base(MEMORY_SIZE=3276...
+Compiling module xpm.xpm_memory_tdpram(MEMORY_SIZE=32...
+Compiling module xil_defaultlib.bram_32k_2w_2r(DATA_WIDTH=32,ADD...
+Compiling module xil_defaultlib.bram_36e2_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot bram_36e2_tb_behav

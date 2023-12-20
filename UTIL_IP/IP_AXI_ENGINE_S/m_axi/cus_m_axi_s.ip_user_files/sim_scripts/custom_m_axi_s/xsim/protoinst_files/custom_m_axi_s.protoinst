@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"custom_m_axi_s": {
+			"proto_instances": {
+			}
+		}
+	}
+}

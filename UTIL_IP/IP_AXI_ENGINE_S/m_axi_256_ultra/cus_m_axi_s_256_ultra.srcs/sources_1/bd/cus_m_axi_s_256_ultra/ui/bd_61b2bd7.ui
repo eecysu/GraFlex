@@ -1,0 +1,106 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.2019",
+   "Default View_TopLeft":"-1267,67",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port m_axis_rd -pg 1 -lvl 3 -x 400 -y 130 -defaultsOSRD
+preplace port s_axis_wr -pg 1 -lvl 0 -x -630 -y 850 -defaultsOSRD
+preplace port clk -pg 1 -lvl 0 -x -630 -y 190 -defaultsOSRD
+preplace port rst_n -pg 1 -lvl 0 -x -630 -y 300 -defaultsOSRD
+preplace port rd_start -pg 1 -lvl 0 -x -630 -y 210 -defaultsOSRD
+preplace port wr_start -pg 1 -lvl 0 -x -630 -y 810 -defaultsOSRD
+preplace port rd_req_wr_en -pg 1 -lvl 0 -x -630 -y 490 -defaultsOSRD
+preplace port wr_done -pg 1 -lvl 3 -x 400 -y 1060 -defaultsOSRD
+preplace port rd_done -pg 1 -lvl 3 -x 400 -y 530 -defaultsOSRD
+preplace port rd_req_full_n -pg 1 -lvl 3 -x 400 -y 510 -defaultsOSRD
+preplace port m_axi_arvalid -pg 1 -lvl 3 -x 400 -y 350 -defaultsOSRD
+preplace port m_axi_arready -pg 1 -lvl 0 -x -630 -y 370 -defaultsOSRD
+preplace port m_axi_rlast -pg 1 -lvl 0 -x -630 -y 450 -defaultsOSRD
+preplace port m_axi_rvalid -pg 1 -lvl 0 -x -630 -y 470 -defaultsOSRD
+preplace port m_axi_rready -pg 1 -lvl 3 -x 400 -y 490 -defaultsOSRD
+preplace port m_axi_awvalid -pg 1 -lvl 3 -x 400 -y 850 -defaultsOSRD
+preplace port m_axi_awready -pg 1 -lvl 0 -x -630 -y 870 -defaultsOSRD
+preplace port m_axi_wlast -pg 1 -lvl 3 -x 400 -y 960 -defaultsOSRD
+preplace port m_axi_wvalid -pg 1 -lvl 3 -x 400 -y 980 -defaultsOSRD
+preplace port m_axi_wready -pg 1 -lvl 0 -x -630 -y 970 -defaultsOSRD
+preplace port m_axi_bvalid -pg 1 -lvl 0 -x -630 -y 1010 -defaultsOSRD
+preplace port m_axi_bready -pg 1 -lvl 3 -x 400 -y 1040 -defaultsOSRD
+preplace portBus wr_baseAddr -pg 1 -lvl 0 -x -630 -y 910 -defaultsOSRD
+preplace portBus rd_baseAddr -pg 1 -lvl 0 -x -630 -y 320 -defaultsOSRD
+preplace portBus rd_req_din -pg 1 -lvl 0 -x -630 -y 340 -defaultsOSRD
+preplace portBus m_axi_arid -pg 1 -lvl 3 -x 400 -y 170 -defaultsOSRD
+preplace portBus m_axi_araddr -pg 1 -lvl 3 -x 400 -y 190 -defaultsOSRD
+preplace portBus m_axi_arlen -pg 1 -lvl 3 -x 400 -y 210 -defaultsOSRD
+preplace portBus m_axi_arsize -pg 1 -lvl 3 -x 400 -y 230 -defaultsOSRD
+preplace portBus m_axi_arburst -pg 1 -lvl 3 -x 400 -y 250 -defaultsOSRD
+preplace portBus m_axi_arlock -pg 1 -lvl 3 -x 400 -y 270 -defaultsOSRD
+preplace portBus m_axi_arcache -pg 1 -lvl 3 -x 400 -y 290 -defaultsOSRD
+preplace portBus m_axi_arregion -pg 1 -lvl 3 -x 400 -y 310 -defaultsOSRD
+preplace portBus m_axi_arqos -pg 1 -lvl 3 -x 400 -y 330 -defaultsOSRD
+preplace portBus m_axi_rid -pg 1 -lvl 0 -x -630 -y 390 -defaultsOSRD
+preplace portBus m_axi_rdata -pg 1 -lvl 0 -x -630 -y 410 -defaultsOSRD
+preplace portBus m_axi_rresp -pg 1 -lvl 0 -x -630 -y 430 -defaultsOSRD
+preplace portBus m_axi_awid -pg 1 -lvl 3 -x 400 -y 770 -defaultsOSRD
+preplace portBus m_axi_awaddr -pg 1 -lvl 3 -x 400 -y 790 -defaultsOSRD
+preplace portBus m_axi_awlen -pg 1 -lvl 3 -x 400 -y 810 -defaultsOSRD
+preplace portBus m_axi_awsize -pg 1 -lvl 3 -x 400 -y 830 -defaultsOSRD
+preplace portBus wr_len -pg 1 -lvl 0 -x -630 -y 950 -defaultsOSRD
+preplace portBus m_axi_wdata -pg 1 -lvl 3 -x 400 -y 920 -defaultsOSRD
+preplace portBus m_axi_wstrb -pg 1 -lvl 3 -x 400 -y 940 -defaultsOSRD
+preplace inst step_to_pulse_0 -pg 1 -lvl 1 -x -300 -y 200 -defaultsOSRD
+preplace inst step_to_pulse_1 -pg 1 -lvl 1 -x -300 -y 800 -defaultsOSRD -resize 140 96
+preplace inst mread_master_ultra_0 -pg 1 -lvl 2 -x 140 -y 330 -defaultsOSRD
+preplace inst swr_engine_0 -pg 1 -lvl 2 -x 140 -y 920 -defaultsOSRD
+preplace netloc clk_0_1 1 0 2 -580 280 -150
+preplace netloc rst_n_0_1 1 0 2 NJ 300 -170J
+preplace netloc step_in_0_1 1 0 1 N 210
+preplace netloc step_in_0_2 1 0 1 N 810
+preplace netloc baseAddr_0_1 1 0 2 NJ 910 -190J
+preplace netloc baseAddr_0_2 1 0 2 NJ 320 NJ
+preplace netloc step_to_pulse_1_pul_out 1 1 1 -180 800n
+preplace netloc step_to_pulse_0_pul_out 1 1 1 -140 200n
+preplace netloc req_wr_en_0_1 1 0 2 -610J 360 NJ
+preplace netloc req_din_0_1 1 0 2 NJ 340 NJ
+preplace netloc swr_engine_0_req_done 1 2 1 N 1060
+preplace netloc mread_master_ultra_0_req_done 1 2 1 N 530
+preplace netloc mread_master_ultra_0_req_full_n 1 2 1 N 510
+preplace netloc mread_master_ultra_0_m_axi_ARID 1 2 1 N 170
+preplace netloc mread_master_ultra_0_m_axi_ARADDR 1 2 1 N 190
+preplace netloc mread_master_ultra_0_m_axi_ARLEN 1 2 1 N 210
+preplace netloc mread_master_ultra_0_m_axi_ARSIZE 1 2 1 N 230
+preplace netloc mread_master_ultra_0_m_axi_ARBURST 1 2 1 N 250
+preplace netloc mread_master_ultra_0_m_axi_ARLOCK 1 2 1 N 270
+preplace netloc mread_master_ultra_0_m_axi_ARCACHE 1 2 1 N 290
+preplace netloc mread_master_ultra_0_m_axi_ARREGION 1 2 1 N 310
+preplace netloc mread_master_ultra_0_m_axi_ARQOS 1 2 1 N 330
+preplace netloc mread_master_ultra_0_m_axi_ARVALID 1 2 1 N 350
+preplace netloc m_axi_ARREADY_0_1 1 0 3 NJ 370 -160J 590 340
+preplace netloc m_axi_RID_0_1 1 0 3 NJ 390 -180J 610 360
+preplace netloc m_axi_RDATA_0_1 1 0 3 -560J 600 NJ 600 320
+preplace netloc m_axi_RRESP_0_1 1 0 3 -570J 610 -190J 630 350
+preplace netloc m_axi_RLAST_0_1 1 0 3 -590J 620 NJ 620 310
+preplace netloc m_axi_RVALID_0_1 1 0 3 -600J 640 NJ 640 330
+preplace netloc mread_master_ultra_0_m_axi_RREADY 1 2 1 N 490
+preplace netloc swr_engine_0_m_axi_AWID 1 2 1 340 770n
+preplace netloc swr_engine_0_m_axi_AWADDR 1 2 1 350 790n
+preplace netloc swr_engine_0_m_axi_AWLEN 1 2 1 360 810n
+preplace netloc swr_engine_0_m_axi_AWSIZE 1 2 1 370 830n
+preplace netloc swr_engine_0_m_axi_AWVALID 1 2 1 380 850n
+preplace netloc m_axi_AWREADY_0_1 1 0 3 -600J 700 NJ 700 320
+preplace netloc swr_engine_0_m_axi_WLAST 1 2 1 N 960
+preplace netloc swr_engine_0_m_axi_WVALID 1 2 1 N 980
+preplace netloc m_axi_WREADY_0_1 1 0 3 -560J 720 NJ 720 310
+preplace netloc m_axi_BVALID_0_1 1 0 3 -570J 710 NJ 710 330
+preplace netloc swr_engine_0_m_axi_BREADY 1 2 1 N 1040
+preplace netloc req_len_0_1 1 0 2 NJ 950 -200J
+preplace netloc swr_engine_0_m_axi_WDATA 1 2 1 N 920
+preplace netloc swr_engine_0_m_axi_WSTRB 1 2 1 N 940
+preplace netloc s_axis_0_1 1 0 2 -580J 870 NJ
+preplace netloc mread_master_ultra_0_m_axis 1 2 1 N 130
+levelinfo -pg 1 -630 -300 140 400
+pagesize -pg 1 -db -bbox -sgen -820 -80 600 1400
+"
+}
+0

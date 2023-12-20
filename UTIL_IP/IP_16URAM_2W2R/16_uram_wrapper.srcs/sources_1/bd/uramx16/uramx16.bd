@@ -1,0 +1,1848 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xFF8F84E820B3533F",
+      "device": "xcu280-fsvh2892-2L-e",
+      "gen_directory": "../../../../16_uram_wrapper.gen/sources_1/bd/uramx16",
+      "name": "uramx16",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "uram_2w_2r_0": "",
+      "uram_2w_2r_1": "",
+      "uram_2w_2r_2": "",
+      "uram_2w_2r_8": "",
+      "uram_2w_2r_3": "",
+      "uram_2w_2r_9": "",
+      "uram_2w_2r_10": "",
+      "uram_2w_2r_4": "",
+      "uram_2w_2r_11": "",
+      "uram_2w_2r_5": "",
+      "uram_2w_2r_12": "",
+      "uram_2w_2r_6": "",
+      "uram_2w_2r_13": "",
+      "uram_2w_2r_7": "",
+      "uram_2w_2r_14": "",
+      "uram_2w_2r_15": ""
+    },
+    "ports": {
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "uramx16_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst_n_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "ce0_0": {
+        "direction": "I"
+      },
+      "ce1_0": {
+        "direction": "I"
+      },
+      "we0_0": {
+        "direction": "I"
+      },
+      "addr0_0": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "addr1_0": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "wdata0_0": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "wdata1_0": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata0_0": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata1_0": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "ce0_1": {
+        "direction": "I"
+      },
+      "ce1_1": {
+        "direction": "I"
+      },
+      "we0_1": {
+        "direction": "I"
+      },
+      "addr0_1": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "addr1_1": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "wdata0_1": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "wdata1_1": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata0_1": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata1_1": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "ce0_2": {
+        "direction": "I"
+      },
+      "ce1_2": {
+        "direction": "I"
+      },
+      "we0_2": {
+        "direction": "I"
+      },
+      "addr0_2": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "addr1_2": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "wdata0_2": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "wdata1_2": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata0_2": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata1_2": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "ce0_3": {
+        "direction": "I"
+      },
+      "ce1_3": {
+        "direction": "I"
+      },
+      "we0_3": {
+        "direction": "I"
+      },
+      "addr0_3": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "addr1_3": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "wdata0_3": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "wdata1_3": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata0_3": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata1_3": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "ce0_4": {
+        "direction": "I"
+      },
+      "ce1_4": {
+        "direction": "I"
+      },
+      "we0_4": {
+        "direction": "I"
+      },
+      "addr0_4": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "addr1_4": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "wdata0_4": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "wdata1_4": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata0_4": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata1_4": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "ce0_5": {
+        "direction": "I"
+      },
+      "ce1_5": {
+        "direction": "I"
+      },
+      "we0_5": {
+        "direction": "I"
+      },
+      "addr0_5": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "addr1_5": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "wdata0_5": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "wdata1_5": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata0_5": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata1_5": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "ce0_6": {
+        "direction": "I"
+      },
+      "ce1_6": {
+        "direction": "I"
+      },
+      "we0_6": {
+        "direction": "I"
+      },
+      "addr0_6": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "addr1_6": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "wdata0_6": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "wdata1_6": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata0_6": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata1_6": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "ce0_7": {
+        "direction": "I"
+      },
+      "ce1_7": {
+        "direction": "I"
+      },
+      "we0_7": {
+        "direction": "I"
+      },
+      "addr0_7": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "addr1_7": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "wdata0_7": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "wdata1_7": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata0_7": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata1_7": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "ce0_8": {
+        "direction": "I"
+      },
+      "ce1_8": {
+        "direction": "I"
+      },
+      "we0_8": {
+        "direction": "I"
+      },
+      "addr0_8": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "addr1_8": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "wdata0_8": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "wdata1_8": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata0_8": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata1_8": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "ce0_9": {
+        "direction": "I"
+      },
+      "ce1_9": {
+        "direction": "I"
+      },
+      "we0_9": {
+        "direction": "I"
+      },
+      "addr0_9": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "addr1_9": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "wdata0_9": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "wdata1_9": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata0_9": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata1_9": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "ce0_10": {
+        "direction": "I"
+      },
+      "ce1_10": {
+        "direction": "I"
+      },
+      "we0_10": {
+        "direction": "I"
+      },
+      "addr0_10": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "addr1_10": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "wdata0_10": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "wdata1_10": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata0_10": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata1_10": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "ce0_11": {
+        "direction": "I"
+      },
+      "ce1_11": {
+        "direction": "I"
+      },
+      "we0_11": {
+        "direction": "I"
+      },
+      "addr0_11": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "addr1_11": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "wdata0_11": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "wdata1_11": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata0_11": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata1_11": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "ce0_12": {
+        "direction": "I"
+      },
+      "ce1_12": {
+        "direction": "I"
+      },
+      "we0_12": {
+        "direction": "I"
+      },
+      "addr0_12": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "addr1_12": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "wdata0_12": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "wdata1_12": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata0_12": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata1_12": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "ce0_13": {
+        "direction": "I"
+      },
+      "ce1_13": {
+        "direction": "I"
+      },
+      "we0_13": {
+        "direction": "I"
+      },
+      "addr0_13": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "addr1_13": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "wdata0_13": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "wdata1_13": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata0_13": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata1_13": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "ce0_14": {
+        "direction": "I"
+      },
+      "ce1_14": {
+        "direction": "I"
+      },
+      "we0_14": {
+        "direction": "I"
+      },
+      "addr0_14": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "addr1_14": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "wdata0_14": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "wdata1_14": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata0_14": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata1_14": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "ce0_15": {
+        "direction": "I"
+      },
+      "ce1_15": {
+        "direction": "I"
+      },
+      "we0_15": {
+        "direction": "I"
+      },
+      "addr0_15": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "addr1_15": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "wdata0_15": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "wdata1_15": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata0_15": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "rdata1_15": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "we1_0": {
+        "direction": "I"
+      },
+      "we1_1": {
+        "direction": "I"
+      },
+      "we1_2": {
+        "direction": "I"
+      },
+      "we1_3": {
+        "direction": "I"
+      },
+      "we1_4": {
+        "direction": "I"
+      },
+      "we1_5": {
+        "direction": "I"
+      },
+      "we1_6": {
+        "direction": "I"
+      },
+      "we1_7": {
+        "direction": "I"
+      },
+      "we1_8": {
+        "direction": "I"
+      },
+      "we1_9": {
+        "direction": "I"
+      },
+      "we1_10": {
+        "direction": "I"
+      },
+      "we1_11": {
+        "direction": "I"
+      },
+      "we1_12": {
+        "direction": "I"
+      },
+      "we1_13": {
+        "direction": "I"
+      },
+      "we1_14": {
+        "direction": "I"
+      },
+      "we1_15": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "uram_2w_2r_0": {
+        "vlnv": "user.org:user:uram_2w_2r:1.0",
+        "xci_name": "uramx16_uram_2w_2r_0_0",
+        "xci_path": "ip/uramx16_uram_2w_2r_0_0/uramx16_uram_2w_2r_0_0.xci",
+        "inst_hier_path": "uram_2w_2r_0"
+      },
+      "uram_2w_2r_1": {
+        "vlnv": "user.org:user:uram_2w_2r:1.0",
+        "xci_name": "uramx16_uram_2w_2r_0_1",
+        "xci_path": "ip/uramx16_uram_2w_2r_0_1/uramx16_uram_2w_2r_0_1.xci",
+        "inst_hier_path": "uram_2w_2r_1"
+      },
+      "uram_2w_2r_2": {
+        "vlnv": "user.org:user:uram_2w_2r:1.0",
+        "xci_name": "uramx16_uram_2w_2r_0_2",
+        "xci_path": "ip/uramx16_uram_2w_2r_0_2/uramx16_uram_2w_2r_0_2.xci",
+        "inst_hier_path": "uram_2w_2r_2"
+      },
+      "uram_2w_2r_8": {
+        "vlnv": "user.org:user:uram_2w_2r:1.0",
+        "xci_name": "uramx16_uram_2w_2r_0_3",
+        "xci_path": "ip/uramx16_uram_2w_2r_0_3/uramx16_uram_2w_2r_0_3.xci",
+        "inst_hier_path": "uram_2w_2r_8"
+      },
+      "uram_2w_2r_3": {
+        "vlnv": "user.org:user:uram_2w_2r:1.0",
+        "xci_name": "uramx16_uram_2w_2r_1_0",
+        "xci_path": "ip/uramx16_uram_2w_2r_1_0/uramx16_uram_2w_2r_1_0.xci",
+        "inst_hier_path": "uram_2w_2r_3"
+      },
+      "uram_2w_2r_9": {
+        "vlnv": "user.org:user:uram_2w_2r:1.0",
+        "xci_name": "uramx16_uram_2w_2r_1_1",
+        "xci_path": "ip/uramx16_uram_2w_2r_1_1/uramx16_uram_2w_2r_1_1.xci",
+        "inst_hier_path": "uram_2w_2r_9"
+      },
+      "uram_2w_2r_10": {
+        "vlnv": "user.org:user:uram_2w_2r:1.0",
+        "xci_name": "uramx16_uram_2w_2r_2_0",
+        "xci_path": "ip/uramx16_uram_2w_2r_2_0/uramx16_uram_2w_2r_2_0.xci",
+        "inst_hier_path": "uram_2w_2r_10"
+      },
+      "uram_2w_2r_4": {
+        "vlnv": "user.org:user:uram_2w_2r:1.0",
+        "xci_name": "uramx16_uram_2w_2r_3_0",
+        "xci_path": "ip/uramx16_uram_2w_2r_3_0/uramx16_uram_2w_2r_3_0.xci",
+        "inst_hier_path": "uram_2w_2r_4"
+      },
+      "uram_2w_2r_11": {
+        "vlnv": "user.org:user:uram_2w_2r:1.0",
+        "xci_name": "uramx16_uram_2w_2r_3_1",
+        "xci_path": "ip/uramx16_uram_2w_2r_3_1/uramx16_uram_2w_2r_3_1.xci",
+        "inst_hier_path": "uram_2w_2r_11"
+      },
+      "uram_2w_2r_5": {
+        "vlnv": "user.org:user:uram_2w_2r:1.0",
+        "xci_name": "uramx16_uram_2w_2r_4_0",
+        "xci_path": "ip/uramx16_uram_2w_2r_4_0/uramx16_uram_2w_2r_4_0.xci",
+        "inst_hier_path": "uram_2w_2r_5"
+      },
+      "uram_2w_2r_12": {
+        "vlnv": "user.org:user:uram_2w_2r:1.0",
+        "xci_name": "uramx16_uram_2w_2r_4_1",
+        "xci_path": "ip/uramx16_uram_2w_2r_4_1/uramx16_uram_2w_2r_4_1.xci",
+        "inst_hier_path": "uram_2w_2r_12"
+      },
+      "uram_2w_2r_6": {
+        "vlnv": "user.org:user:uram_2w_2r:1.0",
+        "xci_name": "uramx16_uram_2w_2r_5_0",
+        "xci_path": "ip/uramx16_uram_2w_2r_5_0/uramx16_uram_2w_2r_5_0.xci",
+        "inst_hier_path": "uram_2w_2r_6"
+      },
+      "uram_2w_2r_13": {
+        "vlnv": "user.org:user:uram_2w_2r:1.0",
+        "xci_name": "uramx16_uram_2w_2r_5_1",
+        "xci_path": "ip/uramx16_uram_2w_2r_5_1/uramx16_uram_2w_2r_5_1.xci",
+        "inst_hier_path": "uram_2w_2r_13"
+      },
+      "uram_2w_2r_7": {
+        "vlnv": "user.org:user:uram_2w_2r:1.0",
+        "xci_name": "uramx16_uram_2w_2r_6_1",
+        "xci_path": "ip/uramx16_uram_2w_2r_6_1/uramx16_uram_2w_2r_6_1.xci",
+        "inst_hier_path": "uram_2w_2r_7"
+      },
+      "uram_2w_2r_14": {
+        "vlnv": "user.org:user:uram_2w_2r:1.0",
+        "xci_name": "uramx16_uram_2w_2r_6_2",
+        "xci_path": "ip/uramx16_uram_2w_2r_6_2/uramx16_uram_2w_2r_6_2.xci",
+        "inst_hier_path": "uram_2w_2r_14"
+      },
+      "uram_2w_2r_15": {
+        "vlnv": "user.org:user:uram_2w_2r:1.0",
+        "xci_name": "uramx16_uram_2w_2r_7_0",
+        "xci_path": "ip/uramx16_uram_2w_2r_7_0/uramx16_uram_2w_2r_7_0.xci",
+        "inst_hier_path": "uram_2w_2r_15"
+      }
+    },
+    "nets": {
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "uram_2w_2r_0/clk",
+          "uram_2w_2r_1/clk",
+          "uram_2w_2r_2/clk",
+          "uram_2w_2r_8/clk",
+          "uram_2w_2r_3/clk",
+          "uram_2w_2r_9/clk",
+          "uram_2w_2r_10/clk",
+          "uram_2w_2r_4/clk",
+          "uram_2w_2r_11/clk",
+          "uram_2w_2r_5/clk",
+          "uram_2w_2r_12/clk",
+          "uram_2w_2r_6/clk",
+          "uram_2w_2r_13/clk",
+          "uram_2w_2r_7/clk",
+          "uram_2w_2r_14/clk",
+          "uram_2w_2r_15/clk"
+        ]
+      },
+      "rst_n_0_1": {
+        "ports": [
+          "rst_n_0",
+          "uram_2w_2r_0/rst_n",
+          "uram_2w_2r_1/rst_n",
+          "uram_2w_2r_2/rst_n",
+          "uram_2w_2r_8/rst_n",
+          "uram_2w_2r_3/rst_n",
+          "uram_2w_2r_9/rst_n",
+          "uram_2w_2r_10/rst_n",
+          "uram_2w_2r_4/rst_n",
+          "uram_2w_2r_11/rst_n",
+          "uram_2w_2r_5/rst_n",
+          "uram_2w_2r_12/rst_n",
+          "uram_2w_2r_6/rst_n",
+          "uram_2w_2r_13/rst_n",
+          "uram_2w_2r_7/rst_n",
+          "uram_2w_2r_14/rst_n",
+          "uram_2w_2r_15/rst_n"
+        ]
+      },
+      "ce0_0_1": {
+        "ports": [
+          "ce0_0",
+          "uram_2w_2r_0/ce0"
+        ]
+      },
+      "ce1_0_1": {
+        "ports": [
+          "ce1_0",
+          "uram_2w_2r_0/ce1"
+        ]
+      },
+      "we0_0_1": {
+        "ports": [
+          "we0_0",
+          "uram_2w_2r_0/we0"
+        ]
+      },
+      "addr0_0_1": {
+        "ports": [
+          "addr0_0",
+          "uram_2w_2r_0/addr0"
+        ]
+      },
+      "addr1_0_1": {
+        "ports": [
+          "addr1_0",
+          "uram_2w_2r_0/addr1"
+        ]
+      },
+      "wdata0_0_1": {
+        "ports": [
+          "wdata0_0",
+          "uram_2w_2r_0/wdata0"
+        ]
+      },
+      "wdata1_0_1": {
+        "ports": [
+          "wdata1_0",
+          "uram_2w_2r_0/wdata1"
+        ]
+      },
+      "uram_2w_2r_0_rdata0": {
+        "ports": [
+          "uram_2w_2r_0/rdata0",
+          "rdata0_0"
+        ]
+      },
+      "uram_2w_2r_0_rdata1": {
+        "ports": [
+          "uram_2w_2r_0/rdata1",
+          "rdata1_0"
+        ]
+      },
+      "ce0_1_1": {
+        "ports": [
+          "ce0_1",
+          "uram_2w_2r_1/ce0"
+        ]
+      },
+      "ce1_1_1": {
+        "ports": [
+          "ce1_1",
+          "uram_2w_2r_1/ce1"
+        ]
+      },
+      "we0_1_1": {
+        "ports": [
+          "we0_1",
+          "uram_2w_2r_1/we0"
+        ]
+      },
+      "addr0_1_1": {
+        "ports": [
+          "addr0_1",
+          "uram_2w_2r_1/addr0"
+        ]
+      },
+      "addr1_1_1": {
+        "ports": [
+          "addr1_1",
+          "uram_2w_2r_1/addr1"
+        ]
+      },
+      "wdata0_1_1": {
+        "ports": [
+          "wdata0_1",
+          "uram_2w_2r_1/wdata0"
+        ]
+      },
+      "wdata1_1_1": {
+        "ports": [
+          "wdata1_1",
+          "uram_2w_2r_1/wdata1"
+        ]
+      },
+      "uram_2w_2r_1_rdata0": {
+        "ports": [
+          "uram_2w_2r_1/rdata0",
+          "rdata0_1"
+        ]
+      },
+      "uram_2w_2r_1_rdata1": {
+        "ports": [
+          "uram_2w_2r_1/rdata1",
+          "rdata1_1"
+        ]
+      },
+      "ce0_2_1": {
+        "ports": [
+          "ce0_2",
+          "uram_2w_2r_2/ce0"
+        ]
+      },
+      "ce1_2_1": {
+        "ports": [
+          "ce1_2",
+          "uram_2w_2r_2/ce1"
+        ]
+      },
+      "we0_2_1": {
+        "ports": [
+          "we0_2",
+          "uram_2w_2r_2/we0"
+        ]
+      },
+      "addr0_2_1": {
+        "ports": [
+          "addr0_2",
+          "uram_2w_2r_2/addr0"
+        ]
+      },
+      "addr1_2_1": {
+        "ports": [
+          "addr1_2",
+          "uram_2w_2r_2/addr1"
+        ]
+      },
+      "wdata0_2_1": {
+        "ports": [
+          "wdata0_2",
+          "uram_2w_2r_2/wdata0"
+        ]
+      },
+      "wdata1_2_1": {
+        "ports": [
+          "wdata1_2",
+          "uram_2w_2r_2/wdata1"
+        ]
+      },
+      "uram_2w_2r_2_rdata0": {
+        "ports": [
+          "uram_2w_2r_2/rdata0",
+          "rdata0_2"
+        ]
+      },
+      "uram_2w_2r_2_rdata1": {
+        "ports": [
+          "uram_2w_2r_2/rdata1",
+          "rdata1_2"
+        ]
+      },
+      "ce0_3_1": {
+        "ports": [
+          "ce0_3",
+          "uram_2w_2r_3/ce0"
+        ]
+      },
+      "ce1_3_1": {
+        "ports": [
+          "ce1_3",
+          "uram_2w_2r_3/ce1"
+        ]
+      },
+      "we0_3_1": {
+        "ports": [
+          "we0_3",
+          "uram_2w_2r_3/we0"
+        ]
+      },
+      "addr0_3_1": {
+        "ports": [
+          "addr0_3",
+          "uram_2w_2r_3/addr0"
+        ]
+      },
+      "addr1_3_1": {
+        "ports": [
+          "addr1_3",
+          "uram_2w_2r_3/addr1"
+        ]
+      },
+      "wdata0_3_1": {
+        "ports": [
+          "wdata0_3",
+          "uram_2w_2r_3/wdata0"
+        ]
+      },
+      "wdata1_3_1": {
+        "ports": [
+          "wdata1_3",
+          "uram_2w_2r_3/wdata1"
+        ]
+      },
+      "uram_2w_2r_3_rdata0": {
+        "ports": [
+          "uram_2w_2r_3/rdata0",
+          "rdata0_3"
+        ]
+      },
+      "uram_2w_2r_3_rdata1": {
+        "ports": [
+          "uram_2w_2r_3/rdata1",
+          "rdata1_3"
+        ]
+      },
+      "ce0_4_1": {
+        "ports": [
+          "ce0_4",
+          "uram_2w_2r_4/ce0"
+        ]
+      },
+      "ce1_4_1": {
+        "ports": [
+          "ce1_4",
+          "uram_2w_2r_4/ce1"
+        ]
+      },
+      "we0_4_1": {
+        "ports": [
+          "we0_4",
+          "uram_2w_2r_4/we0"
+        ]
+      },
+      "addr0_4_1": {
+        "ports": [
+          "addr0_4",
+          "uram_2w_2r_4/addr0"
+        ]
+      },
+      "addr1_4_1": {
+        "ports": [
+          "addr1_4",
+          "uram_2w_2r_4/addr1"
+        ]
+      },
+      "wdata0_4_1": {
+        "ports": [
+          "wdata0_4",
+          "uram_2w_2r_4/wdata0"
+        ]
+      },
+      "wdata1_4_1": {
+        "ports": [
+          "wdata1_4",
+          "uram_2w_2r_4/wdata1"
+        ]
+      },
+      "uram_2w_2r_4_rdata0": {
+        "ports": [
+          "uram_2w_2r_4/rdata0",
+          "rdata0_4"
+        ]
+      },
+      "uram_2w_2r_4_rdata1": {
+        "ports": [
+          "uram_2w_2r_4/rdata1",
+          "rdata1_4"
+        ]
+      },
+      "ce0_5_1": {
+        "ports": [
+          "ce0_5",
+          "uram_2w_2r_5/ce0"
+        ]
+      },
+      "ce1_5_1": {
+        "ports": [
+          "ce1_5",
+          "uram_2w_2r_5/ce1"
+        ]
+      },
+      "we0_5_1": {
+        "ports": [
+          "we0_5",
+          "uram_2w_2r_5/we0"
+        ]
+      },
+      "addr0_5_1": {
+        "ports": [
+          "addr0_5",
+          "uram_2w_2r_5/addr0"
+        ]
+      },
+      "addr1_5_1": {
+        "ports": [
+          "addr1_5",
+          "uram_2w_2r_5/addr1"
+        ]
+      },
+      "wdata0_5_1": {
+        "ports": [
+          "wdata0_5",
+          "uram_2w_2r_5/wdata0"
+        ]
+      },
+      "wdata1_5_1": {
+        "ports": [
+          "wdata1_5",
+          "uram_2w_2r_5/wdata1"
+        ]
+      },
+      "uram_2w_2r_5_rdata0": {
+        "ports": [
+          "uram_2w_2r_5/rdata0",
+          "rdata0_5"
+        ]
+      },
+      "uram_2w_2r_5_rdata1": {
+        "ports": [
+          "uram_2w_2r_5/rdata1",
+          "rdata1_5"
+        ]
+      },
+      "ce0_6_1": {
+        "ports": [
+          "ce0_6",
+          "uram_2w_2r_6/ce0"
+        ]
+      },
+      "ce1_6_1": {
+        "ports": [
+          "ce1_6",
+          "uram_2w_2r_6/ce1"
+        ]
+      },
+      "we0_6_1": {
+        "ports": [
+          "we0_6",
+          "uram_2w_2r_6/we0"
+        ]
+      },
+      "addr0_6_1": {
+        "ports": [
+          "addr0_6",
+          "uram_2w_2r_6/addr0"
+        ]
+      },
+      "addr1_6_1": {
+        "ports": [
+          "addr1_6",
+          "uram_2w_2r_6/addr1"
+        ]
+      },
+      "wdata0_6_1": {
+        "ports": [
+          "wdata0_6",
+          "uram_2w_2r_6/wdata0"
+        ]
+      },
+      "wdata1_6_1": {
+        "ports": [
+          "wdata1_6",
+          "uram_2w_2r_6/wdata1"
+        ]
+      },
+      "uram_2w_2r_6_rdata0": {
+        "ports": [
+          "uram_2w_2r_6/rdata0",
+          "rdata0_6"
+        ]
+      },
+      "uram_2w_2r_6_rdata1": {
+        "ports": [
+          "uram_2w_2r_6/rdata1",
+          "rdata1_6"
+        ]
+      },
+      "ce0_7_1": {
+        "ports": [
+          "ce0_7",
+          "uram_2w_2r_7/ce0"
+        ]
+      },
+      "ce1_7_1": {
+        "ports": [
+          "ce1_7",
+          "uram_2w_2r_7/ce1"
+        ]
+      },
+      "we0_7_1": {
+        "ports": [
+          "we0_7",
+          "uram_2w_2r_7/we0"
+        ]
+      },
+      "addr0_7_1": {
+        "ports": [
+          "addr0_7",
+          "uram_2w_2r_7/addr0"
+        ]
+      },
+      "addr1_7_1": {
+        "ports": [
+          "addr1_7",
+          "uram_2w_2r_7/addr1"
+        ]
+      },
+      "wdata0_7_1": {
+        "ports": [
+          "wdata0_7",
+          "uram_2w_2r_7/wdata0"
+        ]
+      },
+      "wdata1_7_1": {
+        "ports": [
+          "wdata1_7",
+          "uram_2w_2r_7/wdata1"
+        ]
+      },
+      "uram_2w_2r_7_rdata0": {
+        "ports": [
+          "uram_2w_2r_7/rdata0",
+          "rdata0_7"
+        ]
+      },
+      "uram_2w_2r_7_rdata1": {
+        "ports": [
+          "uram_2w_2r_7/rdata1",
+          "rdata1_7"
+        ]
+      },
+      "ce0_8_1": {
+        "ports": [
+          "ce0_8",
+          "uram_2w_2r_8/ce0"
+        ]
+      },
+      "ce1_8_1": {
+        "ports": [
+          "ce1_8",
+          "uram_2w_2r_8/ce1"
+        ]
+      },
+      "we0_8_1": {
+        "ports": [
+          "we0_8",
+          "uram_2w_2r_8/we0"
+        ]
+      },
+      "addr0_8_1": {
+        "ports": [
+          "addr0_8",
+          "uram_2w_2r_8/addr0"
+        ]
+      },
+      "addr1_8_1": {
+        "ports": [
+          "addr1_8",
+          "uram_2w_2r_8/addr1"
+        ]
+      },
+      "wdata0_8_1": {
+        "ports": [
+          "wdata0_8",
+          "uram_2w_2r_8/wdata0"
+        ]
+      },
+      "wdata1_8_1": {
+        "ports": [
+          "wdata1_8",
+          "uram_2w_2r_8/wdata1"
+        ]
+      },
+      "uram_2w_2r_8_rdata0": {
+        "ports": [
+          "uram_2w_2r_8/rdata0",
+          "rdata0_8"
+        ]
+      },
+      "uram_2w_2r_8_rdata1": {
+        "ports": [
+          "uram_2w_2r_8/rdata1",
+          "rdata1_8"
+        ]
+      },
+      "ce0_9_1": {
+        "ports": [
+          "ce0_9",
+          "uram_2w_2r_9/ce0"
+        ]
+      },
+      "ce1_9_1": {
+        "ports": [
+          "ce1_9",
+          "uram_2w_2r_9/ce1"
+        ]
+      },
+      "we0_9_1": {
+        "ports": [
+          "we0_9",
+          "uram_2w_2r_9/we0"
+        ]
+      },
+      "addr0_9_1": {
+        "ports": [
+          "addr0_9",
+          "uram_2w_2r_9/addr0"
+        ]
+      },
+      "addr1_9_1": {
+        "ports": [
+          "addr1_9",
+          "uram_2w_2r_9/addr1"
+        ]
+      },
+      "wdata0_9_1": {
+        "ports": [
+          "wdata0_9",
+          "uram_2w_2r_9/wdata0"
+        ]
+      },
+      "wdata1_9_1": {
+        "ports": [
+          "wdata1_9",
+          "uram_2w_2r_9/wdata1"
+        ]
+      },
+      "uram_2w_2r_9_rdata0": {
+        "ports": [
+          "uram_2w_2r_9/rdata0",
+          "rdata0_9"
+        ]
+      },
+      "uram_2w_2r_9_rdata1": {
+        "ports": [
+          "uram_2w_2r_9/rdata1",
+          "rdata1_9"
+        ]
+      },
+      "ce0_10_1": {
+        "ports": [
+          "ce0_10",
+          "uram_2w_2r_10/ce0"
+        ]
+      },
+      "ce1_10_1": {
+        "ports": [
+          "ce1_10",
+          "uram_2w_2r_10/ce1"
+        ]
+      },
+      "we0_10_1": {
+        "ports": [
+          "we0_10",
+          "uram_2w_2r_10/we0"
+        ]
+      },
+      "addr0_10_1": {
+        "ports": [
+          "addr0_10",
+          "uram_2w_2r_10/addr0"
+        ]
+      },
+      "addr1_10_1": {
+        "ports": [
+          "addr1_10",
+          "uram_2w_2r_10/addr1"
+        ]
+      },
+      "wdata0_10_1": {
+        "ports": [
+          "wdata0_10",
+          "uram_2w_2r_10/wdata0"
+        ]
+      },
+      "wdata1_10_1": {
+        "ports": [
+          "wdata1_10",
+          "uram_2w_2r_10/wdata1"
+        ]
+      },
+      "uram_2w_2r_10_rdata0": {
+        "ports": [
+          "uram_2w_2r_10/rdata0",
+          "rdata0_10"
+        ]
+      },
+      "uram_2w_2r_10_rdata1": {
+        "ports": [
+          "uram_2w_2r_10/rdata1",
+          "rdata1_10"
+        ]
+      },
+      "ce0_11_1": {
+        "ports": [
+          "ce0_11",
+          "uram_2w_2r_11/ce0"
+        ]
+      },
+      "ce1_11_1": {
+        "ports": [
+          "ce1_11",
+          "uram_2w_2r_11/ce1"
+        ]
+      },
+      "we0_11_1": {
+        "ports": [
+          "we0_11",
+          "uram_2w_2r_11/we0"
+        ]
+      },
+      "addr0_11_1": {
+        "ports": [
+          "addr0_11",
+          "uram_2w_2r_11/addr0"
+        ]
+      },
+      "addr1_11_1": {
+        "ports": [
+          "addr1_11",
+          "uram_2w_2r_11/addr1"
+        ]
+      },
+      "wdata0_11_1": {
+        "ports": [
+          "wdata0_11",
+          "uram_2w_2r_11/wdata0"
+        ]
+      },
+      "wdata1_11_1": {
+        "ports": [
+          "wdata1_11",
+          "uram_2w_2r_11/wdata1"
+        ]
+      },
+      "uram_2w_2r_11_rdata0": {
+        "ports": [
+          "uram_2w_2r_11/rdata0",
+          "rdata0_11"
+        ]
+      },
+      "uram_2w_2r_11_rdata1": {
+        "ports": [
+          "uram_2w_2r_11/rdata1",
+          "rdata1_11"
+        ]
+      },
+      "ce0_12_1": {
+        "ports": [
+          "ce0_12",
+          "uram_2w_2r_12/ce0"
+        ]
+      },
+      "ce1_12_1": {
+        "ports": [
+          "ce1_12",
+          "uram_2w_2r_12/ce1"
+        ]
+      },
+      "we0_12_1": {
+        "ports": [
+          "we0_12",
+          "uram_2w_2r_12/we0"
+        ]
+      },
+      "addr0_12_1": {
+        "ports": [
+          "addr0_12",
+          "uram_2w_2r_12/addr0"
+        ]
+      },
+      "addr1_12_1": {
+        "ports": [
+          "addr1_12",
+          "uram_2w_2r_12/addr1"
+        ]
+      },
+      "wdata0_12_1": {
+        "ports": [
+          "wdata0_12",
+          "uram_2w_2r_12/wdata0"
+        ]
+      },
+      "wdata1_12_1": {
+        "ports": [
+          "wdata1_12",
+          "uram_2w_2r_12/wdata1"
+        ]
+      },
+      "uram_2w_2r_12_rdata0": {
+        "ports": [
+          "uram_2w_2r_12/rdata0",
+          "rdata0_12"
+        ]
+      },
+      "uram_2w_2r_12_rdata1": {
+        "ports": [
+          "uram_2w_2r_12/rdata1",
+          "rdata1_12"
+        ]
+      },
+      "ce0_13_1": {
+        "ports": [
+          "ce0_13",
+          "uram_2w_2r_13/ce0"
+        ]
+      },
+      "ce1_13_1": {
+        "ports": [
+          "ce1_13",
+          "uram_2w_2r_13/ce1"
+        ]
+      },
+      "we0_13_1": {
+        "ports": [
+          "we0_13",
+          "uram_2w_2r_13/we0"
+        ]
+      },
+      "addr0_13_1": {
+        "ports": [
+          "addr0_13",
+          "uram_2w_2r_13/addr0"
+        ]
+      },
+      "addr1_13_1": {
+        "ports": [
+          "addr1_13",
+          "uram_2w_2r_13/addr1"
+        ]
+      },
+      "wdata0_13_1": {
+        "ports": [
+          "wdata0_13",
+          "uram_2w_2r_13/wdata0"
+        ]
+      },
+      "wdata1_13_1": {
+        "ports": [
+          "wdata1_13",
+          "uram_2w_2r_13/wdata1"
+        ]
+      },
+      "uram_2w_2r_13_rdata0": {
+        "ports": [
+          "uram_2w_2r_13/rdata0",
+          "rdata0_13"
+        ]
+      },
+      "uram_2w_2r_13_rdata1": {
+        "ports": [
+          "uram_2w_2r_13/rdata1",
+          "rdata1_13"
+        ]
+      },
+      "ce0_14_1": {
+        "ports": [
+          "ce0_14",
+          "uram_2w_2r_14/ce0"
+        ]
+      },
+      "ce1_14_1": {
+        "ports": [
+          "ce1_14",
+          "uram_2w_2r_14/ce1"
+        ]
+      },
+      "we0_14_1": {
+        "ports": [
+          "we0_14",
+          "uram_2w_2r_14/we0"
+        ]
+      },
+      "addr0_14_1": {
+        "ports": [
+          "addr0_14",
+          "uram_2w_2r_14/addr0"
+        ]
+      },
+      "addr1_14_1": {
+        "ports": [
+          "addr1_14",
+          "uram_2w_2r_14/addr1"
+        ]
+      },
+      "wdata0_14_1": {
+        "ports": [
+          "wdata0_14",
+          "uram_2w_2r_14/wdata0"
+        ]
+      },
+      "wdata1_14_1": {
+        "ports": [
+          "wdata1_14",
+          "uram_2w_2r_14/wdata1"
+        ]
+      },
+      "uram_2w_2r_14_rdata0": {
+        "ports": [
+          "uram_2w_2r_14/rdata0",
+          "rdata0_14"
+        ]
+      },
+      "uram_2w_2r_14_rdata1": {
+        "ports": [
+          "uram_2w_2r_14/rdata1",
+          "rdata1_14"
+        ]
+      },
+      "ce0_15_1": {
+        "ports": [
+          "ce0_15",
+          "uram_2w_2r_15/ce0"
+        ]
+      },
+      "ce1_15_1": {
+        "ports": [
+          "ce1_15",
+          "uram_2w_2r_15/ce1"
+        ]
+      },
+      "we0_15_1": {
+        "ports": [
+          "we0_15",
+          "uram_2w_2r_15/we0"
+        ]
+      },
+      "addr0_15_1": {
+        "ports": [
+          "addr0_15",
+          "uram_2w_2r_15/addr0"
+        ]
+      },
+      "addr1_15_1": {
+        "ports": [
+          "addr1_15",
+          "uram_2w_2r_15/addr1"
+        ]
+      },
+      "wdata0_15_1": {
+        "ports": [
+          "wdata0_15",
+          "uram_2w_2r_15/wdata0"
+        ]
+      },
+      "wdata1_15_1": {
+        "ports": [
+          "wdata1_15",
+          "uram_2w_2r_15/wdata1"
+        ]
+      },
+      "uram_2w_2r_15_rdata0": {
+        "ports": [
+          "uram_2w_2r_15/rdata0",
+          "rdata0_15"
+        ]
+      },
+      "uram_2w_2r_15_rdata1": {
+        "ports": [
+          "uram_2w_2r_15/rdata1",
+          "rdata1_15"
+        ]
+      },
+      "we1_0_1": {
+        "ports": [
+          "we1_0",
+          "uram_2w_2r_0/we1"
+        ]
+      },
+      "we1_1_1": {
+        "ports": [
+          "we1_1",
+          "uram_2w_2r_1/we1"
+        ]
+      },
+      "we1_2_1": {
+        "ports": [
+          "we1_2",
+          "uram_2w_2r_2/we1"
+        ]
+      },
+      "we1_3_1": {
+        "ports": [
+          "we1_3",
+          "uram_2w_2r_3/we1"
+        ]
+      },
+      "we1_4_1": {
+        "ports": [
+          "we1_4",
+          "uram_2w_2r_4/we1"
+        ]
+      },
+      "we1_5_1": {
+        "ports": [
+          "we1_5",
+          "uram_2w_2r_5/we1"
+        ]
+      },
+      "we1_6_1": {
+        "ports": [
+          "we1_6",
+          "uram_2w_2r_6/we1"
+        ]
+      },
+      "we1_7_1": {
+        "ports": [
+          "we1_7",
+          "uram_2w_2r_7/we1"
+        ]
+      },
+      "we1_8_1": {
+        "ports": [
+          "we1_8",
+          "uram_2w_2r_8/we1"
+        ]
+      },
+      "we1_9_1": {
+        "ports": [
+          "we1_9",
+          "uram_2w_2r_9/we1"
+        ]
+      },
+      "we1_10_1": {
+        "ports": [
+          "we1_10",
+          "uram_2w_2r_10/we1"
+        ]
+      },
+      "we1_11_1": {
+        "ports": [
+          "we1_11",
+          "uram_2w_2r_11/we1"
+        ]
+      },
+      "we1_12_1": {
+        "ports": [
+          "we1_12",
+          "uram_2w_2r_12/we1"
+        ]
+      },
+      "we1_13_1": {
+        "ports": [
+          "we1_13",
+          "uram_2w_2r_13/we1"
+        ]
+      },
+      "we1_14_1": {
+        "ports": [
+          "we1_14",
+          "uram_2w_2r_14/we1"
+        ]
+      },
+      "we1_15_1": {
+        "ports": [
+          "we1_15",
+          "uram_2w_2r_15/we1"
+        ]
+      }
+    }
+  }
+}

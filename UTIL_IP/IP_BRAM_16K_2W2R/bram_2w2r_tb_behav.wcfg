@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="bram_2w2r_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="bram_2w2r_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="244900001fs"></ZoomEndTime>
+      <Cursor1Time time="16000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="206"></NameColumnWidth>
+      <ValueColumnWidth column_width="97"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="20" />
+   <wvobject type="logic" fp_name="/bram_2w2r_tb/ap_clk">
+      <obj_property name="ElementShortName">ap_clk</obj_property>
+      <obj_property name="ObjectShortName">ap_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bram_2w2r_tb/ap_rst_n">
+      <obj_property name="ElementShortName">ap_rst_n</obj_property>
+      <obj_property name="ObjectShortName">ap_rst_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bram_2w2r_tb/DUT/warn_cflt">
+      <obj_property name="ElementShortName">warn_cflt</obj_property>
+      <obj_property name="ObjectShortName">warn_cflt</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bram_2w2r_tb/DUT/fwd_01">
+      <obj_property name="ElementShortName">fwd_01</obj_property>
+      <obj_property name="ObjectShortName">fwd_01</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bram_2w2r_tb/DUT/fwd_10">
+      <obj_property name="ElementShortName">fwd_10</obj_property>
+      <obj_property name="ObjectShortName">fwd_10</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bram_2w2r_tb/DUT/fwd_01_1d">
+      <obj_property name="ElementShortName">fwd_01_1d</obj_property>
+      <obj_property name="ObjectShortName">fwd_01_1d</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bram_2w2r_tb/DUT/fwd_10_1d">
+      <obj_property name="ElementShortName">fwd_10_1d</obj_property>
+      <obj_property name="ObjectShortName">fwd_10_1d</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bram_2w2r_tb/DUT/mrg_wr">
+      <obj_property name="ElementShortName">mrg_wr</obj_property>
+      <obj_property name="ObjectShortName">mrg_wr</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group73">
+      <obj_property name="label">port_0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/bram_2w2r_tb/DUT/we0_1d">
+         <obj_property name="ElementShortName">we0_1d</obj_property>
+         <obj_property name="ObjectShortName">we0_1d</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bram_2w2r_tb/DUT/i_we0">
+         <obj_property name="ElementShortName">i_we0</obj_property>
+         <obj_property name="ObjectShortName">i_we0</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bram_2w2r_tb/DUT/i_rdata0">
+         <obj_property name="ElementShortName">i_rdata0[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_rdata0[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bram_2w2r_tb/DUT/rdata0">
+         <obj_property name="ElementShortName">rdata0[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rdata0[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group74">
+      <obj_property name="label">port_1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/bram_2w2r_tb/DUT/we1_1d">
+         <obj_property name="ElementShortName">we1_1d</obj_property>
+         <obj_property name="ObjectShortName">we1_1d</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bram_2w2r_tb/DUT/i_we1">
+         <obj_property name="ElementShortName">i_we1</obj_property>
+         <obj_property name="ObjectShortName">i_we1</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bram_2w2r_tb/DUT/i_rdata1">
+         <obj_property name="ElementShortName">i_rdata1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_rdata1[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bram_2w2r_tb/DUT/rdata1">
+         <obj_property name="ElementShortName">rdata1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rdata1[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_2w2r_tb/DUT/addr0">
+      <obj_property name="ElementShortName">addr0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">addr0[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_2w2r_tb/DUT/addr1">
+      <obj_property name="ElementShortName">addr1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">addr1[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bram_2w2r_tb/DUT/ce0">
+      <obj_property name="ElementShortName">ce0</obj_property>
+      <obj_property name="ObjectShortName">ce0</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bram_2w2r_tb/DUT/ce1">
+      <obj_property name="ElementShortName">ce1</obj_property>
+      <obj_property name="ObjectShortName">ce1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bram_2w2r_tb/DUT/we0">
+      <obj_property name="ElementShortName">we0</obj_property>
+      <obj_property name="ObjectShortName">we0</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bram_2w2r_tb/DUT/we1">
+      <obj_property name="ElementShortName">we1</obj_property>
+      <obj_property name="ObjectShortName">we1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_2w2r_tb/DUT/i_wdata0">
+      <obj_property name="ElementShortName">i_wdata0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">i_wdata0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_2w2r_tb/DUT/i_wdata1">
+      <obj_property name="ElementShortName">i_wdata1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">i_wdata1[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_2w2r_tb/rdata0">
+      <obj_property name="ElementShortName">rdata0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_2w2r_tb/rdata1">
+      <obj_property name="ElementShortName">rdata1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata1[7:0]</obj_property>
+   </wvobject>
+</wave_config>

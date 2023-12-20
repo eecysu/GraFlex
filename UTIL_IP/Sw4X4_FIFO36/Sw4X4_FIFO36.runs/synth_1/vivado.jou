@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Sep 29 18:38:40 2021
+# Process ID: 16720
+# Current directory: /home/chunyou/Xilinx/GraphHBM/UTIL_IP/Sw4X4_FIFO36/Sw4X4_FIFO36.runs/synth_1
+# Command line: vivado -log Sw4X4_FIFO36.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Sw4X4_FIFO36.tcl
+# Log file: /home/chunyou/Xilinx/GraphHBM/UTIL_IP/Sw4X4_FIFO36/Sw4X4_FIFO36.runs/synth_1/Sw4X4_FIFO36.vds
+# Journal file: /home/chunyou/Xilinx/GraphHBM/UTIL_IP/Sw4X4_FIFO36/Sw4X4_FIFO36.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Sw4X4_FIFO36.tcl -notrace

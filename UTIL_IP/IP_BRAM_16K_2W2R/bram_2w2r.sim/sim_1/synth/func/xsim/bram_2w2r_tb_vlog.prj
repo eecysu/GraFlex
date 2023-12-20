@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"bram_2w2r_tb_func_synth.v" \
+
+sv xil_defaultlib  \
+"../../../../../bram_2w2r.srcs/sim_1/new/bram_2w2r_tb.sv" \
+
+# Do not sort compile order
+nosort

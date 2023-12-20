@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Dec 14 16:53:49 2022
+# Process ID: 2163372
+# Current directory: /Orion/GraphHBM/UTIL_IP/Sw2X2_FIFO36_W/Sw2X2_FIFO36_W.runs/synth_1
+# Command line: vivado -log Sw2X2_FIFO36_W.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Sw2X2_FIFO36_W.tcl
+# Log file: /Orion/GraphHBM/UTIL_IP/Sw2X2_FIFO36_W/Sw2X2_FIFO36_W.runs/synth_1/Sw2X2_FIFO36_W.vds
+# Journal file: /Orion/GraphHBM/UTIL_IP/Sw2X2_FIFO36_W/Sw2X2_FIFO36_W.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Sw2X2_FIFO36_W.tcl -notrace

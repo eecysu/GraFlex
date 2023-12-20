@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="uram_2w2r_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="uram_2w2r_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="18308334fs"></ZoomStartTime>
+      <ZoomEndTime time="148458335fs"></ZoomEndTime>
+      <Cursor1Time time="44008334fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="200"></NameColumnWidth>
+      <ValueColumnWidth column_width="97"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject type="logic" fp_name="/uram_2w2r_tb/ap_clk">
+      <obj_property name="ElementShortName">ap_clk</obj_property>
+      <obj_property name="ObjectShortName">ap_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/uram_2w2r_tb/ap_rst_n">
+      <obj_property name="ElementShortName">ap_rst_n</obj_property>
+      <obj_property name="ObjectShortName">ap_rst_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/uram_2w2r_tb/DUT/mrg_wr">
+      <obj_property name="ElementShortName">mrg_wr</obj_property>
+      <obj_property name="ObjectShortName">mrg_wr</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group29">
+      <obj_property name="label">port_0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/uram_2w2r_tb/ce0">
+         <obj_property name="ElementShortName">ce0</obj_property>
+         <obj_property name="ObjectShortName">ce0</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/uram_2w2r_tb/DUT/i_we0">
+         <obj_property name="ElementShortName">i_we0[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_we0[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/uram_2w2r_tb/we0">
+         <obj_property name="ElementShortName">we0[7:0]</obj_property>
+         <obj_property name="ObjectShortName">we0[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/uram_2w2r_tb/DUT/rw_bit0">
+         <obj_property name="ElementShortName">rw_bit0</obj_property>
+         <obj_property name="ObjectShortName">rw_bit0</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/uram_2w2r_tb/addr0">
+         <obj_property name="ElementShortName">addr0[11:0]</obj_property>
+         <obj_property name="ObjectShortName">addr0[11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/uram_2w2r_tb/DUT/i_rdata0">
+         <obj_property name="ElementShortName">i_rdata0[71:0]</obj_property>
+         <obj_property name="ObjectShortName">i_rdata0[71:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/uram_2w2r_tb/rdata0">
+         <obj_property name="ElementShortName">rdata0[63:0]</obj_property>
+         <obj_property name="ObjectShortName">rdata0[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/uram_2w2r_tb/DUT/i_wdata0">
+         <obj_property name="ElementShortName">i_wdata0[71:0]</obj_property>
+         <obj_property name="ObjectShortName">i_wdata0[71:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/uram_2w2r_tb/wdata0">
+         <obj_property name="ElementShortName">wdata0[63:0]</obj_property>
+         <obj_property name="ObjectShortName">wdata0[63:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group30">
+      <obj_property name="label">port_1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/uram_2w2r_tb/ce1">
+         <obj_property name="ElementShortName">ce1</obj_property>
+         <obj_property name="ObjectShortName">ce1</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/uram_2w2r_tb/DUT/i_we1">
+         <obj_property name="ElementShortName">i_we1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_we1[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/uram_2w2r_tb/we1">
+         <obj_property name="ElementShortName">we1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">we1[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/uram_2w2r_tb/DUT/rw_bit1">
+         <obj_property name="ElementShortName">rw_bit1</obj_property>
+         <obj_property name="ObjectShortName">rw_bit1</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/uram_2w2r_tb/addr1">
+         <obj_property name="ElementShortName">addr1[11:0]</obj_property>
+         <obj_property name="ObjectShortName">addr1[11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/uram_2w2r_tb/DUT/i_rdata1">
+         <obj_property name="ElementShortName">i_rdata1[71:0]</obj_property>
+         <obj_property name="ObjectShortName">i_rdata1[71:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/uram_2w2r_tb/rdata1">
+         <obj_property name="ElementShortName">rdata1[63:0]</obj_property>
+         <obj_property name="ObjectShortName">rdata1[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/uram_2w2r_tb/DUT/i_wdata1">
+         <obj_property name="ElementShortName">i_wdata1[71:0]</obj_property>
+         <obj_property name="ObjectShortName">i_wdata1[71:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/uram_2w2r_tb/wdata1">
+         <obj_property name="ElementShortName">wdata1[63:0]</obj_property>
+         <obj_property name="ObjectShortName">wdata1[63:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

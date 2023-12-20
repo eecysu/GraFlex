@@ -1,0 +1,7 @@
+Running: xsim.dir/uram_2w_2r_x4_tb_behav/xsimk -simmode gui -wdb uram_2w_2r_x4_tb_behav.wdb -simrunnum 0 -socket 55083
+Design successfully loaded
+Design Loading Memory Usage: 34356 KB (Peak: 34356 KB)
+Design Loading CPU Usage: 20 ms
+Simulation completed
+Simulation Memory Usage: 116092 KB (Peak: 173624 KB)
+Simulation CPU Usage: 20 ms

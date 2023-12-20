@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../uram_2w2r.srcs/sources_1/new/uram_2w2r.v" \
+"../../../../uram_2w2r.srcs/sim_1/new/uram_2w2r.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

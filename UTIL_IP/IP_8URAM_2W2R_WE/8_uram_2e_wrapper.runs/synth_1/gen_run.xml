@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xcu280-fsvh2892-2L-e" LaunchTime="1679025739">
+  <File Type="VDS-TIMING-PB" Name="uram_2w_2r_we_x8_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="uram_2w_2r_we_x8_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="uram_2w_2r_we_x8.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="uram_2w_2r_we_x8_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="uram_2w_2r_we_x8_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="uram_2w_2r_we_x8_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="uram_2w_2r_we_x8.vds"/>
+  <File Type="REPORTS-TCL" Name="uram_2w_2r_we_x8_reports.tcl"/>
+  <File Type="PA-TCL" Name="uram_2w_2r_we_x8.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/uram_wex8/uram_wex8.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/uram_wex8/hdl/uram_wex8_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/eight_uram_we.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="uram_2w_2r_we_x8"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Flow_AlternateRoutability" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design">
+      <Option Id="NoCombineLuts">1</Option>
+      <Option Id="ShregMinSize">10</Option>
+      <Option Id="Directive">3</Option>
+    </Step>
+  </Strategy>
+</GenRun>

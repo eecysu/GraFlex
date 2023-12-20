@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xcu280-fsvh2892-2L-e" LaunchTime="1678960843">
+  <File Type="VDS-TIMING-PB" Name="Sw2X2_FIFO18_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Sw2X2_FIFO18_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="Sw2X2_FIFO18.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="Sw2X2_FIFO18_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="Sw2X2_FIFO18_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="Sw2X2_FIFO18_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="Sw2X2_FIFO18.vds"/>
+  <File Type="REPORTS-TCL" Name="Sw2X2_FIFO18_reports.tcl"/>
+  <File Type="PA-TCL" Name="Sw2X2_FIFO18.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src/FIFO18W36.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../media/Orion/VIVADO_WD/IP_LIB/Sw2X2_FIFO18/src/FIFO18W36.v"/>
+        <Attr Name="ImportTime" Val="1630568236"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/MatArbiter2X2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../media/Orion/VIVADO_WD/IP_LIB/Sw2X2_FIFO18/src/MatArbiter2X2.v"/>
+        <Attr Name="ImportTime" Val="1628668374"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/Sw2X2_FIFO18.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../media/Orion/VIVADO_WD/IP_LIB/Sw2X2_FIFO18/src/Sw2X2_FIFO18.v"/>
+        <Attr Name="ImportTime" Val="1630571515"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Sw2X2_FIFO18"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Flow_AlternateRoutability" Flow="Vivado Synthesis 2020">
+      <Desc>Performs optimizations which creates alternative logic technology mapping, including disabling LUT combining, forcing F7/F8/F9 to logic, increasing the threshold of shift register inference.</Desc>
+    </StratHandle>
+    <Step Id="synth_design">
+      <Option Id="NoCombineLuts">1</Option>
+      <Option Id="ShregMinSize">10</Option>
+      <Option Id="Directive">3</Option>
+    </Step>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,7 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_BRAM_2W2R/bram_2w2r.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,
+/home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_BRAM_2W2R/bram_2w2r.srcs/sim_1/new/bram_2w2r_tb.sv,1636700630,systemVerilog,,,,bram_2w2r_tb,,uvm,,,,,,
+/home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_BRAM_2W2R/bram_2w2r.srcs/sources_1/new/bram_2w2r.v,1636700989,systemVerilog,,/home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_BRAM_2W2R/bram_2w2r.srcs/sim_1/new/bram_2w2r_tb.sv,,bram_2w_2r,,uvm,,,,,,

@@ -1,0 +1,237 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Feb 11 13:42:58 2023
+# Process ID: 1248663
+# Current directory: /Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.runs/synth_1
+# Command line: vivado -log cus_m_axi_s_128.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cus_m_axi_s_128.tcl
+# Log file: /Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.runs/synth_1/cus_m_axi_s_128.vds
+# Journal file: /Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source cus_m_axi_s_128.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/Orion/GraphHBM/UTIL_IP'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/Orion/GraphHBM/UTIL_IP' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.runs/synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:bram_32k_2w_2r:1.0'. The one found in IP location '/Orion/GraphHBM/UTIL_IP/IP_BRAM_32K_2W2R' will take precedence over the same IP in location /Orion/GraphHBM/UTIL_IP/IP_BRAM_32K_2W2R/bram_32k_2w2r.srcs/sources_1/new
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:cycle_counter:1.0'. The one found in IP location '/Orion/GraphHBM/UTIL_IP/IP_CYCLE_CNT' will take precedence over the same IP in location /Orion/GraphHBM/UTIL_IP/IP_CYCLE_CNT/cycle_cnt.srcs/sources_1/new
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:cus_m_axi_s_256_uram:1.0'. The one found in IP location '/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_256_ultra' will take precedence over the same IP in location /Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_256_ultra/cus_m_axi_s_256_ultra.srcs/sources_1
+Command: synth_design -top cus_m_axi_s_128 -part xcu280-fsvh2892-2L-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1248808
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3203.832 ; gain = 173.719 ; free physical = 53145 ; free virtual = 82464
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cus_m_axi_s_128' [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.srcs/sources_1/imports/hdl/custom_m_axi_128_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'custom_m_axi_128' [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.gen/sources_1/bd/custom_m_axi_128/synth/custom_m_axi_128.v:13]
+INFO: [Synth 8-6157] synthesizing module 'custom_m_axi_128_mread_master_0_0' [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.runs/synth_1/.Xil/Vivado-1248663-noah/realtime/custom_m_axi_128_mread_master_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'custom_m_axi_128_mread_master_0_0' (1#1) [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.runs/synth_1/.Xil/Vivado-1248663-noah/realtime/custom_m_axi_128_mread_master_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'custom_m_axi_128_step_to_pulse_0_0' [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.runs/synth_1/.Xil/Vivado-1248663-noah/realtime/custom_m_axi_128_step_to_pulse_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'custom_m_axi_128_step_to_pulse_0_0' (2#1) [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.runs/synth_1/.Xil/Vivado-1248663-noah/realtime/custom_m_axi_128_step_to_pulse_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'custom_m_axi_128_step_to_pulse_0_1' [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.runs/synth_1/.Xil/Vivado-1248663-noah/realtime/custom_m_axi_128_step_to_pulse_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'custom_m_axi_128_step_to_pulse_0_1' (3#1) [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.runs/synth_1/.Xil/Vivado-1248663-noah/realtime/custom_m_axi_128_step_to_pulse_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'custom_m_axi_128_swr_engine_0_0' [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.runs/synth_1/.Xil/Vivado-1248663-noah/realtime/custom_m_axi_128_swr_engine_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'custom_m_axi_128_swr_engine_0_0' (4#1) [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.runs/synth_1/.Xil/Vivado-1248663-noah/realtime/custom_m_axi_128_swr_engine_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'custom_m_axi_128' (5#1) [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.gen/sources_1/bd/custom_m_axi_128/synth/custom_m_axi_128.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'cus_m_axi_s_128' (6#1) [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.srcs/sources_1/imports/hdl/custom_m_axi_128_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3249.738 ; gain = 219.625 ; free physical = 53172 ; free virtual = 82491
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3267.582 ; gain = 237.469 ; free physical = 53863 ; free virtual = 83183
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3267.582 ; gain = 237.469 ; free physical = 53863 ; free virtual = 83183
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3267.582 ; gain = 0.000 ; free physical = 53857 ; free virtual = 83176
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.gen/sources_1/bd/custom_m_axi_128/ip/custom_m_axi_128_mread_master_0_0/custom_m_axi_128_mread_master_0_0/custom_m_axi_128_mread_master_0_0_in_context.xdc] for cell 'custom_m_axi_128_i/mread_master_0'
+Finished Parsing XDC File [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.gen/sources_1/bd/custom_m_axi_128/ip/custom_m_axi_128_mread_master_0_0/custom_m_axi_128_mread_master_0_0/custom_m_axi_128_mread_master_0_0_in_context.xdc] for cell 'custom_m_axi_128_i/mread_master_0'
+Parsing XDC File [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.gen/sources_1/bd/custom_m_axi_128/ip/custom_m_axi_128_step_to_pulse_0_0/custom_m_axi_128_step_to_pulse_0_0/custom_m_axi_128_step_to_pulse_0_1_in_context.xdc] for cell 'custom_m_axi_128_i/step_to_pulse_0'
+Finished Parsing XDC File [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.gen/sources_1/bd/custom_m_axi_128/ip/custom_m_axi_128_step_to_pulse_0_0/custom_m_axi_128_step_to_pulse_0_0/custom_m_axi_128_step_to_pulse_0_1_in_context.xdc] for cell 'custom_m_axi_128_i/step_to_pulse_0'
+Parsing XDC File [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.gen/sources_1/bd/custom_m_axi_128/ip/custom_m_axi_128_step_to_pulse_0_1/custom_m_axi_128_step_to_pulse_0_1/custom_m_axi_128_step_to_pulse_0_1_in_context.xdc] for cell 'custom_m_axi_128_i/step_to_pulse_1'
+Finished Parsing XDC File [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.gen/sources_1/bd/custom_m_axi_128/ip/custom_m_axi_128_step_to_pulse_0_1/custom_m_axi_128_step_to_pulse_0_1/custom_m_axi_128_step_to_pulse_0_1_in_context.xdc] for cell 'custom_m_axi_128_i/step_to_pulse_1'
+Parsing XDC File [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.gen/sources_1/bd/custom_m_axi_128/ip/custom_m_axi_128_swr_engine_0_0/custom_m_axi_128_swr_engine_0_0/cus_m_axi_s_128_ultra_swr_engine_0_0_in_context.xdc] for cell 'custom_m_axi_128_i/swr_engine_0'
+Finished Parsing XDC File [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.gen/sources_1/bd/custom_m_axi_128/ip/custom_m_axi_128_swr_engine_0_0/custom_m_axi_128_swr_engine_0_0/cus_m_axi_s_128_ultra_swr_engine_0_0_in_context.xdc] for cell 'custom_m_axi_128_i/swr_engine_0'
+Parsing XDC File [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3369.301 ; gain = 0.000 ; free physical = 53785 ; free virtual = 83104
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3369.301 ; gain = 0.000 ; free physical = 53785 ; free virtual = 83104
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3369.301 ; gain = 339.188 ; free physical = 53802 ; free virtual = 83122
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3369.301 ; gain = 339.188 ; free physical = 53802 ; free virtual = 83122
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for custom_m_axi_128_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for custom_m_axi_128_i/mread_master_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for custom_m_axi_128_i/step_to_pulse_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for custom_m_axi_128_i/step_to_pulse_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for custom_m_axi_128_i/swr_engine_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3369.301 ; gain = 339.188 ; free physical = 53802 ; free virtual = 83122
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3369.301 ; gain = 339.188 ; free physical = 53801 ; free virtual = 83121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3369.301 ; gain = 339.188 ; free physical = 53790 ; free virtual = 83112
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 3738.152 ; gain = 708.039 ; free physical = 52942 ; free virtual = 82265
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 3738.152 ; gain = 708.039 ; free physical = 52968 ; free virtual = 82291
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 3758.184 ; gain = 728.070 ; free physical = 52902 ; free virtual = 82225
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 3764.121 ; gain = 734.008 ; free physical = 52898 ; free virtual = 82221
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 3764.121 ; gain = 734.008 ; free physical = 52898 ; free virtual = 82221
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 3764.121 ; gain = 734.008 ; free physical = 52898 ; free virtual = 82221
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 3764.121 ; gain = 734.008 ; free physical = 52898 ; free virtual = 82221
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 3764.121 ; gain = 734.008 ; free physical = 52898 ; free virtual = 82221
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 3764.121 ; gain = 734.008 ; free physical = 52898 ; free virtual = 82221
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------------+----------+
+|      |BlackBox name                      |Instances |
++------+-----------------------------------+----------+
+|1     |custom_m_axi_128_mread_master_0_0  |         1|
+|2     |custom_m_axi_128_step_to_pulse_0_0 |         1|
+|3     |custom_m_axi_128_step_to_pulse_0_1 |         1|
+|4     |custom_m_axi_128_swr_engine_0_0    |         1|
++------+-----------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------+------+
+|      |Cell                             |Count |
++------+---------------------------------+------+
+|1     |custom_m_axi_128_mread_master_0  |     1|
+|2     |custom_m_axi_128_step_to_pulse_0 |     2|
+|4     |custom_m_axi_128_swr_engine_0    |     1|
+|5     |IBUF                             |   453|
+|6     |OBUF                             |   494|
++------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 3764.121 ; gain = 734.008 ; free physical = 52898 ; free virtual = 82221
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 3764.121 ; gain = 632.289 ; free physical = 52934 ; free virtual = 82257
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 3764.129 ; gain = 734.008 ; free physical = 52934 ; free virtual = 82257
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3771.059 ; gain = 0.000 ; free physical = 53011 ; free virtual = 82334
+INFO: [Netlist 29-17] Analyzing 453 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3832.363 ; gain = 0.000 ; free physical = 52850 ; free virtual = 82173
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 453 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 453 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 3832.363 ; gain = 1457.609 ; free physical = 52981 ; free virtual = 82305
+INFO: [Common 17-1381] The checkpoint '/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.runs/synth_1/cus_m_axi_s_128.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cus_m_axi_s_128_utilization_synth.rpt -pb cus_m_axi_s_128_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 11 13:43:33 2023...

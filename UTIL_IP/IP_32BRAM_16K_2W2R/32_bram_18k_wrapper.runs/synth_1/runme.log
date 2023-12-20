@@ -1,0 +1,557 @@
+
+*** Running vivado
+    with args -log bram_2w_2r_16k_x32.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bram_2w_2r_16k_x32.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source bram_2w_2r_16k_x32.tcl -notrace
+Command: synth_design -top bram_2w_2r_16k_x32 -part xcu280-fsvh2892-2L-e -directive AlternateRoutability -no_lc -shreg_min_size 10
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3517426
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3190.805 ; gain = 172.688 ; free physical = 19335 ; free virtual = 47498
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bram_2w_2r_16k_x32' [/Orion/GraphHBM/UTIL_IP/IP_32BRAM_16K_2W2R/32_bram_18k_wrapper.srcs/sources_1/new/bram_2w_2r_x32.sv:5]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'bram_16k_2w_2r' [/Orion/GraphHBM/UTIL_IP/IP_32BRAM_16K_2W2R/32_bram_18k_wrapper.srcs/sources_1/new/bram_16k_2w_2r.v:4]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_tdpram' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8871]
+	Parameter MEMORY_SIZE bound to: 16384 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: block - type: string 
+	Parameter CLOCKING_MODE bound to: common_clock - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: 0 - type: string 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: disable_sleep - type: string 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 1 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 8 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 8 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 11 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter WRITE_MODE_A bound to: no_change - type: string 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 8 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 8 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 11 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: no_change - type: string 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: 2 - type: integer 
+	Parameter P_CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter P_ECC_MODE bound to: 0 - type: integer 
+	Parameter P_WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter P_WRITE_MODE_A bound to: 2 - type: integer 
+	Parameter P_WRITE_MODE_B bound to: 2 - type: integer 
+	Parameter P_MEMORY_OPTIMIZATION bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 2 - type: integer 
+	Parameter MEMORY_SIZE bound to: 16384 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 2 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: 0 - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 1 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 8 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 8 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 11 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter WRITE_MODE_A bound to: 2 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 8 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 8 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 11 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 2 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: block - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 8 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 8 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 8 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 8 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 2048 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 8 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 8 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 11 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 11 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 11 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 11 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 8 - type: integer 
+	Parameter rstb_loop_iter bound to: 8 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 8 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (1#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_tdpram' (2#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8871]
+INFO: [Synth 8-6155] done synthesizing module 'bram_16k_2w_2r' (3#1) [/Orion/GraphHBM/UTIL_IP/IP_32BRAM_16K_2W2R/32_bram_18k_wrapper.srcs/sources_1/new/bram_16k_2w_2r.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bram_2w_2r_16k_x32' (4#1) [/Orion/GraphHBM/UTIL_IP/IP_32BRAM_16K_2W2R/32_bram_18k_wrapper.srcs/sources_1/new/bram_2w_2r_x32.sv:5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3242.711 ; gain = 224.594 ; free physical = 20022 ; free virtual = 48186
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3259.555 ; gain = 241.438 ; free physical = 20054 ; free virtual = 48218
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3259.555 ; gain = 241.438 ; free physical = 20053 ; free virtual = 48217
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3259.555 ; gain = 0.000 ; free physical = 20077 ; free virtual = 48240
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bram_2w_2r_16k_x32_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bram_2w_2r_16k_x32_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1715] 1 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3445.180 ; gain = 0.000 ; free physical = 19981 ; free virtual = 48145
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3445.180 ; gain = 0.000 ; free physical = 19981 ; free virtual = 48144
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3445.180 ; gain = 427.062 ; free physical = 20072 ; free virtual = 48236
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3445.180 ; gain = 427.062 ; free physical = 20072 ; free virtual = 48236
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[0].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[1].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[2].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[3].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[4].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[5].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[6].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[7].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[8].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[9].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[10].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[11].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[12].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[13].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[14].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[15].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[16].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[17].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[18].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[19].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[20].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[21].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[22].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[23].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[24].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[25].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[26].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[27].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[28].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[29].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[30].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \gen_bram_ram[31].inst_bram_U /xpm_memory_tdpram_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3445.180 ; gain = 427.062 ; free physical = 20058 ; free virtual = 48221
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"xpm_memory_base:/gen_wr_b.gen_word_narrow.mem_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "xpm_memory_base:/gen_wr_b.gen_word_narrow.mem_reg"
+INFO: [Synth 8-3971] The signal "xpm_memory_base:/gen_wr_b.gen_word_narrow.mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3445.180 ; gain = 427.062 ; free physical = 20052 ; free virtual = 48218
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 128   
+	                1 Bit    Registers := 64    
++---RAMs : 
+	              16K Bit	(2048 X 8 bit)          RAMs := 32    
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 64    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"xpm_memory_tdpram:/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "xpm_memory_tdpram:/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-3971] The signal "xpm_memory_tdpram:/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3445.180 ; gain = 427.062 ; free physical = 20031 ; free virtual = 48200
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++----------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                             | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++----------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
++----------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 3756.055 ; gain = 737.938 ; free physical = 20641 ; free virtual = 48781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 3758.055 ; gain = 739.938 ; free physical = 20638 ; free virtual = 48778
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++----------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                             | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++----------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_tdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 2 K x 8(NO_CHANGE)     | W | R | 2 K x 8(NO_CHANGE)     | W | R | Port A and B     | 1      | 0      | 1               | 
++----------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[0].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[0].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[1].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[1].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[2].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[2].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[3].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[3].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[4].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[4].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[5].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[5].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[6].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[6].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[7].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[7].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[8].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[8].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[9].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[9].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[10].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[10].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[11].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[11].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[12].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[12].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[13].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[13].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[14].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[14].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[15].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[15].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[16].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[16].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[17].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[17].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[18].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[18].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[19].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[19].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[20].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[20].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[21].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[21].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[22].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[22].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[23].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[23].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[24].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[24].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[25].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[25].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[26].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[26].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[27].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[27].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[28].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[28].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[29].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[29].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[30].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[30].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[31].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gen_bram_ram[31].inst_bram_U/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 3777.086 ; gain = 758.969 ; free physical = 20644 ; free virtual = 48784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 3783.023 ; gain = 764.906 ; free physical = 20644 ; free virtual = 48784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 3783.023 ; gain = 764.906 ; free physical = 20644 ; free virtual = 48784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 3783.023 ; gain = 764.906 ; free physical = 20644 ; free virtual = 48784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 3783.023 ; gain = 764.906 ; free physical = 20644 ; free virtual = 48784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 3783.023 ; gain = 764.906 ; free physical = 20644 ; free virtual = 48784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 3783.023 ; gain = 764.906 ; free physical = 20644 ; free virtual = 48784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |LUT1     |     1|
+|3     |LUT2     |   288|
+|4     |LUT3     |   512|
+|5     |LUT4     |    32|
+|6     |LUT6     |   160|
+|7     |RAMB18E2 |    32|
+|8     |FDRE     |   576|
+|9     |IBUF     |  1346|
+|10    |OBUF     |   512|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 3783.023 ; gain = 764.906 ; free physical = 20644 ; free virtual = 48784
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 3783.023 ; gain = 579.281 ; free physical = 20682 ; free virtual = 48822
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 3783.031 ; gain = 764.906 ; free physical = 20682 ; free virtual = 48822
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3794.992 ; gain = 0.000 ; free physical = 20769 ; free virtual = 48909
+INFO: [Netlist 29-17] Analyzing 1347 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3846.281 ; gain = 0.000 ; free physical = 20668 ; free virtual = 48808
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1347 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 1346 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+95 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 3846.281 ; gain = 1472.523 ; free physical = 20807 ; free virtual = 48947
+INFO: [Common 17-1381] The checkpoint '/Orion/GraphHBM/UTIL_IP/IP_32BRAM_16K_2W2R/32_bram_18k_wrapper.runs/synth_1/bram_2w_2r_16k_x32.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bram_2w_2r_16k_x32_utilization_synth.rpt -pb bram_2w_2r_16k_x32_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 17 14:53:34 2023...

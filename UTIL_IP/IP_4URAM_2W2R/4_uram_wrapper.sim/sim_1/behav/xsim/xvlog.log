@@ -1,0 +1,16 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R/4_uram_wrapper.ip_user_files/bd/uramx4/sim/uramx4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uramx4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R/4_uram_wrapper.ip_user_files/bd/uramx4/ipshared/074c/uram_2w2r.srcs/sources_1/new/uram_2w_2r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uram_2w_2r
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R/4_uram_wrapper.ip_user_files/bd/uramx4/ip/uramx4_uram_2w_2r_0_3/sim/uramx4_uram_2w_2r_0_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uramx4_uram_2w_2r_0_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R/4_uram_wrapper.ip_user_files/bd/uramx4/ip/uramx4_uram_2w_2r_0_4/sim/uramx4_uram_2w_2r_0_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uramx4_uram_2w_2r_0_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R/4_uram_wrapper.ip_user_files/bd/uramx4/ip/uramx4_uram_2w_2r_1_1/sim/uramx4_uram_2w_2r_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uramx4_uram_2w_2r_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R/4_uram_wrapper.ip_user_files/bd/uramx4/ip/uramx4_uram_2w_2r_2_0/sim/uramx4_uram_2w_2r_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uramx4_uram_2w_2r_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R/4_uram_wrapper.srcs/sources_1/new/four_uram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uram_2w_2r_x4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/Orion/GraphHBM/UTIL_IP/IP_4URAM_2W2R/4_uram_wrapper.gen/sources_1/bd/uramx4/hdl/uramx4_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uramx4_wrapper

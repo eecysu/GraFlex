@@ -1,0 +1,271 @@
+
+*** Running vivado
+    with args -log Sw4X4_FIFO18.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Sw4X4_FIFO18.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source Sw4X4_FIFO18.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/Orion/GraphHBM/UTIL_IP'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/Orion/GraphHBM/UTIL_IP' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.runs/synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:cycle_counter:1.0'. The one found in IP location '/Orion/GraphHBM/UTIL_IP/IP_CYCLE_CNT' will take precedence over the same IP in location /Orion/GraphHBM/UTIL_IP/IP_CYCLE_CNT/cycle_cnt.srcs/sources_1/new
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:cus_m_axi_s_256_uram:1.0'. The one found in IP location '/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_256_ultra' will take precedence over the same IP in location /Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_256_ultra/cus_m_axi_s_256_ultra.srcs/sources_1
+Command: synth_design -top Sw4X4_FIFO18 -part xcu280-fsvh2892-2L-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 407417
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NOR4 [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/MatArbiter4X4.v:3]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2395.262 ; gain = 0.000 ; free physical = 20703 ; free virtual = 43843
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Sw4X4_FIFO18' [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/Sw4X4_FIFO18.v:3]
+	Parameter ROUTING_HBIT bound to: 2 - type: integer 
+	Parameter FIFO_FULL_TH bound to: 508 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FIFO18W36' [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/FIFO18W36.v:3]
+	Parameter EMPTY_TH bound to: 2 - type: integer 
+	Parameter FULL_TH bound to: 508 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FIFO18E2' [/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:14187]
+	Parameter CASCADE_ORDER bound to: NONE - type: string 
+	Parameter CLOCK_DOMAINS bound to: COMMON - type: string 
+	Parameter FIRST_WORD_FALL_THROUGH bound to: FALSE - type: string 
+	Parameter INIT bound to: 36'b000000000000000000000000000000000000 
+	Parameter IS_RDCLK_INVERTED bound to: 1'b0 
+	Parameter IS_RDEN_INVERTED bound to: 1'b0 
+	Parameter IS_RSTREG_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter IS_WRCLK_INVERTED bound to: 1'b0 
+	Parameter IS_WREN_INVERTED bound to: 1'b0 
+	Parameter PROG_EMPTY_THRESH bound to: 2 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 508 - type: integer 
+	Parameter RDCOUNT_TYPE bound to: SIMPLE_DATACOUNT - type: string 
+	Parameter READ_WIDTH bound to: 36 - type: integer 
+	Parameter REGISTER_MODE bound to: UNREGISTERED - type: string 
+	Parameter RSTREG_PRIORITY bound to: RSTREG - type: string 
+	Parameter SLEEP_ASYNC bound to: FALSE - type: string 
+	Parameter SRVAL bound to: 36'b000000000000000000000000000000000000 
+	Parameter WRCOUNT_TYPE bound to: SIMPLE_DATACOUNT - type: string 
+	Parameter WRITE_WIDTH bound to: 36 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FIFO18E2' (1#1) [/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:14187]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO18W36' (2#1) [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/FIFO18W36.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MatArbiter4X4' [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/MatArbiter4X4.v:15]
+INFO: [Synth 8-6157] synthesizing module 'NOR4' [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/MatArbiter4X4.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'NOR4' (3#1) [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/MatArbiter4X4.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MatArbiter4X4' (4#1) [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/MatArbiter4X4.v:15]
+INFO: [Synth 8-226] default block is never used [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/Sw4X4_FIFO18.v:771]
+INFO: [Synth 8-226] default block is never used [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/Sw4X4_FIFO18.v:796]
+INFO: [Synth 8-226] default block is never used [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/Sw4X4_FIFO18.v:821]
+INFO: [Synth 8-226] default block is never used [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/Sw4X4_FIFO18.v:846]
+INFO: [Synth 8-226] default block is never used [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/Sw4X4_FIFO18.v:872]
+INFO: [Synth 8-226] default block is never used [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/Sw4X4_FIFO18.v:897]
+INFO: [Synth 8-226] default block is never used [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/Sw4X4_FIFO18.v:922]
+INFO: [Synth 8-226] default block is never used [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/Sw4X4_FIFO18.v:947]
+INFO: [Synth 8-226] default block is never used [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/Sw4X4_FIFO18.v:973]
+INFO: [Synth 8-226] default block is never used [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/Sw4X4_FIFO18.v:998]
+INFO: [Synth 8-226] default block is never used [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/Sw4X4_FIFO18.v:1023]
+INFO: [Synth 8-226] default block is never used [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/Sw4X4_FIFO18.v:1048]
+INFO: [Synth 8-226] default block is never used [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/Sw4X4_FIFO18.v:1074]
+INFO: [Synth 8-226] default block is never used [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/Sw4X4_FIFO18.v:1099]
+INFO: [Synth 8-226] default block is never used [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/Sw4X4_FIFO18.v:1124]
+INFO: [Synth 8-226] default block is never used [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/Sw4X4_FIFO18.v:1149]
+INFO: [Synth 8-6157] synthesizing module 'MUX4X1' [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/MUX4X1.v:3]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX4X1' (5#1) [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/MUX4X1.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Sw4X4_FIFO18' (6#1) [/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.srcs/sources_1/imports/src/Sw4X4_FIFO18.v:3]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2395.262 ; gain = 0.000 ; free physical = 20737 ; free virtual = 43878
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2395.262 ; gain = 0.000 ; free physical = 21426 ; free virtual = 44567
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2403.188 ; gain = 7.926 ; free physical = 21425 ; free virtual = 44566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2403.188 ; gain = 7.926 ; free physical = 21404 ; free virtual = 44546
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                1 Bit    Registers := 64    
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 4     
+	   5 Input    3 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 24    
+	   3 Input    1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 3253.555 ; gain = 858.293 ; free physical = 20307 ; free virtual = 43451
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 3253.555 ; gain = 858.293 ; free physical = 20318 ; free virtual = 43462
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 3261.562 ; gain = 866.301 ; free physical = 20314 ; free virtual = 43458
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3261.562 ; gain = 866.301 ; free physical = 20298 ; free virtual = 43442
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3261.562 ; gain = 866.301 ; free physical = 20298 ; free virtual = 43442
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3261.562 ; gain = 866.301 ; free physical = 20298 ; free virtual = 43442
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3261.562 ; gain = 866.301 ; free physical = 20298 ; free virtual = 43442
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3261.562 ; gain = 866.301 ; free physical = 20298 ; free virtual = 43442
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3261.562 ; gain = 866.301 ; free physical = 20298 ; free virtual = 43442
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |FIFO18E2 |    16|
+|3     |LUT1     |     1|
+|4     |LUT2     |    24|
+|5     |LUT4     |    52|
+|6     |LUT5     |    24|
+|7     |LUT6     |   180|
+|8     |FDRE     |   168|
+|9     |FDSE     |    24|
+|10    |IBUF     |   138|
+|11    |OBUF     |   136|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------+----------------+------+
+|      |Instance  |Module          |Cells |
++------+----------+----------------+------+
+|1     |top       |                |   764|
+|2     |  MA_a    |MatArbiter4X4   |    64|
+|3     |  MA_b    |MatArbiter4X4_0 |    64|
+|4     |  MA_c    |MatArbiter4X4_1 |    64|
+|5     |  MA_d    |MatArbiter4X4_2 |    65|
+|6     |  fifo_a0 |FIFO18W36       |     3|
+|7     |  fifo_a1 |FIFO18W36_3     |     3|
+|8     |  fifo_a2 |FIFO18W36_4     |     4|
+|9     |  fifo_a3 |FIFO18W36_5     |     3|
+|10    |  fifo_b0 |FIFO18W36_6     |     3|
+|11    |  fifo_b1 |FIFO18W36_7     |     4|
+|12    |  fifo_b2 |FIFO18W36_8     |     3|
+|13    |  fifo_b3 |FIFO18W36_9     |     3|
+|14    |  fifo_c0 |FIFO18W36_10    |     4|
+|15    |  fifo_c1 |FIFO18W36_11    |     3|
+|16    |  fifo_c2 |FIFO18W36_12    |     3|
+|17    |  fifo_c3 |FIFO18W36_13    |     3|
+|18    |  fifo_d0 |FIFO18W36_14    |     3|
+|19    |  fifo_d1 |FIFO18W36_15    |     3|
+|20    |  fifo_d2 |FIFO18W36_16    |     4|
+|21    |  fifo_d3 |FIFO18W36_17    |     3|
++------+----------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3261.562 ; gain = 866.301 ; free physical = 20298 ; free virtual = 43442
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3261.562 ; gain = 866.301 ; free physical = 20304 ; free virtual = 43448
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3261.570 ; gain = 866.301 ; free physical = 20304 ; free virtual = 43448
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3269.562 ; gain = 0.000 ; free physical = 20388 ; free virtual = 43532
+INFO: [Netlist 29-17] Analyzing 139 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3367.215 ; gain = 0.000 ; free physical = 20296 ; free virtual = 43440
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 139 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 138 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 3 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3367.215 ; gain = 972.031 ; free physical = 20437 ; free virtual = 43581
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint '/Orion/GraphHBM/UTIL_IP/Sw4X4_FIFO18/Sw4X4_FIFO18.runs/synth_1/Sw4X4_FIFO18.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Sw4X4_FIFO18_utilization_synth.rpt -pb Sw4X4_FIFO18_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 27 16:12:08 2022...

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="uramx8_uram_2w_2r_0_2_synth_1" LaunchPart="xcu280-fsvh2892-2L-e" LaunchTime="1683426907">
+  <File Type="VDS-TIMING-PB" Name="uramx8_uram_2w_2r_0_2_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="uramx8_uram_2w_2r_0_2_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="uramx8_uram_2w_2r_0_2.dcp"/>
+  <File Type="REPORTS-TCL" Name="uramx8_uram_2w_2r_0_2_reports.tcl"/>
+  <File Type="PA-TCL" Name="uramx8_uram_2w_2r_0_2.tcl"/>
+  <File Type="RDS-RDS" Name="uramx8_uram_2w_2r_0_2.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="uramx8_uram_2w_2r_0_2_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="uramx8_uram_2w_2r_0_2_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="uramx8_uram_2w_2r_0_2_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uramx8_uram_2w_2r_0_2">
+    <File Path="$PSRCDIR/sources_1/bd/uramx8/ip/uramx8_uram_2w_2r_0_2/uramx8_uram_2w_2r_0_2.xci">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="uramx8_uram_2w_2r_0_2"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uramx8_uram_2w_2r_0_2">
+    <File Path="$PSRCDIR/sources_1/bd/uramx8/ip/uramx8_uram_2w_2r_0_2/uramx8_uram_2w_2r_0_2.xci">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="uramx8_uram_2w_2r_0_2"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

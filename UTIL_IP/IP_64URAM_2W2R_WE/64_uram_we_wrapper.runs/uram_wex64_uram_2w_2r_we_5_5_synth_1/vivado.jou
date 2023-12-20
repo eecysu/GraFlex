@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep 18 23:08:33 2023
+# Process ID: 2853076
+# Current directory: /Orion/GraphHBM/UTIL_IP/IP_64URAM_2W2R_WE/64_uram_we_wrapper.runs/uram_wex64_uram_2w_2r_we_5_5_synth_1
+# Command line: vivado -log uram_wex64_uram_2w_2r_we_5_5.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uram_wex64_uram_2w_2r_we_5_5.tcl
+# Log file: /Orion/GraphHBM/UTIL_IP/IP_64URAM_2W2R_WE/64_uram_we_wrapper.runs/uram_wex64_uram_2w_2r_we_5_5_synth_1/uram_wex64_uram_2w_2r_we_5_5.vds
+# Journal file: /Orion/GraphHBM/UTIL_IP/IP_64URAM_2W2R_WE/64_uram_we_wrapper.runs/uram_wex64_uram_2w_2r_we_5_5_synth_1/vivado.jou
+#-----------------------------------------------------------
+source uram_wex64_uram_2w_2r_we_5_5.tcl -notrace

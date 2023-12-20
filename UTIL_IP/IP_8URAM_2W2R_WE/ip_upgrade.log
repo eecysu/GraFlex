@@ -1,0 +1,1451 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 12:02:01 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_6_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_6_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 12:02:01 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_5_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_5_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 12:02:01 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_4_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_4_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 12:02:01 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_3_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_3_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 12:02:01 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_1_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 12:02:00 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_0_2 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 12:02:00 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_0_1 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 12:02:00 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_0_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 02:34:21 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_6_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of uram_wex8_uram_2w_2r_we_6_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+Parameter 'DATA_WIDTH' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_6_0', and cannot be set to '64'
+
+Parameter 'ADDR_RANGE' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_6_0', and cannot be set to '4096'
+
+Parameter 'ADDR_WIDTH' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_6_0', and cannot be set to '12'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv user.org:user:uram_2w_2r_we:1.0 -user_name uram_wex8_uram_2w_2r_we_6_0
+set_property -dict "\
+  CONFIG.Component_Name {uram_wex8_uram_2w_2r_we_6_0} \
+  CONFIG.clk.ASSOCIATED_BUSIF {} \
+  CONFIG.clk.ASSOCIATED_RESET {} \
+  CONFIG.clk.CLK_DOMAIN {uram_wex8_clk_0} \
+  CONFIG.clk.FREQ_HZ {100000000} \
+  CONFIG.clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.clk.INSERT_VIP {0} \
+  CONFIG.clk.PHASE {0.000} \
+  CONFIG.rst_n.INSERT_VIP {0} \
+  CONFIG.rst_n.POLARITY {ACTIVE_LOW} " [get_ips uram_wex8_uram_2w_2r_we_6_0]
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 02:34:21 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_5_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of uram_wex8_uram_2w_2r_we_5_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+Parameter 'DATA_WIDTH' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_5_0', and cannot be set to '64'
+
+Parameter 'ADDR_RANGE' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_5_0', and cannot be set to '4096'
+
+Parameter 'ADDR_WIDTH' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_5_0', and cannot be set to '12'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv user.org:user:uram_2w_2r_we:1.0 -user_name uram_wex8_uram_2w_2r_we_5_0
+set_property -dict "\
+  CONFIG.Component_Name {uram_wex8_uram_2w_2r_we_5_0} \
+  CONFIG.clk.ASSOCIATED_BUSIF {} \
+  CONFIG.clk.ASSOCIATED_RESET {} \
+  CONFIG.clk.CLK_DOMAIN {uram_wex8_clk_0} \
+  CONFIG.clk.FREQ_HZ {100000000} \
+  CONFIG.clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.clk.INSERT_VIP {0} \
+  CONFIG.clk.PHASE {0.000} \
+  CONFIG.rst_n.INSERT_VIP {0} \
+  CONFIG.rst_n.POLARITY {ACTIVE_LOW} " [get_ips uram_wex8_uram_2w_2r_we_5_0]
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 02:34:21 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_4_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of uram_wex8_uram_2w_2r_we_4_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+Parameter 'DATA_WIDTH' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_4_0', and cannot be set to '64'
+
+Parameter 'ADDR_RANGE' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_4_0', and cannot be set to '4096'
+
+Parameter 'ADDR_WIDTH' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_4_0', and cannot be set to '12'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv user.org:user:uram_2w_2r_we:1.0 -user_name uram_wex8_uram_2w_2r_we_4_0
+set_property -dict "\
+  CONFIG.Component_Name {uram_wex8_uram_2w_2r_we_4_0} \
+  CONFIG.clk.ASSOCIATED_BUSIF {} \
+  CONFIG.clk.ASSOCIATED_RESET {} \
+  CONFIG.clk.CLK_DOMAIN {uram_wex8_clk_0} \
+  CONFIG.clk.FREQ_HZ {100000000} \
+  CONFIG.clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.clk.INSERT_VIP {0} \
+  CONFIG.clk.PHASE {0.000} \
+  CONFIG.rst_n.INSERT_VIP {0} \
+  CONFIG.rst_n.POLARITY {ACTIVE_LOW} " [get_ips uram_wex8_uram_2w_2r_we_4_0]
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 02:34:21 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_3_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of uram_wex8_uram_2w_2r_we_3_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+Parameter 'DATA_WIDTH' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_3_0', and cannot be set to '64'
+
+Parameter 'ADDR_RANGE' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_3_0', and cannot be set to '4096'
+
+Parameter 'ADDR_WIDTH' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_3_0', and cannot be set to '12'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv user.org:user:uram_2w_2r_we:1.0 -user_name uram_wex8_uram_2w_2r_we_3_0
+set_property -dict "\
+  CONFIG.Component_Name {uram_wex8_uram_2w_2r_we_3_0} \
+  CONFIG.clk.ASSOCIATED_BUSIF {} \
+  CONFIG.clk.ASSOCIATED_RESET {} \
+  CONFIG.clk.CLK_DOMAIN {uram_wex8_clk_0} \
+  CONFIG.clk.FREQ_HZ {100000000} \
+  CONFIG.clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.clk.INSERT_VIP {0} \
+  CONFIG.clk.PHASE {0.000} \
+  CONFIG.rst_n.INSERT_VIP {0} \
+  CONFIG.rst_n.POLARITY {ACTIVE_LOW} " [get_ips uram_wex8_uram_2w_2r_we_3_0]
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 02:34:21 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_1_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of uram_wex8_uram_2w_2r_we_1_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+Parameter 'DATA_WIDTH' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_1_0', and cannot be set to '64'
+
+Parameter 'ADDR_RANGE' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_1_0', and cannot be set to '4096'
+
+Parameter 'ADDR_WIDTH' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_1_0', and cannot be set to '12'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv user.org:user:uram_2w_2r_we:1.0 -user_name uram_wex8_uram_2w_2r_we_1_0
+set_property -dict "\
+  CONFIG.Component_Name {uram_wex8_uram_2w_2r_we_1_0} \
+  CONFIG.clk.ASSOCIATED_BUSIF {} \
+  CONFIG.clk.ASSOCIATED_RESET {} \
+  CONFIG.clk.CLK_DOMAIN {uram_wex8_clk_0} \
+  CONFIG.clk.FREQ_HZ {100000000} \
+  CONFIG.clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.clk.INSERT_VIP {0} \
+  CONFIG.clk.PHASE {0.000} \
+  CONFIG.rst_n.INSERT_VIP {0} \
+  CONFIG.rst_n.POLARITY {ACTIVE_LOW} " [get_ips uram_wex8_uram_2w_2r_we_1_0]
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 02:34:20 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_0_2'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of uram_wex8_uram_2w_2r_we_0_2 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+Parameter 'DATA_WIDTH' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_0_2', and cannot be set to '64'
+
+Parameter 'ADDR_RANGE' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_0_2', and cannot be set to '4096'
+
+Parameter 'ADDR_WIDTH' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_0_2', and cannot be set to '12'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv user.org:user:uram_2w_2r_we:1.0 -user_name uram_wex8_uram_2w_2r_we_0_2
+set_property -dict "\
+  CONFIG.Component_Name {uram_wex8_uram_2w_2r_we_0_2} \
+  CONFIG.clk.ASSOCIATED_BUSIF {} \
+  CONFIG.clk.ASSOCIATED_RESET {} \
+  CONFIG.clk.CLK_DOMAIN {uram_wex8_clk_0} \
+  CONFIG.clk.FREQ_HZ {100000000} \
+  CONFIG.clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.clk.INSERT_VIP {0} \
+  CONFIG.clk.PHASE {0.000} \
+  CONFIG.rst_n.INSERT_VIP {0} \
+  CONFIG.rst_n.POLARITY {ACTIVE_LOW} " [get_ips uram_wex8_uram_2w_2r_we_0_2]
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 02:34:20 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of uram_wex8_uram_2w_2r_we_0_1 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+Parameter 'DATA_WIDTH' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_0_1', and cannot be set to '64'
+
+Parameter 'ADDR_RANGE' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_0_1', and cannot be set to '4096'
+
+Parameter 'ADDR_WIDTH' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_0_1', and cannot be set to '12'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv user.org:user:uram_2w_2r_we:1.0 -user_name uram_wex8_uram_2w_2r_we_0_1
+set_property -dict "\
+  CONFIG.Component_Name {uram_wex8_uram_2w_2r_we_0_1} \
+  CONFIG.clk.ASSOCIATED_BUSIF {} \
+  CONFIG.clk.ASSOCIATED_RESET {} \
+  CONFIG.clk.CLK_DOMAIN {uram_wex8_clk_0} \
+  CONFIG.clk.FREQ_HZ {100000000} \
+  CONFIG.clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.clk.INSERT_VIP {0} \
+  CONFIG.clk.PHASE {0.000} \
+  CONFIG.rst_n.INSERT_VIP {0} \
+  CONFIG.rst_n.POLARITY {ACTIVE_LOW} " [get_ips uram_wex8_uram_2w_2r_we_0_1]
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 02:34:20 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of uram_wex8_uram_2w_2r_we_0_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+Parameter 'DATA_WIDTH' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_0_0', and cannot be set to '64'
+
+Parameter 'ADDR_RANGE' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_0_0', and cannot be set to '4096'
+
+Parameter 'ADDR_WIDTH' is no longer present on the upgraded IP 'uram_wex8_uram_2w_2r_we_0_0', and cannot be set to '12'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv user.org:user:uram_2w_2r_we:1.0 -user_name uram_wex8_uram_2w_2r_we_0_0
+set_property -dict "\
+  CONFIG.Component_Name {uram_wex8_uram_2w_2r_we_0_0} \
+  CONFIG.clk.ASSOCIATED_BUSIF {} \
+  CONFIG.clk.ASSOCIATED_RESET {} \
+  CONFIG.clk.CLK_DOMAIN {uram_wex8_clk_0} \
+  CONFIG.clk.FREQ_HZ {100000000} \
+  CONFIG.clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.clk.INSERT_VIP {0} \
+  CONFIG.clk.PHASE {0.000} \
+  CONFIG.rst_n.INSERT_VIP {0} \
+  CONFIG.rst_n.POLARITY {ACTIVE_LOW} " [get_ips uram_wex8_uram_2w_2r_we_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 01:49:43 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_6_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_6_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 01:49:43 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_5_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_5_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 01:49:42 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_4_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_4_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 01:49:42 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_3_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_3_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 01:49:42 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_1_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 01:49:42 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_0_2 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 01:49:42 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_0_1 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Mar 17 01:49:42 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_0_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar 16 18:59:09 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_6_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_6_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar 16 18:59:09 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_5_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_5_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar 16 18:59:09 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_4_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_4_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar 16 18:59:09 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_3_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_3_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar 16 18:59:09 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_1_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar 16 18:59:09 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_0_2 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar 16 18:59:08 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_0_1 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar 16 18:59:08 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_0_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Mar  5 11:01:47 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_6_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_6_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Mar  5 11:01:47 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_5_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_5_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Mar  5 11:01:47 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_4_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_4_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Mar  5 11:01:47 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_3_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_3_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Mar  5 11:01:47 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_1_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Mar  5 11:01:47 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_0_2 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Mar  5 11:01:47 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_0_1 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Mar  5 11:01:47 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_0_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar  2 16:20:42 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_6_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_6_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar  2 16:20:42 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_5_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_5_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar  2 16:20:42 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_4_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_4_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar  2 16:20:42 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_3_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_3_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar  2 16:20:42 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_1_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar  2 16:20:42 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_0_2 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar  2 16:20:42 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_0_1 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar  2 16:20:42 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_0_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar  2 16:19:43 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_6_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_6_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar  2 16:19:43 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_5_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_5_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar  2 16:19:43 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_4_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_4_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar  2 16:19:43 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_3_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_3_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar  2 16:19:43 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_1_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar  2 16:19:43 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_0_2 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar  2 16:19:43 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_0_1 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Mar  2 16:19:42 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex8_uram_2w_2r_we_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex8_uram_2w_2r_we_0_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+

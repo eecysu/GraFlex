@@ -1,0 +1,240 @@
+
+*** Running vivado
+    with args -log Sw2X2_FIFO36_W.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Sw2X2_FIFO36_W.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source Sw2X2_FIFO36_W.tcl -notrace
+Command: synth_design -top Sw2X2_FIFO36_W -part xcu280-fsvh2892-2L-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2163416
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2391.824 ; gain = 0.000 ; free physical = 57071 ; free virtual = 103336
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Sw2X2_FIFO36_W' [/Orion/GraphHBM/UTIL_IP/Sw2X2_FIFO36_W/Sw2X2_FIFO36_W.srcs/sources_1/new/Sw2X2_FIFO36.v:13]
+	Parameter ROUTING_BIT bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter FIFO_FULL_TH bound to: 510 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FIFO36_W' [/Orion/GraphHBM/UTIL_IP/Sw2X2_FIFO36_W/Sw2X2_FIFO36_W.srcs/sources_1/new/FIFO36_W.sv:4]
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter EMPTY_TH bound to: 2 - type: integer 
+	Parameter FULL_TH bound to: 510 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FIFO36E2' [/opt/XILINX/Vivado/2020.2/scripts/rt/data/unisim_comp.v:14446]
+	Parameter CASCADE_ORDER bound to: NONE - type: string 
+	Parameter CLOCK_DOMAINS bound to: COMMON - type: string 
+	Parameter EN_ECC_PIPE bound to: FALSE - type: string 
+	Parameter EN_ECC_READ bound to: FALSE - type: string 
+	Parameter EN_ECC_WRITE bound to: FALSE - type: string 
+	Parameter FIRST_WORD_FALL_THROUGH bound to: FALSE - type: string 
+	Parameter INIT bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter IS_RDCLK_INVERTED bound to: 1'b0 
+	Parameter IS_RDEN_INVERTED bound to: 1'b0 
+	Parameter IS_RSTREG_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter IS_WRCLK_INVERTED bound to: 1'b0 
+	Parameter IS_WREN_INVERTED bound to: 1'b0 
+	Parameter PROG_EMPTY_THRESH bound to: 2 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 510 - type: integer 
+	Parameter RDCOUNT_TYPE bound to: SIMPLE_DATACOUNT - type: string 
+	Parameter READ_WIDTH bound to: 72 - type: integer 
+	Parameter REGISTER_MODE bound to: UNREGISTERED - type: string 
+	Parameter RSTREG_PRIORITY bound to: RSTREG - type: string 
+	Parameter SLEEP_ASYNC bound to: FALSE - type: string 
+	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter WRCOUNT_TYPE bound to: SIMPLE_DATACOUNT - type: string 
+	Parameter WRITE_WIDTH bound to: 72 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FIFO36E2' (1#1) [/opt/XILINX/Vivado/2020.2/scripts/rt/data/unisim_comp.v:14446]
+WARNING: [Synth 8-693] zero replication count - replication ignored [/Orion/GraphHBM/UTIL_IP/Sw2X2_FIFO36_W/Sw2X2_FIFO36_W.srcs/sources_1/new/FIFO36_W.sv:179]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO36_W' (2#1) [/Orion/GraphHBM/UTIL_IP/Sw2X2_FIFO36_W/Sw2X2_FIFO36_W.srcs/sources_1/new/FIFO36_W.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'MatArbiter2X2' [/Orion/GraphHBM/UTIL_IP/Sw2X2_FIFO36_W/Sw2X2_FIFO36_W.srcs/sources_1/new/MatArbiter2X2.v:13]
+INFO: [Synth 8-6157] synthesizing module 'NOR_2' [/Orion/GraphHBM/UTIL_IP/Sw2X2_FIFO36_W/Sw2X2_FIFO36_W.srcs/sources_1/new/MatArbiter2X2.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'NOR_2' (3#1) [/Orion/GraphHBM/UTIL_IP/Sw2X2_FIFO36_W/Sw2X2_FIFO36_W.srcs/sources_1/new/MatArbiter2X2.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MatArbiter2X2' (4#1) [/Orion/GraphHBM/UTIL_IP/Sw2X2_FIFO36_W/Sw2X2_FIFO36_W.srcs/sources_1/new/MatArbiter2X2.v:13]
+INFO: [Synth 8-226] default block is never used [/Orion/GraphHBM/UTIL_IP/Sw2X2_FIFO36_W/Sw2X2_FIFO36_W.srcs/sources_1/new/Sw2X2_FIFO36.v:269]
+INFO: [Synth 8-226] default block is never used [/Orion/GraphHBM/UTIL_IP/Sw2X2_FIFO36_W/Sw2X2_FIFO36_W.srcs/sources_1/new/Sw2X2_FIFO36.v:293]
+INFO: [Synth 8-226] default block is never used [/Orion/GraphHBM/UTIL_IP/Sw2X2_FIFO36_W/Sw2X2_FIFO36_W.srcs/sources_1/new/Sw2X2_FIFO36.v:317]
+INFO: [Synth 8-226] default block is never used [/Orion/GraphHBM/UTIL_IP/Sw2X2_FIFO36_W/Sw2X2_FIFO36_W.srcs/sources_1/new/Sw2X2_FIFO36.v:341]
+INFO: [Synth 8-6155] done synthesizing module 'Sw2X2_FIFO36_W' (5#1) [/Orion/GraphHBM/UTIL_IP/Sw2X2_FIFO36_W/Sw2X2_FIFO36_W.srcs/sources_1/new/Sw2X2_FIFO36.v:13]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2391.824 ; gain = 0.000 ; free physical = 57112 ; free virtual = 103377
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2391.824 ; gain = 0.000 ; free physical = 57826 ; free virtual = 104092
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2399.699 ; gain = 7.875 ; free physical = 57833 ; free virtual = 104099
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2399.699 ; gain = 7.875 ; free physical = 57781 ; free virtual = 104047
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 4     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 3244.059 ; gain = 852.234 ; free physical = 56680 ; free virtual = 102949
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 3244.059 ; gain = 852.234 ; free physical = 56682 ; free virtual = 102950
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 3244.059 ; gain = 852.234 ; free physical = 56675 ; free virtual = 102944
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 3244.059 ; gain = 852.234 ; free physical = 56675 ; free virtual = 102943
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 3244.059 ; gain = 852.234 ; free physical = 56675 ; free virtual = 102943
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 3244.059 ; gain = 852.234 ; free physical = 56675 ; free virtual = 102943
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 3244.059 ; gain = 852.234 ; free physical = 56675 ; free virtual = 102943
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 3244.059 ; gain = 852.234 ; free physical = 56675 ; free virtual = 102943
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 3244.059 ; gain = 852.234 ; free physical = 56675 ; free virtual = 102943
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |FIFO36E2 |     4|
+|3     |LUT1     |     1|
+|4     |LUT2     |     2|
+|5     |LUT3     |   136|
+|6     |LUT4     |     2|
+|7     |LUT5     |     4|
+|8     |LUT6     |     4|
+|9     |FDRE     |   272|
+|10    |FDSE     |     2|
+|11    |IBUF     |   134|
+|12    |OBUF     |   132|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------+----------------+------+
+|      |Instance  |Module          |Cells |
++------+----------+----------------+------+
+|1     |top       |                |   694|
+|2     |  MA_a    |MatArbiter2X2   |     5|
+|3     |  MA_b    |MatArbiter2X2_0 |     6|
+|4     |  fifo_a0 |FIFO36_W        |    68|
+|5     |  fifo_a1 |FIFO36_W_1      |     3|
+|6     |  fifo_b0 |FIFO36_W_2      |    68|
+|7     |  fifo_b1 |FIFO36_W_3      |     3|
++------+----------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 3244.059 ; gain = 852.234 ; free physical = 56675 ; free virtual = 102943
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 3244.059 ; gain = 852.234 ; free physical = 56677 ; free virtual = 102945
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 3244.066 ; gain = 852.234 ; free physical = 56677 ; free virtual = 102945
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3244.066 ; gain = 0.000 ; free physical = 56762 ; free virtual = 103030
+INFO: [Netlist 29-17] Analyzing 135 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3368.867 ; gain = 0.000 ; free physical = 56652 ; free virtual = 102921
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 135 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 134 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3368.867 ; gain = 977.172 ; free physical = 56799 ; free virtual = 103068
+INFO: [Common 17-1381] The checkpoint '/Orion/GraphHBM/UTIL_IP/Sw2X2_FIFO36_W/Sw2X2_FIFO36_W.runs/synth_1/Sw2X2_FIFO36_W.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Sw2X2_FIFO36_W_utilization_synth.rpt -pb Sw2X2_FIFO36_W_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 14 16:54:08 2022...

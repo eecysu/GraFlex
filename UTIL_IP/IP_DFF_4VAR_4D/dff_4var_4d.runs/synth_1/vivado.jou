@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Feb  9 16:04:49 2023
+# Process ID: 2590540
+# Current directory: /Orion/GraphHBM/UTIL_IP/IP_DFF_4VAR_4D/dff_4var_4d.runs/synth_1
+# Command line: vivado -log dff_4var_4d.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dff_4var_4d.tcl
+# Log file: /Orion/GraphHBM/UTIL_IP/IP_DFF_4VAR_4D/dff_4var_4d.runs/synth_1/dff_4var_4d.vds
+# Journal file: /Orion/GraphHBM/UTIL_IP/IP_DFF_4VAR_4D/dff_4var_4d.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source dff_4var_4d.tcl -notrace

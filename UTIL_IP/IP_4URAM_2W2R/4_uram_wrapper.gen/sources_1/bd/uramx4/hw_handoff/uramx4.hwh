@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon May  8 18:54:50 2023" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="virtexuplusHBM" BOARD="xilinx.com:au280:part0:1.1" DEVICE="xcu280" NAME="uramx4" PACKAGE="fsvh2892" SPEEDGRADE="-2L"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_0" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_0" PORT="clk"/>
+        <CONNECTION INSTANCE="uram_2w_2r_1" PORT="clk"/>
+        <CONNECTION INSTANCE="uram_2w_2r_2" PORT="clk"/>
+        <CONNECTION INSTANCE="uram_2w_2r_3" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rst_n_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst_n_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_0" PORT="rst_n"/>
+        <CONNECTION INSTANCE="uram_2w_2r_1" PORT="rst_n"/>
+        <CONNECTION INSTANCE="uram_2w_2r_2" PORT="rst_n"/>
+        <CONNECTION INSTANCE="uram_2w_2r_3" PORT="rst_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="11" NAME="addr0_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_addr0_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_0" PORT="addr0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="11" NAME="addr1_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_addr1_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_0" PORT="addr1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ce0_0" SIGIS="undef" SIGNAME="External_Ports_ce0_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_0" PORT="ce0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ce1_0" SIGIS="undef" SIGNAME="External_Ports_ce1_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_0" PORT="ce1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="63" NAME="rdata0_0" RIGHT="0" SIGIS="undef" SIGNAME="uram_2w_2r_0_rdata0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_0" PORT="rdata0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="63" NAME="rdata1_0" RIGHT="0" SIGIS="undef" SIGNAME="uram_2w_2r_0_rdata1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_0" PORT="rdata1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="63" NAME="wdata0_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wdata0_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_0" PORT="wdata0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="63" NAME="wdata1_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wdata1_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_0" PORT="wdata1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="we0_0" SIGIS="undef" SIGNAME="External_Ports_we0_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_0" PORT="we0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="we1_0" SIGIS="undef" SIGNAME="External_Ports_we1_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_0" PORT="we1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="11" NAME="addr0_1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_addr0_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_1" PORT="addr0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="11" NAME="addr1_1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_addr1_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_1" PORT="addr1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ce0_1" SIGIS="undef" SIGNAME="External_Ports_ce0_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_1" PORT="ce0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ce1_1" SIGIS="undef" SIGNAME="External_Ports_ce1_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_1" PORT="ce1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="63" NAME="rdata0_1" RIGHT="0" SIGIS="undef" SIGNAME="uram_2w_2r_1_rdata0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_1" PORT="rdata0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="63" NAME="rdata1_1" RIGHT="0" SIGIS="undef" SIGNAME="uram_2w_2r_1_rdata1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_1" PORT="rdata1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="63" NAME="wdata0_1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wdata0_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_1" PORT="wdata0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="63" NAME="wdata1_1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wdata1_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_1" PORT="wdata1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="we0_1" SIGIS="undef" SIGNAME="External_Ports_we0_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_1" PORT="we0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="we1_1" SIGIS="undef" SIGNAME="External_Ports_we1_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_1" PORT="we1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="11" NAME="addr0_2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_addr0_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_2" PORT="addr0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="11" NAME="addr1_2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_addr1_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_2" PORT="addr1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ce0_2" SIGIS="undef" SIGNAME="External_Ports_ce0_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_2" PORT="ce0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ce1_2" SIGIS="undef" SIGNAME="External_Ports_ce1_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_2" PORT="ce1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="63" NAME="rdata0_2" RIGHT="0" SIGIS="undef" SIGNAME="uram_2w_2r_2_rdata0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_2" PORT="rdata0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="63" NAME="rdata1_2" RIGHT="0" SIGIS="undef" SIGNAME="uram_2w_2r_2_rdata1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_2" PORT="rdata1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="63" NAME="wdata0_2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wdata0_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_2" PORT="wdata0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="63" NAME="wdata1_2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wdata1_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_2" PORT="wdata1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="we0_2" SIGIS="undef" SIGNAME="External_Ports_we0_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_2" PORT="we0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="we1_2" SIGIS="undef" SIGNAME="External_Ports_we1_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_2" PORT="we1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="11" NAME="addr0_3" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_addr0_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_3" PORT="addr0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="11" NAME="addr1_3" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_addr1_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_3" PORT="addr1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ce0_3" SIGIS="undef" SIGNAME="External_Ports_ce0_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_3" PORT="ce0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ce1_3" SIGIS="undef" SIGNAME="External_Ports_ce1_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_3" PORT="ce1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="63" NAME="rdata0_3" RIGHT="0" SIGIS="undef" SIGNAME="uram_2w_2r_3_rdata0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_3" PORT="rdata0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="63" NAME="rdata1_3" RIGHT="0" SIGIS="undef" SIGNAME="uram_2w_2r_3_rdata1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_3" PORT="rdata1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="63" NAME="wdata0_3" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wdata0_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_3" PORT="wdata0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="63" NAME="wdata1_3" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wdata1_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_3" PORT="wdata1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="we0_3" SIGIS="undef" SIGNAME="External_Ports_we0_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_3" PORT="we0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="we1_3" SIGIS="undef" SIGNAME="External_Ports_we1_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="uram_2w_2r_3" PORT="we1"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/uram_2w_2r_0" HWVERSION="1.0" INSTANCE="uram_2w_2r_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="uram_2w_2r" VLNV="user.org:user:uram_2w_2r:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DATA_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="ADDR_RANGE" VALUE="4096"/>
+        <PARAMETER NAME="ADDR_WIDTH" VALUE="12"/>
+        <PARAMETER NAME="Component_Name" VALUE="uramx4_uram_2w_2r_0_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst_n" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst_n_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_n_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ce0" SIGIS="undef" SIGNAME="External_Ports_ce0_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ce0_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ce1" SIGIS="undef" SIGNAME="External_Ports_ce1_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ce1_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="we0" SIGIS="undef" SIGNAME="External_Ports_we0_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="we0_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="we1" SIGIS="undef" SIGNAME="External_Ports_we1_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="we1_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="addr0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_addr0_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="addr0_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="addr1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_addr1_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="addr1_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="rdata0" RIGHT="0" SIGIS="undef" SIGNAME="uram_2w_2r_0_rdata0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rdata0_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="rdata1" RIGHT="0" SIGIS="undef" SIGNAME="uram_2w_2r_0_rdata1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rdata1_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="wdata0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wdata0_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="wdata0_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="wdata1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wdata1_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="wdata1_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/uram_2w_2r_1" HWVERSION="1.0" INSTANCE="uram_2w_2r_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="uram_2w_2r" VLNV="user.org:user:uram_2w_2r:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DATA_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="ADDR_RANGE" VALUE="4096"/>
+        <PARAMETER NAME="ADDR_WIDTH" VALUE="12"/>
+        <PARAMETER NAME="Component_Name" VALUE="uramx4_uram_2w_2r_0_4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst_n" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst_n_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_n_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ce0" SIGIS="undef" SIGNAME="External_Ports_ce0_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ce0_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ce1" SIGIS="undef" SIGNAME="External_Ports_ce1_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ce1_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="we0" SIGIS="undef" SIGNAME="External_Ports_we0_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="we0_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="we1" SIGIS="undef" SIGNAME="External_Ports_we1_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="we1_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="addr0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_addr0_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="addr0_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="addr1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_addr1_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="addr1_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="rdata0" RIGHT="0" SIGIS="undef" SIGNAME="uram_2w_2r_1_rdata0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rdata0_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="rdata1" RIGHT="0" SIGIS="undef" SIGNAME="uram_2w_2r_1_rdata1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rdata1_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="wdata0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wdata0_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="wdata0_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="wdata1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wdata1_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="wdata1_1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/uram_2w_2r_2" HWVERSION="1.0" INSTANCE="uram_2w_2r_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="uram_2w_2r" VLNV="user.org:user:uram_2w_2r:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DATA_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="ADDR_RANGE" VALUE="4096"/>
+        <PARAMETER NAME="ADDR_WIDTH" VALUE="12"/>
+        <PARAMETER NAME="Component_Name" VALUE="uramx4_uram_2w_2r_1_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst_n" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst_n_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_n_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ce0" SIGIS="undef" SIGNAME="External_Ports_ce0_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ce0_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ce1" SIGIS="undef" SIGNAME="External_Ports_ce1_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ce1_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="we0" SIGIS="undef" SIGNAME="External_Ports_we0_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="we0_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="we1" SIGIS="undef" SIGNAME="External_Ports_we1_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="we1_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="addr0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_addr0_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="addr0_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="addr1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_addr1_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="addr1_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="rdata0" RIGHT="0" SIGIS="undef" SIGNAME="uram_2w_2r_2_rdata0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rdata0_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="rdata1" RIGHT="0" SIGIS="undef" SIGNAME="uram_2w_2r_2_rdata1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rdata1_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="wdata0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wdata0_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="wdata0_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="wdata1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wdata1_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="wdata1_2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/uram_2w_2r_3" HWVERSION="1.0" INSTANCE="uram_2w_2r_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="uram_2w_2r" VLNV="user.org:user:uram_2w_2r:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DATA_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="ADDR_RANGE" VALUE="4096"/>
+        <PARAMETER NAME="ADDR_WIDTH" VALUE="12"/>
+        <PARAMETER NAME="Component_Name" VALUE="uramx4_uram_2w_2r_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst_n" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst_n_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_n_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ce0" SIGIS="undef" SIGNAME="External_Ports_ce0_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ce0_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ce1" SIGIS="undef" SIGNAME="External_Ports_ce1_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ce1_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="we0" SIGIS="undef" SIGNAME="External_Ports_we0_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="we0_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="we1" SIGIS="undef" SIGNAME="External_Ports_we1_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="we1_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="addr0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_addr0_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="addr0_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="addr1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_addr1_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="addr1_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="rdata0" RIGHT="0" SIGIS="undef" SIGNAME="uram_2w_2r_3_rdata0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rdata0_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="rdata1" RIGHT="0" SIGIS="undef" SIGNAME="uram_2w_2r_3_rdata1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rdata1_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="wdata0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wdata0_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="wdata0_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="wdata1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wdata1_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="wdata1_3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

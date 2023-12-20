@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="bram_36e2_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="bram_36e2_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="221600001fs"></ZoomEndTime>
+      <Cursor1Time time="16000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="203"></NameColumnWidth>
+      <ValueColumnWidth column_width="130"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject type="logic" fp_name="/bram_36e2_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bram_36e2_tb/rst_n">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bram_36e2_tb/ce0">
+      <obj_property name="ElementShortName">ce0</obj_property>
+      <obj_property name="ObjectShortName">ce0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bram_36e2_tb/we0">
+      <obj_property name="ElementShortName">we0</obj_property>
+      <obj_property name="ObjectShortName">we0</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_36e2_tb/addr0">
+      <obj_property name="ElementShortName">addr0[9:0]</obj_property>
+      <obj_property name="ObjectShortName">addr0[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_36e2_tb/wdata0">
+      <obj_property name="ElementShortName">wdata0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata0[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_36e2_tb/rdata0">
+      <obj_property name="ElementShortName">rdata0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata0[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bram_36e2_tb/ce1">
+      <obj_property name="ElementShortName">ce1</obj_property>
+      <obj_property name="ObjectShortName">ce1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bram_36e2_tb/we1">
+      <obj_property name="ElementShortName">we1</obj_property>
+      <obj_property name="ObjectShortName">we1</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_36e2_tb/addr1">
+      <obj_property name="ElementShortName">addr1[9:0]</obj_property>
+      <obj_property name="ObjectShortName">addr1[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_36e2_tb/rdata1">
+      <obj_property name="ElementShortName">rdata1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata1[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_36e2_tb/wdata1">
+      <obj_property name="ElementShortName">wdata1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata1[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

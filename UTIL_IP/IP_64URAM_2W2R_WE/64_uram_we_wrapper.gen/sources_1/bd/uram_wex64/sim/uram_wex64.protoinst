@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"uram_wex64": {
+			"proto_instances": {
+			}
+		}
+	}
+}

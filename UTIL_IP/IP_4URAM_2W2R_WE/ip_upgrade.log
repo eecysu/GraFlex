@@ -1,0 +1,79 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun May  7 10:22:13 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex4_uram_2w_2r_we_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex4_uram_2w_2r_we_1_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun May  7 10:22:13 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex4_uram_2w_2r_we_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex4_uram_2w_2r_we_0_2 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun May  7 10:22:12 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex4_uram_2w_2r_we_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex4_uram_2w_2r_we_0_1 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun May  7 10:22:12 2023
+| Host         : noah running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xcu280-fsvh2892-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uram_wex4_uram_2w_2r_we_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uram_wex4_uram_2w_2r_we_0_0 (user.org:user:uram_2w_2r_we:1.0 (Rev. 1)) to Vivado generation flows.
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Nov  8 20:53:04 2021
+# Process ID: 12191
+# Current directory: /home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_BRAM_2W2R/bram_2w2r.sim/sim_1/synth/func/xsim
+# Command line: wbtcv -mode batch -source /home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_BRAM_2W2R/bram_2w2r.sim/sim_1/synth/func/xsim/xsim.dir/bram_2w2r_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_BRAM_2W2R/bram_2w2r.sim/sim_1/synth/func/xsim/webtalk.log
+# Journal file: /home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_BRAM_2W2R/bram_2w2r.sim/sim_1/synth/func/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/chunyou/Xilinx/GraphHBM/UTIL_IP/IP_BRAM_2W2R/bram_2w2r.sim/sim_1/synth/func/xsim/xsim.dir/bram_2w2r_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace

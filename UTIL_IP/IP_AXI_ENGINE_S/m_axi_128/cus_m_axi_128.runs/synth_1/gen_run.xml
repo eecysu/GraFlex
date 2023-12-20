@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xcu280-fsvh2892-2L-e" LaunchTime="1676094177">
+  <File Type="VDS-TIMING-PB" Name="cus_m_axi_s_128_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="cus_m_axi_s_128_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="cus_m_axi_s_128.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="cus_m_axi_s_128_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="cus_m_axi_s_128_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="cus_m_axi_s_128_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="cus_m_axi_s_128.vds"/>
+  <File Type="REPORTS-TCL" Name="cus_m_axi_s_128_reports.tcl"/>
+  <File Type="PA-TCL" Name="cus_m_axi_s_128.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/custom_m_axi_128/custom_m_axi_128.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/custom_m_axi_128_wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PGENDIR/sources_1/bd/custom_m_axi_128/hdl/custom_m_axi_128_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1676094150"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="cus_m_axi_s_128"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="custom_m_axi_128_step_to_pulse_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="custom_m_axi_128_step_to_pulse_0_1"/>
+</GenRun>

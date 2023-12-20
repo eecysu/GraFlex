@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="custom_m_axi_128_mread_master_0_0_synth_1" LaunchDir="/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.runs/custom_m_axi_128_mread_master_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="custom_m_axi_128_swr_engine_0_0_synth_1" LaunchDir="/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.runs/custom_m_axi_128_swr_engine_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/Orion/GraphHBM/UTIL_IP/IP_AXI_ENGINE_S/m_axi_128/cus_m_axi_128.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="custom_m_axi_128_mread_master_0_0_synth_1"/>
+		<Parent Id="custom_m_axi_128_swr_engine_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+
