@@ -1,0 +1,583 @@
+INFO-FLOW: Workspace /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1 opened at Wed Dec 20 22:12:03 HKT 2023
+Execute       send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -default_interface 
+Execute       get_config_interface -m_axi_offset 
+Execute       get_config_rtl -register_reset_num 
+Execute     set_part xcu280-fsvh2892-2L-e 
+INFO: [HLS 200-1510] Running: set_part xcu280-fsvh2892-2L-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/opt/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/opt/Xilinx/Vivado/2020.2/data:/opt/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcu280-fsvh2892-2L-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2020.2/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 0.66 sec.
+Execute       ap_part_info -name xcu280-fsvh2892-2L-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcu280:-fsvh2892:-2L-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcu280-fsvh2892-2L-e 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data resources 
+Execute         config_chip_info -resource {SLICE 162960} {LUT 1303680} {FF 2607360} {DSP 9024} {BRAM 4032} {URAM 960} {SLR 3} 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcu280:-fsvh2892:-2L-e 
+Execute         import_lib /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO: [HLS 200-10] Setting target device to 'xcu280-fsvh2892-2L-e'
+Execute       ap_part_info -name xcu280-fsvh2892-2L-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.76 sec.
+Execute     create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+Execute       ap_set_clock -name default -period 5 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+Execute     csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute       get_config_compile -effort 
+Execute       get_config_compile -enable_clang39 
+Execute       get_config_compile -g 
+Execute       get_config_compile -ng 
+Execute       get_config_compile -opt_fp 
+Execute       get_config_compile -skip_cdt 
+Execute       get_config_compile -skip_syncheck 
+Execute       get_config_compile -skip_transform 
+Execute       get_config_compile -keep_printf 
+Execute       elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 167.111 MB.
+INFO: [HLS 200-10] Analyzing design file '/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute         get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl.cpp as C++
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl.cpp -foptimization-record-file=/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/clang.bfs_ctrl.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0 -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/39 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/bfs_ctrl.pp.0.cpp > /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/clang.bfs_ctrl.cpp.out.log 2> /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/clang.bfs_ctrl.cpp.err.log 
+INFO-FLOW: Done: GCC PP 39 time: 0.1 seconds per iteration
+Execute         set_directive_top BFS_Ctrl_4X1_VER1 -name=BFS_Ctrl_4X1_VER1 
+INFO-FLOW: Setting directive 'TOP' name=BFS_Ctrl_4X1_VER1 
+INFO-FLOW: Setting directive 'TOP' name=BFS_Ctrl_4X1_VER1 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO-FLOW: Setting directive 'TOP' name=BFS_Ctrl_4X1_VER1 
+Execute         list_core -type functional_unit 
+Execute         clang_tidy xilinx-systemc-detector /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/bfs_ctrl.pp.0.cpp std=gnu++14 -target fpga  -directive=/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/.systemc_flag -fix-errors /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/bfs_ctrl.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command         clang_tidy done; 0.25 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute         clang_tidy xilinx-directive2pragma /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/bfs_ctrl.pp.0.cpp std=gnu++14 -target fpga  -directive=/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/all.directive.json -fix-errors /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/bfs_ctrl.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command         clang_tidy done; 0.37 sec.
+Execute         clang_tidy xilinx-constantarray-param,xilinx-remove-assert /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/bfs_ctrl.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/bfs_ctrl.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command         clang_tidy done; 0.27 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.6 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+Execute         clang_tidy -errorcheck xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/bfs_ctrl.pp.0.cpp std=gnu++14 -target fpga  
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/clang-tidy.bfs_ctrl.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/bfs_ctrl.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/clang-tidy.bfs_ctrl.pp.0.cpp.out.log 2> /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/clang-tidy.bfs_ctrl.pp.0.cpp.err.log 
+Command           ap_eval done; 0.41 sec.
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Command         clang_tidy done; 0.42 sec.
+Execute         get_config_dataflow -strict_mode 
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/xilinx-dataflow-lawyer.bfs_ctrl.pp.0.cpp.diag.yml /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/bfs_ctrl.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/xilinx-dataflow-lawyer.bfs_ctrl.pp.0.cpp.out.log 2> /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/xilinx-dataflow-lawyer.bfs_ctrl.pp.0.cpp.err.log 
+Command         ap_eval done; 0.23 sec.
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/clang.bfs_ctrl.pp.0.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/bfs_ctrl.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/bfs_ctrl.bc > /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/clang.bfs_ctrl.pp.0.cpp.out.log 2> /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/clang.bfs_ctrl.pp.0.cpp.err.log 
+Command         ap_eval done; 0.24 sec.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.21 seconds. CPU system time: 0.25 seconds. Elapsed time: 1.85 seconds; current allocated memory: 168.699 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute         run_link_or_opt -out /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.0.bc -args  "/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/bfs_ctrl.g.bc"  
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/bfs_ctrl.g.bc -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.0.bc > /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.out.log 2> /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.err.log 
+INFO-FLOW: 
+Execute         run_link_or_opt -opt -out /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.1.lower.bc -args /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.diag.yml /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.1.lower.bc > /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.out.log 2> /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.err.log 
+INFO-FLOW: 
+INFO-FLOW: Linking math bc lib
+Execute         run_link_or_opt -out /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.2.m1.bc -args /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.2.m1.bc > /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.out.log 2> /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.err.log 
+Command           ap_eval done; 1.34 sec.
+INFO-FLOW: 
+Command         run_link_or_opt done; 1.34 sec.
+Execute         run_link_or_opt -opt -out /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=BFS_Ctrl_4X1_VER1 -reflow-float-conversion 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.diag.yml /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=BFS_Ctrl_4X1_VER1 -reflow-float-conversion -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.3.fpc.bc > /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.out.log 2> /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.err.log 
+Command           ap_eval done; 0.47 sec.
+INFO-FLOW: 
+Command         run_link_or_opt done; 0.47 sec.
+Execute         run_link_or_opt -out /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.4.m2.bc -args /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.4.m2.bc > /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.out.log 2> /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.err.log 
+INFO-FLOW: 
+Execute         run_link_or_opt -opt -out /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=BFS_Ctrl_4X1_VER1 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.diag.yml /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=BFS_Ctrl_4X1_VER1 -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.5.gdce.bc > /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.out.log 2> /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.err.log 
+INFO-FLOW: 
+Execute         get_solution -flow_target 
+Execute         get_config_export -xo 
+Execute         get_config_export -format 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_interface -default_slave_interface 
+Execute         get_solution -flow_target 
+Execute         get_config_export -xo 
+Execute         get_config_export -format 
+Execute         get_config_interface -m_axi_offset 
+Execute         get_config_interface -m_axi_latency 
+Execute         get_config_interface -m_axi_alignment_byte_size 
+Execute         get_config_interface -m_axi_min_bitwidth 
+Execute         get_config_interface -m_axi_max_bitwidth 
+Execute         get_config_interface -m_axi_max_widen_bitwidth 
+Execute         get_config_interface -m_axi_num_read_outstanding 
+Execute         get_config_interface -m_axi_num_write_outstanding 
+Execute         get_config_interface -m_axi_max_read_burst_length 
+Execute         get_config_interface -m_axi_max_write_burst_length 
+Execute         get_config_interface -m_axi_min_bitwidth 
+Execute         get_config_interface -m_axi_max_bitwidth 
+Execute         get_config_interface -m_axi_latency 
+Execute         get_config_interface -m_axi_min_bitwidth 
+Execute         get_config_interface -m_axi_max_bitwidth 
+Execute         get_config_interface -m_axi_max_widen_bitwidth 
+Execute         get_config_interface -m_axi_auto_max_ports 
+Execute         get_config_interface -m_axi_num_read_outstanding 
+Execute         get_config_interface -m_axi_num_write_outstanding 
+Execute         get_config_interface -m_axi_max_read_burst_length 
+Execute         get_config_interface -m_axi_max_write_burst_length 
+Execute         get_config_interface -s_axilite_data64 
+Execute         get_config_interface -m_axi_alignment_byte_size 
+Execute         get_config_compile -pragma_strict_mode 
+Execute         get_config_compile -pipeline_style 
+Execute         send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute         is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/clang.a.g.ld.0.bc.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=BFS_Ctrl_4X1_VER1 -mllvm -hls-db-dir -mllvm /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=off -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -assume-maxi-align=0 -mllvm -no-unaligned-maxi-accesses -mllvm -reflow-pipeline-style-llvm-setting=0 -mllvm -disable-inlined-alloca-merging=true -x ir /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.lto.bc > /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/clang.a.g.ld.0.bc.out.log 2> /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/clang.a.g.ld.0.bc.err.log 
+INFO-FLOW: DBG:CMD: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.74 seconds. CPU system time: 0.2 seconds. Elapsed time: 1.94 seconds; current allocated memory: 169.865 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 169.867 MB.
+Execute         opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute           cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute           transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top BFS_Ctrl_4X1_VER1 -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.0.bc -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 171.118 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute           transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.1.bc -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute           transform -syn-check /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.2.prechk.bc -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 170.423 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.g.1.bc to /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute           transform -hls -tmp /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.o.1.bc -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-510] Pipelining loop 'waitId0' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl.cpp:50) in function 'BFS_Ctrl_4X1_VER1' automatically.
+INFO-FLOW: Presyn 2...
+Execute           transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.o.1.tmp.bc -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-11] Balancing expressions in function 'BFS_Ctrl_4X1_VER1' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl.cpp:16)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 190.904 MB.
+Execute           get_config_compile -enable_loop_extract 
+Execute           get_config_compile -disable_auto_rewind 
+Execute           get_config_compile -enable_auto_rewind 
+INFO-FLOW: Building ssdm...
+Execute           transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin2 -bitwidthmin2 -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.o.2.bc -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [HLS 200-960] Cannot flatten loop 'MainLoop' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl.cpp:44:15) in function 'BFS_Ctrl_4X1_VER1' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 193.059 MB.
+INFO-FLOW: Finish building internal data model.
+Command         opt_and_import_c done; 0.24 sec.
+Command       elaborate done; 4.06 sec.
+Execute       autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'BFS_Ctrl_4X1_VER1' ...
+Execute         ap_set_top_model BFS_Ctrl_4X1_VER1 
+Execute         get_model_list BFS_Ctrl_4X1_VER1 -filter all-wo-channel -topdown 
+Execute         preproc_iomode -model BFS_Ctrl_4X1_VER1 
+Execute         preproc_iomode -model BFS_PE 
+Execute         get_model_list BFS_Ctrl_4X1_VER1 -filter all-wo-channel 
+INFO-FLOW: Model list for configure: BFS_PE BFS_Ctrl_4X1_VER1
+INFO-FLOW: Configuring Module : BFS_PE ...
+Execute         set_default_model BFS_PE 
+Execute         apply_spec_resource_limit BFS_PE 
+INFO-FLOW: Configuring Module : BFS_Ctrl_4X1_VER1 ...
+Execute         set_default_model BFS_Ctrl_4X1_VER1 
+Execute         apply_spec_resource_limit BFS_Ctrl_4X1_VER1 
+INFO-FLOW: Model list for preprocess: BFS_PE BFS_Ctrl_4X1_VER1
+INFO-FLOW: Preprocessing Module: BFS_PE ...
+Execute         set_default_model BFS_PE 
+Execute         cdfg_preprocess -model BFS_PE 
+Execute         rtl_gen_preprocess BFS_PE 
+INFO-FLOW: Preprocessing Module: BFS_Ctrl_4X1_VER1 ...
+Execute         set_default_model BFS_Ctrl_4X1_VER1 
+Execute         cdfg_preprocess -model BFS_Ctrl_4X1_VER1 
+Execute         rtl_gen_preprocess BFS_Ctrl_4X1_VER1 
+INFO-FLOW: Model list for synthesis: BFS_PE BFS_Ctrl_4X1_VER1
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'BFS_PE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model BFS_PE 
+Execute         schedule -model BFS_PE 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 193.237 MB.
+Execute         syn_report -verbosereport -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_PE.verbose.sched.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         db_write -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_PE.sched.adb -f 
+INFO-FLOW: Finish scheduling BFS_PE.
+Execute         set_default_model BFS_PE 
+Execute         bind -model BFS_PE 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 193.313 MB.
+Execute         syn_report -verbosereport -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_PE.verbose.bind.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         db_write -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_PE.bind.adb -f 
+INFO-FLOW: Finish binding BFS_PE.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'BFS_Ctrl_4X1_VER1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model BFS_Ctrl_4X1_VER1 
+Execute         schedule -model BFS_Ctrl_4X1_VER1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'waitId0'.
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln51', /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl.cpp:51)) in the first pipeline iteration (II = 1 cycles).
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln51', /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl.cpp:51)) in the first pipeline iteration (II = 2 cycles).
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln51', /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl.cpp:51)) in the first pipeline iteration (II = 3 cycles).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 4, Depth = 4, loop 'waitId0'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 193.583 MB.
+Execute         syn_report -verbosereport -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.verbose.sched.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         db_write -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.sched.adb -f 
+INFO-FLOW: Finish scheduling BFS_Ctrl_4X1_VER1.
+Execute         set_default_model BFS_Ctrl_4X1_VER1 
+Execute         bind -model BFS_Ctrl_4X1_VER1 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 193.936 MB.
+Execute         syn_report -verbosereport -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.verbose.bind.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         db_write -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.bind.adb -f 
+INFO-FLOW: Finish binding BFS_Ctrl_4X1_VER1.
+Execute         get_model_list BFS_Ctrl_4X1_VER1 -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute         rtl_gen_preprocess BFS_PE 
+Execute         rtl_gen_preprocess BFS_Ctrl_4X1_VER1 
+INFO-FLOW: Model list for RTL generation: BFS_PE BFS_Ctrl_4X1_VER1
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'BFS_PE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         create_rtl_model BFS_PE -top_prefix BFS_Ctrl_4X1_VER1_ -sub_prefix BFS_Ctrl_4X1_VER1_ -mg_file /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_PE.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'BFS_PE'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 194.045 MB.
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.rtl_wrap.cfg.tcl 
+Execute         gen_rtl BFS_PE -style xilinx -f -lang vhdl -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/syn/vhdl/BFS_Ctrl_4X1_VER1_BFS_PE 
+Execute         gen_rtl BFS_PE -style xilinx -f -lang vlog -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/syn/verilog/BFS_Ctrl_4X1_VER1_BFS_PE 
+Execute         syn_report -csynth -model BFS_PE -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/syn/report/BFS_PE_csynth.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         syn_report -rtlxml -model BFS_PE -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/syn/report/BFS_PE_csynth.xml 
+Execute           get_solution -flow_target
+Execute             get_solution -flow_target 
+Execute         syn_report -verbosereport -model BFS_PE -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_PE.verbose.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         db_write -model BFS_PE -f -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_PE.adb 
+Execute         gen_tb_info BFS_PE -p /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_PE 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'BFS_Ctrl_4X1_VER1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         create_rtl_model BFS_Ctrl_4X1_VER1 -top_prefix  -sub_prefix BFS_Ctrl_4X1_VER1_ -mg_file /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/dummyParam' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/N_Vertex' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/resWrite' to 'ap_none' (register, both mode).
+WARNING: [RTGEN 206-101] Port 'resWrite' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/glblIterIdx' to 'ap_none' (register, both mode).
+WARNING: [RTGEN 206-101] Port 'glblIterIdx' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/cnt_scatter_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/cnt_scatter_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/cnt_scatter_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/cnt_scatter_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/cnt_gather_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/cnt_gather_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/cnt_gather_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/cnt_gather_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/exist_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/exist_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/exist_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/exist_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'BFS_Ctrl_4X1_VER1' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Cannot apply register mode option on port resWrite. It is not an AXI-Stream interface.
+WARNING: [RTGEN 206-101] Cannot apply register mode option on port glblIterIdx. It is not an AXI-Stream interface.
+WARNING: [RTGEN 206-101] Register 'iterIdx' is power-on initialization.
+WARNING: [RTGEN 206-101] Port 'BFS_Ctrl_4X1_VER1/cnt_gather_1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'BFS_Ctrl_4X1_VER1/cnt_gather_2' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'BFS_Ctrl_4X1_VER1/cnt_gather_3' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'BFS_Ctrl_4X1_VER1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 194.684 MB.
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.rtl_wrap.cfg.tcl 
+Execute         gen_rtl BFS_Ctrl_4X1_VER1 -istop -style xilinx -f -lang vhdl -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/syn/vhdl/BFS_Ctrl_4X1_VER1 
+Execute         gen_rtl BFS_Ctrl_4X1_VER1 -istop -style xilinx -f -lang vlog -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/syn/verilog/BFS_Ctrl_4X1_VER1 
+Execute         syn_report -csynth -model BFS_Ctrl_4X1_VER1 -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/syn/report/BFS_Ctrl_4X1_VER1_csynth.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         syn_report -rtlxml -model BFS_Ctrl_4X1_VER1 -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/syn/report/BFS_Ctrl_4X1_VER1_csynth.xml 
+Execute           get_solution -flow_target
+Execute             get_solution -flow_target 
+Execute         syn_report -verbosereport -model BFS_Ctrl_4X1_VER1 -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.verbose.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         db_write -model BFS_Ctrl_4X1_VER1 -f -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.adb 
+Execute         gen_tb_info BFS_Ctrl_4X1_VER1 -p /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1 
+Execute         export_constraint_db -f -tool general -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.constraint.tcl 
+Execute         syn_report -designview -model BFS_Ctrl_4X1_VER1 -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.design.xml 
+Execute         syn_report -csynthDesign -model BFS_Ctrl_4X1_VER1 -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/syn/report/csynth.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         get_config_rtl -disable_wave_debug 
+Execute         syn_report -wcfg -model BFS_Ctrl_4X1_VER1 -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1_dataflow_ana.wcfg 
+Execute         syn_report -protoinst -model BFS_Ctrl_4X1_VER1 -o /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.protoinst 
+Execute         get_config_debug -directory 
+Execute         sc_get_clocks BFS_Ctrl_4X1_VER1 
+Execute         get_config_export -vivado_clock 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         sc_get_portdomain BFS_Ctrl_4X1_VER1 
+INFO-FLOW: Model list for RTL component generation: BFS_PE BFS_Ctrl_4X1_VER1
+INFO-FLOW: Handling components in module [BFS_PE] ... 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_PE.compgen.tcl 
+INFO-FLOW: Handling components in module [BFS_Ctrl_4X1_VER1] ... 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.compgen.tcl 
+INFO-FLOW: Append model BFS_PE
+INFO-FLOW: Append model BFS_Ctrl_4X1_VER1
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: BFS_PE BFS_Ctrl_4X1_VER1
+INFO-FLOW: To file: write model BFS_PE
+INFO-FLOW: To file: write model BFS_Ctrl_4X1_VER1
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute         get_top 
+Execute         get_config_export -ipname 
+Execute         get_config_export -xo 
+Execute         get_config_export -format 
+Execute         get_config_rtl -module_auto_prefix 
+INFO-FLOW: DBG:CMD:   auto_impl: set ipname to top (module_auto_prefix): BFS_Ctrl_4X1_VER1
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1
+Execute         get_solution -flow_target 
+Execute         get_config_export -xo 
+Execute         get_config_export -format 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/global.setting.tcl
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=5.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_PE.compgen.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.compgen.tcl 
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1
+Execute         get_solution -flow_target 
+Execute         get_config_export -xo 
+Execute         get_config_export -format 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/global.setting.tcl
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=BFS_Ctrl_4X1_VER1 xml_exists=0
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.rtl_wrap.cfg.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.rtl_wrap.cfg.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.rtl_wrap.cfg.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.tbgen.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_PE.compgen.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_PE.compgen.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.compgen.tcl 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Command         ap_source done; 0.16 sec.
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_PE.compgen.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.compgen.tcl 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.constraint.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=28
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=16
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=2 #gSsdmPorts=28
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/top-io-be.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.tbgen.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.rtl_wrap.cfg.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.compgen.dataonly.tcl 
+Execute         get_config_export -format 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_PE.tbgen.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.tbgen.tcl 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute         get_solution -flow_target 
+Execute         get_config_rtl -kernel_profile 
+Execute         get_config_rtl -kernel_profile 
+Execute         get_config_rtl -stall_sig_gen 
+Execute         get_config_rtl -profile 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.constraint.tcl 
+Execute         sc_get_clocks BFS_Ctrl_4X1_VER1 
+Execute         source /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.52 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.53 seconds; current allocated memory: 202.206 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for BFS_Ctrl_4X1_VER1.
+INFO: [VLOG 209-307] Generating Verilog RTL for BFS_Ctrl_4X1_VER1.
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report append design.xml content design_xml=/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1/.autopilot/db/BFS_Ctrl_4X1_VER1.design.xml
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report json2reportxml
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report done
+Execute         syn_report -model BFS_Ctrl_4X1_VER1 -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 404.86 MHz
+Command       autosyn done; 0.93 sec.
+Command     csynth_design done; 4.99 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 4.9 seconds. CPU system time: 0.48 seconds. Elapsed time: 4.99 seconds; current allocated memory: 202.398 MB.
+Execute     cleanup_all 

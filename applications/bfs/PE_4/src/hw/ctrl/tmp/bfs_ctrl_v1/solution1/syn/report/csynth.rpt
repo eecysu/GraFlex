@@ -1,0 +1,27 @@
+
+
+================================================================
+== Synthesis Summary Report of 'BFS_Ctrl_4X1_VER1'
+================================================================
++ General Information: 
+    * Date:           Wed Dec 20 22:12:08 2023
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+    * Project:        bfs_ctrl_v1
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcu280-fsvh2892-2L-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------+------+-------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |        Modules       | Issue|       | Latency | Latency| Iteration|         | Trip |          |      |    |           |           |     |
+    |        & Loops       | Type | Slack | (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT    | URAM|
+    +----------------------+------+-------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |+ BFS_Ctrl_4X1_VER1   |     -|  -1.18|        -|       -|         -|        -|     -|        no|     -|   -|  143 (~0%)|  358 (~0%)|    -|
+    | + grp_BFS_PE_fu_172  |     -|  -3.65|        1|   5.000|         -|        1|     -|        no|     -|   -|    2 (~0%)|   14 (~0%)|    -|
+    | o MainLoop           |     -|  -3.65|        -|       -|         -|        -|     -|        no|     -|   -|          -|          -|    -|
+    |  o waitId0           |    II|  -3.65|        -|       -|         4|        4|     -|       yes|     -|   -|          -|          -|    -|
+    +----------------------+------+-------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+

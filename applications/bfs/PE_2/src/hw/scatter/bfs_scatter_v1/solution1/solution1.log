@@ -1,0 +1,262 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcu280-fsvh2892-2L-e 
+INFO: [HLS 200-10] Setting target device to 'xcu280-fsvh2892-2L-e'
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 167.065 MB.
+INFO: [HLS 200-10] Analyzing design file '/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.88 seconds. CPU system time: 0.2 seconds. Elapsed time: 2.51 seconds; current allocated memory: 168.697 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<128>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<128>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<128>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<128>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<128>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<128>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<128>, 0ul, 0ul, 0ul> const&)' into 'WrDist(hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>&, ap_uint<64> const (*) [4096], unsigned char)' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:21:15)
+INFO: [HLS 214-131] Inlining function 'hls::stream<unsigned int, 0>::write(unsigned int const&)' into 'hls::stream<unsigned int, 0>::operator<<(unsigned int const&)' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::read()' into 'BuffOfst(hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>&, hls::stream<unsigned int, 0>&, bool volatile*, ap_uint<64>*, unsigned int)' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:58:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<unsigned int, 0>::operator<<(unsigned int const&)' into 'BuffOfst(hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>&, hls::stream<unsigned int, 0>&, bool volatile*, ap_uint<64>*, unsigned int)' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:52:14)
+INFO: [HLS 214-131] Inlining function 'hls::stream<unsigned int, 0>::operator<<(unsigned int const&)' into 'feed_network(hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>&, hls::stream<unsigned int, 0>&, bool volatile*, unsigned short, ap_uint<32> const*, ap_uint<64> (*) [4096], hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&)' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:214:40)
+INFO: [HLS 214-131] Inlining function 'hls::stream<unsigned int, 0>::operator<<(unsigned int const&)' into 'feed_network(hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>&, hls::stream<unsigned int, 0>&, bool volatile*, unsigned short, ap_uint<32> const*, ap_uint<64> (*) [4096], hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&)' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:213:40)
+INFO: [HLS 214-131] Inlining function 'hls::stream<unsigned int, 0>::operator<<(unsigned int const&)' into 'feed_network(hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>&, hls::stream<unsigned int, 0>&, bool volatile*, unsigned short, ap_uint<32> const*, ap_uint<64> (*) [4096], hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&)' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:212:40)
+INFO: [HLS 214-131] Inlining function 'hls::stream<unsigned int, 0>::operator<<(unsigned int const&)' into 'feed_network(hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>&, hls::stream<unsigned int, 0>&, bool volatile*, unsigned short, ap_uint<32> const*, ap_uint<64> (*) [4096], hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&)' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:211:61)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::read()' into 'feed_network(hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>&, hls::stream<unsigned int, 0>&, bool volatile*, unsigned short, ap_uint<32> const*, ap_uint<64> (*) [4096], hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&)' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:178:19)
+INFO: [HLS 214-131] Inlining function 'hls::stream<unsigned int, 0>::operator<<(unsigned int const&)' into 'feed_network(hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>&, hls::stream<unsigned int, 0>&, bool volatile*, unsigned short, ap_uint<32> const*, ap_uint<64> (*) [4096], hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&)' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:171:14)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<128>, 0ul, 0ul, 0ul> const&)' into 'BFS_Scatter' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:395:15)
+INFO: [HLS 214-186] Unrolling loop 'INIT_L0_1' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:406:18) in function 'BFS_Scatter' completely with a factor of 64 (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:406:18)
+INFO: [HLS 214-248] complete partitioned array 'tmp_dist' on dimension 1 (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:250:2)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i64.s_struct.ap_uint.6s' into 'BFS_Scatter'
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.02 seconds. CPU system time: 0.14 seconds. Elapsed time: 4.17 seconds; current allocated memory: 173.000 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 173.001 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.34 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.35 seconds; current allocated memory: 195.450 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:674: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1.11 seconds. CPU system time: 0 seconds. Elapsed time: 1.14 seconds; current allocated memory: 232.355 MB.
+INFO: [XFORM 203-510] Pipelining loop 'SEND_REQ_TUPLE_L4' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:46) in function 'BuffOfst' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_57_1' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:38) in function 'BuffOfst' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'L3_1' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:85) in function 'gen_access_tuple' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'INIT_L0' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:404) in function 'BFS_Scatter' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'L5' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:15) in function 'WrDist' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'feed_network' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:159:37).
+WARNING: [XFORM 203-503] Ignored partial unroll directive for loop 'L2' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:159) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-503] Ignored partial unroll directive for loop 'L2_FEED_NET' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:159) because its parent loop or function is pipelined.
+INFO: [HLS 200-489] Unrolling loop 'L5_1' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:18) in function 'WrDist' completely with a factor of 32.
+WARNING: [HLS 200-936] Cannot unroll loop 'L2' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:159) in function 'feed_network': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'L2_SEND_REQ_TPL' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:170) in function 'feed_network': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-932] Cannot unroll loop 'L2_FEED_NET' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:159) in function 'feed_network' completely: variable loop bound.
+WARNING: [XFORM 203-561] Updating loop upper bound from -1 to 1024 for loop 'L3_1' in function 'gen_access_tuple'.
+INFO: [XFORM 203-101] Partitioning array 'mem_req_buff.V' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:348) in dimension 1 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:418:22) to (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:429:42) in function 'BFS_Scatter'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 3.58 seconds. CPU system time: 0.02 seconds. Elapsed time: 3.59 seconds; current allocated memory: 289.869 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'L3' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:90:20) in function 'gen_access_tuple' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'L2' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:159:14) in function 'feed_network' more than one sub loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'L4' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:38:12) in function 'BuffOfst' more than one sub loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'mem_req_buff' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:117:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'mem_req_buff' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:120:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'mem_req_buff' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:123:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'mem_req_buff' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:133:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'mem_req_buff' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:135:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'mem_req_buff' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_2/src/hw/scatter/bfs_scatter.cpp:138:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'ofst_buff' 
+INFO: [HLS 200-472] Inferring partial write operation for 'ofst_buff' 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1.7 seconds. CPU system time: 0 seconds. Elapsed time: 1.71 seconds; current allocated memory: 356.365 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'BFS_Scatter' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'BuffOfst' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'SEND_REQ_TUPLE_L4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'SEND_REQ_TUPLE_L4'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_57_1'.
+WARNING: [HLS 200-885] Unable to schedule 'store' operation ('ofst_buff_addr_2_write_ln293') of variable 'p_cast' on array 'ofst_buff' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'ofst_buff'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 2, loop 'VITIS_LOOP_57_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 358.071 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 358.436 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'feed_network' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'feed_network': contains subloop(s) that are not unrolled.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'feed_network': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'L2_FEED_NET'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'L2_FEED_NET'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.21 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 359.753 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.24 seconds. CPU system time: 0 seconds. Elapsed time: 0.24 seconds; current allocated memory: 363.073 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'gen_access_tuple' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'L3_1'.
+WARNING: [HLS 200-880] The II Violation in module 'gen_access_tuple' (loop 'L3_1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'add' operation ('ofstAddr.V') and 'sub' operation ('sub_ln1364').
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 3, loop 'L3_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.28 seconds. CPU system time: 0 seconds. Elapsed time: 0.3 seconds; current allocated memory: 363.608 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 364.296 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'WrDist' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'L5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 32, Final II = 32, Depth = 33, loop 'L5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.25 seconds. CPU system time: 0 seconds. Elapsed time: 0.24 seconds; current allocated memory: 365.231 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.25 seconds. CPU system time: 0 seconds. Elapsed time: 0.25 seconds; current allocated memory: 366.941 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'BFS_Scatter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'INIT_L0'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'INIT_L0'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.43 seconds. CPU system time: 0 seconds. Elapsed time: 0.43 seconds; current allocated memory: 369.152 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.77 seconds. CPU system time: 0 seconds. Elapsed time: 0.78 seconds; current allocated memory: 372.575 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'BuffOfst' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'BuffOfst'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.55 seconds. CPU system time: 0 seconds. Elapsed time: 0.54 seconds; current allocated memory: 373.114 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'feed_network' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'feed_network'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 376.471 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'gen_access_tuple' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'gen_access_tuple'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.32 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.34 seconds; current allocated memory: 382.908 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'WrDist' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'WrDist'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.28 seconds. CPU system time: 0 seconds. Elapsed time: 0.29 seconds; current allocated memory: 387.811 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'BFS_Scatter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/CSR_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/CSR_E' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/glbl_d' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/rd_baseAddr' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'rd_baseAddr' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/wr_baseAddr' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'wr_baseAddr' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/rd_port_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/rd_port_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/rd_port_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/rd_port_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/wr_port_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/wr_port_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/wr_port_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/wr_port_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/rd_req_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/wr_len' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'wr_len' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/rd_start' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'rd_start' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/wr_start' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'wr_start' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/N_Vertex' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/root' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/peID' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/sw_data_0_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/sw_data_1_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/sw_data_2_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/sw_data_3_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/glblIterIdx' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/cycle_cnt' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/launch_recv' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'launch_recv' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/resWrite' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_16' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_17' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_18' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_19' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_20' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_21' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_22' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_23' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_24' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_25' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_26' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_27' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_28' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_29' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_30' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_31' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_32' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_33' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_34' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_35' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_36' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_37' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_38' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_39' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_40' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_41' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_42' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_43' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_44' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_45' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_46' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_47' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_48' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_49' to 'ap_memory'.

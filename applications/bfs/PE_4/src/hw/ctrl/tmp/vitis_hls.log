@@ -1,0 +1,122 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /opt/Xilinx/Vitis_HLS/2020.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'chunyou' on host 'noah' (Linux_x86_64 version 5.8.0-63-generic) on Wed Dec 20 22:12:03 HKT 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
+INFO: [HLS 200-10] In directory '/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp'
+Sourcing Tcl script '/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/run_hls.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset bfs_ctrl_v1 
+INFO: [HLS 200-10] Creating and opening project '/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1'.
+INFO: [HLS 200-1510] Running: set_top BFS_Ctrl_4X1_VER1 
+INFO: [HLS 200-1510] Running: add_files /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl.cpp 
+INFO: [HLS 200-10] Adding design file '/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution '/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl_v1/solution1'.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xcu280-fsvh2892-2L-e 
+INFO: [HLS 200-10] Setting target device to 'xcu280-fsvh2892-2L-e'
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 167.111 MB.
+INFO: [HLS 200-10] Analyzing design file '/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.21 seconds. CPU system time: 0.25 seconds. Elapsed time: 1.85 seconds; current allocated memory: 168.699 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.74 seconds. CPU system time: 0.2 seconds. Elapsed time: 1.94 seconds; current allocated memory: 169.865 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 169.867 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 171.118 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 170.423 MB.
+INFO: [XFORM 203-510] Pipelining loop 'waitId0' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl.cpp:50) in function 'BFS_Ctrl_4X1_VER1' automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'BFS_Ctrl_4X1_VER1' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl.cpp:16)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 190.904 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'MainLoop' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl.cpp:44:15) in function 'BFS_Ctrl_4X1_VER1' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-960.html
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 193.059 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'BFS_Ctrl_4X1_VER1' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'BFS_PE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 193.237 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 193.313 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'BFS_Ctrl_4X1_VER1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'waitId0'.
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln51', /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl.cpp:51)) in the first pipeline iteration (II = 1 cycles).
+Resolution: For help on HLS 200-878 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-878.html
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln51', /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl.cpp:51)) in the first pipeline iteration (II = 2 cycles).
+Resolution: For help on HLS 200-878 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-878.html
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln51', /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/ctrl/tmp/bfs_ctrl.cpp:51)) in the first pipeline iteration (II = 3 cycles).
+Resolution: For help on HLS 200-878 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-878.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 4, Depth = 4, loop 'waitId0'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 193.583 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 193.936 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'BFS_PE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'BFS_PE'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 194.045 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'BFS_Ctrl_4X1_VER1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/dummyParam' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/N_Vertex' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/resWrite' to 'ap_none' (register, both mode).
+WARNING: [RTGEN 206-101] Port 'resWrite' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/glblIterIdx' to 'ap_none' (register, both mode).
+WARNING: [RTGEN 206-101] Port 'glblIterIdx' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/cnt_scatter_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/cnt_scatter_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/cnt_scatter_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/cnt_scatter_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/cnt_gather_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/cnt_gather_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/cnt_gather_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/cnt_gather_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/exist_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/exist_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/exist_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_4X1_VER1/exist_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'BFS_Ctrl_4X1_VER1' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Cannot apply register mode option on port resWrite. It is not an AXI-Stream interface.
+WARNING: [RTGEN 206-101] Cannot apply register mode option on port glblIterIdx. It is not an AXI-Stream interface.
+WARNING: [RTGEN 206-101] Register 'iterIdx' is power-on initialization.
+WARNING: [RTGEN 206-101] Port 'BFS_Ctrl_4X1_VER1/cnt_gather_1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'BFS_Ctrl_4X1_VER1/cnt_gather_2' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'BFS_Ctrl_4X1_VER1/cnt_gather_3' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'BFS_Ctrl_4X1_VER1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 194.684 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.52 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.53 seconds; current allocated memory: 202.206 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for BFS_Ctrl_4X1_VER1.
+INFO: [VLOG 209-307] Generating Verilog RTL for BFS_Ctrl_4X1_VER1.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 404.86 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 4.9 seconds. CPU system time: 0.48 seconds. Elapsed time: 4.99 seconds; current allocated memory: 202.398 MB.
+INFO: [HLS 200-112] Total CPU user time: 5.93 seconds. Total CPU system time: 0.89 seconds. Total elapsed time: 5.91 seconds; peak allocated memory: 202.206 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Wed Dec 20 22:12:09 2023...

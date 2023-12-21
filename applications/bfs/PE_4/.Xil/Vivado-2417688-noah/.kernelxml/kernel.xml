@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root versionMajor="1" versionMinor="6">
+  <kernel name="inst_bfs_4x1_v1" language="ip_c" vlnv="rcsl.ust.hk:kernel:inst_bfs_4x1_v1:1.0" attributes="" preferredWorkGroupSizeMultiple="0" workGroupSize="1" interrupt="true" hwControlProtocol="ap_ctrl_hs">
+    <ports>
+      <port name="s_axi_control" mode="slave" range="0x1000" dataWidth="32" portType="addressable" base="0x0"/>
+      <port name="m_axi_gmem0" mode="master" range="0xFFFFFFFFFFFFFFFF" dataWidth="128" portType="addressable" base="0x0"/>
+      <port name="m_axi_gmem1" mode="master" range="0xFFFFFFFFFFFFFFFF" dataWidth="128" portType="addressable" base="0x0"/>
+      <port name="m_axi_gmem2" mode="master" range="0xFFFFFFFFFFFFFFFF" dataWidth="128" portType="addressable" base="0x0"/>
+      <port name="m_axi_gmem3" mode="master" range="0xFFFFFFFFFFFFFFFF" dataWidth="128" portType="addressable" base="0x0"/>
+    </ports>
+    <args>
+      <arg name="root" addressQualifier="0" id="0" port="s_axi_control" size="0x4" offset="0x010" hostOffset="0x0" hostSize="0x4" type="uint"/>
+      <arg name="N_Vertex" addressQualifier="0" id="1" port="s_axi_control" size="0x4" offset="0x018" hostOffset="0x0" hostSize="0x4" type="uint"/>
+      <arg name="CSR_V_0" addressQualifier="1" id="2" port="m_axi_gmem0" size="0x8" offset="0x020" hostOffset="0x0" hostSize="0x8" type="int*"/>
+      <arg name="CSR_E_0" addressQualifier="1" id="3" port="m_axi_gmem0" size="0x8" offset="0x02c" hostOffset="0x0" hostSize="0x8" type="int*"/>
+      <arg name="glbl_d_0" addressQualifier="1" id="4" port="m_axi_gmem0" size="0x8" offset="0x038" hostOffset="0x0" hostSize="0x8" type="int*"/>
+      <arg name="CSR_V_1" addressQualifier="1" id="5" port="m_axi_gmem1" size="0x8" offset="0x044" hostOffset="0x0" hostSize="0x8" type="int*"/>
+      <arg name="CSR_E_1" addressQualifier="1" id="6" port="m_axi_gmem1" size="0x8" offset="0x050" hostOffset="0x0" hostSize="0x8" type="int*"/>
+      <arg name="glbl_d_1" addressQualifier="1" id="7" port="m_axi_gmem1" size="0x8" offset="0x05c" hostOffset="0x0" hostSize="0x8" type="int*"/>
+      <arg name="CSR_V_2" addressQualifier="1" id="8" port="m_axi_gmem2" size="0x8" offset="0x068" hostOffset="0x0" hostSize="0x8" type="int*"/>
+      <arg name="CSR_E_2" addressQualifier="1" id="9" port="m_axi_gmem2" size="0x8" offset="0x074" hostOffset="0x0" hostSize="0x8" type="int*"/>
+      <arg name="glbl_d_2" addressQualifier="1" id="10" port="m_axi_gmem2" size="0x8" offset="0x080" hostOffset="0x0" hostSize="0x8" type="int*"/>
+      <arg name="CSR_V_3" addressQualifier="1" id="11" port="m_axi_gmem3" size="0x8" offset="0x08c" hostOffset="0x0" hostSize="0x8" type="int*"/>
+      <arg name="CSR_E_3" addressQualifier="1" id="12" port="m_axi_gmem3" size="0x8" offset="0x098" hostOffset="0x0" hostSize="0x8" type="int*"/>
+      <arg name="glbl_d_3" addressQualifier="1" id="13" port="m_axi_gmem3" size="0x8" offset="0x0a4" hostOffset="0x0" hostSize="0x8" type="int*"/>
+    </args>
+  </kernel>
+</root>

@@ -1,0 +1,4 @@
+assign bsp_ap_start = grp_BFS_PE_fu_142_ap_start;
+assign grp_BFS_PE_fu_142_ap_done = bsp_ap_done;
+assign grp_BFS_PE_fu_142_ap_idle = bsp_ap_idle;
+assign grp_BFS_PE_fu_142_ap_ready = bsp_ap_ready;

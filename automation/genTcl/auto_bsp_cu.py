@@ -486,7 +486,7 @@ def wrapBspCU(bspConfig, sysConfig):
         for i in range(sysConfig["RamPerCU"]["N_RAM"]):
             ramPfxName = sysConfig["RamPerCU"]["Name_Ram_"+str(i)]
             ramBankNoTotal = sysConfig["RamPerCU"]["N_Bank_Ram_"+str(i)]
-            ramBankNoDict[ramPfxName] = ramBankNoTotal // nGatherPE
+            ramBankNoDict[ramPfxName] = ramBankNoTotal // expandFactor
 
         for s in ramInterface:
             ramPfx = s

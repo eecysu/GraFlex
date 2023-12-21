@@ -1,0 +1,15 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "BFS_Ctrl_2X1_VER1",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "BFS_Ctrl_2X1_VER1"
+              }]
+          }
+        }]
+    }]}

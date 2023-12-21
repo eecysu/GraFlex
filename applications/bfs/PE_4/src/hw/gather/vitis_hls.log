@@ -1,0 +1,121 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /opt/Xilinx/Vitis_HLS/2020.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'chunyou' on host 'noah' (Linux_x86_64 version 5.8.0-63-generic) on Wed Dec 20 22:12:27 HKT 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
+INFO: [HLS 200-10] In directory '/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather'
+Sourcing Tcl script '/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/run_hls.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset bfs_gather_v1 
+INFO: [HLS 200-10] Opening and resetting project '/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather_v1'.
+WARNING: [HLS 200-40] No /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather_v1/solution1/solution1.aps file found.
+INFO: [HLS 200-1510] Running: set_top BFS_Gather 
+INFO: [HLS 200-1510] Running: add_files /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp 
+INFO: [HLS 200-10] Adding design file '/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution '/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather_v1/solution1'.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xcu280-fsvh2892-2L-e 
+INFO: [HLS 200-10] Setting target device to 'xcu280-fsvh2892-2L-e'
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 167.113 MB.
+INFO: [HLS 200-10] Analyzing design file '/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.4 seconds. CPU system time: 0.28 seconds. Elapsed time: 2.07 seconds; current allocated memory: 168.717 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-248] complete partitioned array 'tmp_dist' on dimension 1 (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:5:2)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:39:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:88:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:88:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:88:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:88:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:81:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:81:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:81:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:81:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:74:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:74:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:74:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:74:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:67:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:67:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:67:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:67:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:60:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:60:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:60:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:60:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:53:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:53:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:53:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:53:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:46:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:46:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:46:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:46:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:39:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:39:42)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t (*) [4096])' (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:39:42)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.1 seconds. CPU system time: 0.16 seconds. Elapsed time: 2.26 seconds; current allocated memory: 169.340 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 169.342 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 175.437 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 182.849 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (/Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:34:3) in function 'BFS_Gather'... converting 6 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 211.213 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.16 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 209.326 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'BFS_Gather' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'BFS_Gather' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'BFS_Gather'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 3, function 'BFS_Gather'
+WARNING: [HLS 200-871] Estimated clock period (4.70487ns) exceeds the target (target clock period: 5ns, clock uncertainty: 1.35ns, effective delay budget: 3.65ns).
+Resolution: For help on HLS 200-871 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'BFS_Gather' consists of the following:	'load' operation ('tmp_dist_0_load', /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:32) on array 'tmp_dist_0' [50]  (1.65 ns)
+	'select' operation ('select_ln32', /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:32) [58]  (0 ns)
+	'select' operation ('select_ln32_1', /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:32) [60]  (0.411 ns)
+	'select' operation ('select_ln32_2', /Zodiac/GraFlex/ArtifactEvaluation/figure8/BFS_Scalability/PE_4/src/hw/gather/bfs_gather.cpp:32) [62]  (0.411 ns)
+	'icmp' operation ('icmp_ln878_1') [287]  (0.593 ns)
+	blocking operation 1.64 ns on control path)
+
+Resolution: For help on HLS 200-1016 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 210.486 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 211.652 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'BFS_Gather' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Gather/peID' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Gather/sw_data' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Gather/exist' to 'ap_none' (register, both mode).
+WARNING: [RTGEN 206-101] Port 'exist' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Gather/tmp_dist_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Gather/tmp_dist_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Gather/tmp_dist_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Gather/tmp_dist_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'BFS_Gather' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Cannot apply register mode option on port exist. It is not an AXI-Stream interface.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'BFS_Gather'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 213.110 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.73 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.75 seconds; current allocated memory: 224.563 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for BFS_Gather.
+INFO: [VLOG 209-307] Generating Verilog RTL for BFS_Gather.
+INFO: [HLS 200-789] **** Estimated Fmax: 212.55 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 6.2 seconds. CPU system time: 0.48 seconds. Elapsed time: 6.09 seconds; current allocated memory: 224.824 MB.
+INFO: [HLS 200-112] Total CPU user time: 7.33 seconds. Total CPU system time: 0.81 seconds. Total elapsed time: 7.02 seconds; peak allocated memory: 224.563 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Wed Dec 20 22:12:34 2023...

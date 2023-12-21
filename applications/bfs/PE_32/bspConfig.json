@@ -1,0 +1,59 @@
+{
+  "ArgFromKernel": {
+    "N_Args": 1,
+    "Name_Arg_0": "N_Vertex",
+    "Type_Arg_0": "uint"
+  },
+
+  "BspController": {
+    "SourceFile": "bfs_ctrl.cpp",
+    "HeaderFile": "bfs_ctrl.h",
+    "targetPeriod": 5,
+    "TopFunction": "BFS_Ctrl_32X1_VER1"
+  },
+
+  "BspCU": {
+    "Scatter": {
+      "SourceFile": "bfs_scatter.cpp",
+      "HeaderFile": "bfs_scatter.h",
+      "targetPeriod": 5,
+      "TopFunction": "BFS_Scatter",
+      "N_Signals": 0
+    },
+
+    "Gather": {
+      "SourceFile": "bfs_gather.cpp",
+      "HeaderFile": "bfs_gather.h",
+      "targetPeriod": 5,
+      "TopFunction": "BFS_Gather",
+      "N_Signals": 1,
+      "exist": "or"
+    }
+  },
+
+  "Broadcast": {
+    "N_Signals": 2,
+    "Name_Signal_0": "resWrite",
+    "Type_Signal_0": "bool",
+    "Dest_Signal_0": "Scatter",
+    "Name_Signal_1": "glblIterIdx",
+    "Type_Signal_1": "ushort",
+    "Dest_Signal_1": "Scatter"
+  },
+
+  "Feedback" : {
+    "N_Signals": 3,
+    "Name_Signal_0": "cnt_scatter",
+    "Type_Signal_0": "uint",
+    "From_Signal_0": "BuiltIn",
+    "Latch_Signal_0": "Pass",
+    "Name_Signal_1": "cnt_gather",
+    "Type_Signal_1": "uint",
+    "From_Signal_1": "BuiltIn",
+    "Latch_Signal_1": "Pass",
+    "Name_Signal_2": "exist",
+    "Type_Signal_2": "bool",
+    "From_Signal_2": "Gather",
+    "Latch_Signal_2": "Or"
+  }
+}
