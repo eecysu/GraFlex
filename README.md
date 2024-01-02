@@ -22,7 +22,7 @@ GraFlex: Flexible Graph Processing on FPGAs through Customized Scalable Intercon
 
 ## Artifact Evaluation
 Current release is not fully stable. To access the graph datasets and directly reproduce the results, please visit the following Zenodo link:
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10426527.svg)](https://doi.org/10.5281/zenodo.10426527)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10450444.svg)](https://doi.org/10.5281/zenodo.10450444)
 <!---
 > [GraFlex_FPGA24_AE](https://hkustconnect-my.sharepoint.com/:f:/g/personal/csuae_connect_ust_hk/EupDPx5WCC9Auo7X8-OhTXsBLQWv4-FL87pnrYbjh2VXhA?e=Qffsfd)
 --->
