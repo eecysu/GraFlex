@@ -1,0 +1,936 @@
+INFO-FLOW: Workspace /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1 opened at Fri Mar 22 20:13:50 HKT 2024
+Execute       send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -default_interface 
+Execute       get_config_interface -m_axi_offset 
+Execute       get_config_rtl -register_reset_num 
+Execute     set_part xcu280-fsvh2892-2L-e 
+INFO: [HLS 200-1510] Running: set_part xcu280-fsvh2892-2L-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/opt/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/opt/Xilinx/Vivado/2020.2/data:/opt/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcu280-fsvh2892-2L-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2020.2/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 0.54 sec.
+Execute       ap_part_info -name xcu280-fsvh2892-2L-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcu280:-fsvh2892:-2L-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcu280-fsvh2892-2L-e 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data resources 
+Execute         config_chip_info -resource {SLICE 162960} {LUT 1303680} {FF 2607360} {DSP 9024} {BRAM 4032} {URAM 960} {SLR 3} 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcu280:-fsvh2892:-2L-e 
+Execute         import_lib /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO: [HLS 200-10] Setting target device to 'xcu280-fsvh2892-2L-e'
+Execute       ap_part_info -name xcu280-fsvh2892-2L-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.63 sec.
+Execute     create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+Execute       ap_set_clock -name default -period 5 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+Execute     csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute       get_config_compile -effort 
+Execute       get_config_compile -enable_clang39 
+Execute       get_config_compile -g 
+Execute       get_config_compile -ng 
+Execute       get_config_compile -opt_fp 
+Execute       get_config_compile -skip_cdt 
+Execute       get_config_compile -skip_syncheck 
+Execute       get_config_compile -skip_transform 
+Execute       get_config_compile -keep_printf 
+Execute       elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0 seconds; current allocated memory: 167.074 MB.
+INFO: [HLS 200-10] Analyzing design file '/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute         get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp as C++
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp -foptimization-record-file=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/clang.bfs_scatter.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0 -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/39 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/bfs_scatter.pp.0.cpp > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/clang.bfs_scatter.cpp.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/clang.bfs_scatter.cpp.err.log 
+INFO-FLOW: Done: GCC PP 39 time: 0 seconds per iteration
+Execute         set_directive_top BFS_Scatter -name=BFS_Scatter 
+INFO-FLOW: Setting directive 'TOP' name=BFS_Scatter 
+INFO-FLOW: Setting directive 'TOP' name=BFS_Scatter 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO-FLOW: Setting directive 'TOP' name=BFS_Scatter 
+Execute         list_core -type functional_unit 
+Execute         clang_tidy xilinx-systemc-detector /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/bfs_scatter.pp.0.cpp std=gnu++14 -target fpga  -directive=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/.systemc_flag -fix-errors /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/bfs_scatter.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command         clang_tidy done; 0.3 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute         clang_tidy xilinx-directive2pragma /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/bfs_scatter.pp.0.cpp std=gnu++14 -target fpga  -directive=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/all.directive.json -fix-errors /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/bfs_scatter.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command         clang_tidy done; 0.29 sec.
+Execute         clang_tidy xilinx-constantarray-param,xilinx-remove-assert /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/bfs_scatter.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/bfs_scatter.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command         clang_tidy done; 0.32 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.6 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+Execute         clang_tidy -errorcheck xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/bfs_scatter.pp.0.cpp std=gnu++14 -target fpga  
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/clang-tidy.bfs_scatter.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/bfs_scatter.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/clang-tidy.bfs_scatter.pp.0.cpp.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/clang-tidy.bfs_scatter.pp.0.cpp.err.log 
+Command           ap_eval done; 0.34 sec.
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Command         clang_tidy done; 0.35 sec.
+Execute         get_config_dataflow -strict_mode 
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/xilinx-dataflow-lawyer.bfs_scatter.pp.0.cpp.diag.yml /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/bfs_scatter.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/xilinx-dataflow-lawyer.bfs_scatter.pp.0.cpp.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/xilinx-dataflow-lawyer.bfs_scatter.pp.0.cpp.err.log 
+Command         ap_eval done; 0.2 sec.
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/clang.bfs_scatter.pp.0.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/bfs_scatter.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/bfs_scatter.bc > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/clang.bfs_scatter.pp.0.cpp.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/clang.bfs_scatter.pp.0.cpp.err.log 
+Command         ap_eval done; 0.21 sec.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.02 seconds. CPU system time: 0.26 seconds. Elapsed time: 1.75 seconds; current allocated memory: 168.677 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute         run_link_or_opt -out /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.0.bc -args  "/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/bfs_scatter.g.bc"  
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/bfs_scatter.g.bc -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.0.bc > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.err.log 
+INFO-FLOW: 
+Execute         run_link_or_opt -opt -out /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.1.lower.bc -args /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.diag.yml /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.1.lower.bc > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.err.log 
+INFO-FLOW: 
+INFO-FLOW: Linking math bc lib
+Execute         run_link_or_opt -out /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.2.m1.bc -args /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.2.m1.bc > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.err.log 
+Command           ap_eval done; 1.13 sec.
+INFO-FLOW: 
+Command         run_link_or_opt done; 1.13 sec.
+Execute         run_link_or_opt -opt -out /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=BFS_Scatter -reflow-float-conversion 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.diag.yml /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=BFS_Scatter -reflow-float-conversion -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.3.fpc.bc > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.err.log 
+Command           ap_eval done; 0.41 sec.
+INFO-FLOW: 
+Command         run_link_or_opt done; 0.41 sec.
+Execute         run_link_or_opt -out /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.4.m2.bc -args /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.4.m2.bc > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.err.log 
+INFO-FLOW: 
+Execute         run_link_or_opt -opt -out /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=BFS_Scatter 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.diag.yml /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=BFS_Scatter -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.5.gdce.bc > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.err.log 
+INFO-FLOW: 
+Execute         get_solution -flow_target 
+Execute         get_config_export -xo 
+Execute         get_config_export -format 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_interface -default_slave_interface 
+Execute         get_solution -flow_target 
+Execute         get_config_export -xo 
+Execute         get_config_export -format 
+Execute         get_config_interface -m_axi_offset 
+Execute         get_config_interface -m_axi_latency 
+Execute         get_config_interface -m_axi_alignment_byte_size 
+Execute         get_config_interface -m_axi_min_bitwidth 
+Execute         get_config_interface -m_axi_max_bitwidth 
+Execute         get_config_interface -m_axi_max_widen_bitwidth 
+Execute         get_config_interface -m_axi_num_read_outstanding 
+Execute         get_config_interface -m_axi_num_write_outstanding 
+Execute         get_config_interface -m_axi_max_read_burst_length 
+Execute         get_config_interface -m_axi_max_write_burst_length 
+Execute         get_config_interface -m_axi_min_bitwidth 
+Execute         get_config_interface -m_axi_max_bitwidth 
+Execute         get_config_interface -m_axi_latency 
+Execute         get_config_interface -m_axi_min_bitwidth 
+Execute         get_config_interface -m_axi_max_bitwidth 
+Execute         get_config_interface -m_axi_max_widen_bitwidth 
+Execute         get_config_interface -m_axi_auto_max_ports 
+Execute         get_config_interface -m_axi_num_read_outstanding 
+Execute         get_config_interface -m_axi_num_write_outstanding 
+Execute         get_config_interface -m_axi_max_read_burst_length 
+Execute         get_config_interface -m_axi_max_write_burst_length 
+Execute         get_config_interface -s_axilite_data64 
+Execute         get_config_interface -m_axi_alignment_byte_size 
+Execute         get_config_compile -pragma_strict_mode 
+Execute         get_config_compile -pipeline_style 
+Execute         send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute         is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/clang.a.g.ld.0.bc.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=BFS_Scatter -mllvm -hls-db-dir -mllvm /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=off -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -assume-maxi-align=0 -mllvm -no-unaligned-maxi-accesses -mllvm -reflow-pipeline-style-llvm-setting=0 -mllvm -disable-inlined-alloca-merging=true -x ir /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.lto.bc > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/clang.a.g.ld.0.bc.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/clang.a.g.ld.0.bc.err.log 
+Command         ap_eval done; 0.48 sec.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<128>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<128>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<128>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<128>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<128>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<128>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<128>, 0ul, 0ul, 0ul> const&)' into 'WrDist(hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>&, ap_uint<64> const (*) [4096], unsigned char)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:28:13)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<128>, 0ul, 0ul, 0ul> const&)' into 'WrDist(hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>&, ap_uint<64> const (*) [4096], unsigned char)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:25:13)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<128>, 0ul, 0ul, 0ul> const&)' into 'WrDist(hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>&, ap_uint<64> const (*) [4096], unsigned char)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:22:13)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<128>, 0ul, 0ul, 0ul> const&)' into 'WrDist(hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>&, ap_uint<64> const (*) [4096], unsigned char)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:19:13)
+INFO: [HLS 214-131] Inlining function 'hls::stream<unsigned int, 0>::write(unsigned int const&)' into 'hls::stream<unsigned int, 0>::operator<<(unsigned int const&)' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::read()' into 'BuffOfst(hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>&, hls::stream<unsigned int, 0>&, bool volatile*, ap_uint<64>*, unsigned int)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:64:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<unsigned int, 0>::operator<<(unsigned int const&)' into 'BuffOfst(hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>&, hls::stream<unsigned int, 0>&, bool volatile*, ap_uint<64>*, unsigned int)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:58:14)
+INFO: [HLS 214-131] Inlining function 'hls::stream<unsigned int, 0>::operator<<(unsigned int const&)' into 'feed_network(hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>&, hls::stream<unsigned int, 0>&, bool volatile*, unsigned short, ap_uint<32> const*, ap_uint<64> (*) [4096], hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:220:40)
+INFO: [HLS 214-131] Inlining function 'hls::stream<unsigned int, 0>::operator<<(unsigned int const&)' into 'feed_network(hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>&, hls::stream<unsigned int, 0>&, bool volatile*, unsigned short, ap_uint<32> const*, ap_uint<64> (*) [4096], hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:219:40)
+INFO: [HLS 214-131] Inlining function 'hls::stream<unsigned int, 0>::operator<<(unsigned int const&)' into 'feed_network(hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>&, hls::stream<unsigned int, 0>&, bool volatile*, unsigned short, ap_uint<32> const*, ap_uint<64> (*) [4096], hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:218:40)
+INFO: [HLS 214-131] Inlining function 'hls::stream<unsigned int, 0>::operator<<(unsigned int const&)' into 'feed_network(hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>&, hls::stream<unsigned int, 0>&, bool volatile*, unsigned short, ap_uint<32> const*, ap_uint<64> (*) [4096], hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:217:61)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::read()' into 'feed_network(hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>&, hls::stream<unsigned int, 0>&, bool volatile*, unsigned short, ap_uint<32> const*, ap_uint<64> (*) [4096], hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:184:19)
+INFO: [HLS 214-131] Inlining function 'hls::stream<unsigned int, 0>::operator<<(unsigned int const&)' into 'feed_network(hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>&, hls::stream<unsigned int, 0>&, bool volatile*, unsigned short, ap_uint<32> const*, ap_uint<64> (*) [4096], hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&, hls::stream<unsigned int, 0>&)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:177:14)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<128>, 0ul, 0ul, 0ul> const&)' into 'BFS_Scatter' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:345:15)
+INFO: [HLS 214-186] Unrolling loop 'INIT_L0_1' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:356:18) in function 'BFS_Scatter' completely with a factor of 8 (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:356:18)
+INFO: [HLS 214-248] complete partitioned array 'tmp_dist' on dimension 1 (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:256:2)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i64.s_struct.ap_uint.6s' into 'BFS_Scatter'
+INFO-FLOW: DBG:CMD: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.36 seconds. CPU system time: 0.19 seconds. Elapsed time: 2.54 seconds; current allocated memory: 171.496 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 171.498 MB.
+Execute         opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute           cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute           transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top BFS_Scatter -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.0.bc -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command           transform done; 0.13 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 193.259 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute           transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.1.bc -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+Command           transform done; 0.25 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute           transform -syn-check /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.2.prechk.bc -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+WARNING: [SYNCHK 200-23] /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:674: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.3 seconds. CPU system time: 0 seconds. Elapsed time: 0.32 seconds; current allocated memory: 229.748 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.g.1.bc to /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute           transform -hls -tmp /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.o.1.bc -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-510] Pipelining loop 'SEND_REQ_TUPLE_L4' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:52) in function 'BuffOfst' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_63_1' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:44) in function 'BuffOfst' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'L3_1' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:91) in function 'gen_access_tuple' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'INIT_L0' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:354) in function 'BFS_Scatter' automatically.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'feed_network' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:165:37).
+WARNING: [XFORM 203-503] Ignored partial unroll directive for loop 'L2' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:165) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-503] Ignored partial unroll directive for loop 'L2_FEED_NET' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:165) because its parent loop or function is pipelined.
+WARNING: [HLS 200-936] Cannot unroll loop 'L2' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:165) in function 'feed_network': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'L2_SEND_REQ_TPL' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:176) in function 'feed_network': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-932] Cannot unroll loop 'L2_FEED_NET' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:165) in function 'feed_network' completely: variable loop bound.
+WARNING: [XFORM 203-561] Updating loop upper bound from -1 to 1024 for loop 'L3_1' in function 'gen_access_tuple'.
+INFO: [XFORM 203-101] Partitioning array 'mem_req_buff.V' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:298) in dimension 1 completely.
+Command           transform done; 0.6 sec.
+INFO-FLOW: Presyn 2...
+Execute           transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.o.1.tmp.bc -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:165:14) to (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:217:29) in function 'feed_network'... converting 20 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:368:22) to (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379:41) in function 'BFS_Scatter'... converting 4 basic blocks.
+Command           transform done; 0.27 sec.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.86 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.87 seconds; current allocated memory: 285.859 MB.
+Execute           get_config_compile -enable_loop_extract 
+Execute           get_config_compile -disable_auto_rewind 
+Execute           get_config_compile -enable_auto_rewind 
+INFO-FLOW: Building ssdm...
+Execute           transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin2 -bitwidthmin2 -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.o.2.bc -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [HLS 200-960] Cannot flatten loop 'L3' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:96:20) in function 'gen_access_tuple' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'L2' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:165:14) in function 'feed_network' more than one sub loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'L4' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:44:12) in function 'BuffOfst' more than one sub loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'mem_req_buff' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:123:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'mem_req_buff' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:126:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'mem_req_buff' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:129:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'mem_req_buff' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:139:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'mem_req_buff' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:141:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'mem_req_buff' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:144:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'ofst_buff' 
+INFO: [HLS 200-472] Inferring partial write operation for 'ofst_buff' 
+Command           transform done; 0.53 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.52 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.53 seconds; current allocated memory: 341.968 MB.
+INFO-FLOW: Finish building internal data model.
+Command         opt_and_import_c done; 1.85 sec.
+Command       elaborate done; 6.14 sec.
+Execute       autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'BFS_Scatter' ...
+Execute         ap_set_top_model BFS_Scatter 
+Execute         get_model_list BFS_Scatter -filter all-wo-channel -topdown 
+Execute         preproc_iomode -model BFS_Scatter 
+Execute         preproc_iomode -model WrDist 
+Execute         preproc_iomode -model gen_access_tuple 
+Execute         preproc_iomode -model feed_network 
+Execute         preproc_iomode -model BuffOfst 
+Execute         get_model_list BFS_Scatter -filter all-wo-channel 
+INFO-FLOW: Model list for configure: BuffOfst feed_network gen_access_tuple WrDist BFS_Scatter
+INFO-FLOW: Configuring Module : BuffOfst ...
+Execute         set_default_model BuffOfst 
+Execute         apply_spec_resource_limit BuffOfst 
+INFO-FLOW: Configuring Module : feed_network ...
+Execute         set_default_model feed_network 
+Execute         apply_spec_resource_limit feed_network 
+INFO-FLOW: Configuring Module : gen_access_tuple ...
+Execute         set_default_model gen_access_tuple 
+Execute         apply_spec_resource_limit gen_access_tuple 
+INFO-FLOW: Configuring Module : WrDist ...
+Execute         set_default_model WrDist 
+Execute         apply_spec_resource_limit WrDist 
+INFO-FLOW: Configuring Module : BFS_Scatter ...
+Execute         set_default_model BFS_Scatter 
+Execute         apply_spec_resource_limit BFS_Scatter 
+INFO-FLOW: Model list for preprocess: BuffOfst feed_network gen_access_tuple WrDist BFS_Scatter
+INFO-FLOW: Preprocessing Module: BuffOfst ...
+Execute         set_default_model BuffOfst 
+Execute         cdfg_preprocess -model BuffOfst 
+Execute         rtl_gen_preprocess BuffOfst 
+INFO-FLOW: Preprocessing Module: feed_network ...
+Execute         set_default_model feed_network 
+Execute         cdfg_preprocess -model feed_network 
+Execute         rtl_gen_preprocess feed_network 
+INFO-FLOW: Preprocessing Module: gen_access_tuple ...
+Execute         set_default_model gen_access_tuple 
+Execute         cdfg_preprocess -model gen_access_tuple 
+Execute         rtl_gen_preprocess gen_access_tuple 
+INFO-FLOW: Preprocessing Module: WrDist ...
+Execute         set_default_model WrDist 
+Execute         cdfg_preprocess -model WrDist 
+Execute         rtl_gen_preprocess WrDist 
+INFO-FLOW: Preprocessing Module: BFS_Scatter ...
+Execute         set_default_model BFS_Scatter 
+Execute         cdfg_preprocess -model BFS_Scatter 
+Execute         rtl_gen_preprocess BFS_Scatter 
+INFO-FLOW: Model list for synthesis: BuffOfst feed_network gen_access_tuple WrDist BFS_Scatter
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'BuffOfst' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model BuffOfst 
+Execute         schedule -model BuffOfst 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'SEND_REQ_TUPLE_L4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'SEND_REQ_TUPLE_L4'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_63_1'.
+WARNING: [HLS 200-885] Unable to schedule 'store' operation ('ofst_buff_addr_2_write_ln293') of variable 'p_cast' on array 'ofst_buff' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'ofst_buff'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 2, loop 'VITIS_LOOP_63_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 342.650 MB.
+Execute         syn_report -verbosereport -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BuffOfst.verbose.sched.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         db_write -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BuffOfst.sched.adb -f 
+INFO-FLOW: Finish scheduling BuffOfst.
+Execute         set_default_model BuffOfst 
+Execute         bind -model BuffOfst 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 343.012 MB.
+Execute         syn_report -verbosereport -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BuffOfst.verbose.bind.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         db_write -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BuffOfst.bind.adb -f 
+INFO-FLOW: Finish binding BuffOfst.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'feed_network' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model feed_network 
+Execute         schedule -model feed_network 
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'feed_network': contains subloop(s) that are not unrolled.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'feed_network': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-61] Pipelining loop 'L2_FEED_NET'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'L2_FEED_NET'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 343.587 MB.
+Execute         syn_report -verbosereport -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/feed_network.verbose.sched.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         db_write -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/feed_network.sched.adb -f 
+INFO-FLOW: Finish scheduling feed_network.
+Execute         set_default_model feed_network 
+Execute         bind -model feed_network 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 344.420 MB.
+Execute         syn_report -verbosereport -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/feed_network.verbose.bind.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         db_write -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/feed_network.bind.adb -f 
+INFO-FLOW: Finish binding feed_network.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'gen_access_tuple' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model gen_access_tuple 
+Execute         schedule -model gen_access_tuple 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'L3_1'.
+WARNING: [HLS 200-880] The II Violation in module 'gen_access_tuple' (loop 'L3_1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'add' operation ('ofstAddr.V') and 'sub' operation ('sub_ln1364').
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 3, loop 'L3_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 344.969 MB.
+Execute         syn_report -verbosereport -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/gen_access_tuple.verbose.sched.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         db_write -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/gen_access_tuple.sched.adb -f 
+INFO-FLOW: Finish scheduling gen_access_tuple.
+Execute         set_default_model gen_access_tuple 
+Execute         bind -model gen_access_tuple 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 345.654 MB.
+Execute         syn_report -verbosereport -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/gen_access_tuple.verbose.bind.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         db_write -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/gen_access_tuple.bind.adb -f 
+INFO-FLOW: Finish binding gen_access_tuple.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'WrDist' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model WrDist 
+Execute         schedule -model WrDist 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'L5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 4, Final II = 4, Depth = 5, loop 'L5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 345.846 MB.
+Execute         syn_report -verbosereport -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/WrDist.verbose.sched.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         db_write -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/WrDist.sched.adb -f 
+INFO-FLOW: Finish scheduling WrDist.
+Execute         set_default_model WrDist 
+Execute         bind -model WrDist 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 346.180 MB.
+Execute         syn_report -verbosereport -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/WrDist.verbose.bind.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         db_write -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/WrDist.bind.adb -f 
+INFO-FLOW: Finish binding WrDist.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'BFS_Scatter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model BFS_Scatter 
+Execute         schedule -model BFS_Scatter 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'INIT_L0'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'INIT_L0'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 347.099 MB.
+Execute         syn_report -verbosereport -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.verbose.sched.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         db_write -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.sched.adb -f 
+INFO-FLOW: Finish scheduling BFS_Scatter.
+Execute         set_default_model BFS_Scatter 
+Execute         bind -model BFS_Scatter 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command         bind done; 0.23 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.28 seconds. CPU system time: 0 seconds. Elapsed time: 0.29 seconds; current allocated memory: 348.495 MB.
+Execute         syn_report -verbosereport -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.verbose.bind.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Command         syn_report done; 0.24 sec.
+Execute         db_write -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.bind.adb -f 
+INFO-FLOW: Finish binding BFS_Scatter.
+Execute         get_model_list BFS_Scatter -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute         rtl_gen_preprocess BuffOfst 
+Execute         rtl_gen_preprocess feed_network 
+Execute         rtl_gen_preprocess gen_access_tuple 
+Execute         rtl_gen_preprocess WrDist 
+Execute         rtl_gen_preprocess BFS_Scatter 
+INFO-FLOW: Model list for RTL generation: BuffOfst feed_network gen_access_tuple WrDist BFS_Scatter
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'BuffOfst' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         create_rtl_model BuffOfst -top_prefix BFS_Scatter_ -sub_prefix BFS_Scatter_ -mg_file /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BuffOfst.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'BuffOfst'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.24 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.26 seconds; current allocated memory: 349.026 MB.
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.rtl_wrap.cfg.tcl 
+Execute         gen_rtl BuffOfst -style xilinx -f -lang vhdl -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/syn/vhdl/BFS_Scatter_BuffOfst 
+Execute         gen_rtl BuffOfst -style xilinx -f -lang vlog -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/syn/verilog/BFS_Scatter_BuffOfst 
+Execute         syn_report -csynth -model BuffOfst -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/syn/report/BuffOfst_csynth.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         syn_report -rtlxml -model BuffOfst -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/syn/report/BuffOfst_csynth.xml 
+Execute           get_solution -flow_target
+Execute             get_solution -flow_target 
+Execute         syn_report -verbosereport -model BuffOfst -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BuffOfst.verbose.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         db_write -model BuffOfst -f -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BuffOfst.adb 
+Execute         gen_tb_info BuffOfst -p /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BuffOfst 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'feed_network' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         create_rtl_model feed_network -top_prefix BFS_Scatter_ -sub_prefix BFS_Scatter_ -mg_file /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/feed_network.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'feed_network'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 351.319 MB.
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.rtl_wrap.cfg.tcl 
+Execute         gen_rtl feed_network -style xilinx -f -lang vhdl -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/syn/vhdl/BFS_Scatter_feed_network 
+Execute         gen_rtl feed_network -style xilinx -f -lang vlog -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/syn/verilog/BFS_Scatter_feed_network 
+Execute         syn_report -csynth -model feed_network -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/syn/report/feed_network_csynth.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         syn_report -rtlxml -model feed_network -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/syn/report/feed_network_csynth.xml 
+Execute           get_solution -flow_target
+Execute             get_solution -flow_target 
+Execute         syn_report -verbosereport -model feed_network -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/feed_network.verbose.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Command         syn_report done; 0.11 sec.
+Execute         db_write -model feed_network -f -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/feed_network.adb 
+Execute         gen_tb_info feed_network -p /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/feed_network 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'gen_access_tuple' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         create_rtl_model gen_access_tuple -top_prefix BFS_Scatter_ -sub_prefix BFS_Scatter_ -mg_file /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/gen_access_tuple.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'gen_access_tuple'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.22 seconds. CPU system time: 0 seconds. Elapsed time: 0.22 seconds; current allocated memory: 354.784 MB.
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.rtl_wrap.cfg.tcl 
+Execute         gen_rtl gen_access_tuple -style xilinx -f -lang vhdl -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/syn/vhdl/BFS_Scatter_gen_access_tuple 
+Execute         gen_rtl gen_access_tuple -style xilinx -f -lang vlog -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/syn/verilog/BFS_Scatter_gen_access_tuple 
+Execute         syn_report -csynth -model gen_access_tuple -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/syn/report/gen_access_tuple_csynth.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         syn_report -rtlxml -model gen_access_tuple -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/syn/report/gen_access_tuple_csynth.xml 
+Execute           get_solution -flow_target
+Execute             get_solution -flow_target 
+Execute         syn_report -verbosereport -model gen_access_tuple -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/gen_access_tuple.verbose.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         db_write -model gen_access_tuple -f -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/gen_access_tuple.adb 
+Execute         gen_tb_info gen_access_tuple -p /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/gen_access_tuple 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'WrDist' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         create_rtl_model WrDist -top_prefix BFS_Scatter_ -sub_prefix BFS_Scatter_ -mg_file /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/WrDist.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'WrDist'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 357.784 MB.
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.rtl_wrap.cfg.tcl 
+Execute         gen_rtl WrDist -style xilinx -f -lang vhdl -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/syn/vhdl/BFS_Scatter_WrDist 
+Execute         gen_rtl WrDist -style xilinx -f -lang vlog -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/syn/verilog/BFS_Scatter_WrDist 
+Execute         syn_report -csynth -model WrDist -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/syn/report/WrDist_csynth.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         syn_report -rtlxml -model WrDist -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/syn/report/WrDist_csynth.xml 
+Execute           get_solution -flow_target
+Execute             get_solution -flow_target 
+Execute         syn_report -verbosereport -model WrDist -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/WrDist.verbose.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         db_write -model WrDist -f -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/WrDist.adb 
+Execute         gen_tb_info WrDist -p /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/WrDist 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'BFS_Scatter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         create_rtl_model BFS_Scatter -top_prefix  -sub_prefix BFS_Scatter_ -mg_file /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.compgen.tcl 
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/CSR_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/CSR_E' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/glbl_d' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/rd_baseAddr' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'rd_baseAddr' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/wr_baseAddr' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'wr_baseAddr' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/rd_port_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/rd_port_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/rd_port_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/rd_port_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/wr_port_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/wr_port_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/wr_port_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/wr_port_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/rd_req_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/wr_len' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'wr_len' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/rd_start' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'rd_start' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/wr_start' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'wr_start' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/N_Vertex' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/root' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/peID' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/sw_data_0_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/sw_data_1_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/sw_data_2_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/sw_data_3_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/glblIterIdx' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/cycle_cnt' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/launch_recv' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'launch_recv' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/resWrite' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Scatter/tmp_dist_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'BFS_Scatter' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'BFS_Scatter'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 360.655 MB.
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.rtl_wrap.cfg.tcl 
+Execute         gen_rtl BFS_Scatter -istop -style xilinx -f -lang vhdl -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/syn/vhdl/BFS_Scatter 
+Execute         gen_rtl BFS_Scatter -istop -style xilinx -f -lang vlog -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/syn/verilog/BFS_Scatter 
+Execute         syn_report -csynth -model BFS_Scatter -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/syn/report/BFS_Scatter_csynth.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         syn_report -rtlxml -model BFS_Scatter -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/syn/report/BFS_Scatter_csynth.xml 
+Execute           get_solution -flow_target
+Execute             get_solution -flow_target 
+Execute         syn_report -verbosereport -model BFS_Scatter -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.verbose.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Command         syn_report done; 0.28 sec.
+Execute         db_write -model BFS_Scatter -f -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.adb 
+Execute         gen_tb_info BFS_Scatter -p /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter 
+Execute         export_constraint_db -f -tool general -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.constraint.tcl 
+Execute         syn_report -designview -model BFS_Scatter -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.design.xml 
+Command         syn_report done; 0.17 sec.
+Execute         syn_report -csynthDesign -model BFS_Scatter -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/syn/report/csynth.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         get_config_rtl -disable_wave_debug 
+Execute         syn_report -wcfg -model BFS_Scatter -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter_dataflow_ana.wcfg 
+Execute         syn_report -protoinst -model BFS_Scatter -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.protoinst 
+Execute         get_config_debug -directory 
+Execute         sc_get_clocks BFS_Scatter 
+Execute         get_config_export -vivado_clock 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         sc_get_portdomain BFS_Scatter 
+INFO-FLOW: Model list for RTL component generation: BuffOfst feed_network gen_access_tuple WrDist BFS_Scatter
+INFO-FLOW: Handling components in module [BuffOfst] ... 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BuffOfst.compgen.tcl 
+INFO-FLOW: Handling components in module [feed_network] ... 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/feed_network.compgen.tcl 
+INFO-FLOW: Handling components in module [gen_access_tuple] ... 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/gen_access_tuple.compgen.tcl 
+INFO-FLOW: Handling components in module [WrDist] ... 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/WrDist.compgen.tcl 
+INFO-FLOW: Handling components in module [BFS_Scatter] ... 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.compgen.tcl 
+INFO-FLOW: Found component BFS_Scatter_ofst_buff.
+INFO-FLOW: Append model BFS_Scatter_ofst_buff
+INFO-FLOW: Found component BFS_Scatter_mem_req_buff_V_0.
+INFO-FLOW: Append model BFS_Scatter_mem_req_buff_V_0
+INFO-FLOW: Found component BFS_Scatter_regslice_both.
+INFO-FLOW: Append model BFS_Scatter_regslice_both
+INFO-FLOW: Found component BFS_Scatter_regslice_both.
+INFO-FLOW: Append model BFS_Scatter_regslice_both
+INFO-FLOW: Found component BFS_Scatter_regslice_both.
+INFO-FLOW: Append model BFS_Scatter_regslice_both
+INFO-FLOW: Found component BFS_Scatter_regslice_both.
+INFO-FLOW: Append model BFS_Scatter_regslice_both
+INFO-FLOW: Found component BFS_Scatter_regslice_both.
+INFO-FLOW: Append model BFS_Scatter_regslice_both
+INFO-FLOW: Found component BFS_Scatter_regslice_both.
+INFO-FLOW: Append model BFS_Scatter_regslice_both
+INFO-FLOW: Found component BFS_Scatter_regslice_both.
+INFO-FLOW: Append model BFS_Scatter_regslice_both
+INFO-FLOW: Found component BFS_Scatter_regslice_both.
+INFO-FLOW: Append model BFS_Scatter_regslice_both
+INFO-FLOW: Append model BuffOfst
+INFO-FLOW: Append model feed_network
+INFO-FLOW: Append model gen_access_tuple
+INFO-FLOW: Append model WrDist
+INFO-FLOW: Append model BFS_Scatter
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: BFS_Scatter_ofst_buff BFS_Scatter_mem_req_buff_V_0 BFS_Scatter_regslice_both BFS_Scatter_regslice_both BFS_Scatter_regslice_both BFS_Scatter_regslice_both BFS_Scatter_regslice_both BFS_Scatter_regslice_both BFS_Scatter_regslice_both BFS_Scatter_regslice_both BuffOfst feed_network gen_access_tuple WrDist BFS_Scatter
+INFO-FLOW: To file: write model BFS_Scatter_ofst_buff
+INFO-FLOW: To file: write model BFS_Scatter_mem_req_buff_V_0
+INFO-FLOW: To file: write model BFS_Scatter_regslice_both
+INFO-FLOW: To file: write model BFS_Scatter_regslice_both
+INFO-FLOW: To file: write model BFS_Scatter_regslice_both
+INFO-FLOW: To file: write model BFS_Scatter_regslice_both
+INFO-FLOW: To file: write model BFS_Scatter_regslice_both
+INFO-FLOW: To file: write model BFS_Scatter_regslice_both
+INFO-FLOW: To file: write model BFS_Scatter_regslice_both
+INFO-FLOW: To file: write model BFS_Scatter_regslice_both
+INFO-FLOW: To file: write model BuffOfst
+INFO-FLOW: To file: write model feed_network
+INFO-FLOW: To file: write model gen_access_tuple
+INFO-FLOW: To file: write model WrDist
+INFO-FLOW: To file: write model BFS_Scatter
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute         get_top 
+Execute         get_config_export -ipname 
+Execute         get_config_export -xo 
+Execute         get_config_export -format 
+Execute         get_config_rtl -module_auto_prefix 
+INFO-FLOW: DBG:CMD:   auto_impl: set ipname to top (module_auto_prefix): BFS_Scatter
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1
+Execute         get_solution -flow_target 
+Execute         get_config_export -xo 
+Execute         get_config_export -format 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/global.setting.tcl
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=5.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BuffOfst.compgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/feed_network.compgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/gen_access_tuple.compgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/WrDist.compgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'BFS_Scatter_ofst_buff_ram (RAM_2P_URAM)' using ultra RAMs.
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'BFS_Scatter_mem_req_buff_V_0_ram (RAM_2P_BRAM)' using block RAMs.
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1
+Execute         get_solution -flow_target 
+Execute         get_config_export -xo 
+Execute         get_config_export -format 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/global.setting.tcl
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=BFS_Scatter xml_exists=0
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.rtl_wrap.cfg.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.rtl_wrap.cfg.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.rtl_wrap.cfg.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.tbgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BuffOfst.compgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/feed_network.compgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/gen_access_tuple.compgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/WrDist.compgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BuffOfst.compgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/feed_network.compgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/gen_access_tuple.compgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/WrDist.compgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.compgen.tcl 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.tbgen.tcl 
+Execute           source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.tbgen.tcl 
+Execute           source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.tbgen.tcl 
+Execute           source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.tbgen.tcl 
+Execute           source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.tbgen.tcl 
+Execute           source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.tbgen.tcl 
+Execute           source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.tbgen.tcl 
+Execute           source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.tbgen.tcl 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Command         ap_source done; 0.21 sec.
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BuffOfst.compgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/feed_network.compgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/gen_access_tuple.compgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/WrDist.compgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.compgen.tcl 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.constraint.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=74
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=36
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=15 #gSsdmPorts=74
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/top-io-be.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.tbgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.rtl_wrap.cfg.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.compgen.dataonly.tcl 
+Execute         get_config_export -format 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BuffOfst.tbgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/feed_network.tbgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/gen_access_tuple.tbgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/WrDist.tbgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.tbgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute         get_solution -flow_target 
+Execute         get_config_rtl -kernel_profile 
+Execute         get_config_rtl -kernel_profile 
+Execute         get_config_rtl -stall_sig_gen 
+Execute         get_config_rtl -profile 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.constraint.tcl 
+Execute         sc_get_clocks BFS_Scatter 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.34 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.37 seconds; current allocated memory: 374.986 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for BFS_Scatter.
+INFO: [VLOG 209-307] Generating Verilog RTL for BFS_Scatter.
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report append design.xml content design_xml=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter_v1/solution1/.autopilot/db/BFS_Scatter.design.xml
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report json2reportxml
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report done
+Execute         syn_report -model BFS_Scatter -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 275.43 MHz
+Command       autosyn done; 3.32 sec.
+Command     csynth_design done; 9.46 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 9.44 seconds. CPU system time: 0.55 seconds. Elapsed time: 9.46 seconds; current allocated memory: 376.218 MB.
+Execute     cleanup_all 

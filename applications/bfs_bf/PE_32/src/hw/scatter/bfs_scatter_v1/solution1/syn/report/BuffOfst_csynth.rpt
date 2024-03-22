@@ -1,0 +1,206 @@
+
+
+================================================================
+== Vitis HLS Report for 'BuffOfst'
+================================================================
+* Date:           Fri Mar 22 20:13:58 2024
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        bfs_scatter_v1
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu280-fsvh2892-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  2.849 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |                      |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip   |          |
+        |       Loop Name      |   min   |   max   |  Latency |  achieved |   target  |   Count  | Pipelined|
+        +----------------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |- L4                  |        ?|        ?|         ?|          -|          -|  0 ~ 4096|        no|
+        | + SEND_REQ_TUPLE_L4  |        0|       16|         2|          1|          1|    0 ~ 16|       yes|
+        | + VITIS_LOOP_63_1    |        ?|        ?|         2|          2|          1|         ?|       yes|
+        +----------------------+---------+---------+----------+-----------+-----------+----------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|      297|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|        -|        -|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|      162|    -|
+|Register             |        -|     -|      234|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|      234|      459|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1344|  3008|   869120|   434560|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4032|  9024|  2607360|  1303680|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln301_fu_408_p2               |         +|   0|  0|  23|          16|          16|
+    |add_ln40_fu_243_p2                |         +|   0|  0|  23|          16|           1|
+    |add_ln41_fu_281_p2                |         +|   0|  0|  20|          13|           1|
+    |i_2_fu_323_p2                     |         +|   0|  0|  20|          13|           1|
+    |j_3_fu_372_p2                     |         +|   0|  0|  12|           5|           1|
+    |ofst_buff_ptr_2_fu_478_p2         |         +|   0|  0|  23|          16|           1|
+    |sub36_fu_350_p2                   |         +|   0|  0|  12|           5|           2|
+    |sub_fu_295_p2                     |         +|   0|  0|  20|          13|           2|
+    |tmp_arlen_V_fu_305_p2             |         +|   0|  0|  12|           4|           2|
+    |and_ln53_fu_392_p2                |       and|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage0_01001         |       and|   0|  0|   2|           1|           1|
+    |ap_block_state4_pp0_stage0_iter1  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln40_fu_227_p2               |      icmp|   0|  0|   9|           4|           1|
+    |icmp_ln41_fu_261_p2               |      icmp|   0|  0|   9|           4|           1|
+    |icmp_ln48_fu_329_p2               |      icmp|   0|  0|  12|          13|          13|
+    |icmp_ln50_fu_338_p2               |      icmp|   0|  0|  12|          14|          14|
+    |icmp_ln52_fu_378_p2               |      icmp|   0|  0|   9|           5|           5|
+    |icmp_ln53_fu_387_p2               |      icmp|   0|  0|  10|           6|           6|
+    |p_sum1_fu_468_p2                  |        or|   0|  0|  16|          16|           1|
+    |n_chunk_fu_249_p3                 |    select|   0|  0|  16|           1|          16|
+    |n_iter_fu_287_p3                  |    select|   0|  0|  13|           1|          13|
+    |select_ln50_fu_315_p3             |    select|   0|  0|   6|           1|           6|
+    |tail_fu_343_p3                    |    select|   0|  0|   6|           1|           5|
+    |tmp_arlen_V_2_fu_397_p3           |    select|   0|  0|   4|           1|           4|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1           |       xor|   0|  0|   2|           2|           1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0| 297|         174|         118|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------+----+-----------+-----+-----------+
+    |            Name            | LUT| Input Size| Bits| Total Bits|
+    +----------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                   |  43|          8|    1|          8|
+    |ap_enable_reg_pp0_iter1     |  14|          3|    1|          3|
+    |ap_phi_mux_j_phi_fu_204_p4  |   9|          2|    5|         10|
+    |i_reg_177                   |   9|          2|   13|         26|
+    |j_reg_200                   |   9|          2|    5|         10|
+    |ofst_buff_address1          |  14|          3|   16|         48|
+    |ofst_buff_d1                |  14|          3|   64|        192|
+    |ofst_buff_ptr_1_reg_212     |   9|          2|   16|         32|
+    |ofst_buff_ptr_reg_188       |   9|          2|   16|         32|
+    |rd_port_TDATA_blk_n         |   9|          2|    1|          2|
+    |rd_req_V_blk_n              |   9|          2|    1|          2|
+    |rd_start                    |  14|          3|    1|          3|
+    +----------------------------+----+-----------+-----+-----------+
+    |Total                       | 162|         34|  140|        368|
+    +----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                |   7|   0|    7|          0|
+    |ap_enable_reg_pp0_iter0  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |i_2_reg_504              |  13|   0|   13|          0|
+    |i_reg_177                |  13|   0|   13|          0|
+    |icmp_ln50_reg_513        |   1|   0|    1|          0|
+    |icmp_ln52_reg_538        |   1|   0|    1|          0|
+    |j_3_reg_533              |   5|   0|    5|          0|
+    |j_reg_200                |   5|   0|    5|          0|
+    |n_iter_reg_484           |  13|   0|   13|          0|
+    |ofst_buff_ptr_1_reg_212  |  16|   0|   16|          0|
+    |ofst_buff_ptr_2_reg_556  |  16|   0|   16|          0|
+    |ofst_buff_ptr_reg_188    |  16|   0|   16|          0|
+    |p_cast_reg_551           |  64|   0|   64|          0|
+    |rd_pkt_last_V_reg_542    |   1|   0|    1|          0|
+    |select_ln50_reg_499      |   5|   0|    5|          0|
+    |sext_ln58_reg_523        |   6|   0|    6|          0|
+    |shl_ln67_reg_546         |  15|   0|   16|          1|
+    |shl_ln_reg_528           |  12|   0|   16|          4|
+    |sub_cast_reg_489         |  14|   0|   14|          0|
+    |tail_reg_518             |   5|   0|    5|          0|
+    |tmp_arlen_V_reg_494      |   4|   0|    4|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    | 234|   0|  239|          5|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+------------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++--------------------+-----+-----+------------+------------------+--------------+
+|ap_clk              |   in|    1|  ap_ctrl_hs|          BuffOfst|  return value|
+|ap_rst              |   in|    1|  ap_ctrl_hs|          BuffOfst|  return value|
+|ap_start            |   in|    1|  ap_ctrl_hs|          BuffOfst|  return value|
+|ap_done             |  out|    1|  ap_ctrl_hs|          BuffOfst|  return value|
+|ap_idle             |  out|    1|  ap_ctrl_hs|          BuffOfst|  return value|
+|ap_ready            |  out|    1|  ap_ctrl_hs|          BuffOfst|  return value|
+|rd_req_V_din        |  out|   32|     ap_fifo|          rd_req_V|       pointer|
+|rd_req_V_full_n     |   in|    1|     ap_fifo|          rd_req_V|       pointer|
+|rd_req_V_write      |  out|    1|     ap_fifo|          rd_req_V|       pointer|
+|rd_start            |  out|    1|      ap_vld|          rd_start|       pointer|
+|rd_start_ap_vld     |  out|    1|      ap_vld|          rd_start|       pointer|
+|ofst_buff_address1  |  out|   16|   ap_memory|         ofst_buff|         array|
+|ofst_buff_ce1       |  out|    1|   ap_memory|         ofst_buff|         array|
+|ofst_buff_we1       |  out|    1|   ap_memory|         ofst_buff|         array|
+|ofst_buff_d1        |  out|   64|   ap_memory|         ofst_buff|         array|
+|rd_port_TDATA       |   in|  128|        axis|  rd_port_V_data_V|       pointer|
+|rd_port_TVALID      |   in|    1|        axis|  rd_port_V_data_V|       pointer|
+|rd_port_TREADY      |  out|    1|        axis|  rd_port_V_last_V|       pointer|
+|rd_port_TLAST       |   in|    1|        axis|  rd_port_V_last_V|       pointer|
+|rd_port_TKEEP       |   in|   16|        axis|  rd_port_V_keep_V|       pointer|
+|rd_port_TSTRB       |   in|   16|        axis|  rd_port_V_strb_V|       pointer|
+|size                |   in|   20|     ap_none|              size|        scalar|
++--------------------+-----+-----+------------+------------------+--------------+
+

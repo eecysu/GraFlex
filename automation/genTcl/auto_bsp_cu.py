@@ -401,7 +401,7 @@ def wrapBspCU(bspConfig, sysConfig):
         svFile.write("    FIFO_D32 # (\n")
         svFile.write("      .DATA_WIDTH ( {} ),\n".format(str(packetWidth)))
         svFile.write("      .EMPTY_TH   ( 3  ),\n")
-        svFile.write("      .FULL_TH    ( 25 )\n")
+        svFile.write("      .FULL_TH    ( 22 )\n")
         svFile.write("    ) inst_gather_fifo_U (\n")
         svFile.write("      .clk\t( ap_clk    ),\n")
         svFile.write("      .rst\t( ~ap_rst_n ),\n")
@@ -438,8 +438,11 @@ def wrapBspCU(bspConfig, sysConfig):
         svFile.write("always @(posedge ap_clk) begin\n")
         svFile.write("  inv_ap_start_1d <= ~ap_start;\n")
         for idx in range(nGatherPE):
-            svFile.write("  sw_ovld_1d[{}] <= sw_ovld_{}_{};\n".format(str(idx), str(idx//bankingFactor), str(idx%bankingFactor)))
-            svFile.write("  sw_odata_1d[{}] <= sw_odata_{}_{};\n".format(str(idx), str(idx//bankingFactor), str(idx%bankingFactor)))
+            i = idx // bankingFactor
+            j = idx %  bankingFactor
+            k = i + j*expandFactor
+            svFile.write("  sw_ovld_1d[{}] <= sw_ovld_{}_{};\n".format(str(k), str(i), str(j)))
+            svFile.write("  sw_odata_1d[{}] <= sw_odata_{}_{};\n".format(str(k), str(i), str(j)))
         svFile.write("end\n\n")
 
 
@@ -499,47 +502,48 @@ def wrapBspCU(bspConfig, sysConfig):
             ramPfx = re.sub('_we0', '', ramPfx)
             ramPfx = re.sub('_d0', '', ramPfx)
             ramPfx = re.sub('_q0', '', ramPfx)
-            ramBankNo = ramBankNoDict[ramPfx]
+            # ramBankStride = ramBankNoDict[ramPfx] // bankingFactor
+            ramBankStride = ramBankNoTotal // nGatherPE
 
             if s.endswith('_address0'):
-                if ramBankNo == 1:
+                if ramBankStride == 1:
                     svFile.write("      .{}\t( {}_g_addr[{}] ),\n" \
                                  .format(s, ramPfx, "gatherIdx"))
                 else:
                     svFile.write("      .{}\t( {}_g_addr[{}] ),\n" \
-                                 .format(s, ramPfx, str(ramIdx*ramBankNo)+"+gatherIdx"))
+                                 .format(s, ramPfx, str(ramIdx*nGatherPE)+"+gatherIdx"))
                 intfCnt += 1
             elif s.endswith('_ce0'):
-                if ramBankNo == 1:
+                if ramBankStride == 1:
                     svFile.write("      .{}\t( {}_g_ce[{}] ),\n" \
                                  .format(s, ramPfx, "gatherIdx"))
                 else:
                     svFile.write("      .{}\t( {}_g_ce[{}] ),\n" \
-                                 .format(s, ramPfx, str(ramIdx*ramBankNo)+"+gatherIdx"))
+                                 .format(s, ramPfx, str(ramIdx*nGatherPE)+"+gatherIdx"))
                 intfCnt += 1
             elif s.endswith('_we0'):
-                if ramBankNo == 1:
+                if ramBankStride == 1:
                     svFile.write("      .{}\t( {}_g_we[{}] ),\n" \
                                  .format(s, ramPfx, "gatherIdx"))
                 else:
                     svFile.write("      .{}\t( {}_g_we[{}] ),\n" \
-                                 .format(s, ramPfx, str(ramIdx*ramBankNo)+"+gatherIdx"))
+                                 .format(s, ramPfx, str(ramIdx*nGatherPE)+"+gatherIdx"))
                 intfCnt += 1               
             elif s.endswith('_d0'):
-                if ramBankNo == 1:
+                if ramBankStride == 1:
                     svFile.write("      .{}\t( {}_g_wdata[{}] ),\n" \
                                  .format(s, ramPfx, "gatherIdx"))
                 else:
                     svFile.write("      .{}\t( {}_g_wdata[{}] ),\n" \
-                                 .format(s, ramPfx, str(ramIdx*ramBankNo)+"+gatherIdx"))
+                                 .format(s, ramPfx, str(ramIdx*nGatherPE)+"+gatherIdx"))
                 intfCnt += 1               
             elif s.endswith('_q0'):
-                if ramBankNo == 1:
+                if ramBankStride == 1:
                     svFile.write("      .{}\t( {}_rdata1[{}] ),\n" \
                                  .format(s, ramPfx, "gatherIdx"))
                 else:
                     svFile.write("      .{}\t( {}_rdata1[{}] ),\n" \
-                                 .format(s, ramPfx, str(ramIdx*ramBankNo)+"+gatherIdx"))
+                                 .format(s, ramPfx, str(ramIdx*nGatherPE)+"+gatherIdx"))
                 intfCnt += 1
             
         svFile.write("    .ap_ready\t()\n")

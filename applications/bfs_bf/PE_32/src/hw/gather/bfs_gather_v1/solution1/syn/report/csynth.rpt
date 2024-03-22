@@ -1,0 +1,24 @@
+
+
+================================================================
+== Synthesis Summary Report of 'BFS_Gather'
+================================================================
++ General Information: 
+    * Date:           Fri Mar 22 20:14:05 2024
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+    * Project:        bfs_gather_v1
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcu280-fsvh2892-2L-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------+--------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |    Modules   |  Issue |      | Latency | Latency| Iteration|         | Trip |          |      |    |          |           |     |
+    |    & Loops   |  Type  | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF    |    LUT    | URAM|
+    +--------------+--------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |+ BFS_Gather  |  Timing|  0.72|        2|  10.000|         -|        2|     -|       yes|     -|   -|  28 (~0%)|  496 (~0%)|    -|
+    +--------------+--------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+

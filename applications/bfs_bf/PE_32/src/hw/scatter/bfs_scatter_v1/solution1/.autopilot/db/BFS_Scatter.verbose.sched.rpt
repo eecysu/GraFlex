@@ -1,0 +1,611 @@
+
+
+================================================================
+== Vitis HLS Report for 'BFS_Scatter'
+================================================================
+* Date:           Fri Mar 22 20:13:57 2024
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        bfs_scatter_v1
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu280-fsvh2892-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.631 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------+---------+---------+-------------+-----------+-----------+-------+----------+
+        |           |  Latency (cycles) |  Iteration  |  Initiation Interval  |  Trip |          |
+        | Loop Name |   min   |   max   |   Latency   |  achieved |   target  | Count | Pipelined|
+        +-----------+---------+---------+-------------+-----------+-----------+-------+----------+
+        |- L6       |        ?|        ?|           68|          -|          -|      ?|        no|
+        |- L_WAIT   |       64|       64|            2|          -|          -|     32|        no|
+        |- INIT_L0  |     4096|     4096|            2|          1|          1|   4096|       yes|
+        |- L1       |        ?|        ?|  10 ~ 131587|          -|          -|  2 ~ ?|        no|
+        +-----------+---------+---------+-------------+-----------+-----------+-------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 17
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 12 2 3 
+2 --> 9 
+3 --> 5 4 
+4 --> 3 
+5 --> 6 7 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 10 
+12 --> 13 
+13 --> 14 10 15 
+14 --> 13 
+15 --> 16 17 
+16 --> 15 
+17 --> 10 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.85>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%resWrite_read = read i1 @_ssdm_op_Read.ap_none.i1, i1 %resWrite"   --->   Operation 18 'read' 'resWrite_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%peID_read = read i8 @_ssdm_op_Read.ap_none.i8, i8 %peID"   --->   Operation 19 'read' 'peID_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%root_read = read i32 @_ssdm_op_Read.ap_none.i32, i32 %root"   --->   Operation 20 'read' 'root_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%N_Vertex_read = read i32 @_ssdm_op_Read.ap_none.i32, i32 %N_Vertex"   --->   Operation 21 'read' 'N_Vertex_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%glbl_d_read = read i33 @_ssdm_op_Read.ap_none.i33, i33 %glbl_d"   --->   Operation 22 'read' 'glbl_d_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%CSR_E_read = read i33 @_ssdm_op_Read.ap_none.i33, i33 %CSR_E"   --->   Operation 23 'read' 'CSR_E_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%CSR_V_read = read i33 @_ssdm_op_Read.ap_none.i33, i33 %CSR_V"   --->   Operation 24 'read' 'CSR_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%empty = trunc i32 %root_read"   --->   Operation 25 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%empty_154 = trunc i32 %root_read"   --->   Operation 26 'trunc' 'empty_154' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%empty_155 = trunc i32 %N_Vertex_read"   --->   Operation 27 'trunc' 'empty_155' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_0"   --->   Operation 28 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i33 %CSR_V"   --->   Operation 29 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i33 %CSR_V, void @empty_12, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i33 %CSR_E"   --->   Operation 31 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i33 %CSR_E, void @empty_12, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 32 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i33 %glbl_d"   --->   Operation 33 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i33 %glbl_d, void @empty_12, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 34 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %rd_baseAddr"   --->   Operation 35 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %rd_baseAddr, void @empty_12, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 36 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %wr_baseAddr"   --->   Operation 37 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %wr_baseAddr, void @empty_12, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 38 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %rd_port_V_data_V, i16 %rd_port_V_keep_V, i16 %rd_port_V_strb_V, i1 %rd_port_V_last_V, void @empty_19, i32 1, i32 1, void @empty_10, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 39 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i128 %rd_port_V_data_V"   --->   Operation 40 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %rd_port_V_keep_V"   --->   Operation 41 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %rd_port_V_strb_V"   --->   Operation 42 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %rd_port_V_last_V"   --->   Operation 43 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %wr_port_V_data_V, i16 %wr_port_V_keep_V, i16 %wr_port_V_strb_V, i1 %wr_port_V_last_V, void @empty_19, i32 1, i32 1, void @empty_10, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 44 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i128 %wr_port_V_data_V"   --->   Operation 45 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %wr_port_V_keep_V"   --->   Operation 46 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %wr_port_V_strb_V"   --->   Operation 47 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %wr_port_V_last_V"   --->   Operation 48 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %rd_req_V, void @empty_16, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 49 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %rd_req_V"   --->   Operation 50 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %wr_len"   --->   Operation 51 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %wr_len, void @empty_12, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 52 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %rd_start"   --->   Operation 53 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %rd_start, void @empty_12, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 54 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %wr_start"   --->   Operation 55 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %wr_start, void @empty_12, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 56 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %N_Vertex"   --->   Operation 57 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %N_Vertex, void @empty_12, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 58 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %root"   --->   Operation 59 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %root, void @empty_12, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 60 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %peID"   --->   Operation 61 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %peID, void @empty_12, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 62 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %sw_data_0_V, void @empty_16, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 63 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %sw_data_0_V"   --->   Operation 64 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %sw_data_1_V, void @empty_16, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 65 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %sw_data_1_V"   --->   Operation 66 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %sw_data_2_V, void @empty_16, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 67 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %sw_data_2_V"   --->   Operation 68 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %sw_data_3_V, void @empty_16, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 69 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %sw_data_3_V"   --->   Operation 70 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %glblIterIdx"   --->   Operation 71 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %glblIterIdx, void @empty_12, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 72 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %cycle_cnt"   --->   Operation 73 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %cycle_cnt, void @empty_12, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 74 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %launch_recv"   --->   Operation 75 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %launch_recv, void @empty_12, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 76 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %resWrite"   --->   Operation 77 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %resWrite, void @empty_12, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 78 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %tmp_dist_0, void @empty, i32 0, i32 0, void @empty_9, i32 1, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 79 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tmp_dist_0, i64 666, i64 207, i64 1"   --->   Operation 80 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %tmp_dist_0"   --->   Operation 81 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %tmp_dist_1, void @empty, i32 0, i32 0, void @empty_9, i32 1, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 82 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tmp_dist_1, i64 666, i64 207, i64 1"   --->   Operation 83 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %tmp_dist_1"   --->   Operation 84 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %tmp_dist_2, void @empty, i32 0, i32 0, void @empty_9, i32 1, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 85 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tmp_dist_2, i64 666, i64 207, i64 1"   --->   Operation 86 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %tmp_dist_2"   --->   Operation 87 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 88 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %tmp_dist_3, void @empty, i32 0, i32 0, void @empty_9, i32 1, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 88 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 89 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tmp_dist_3, i64 666, i64 207, i64 1"   --->   Operation 89 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 90 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %tmp_dist_3"   --->   Operation 90 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 91 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %tmp_dist_4, void @empty, i32 0, i32 0, void @empty_9, i32 1, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 91 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 92 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tmp_dist_4, i64 666, i64 207, i64 1"   --->   Operation 92 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 93 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %tmp_dist_4"   --->   Operation 93 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 94 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %tmp_dist_5, void @empty, i32 0, i32 0, void @empty_9, i32 1, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 94 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 95 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tmp_dist_5, i64 666, i64 207, i64 1"   --->   Operation 95 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 96 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %tmp_dist_5"   --->   Operation 96 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 97 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %tmp_dist_6, void @empty, i32 0, i32 0, void @empty_9, i32 1, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 97 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 98 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tmp_dist_6, i64 666, i64 207, i64 1"   --->   Operation 98 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 99 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %tmp_dist_6"   --->   Operation 99 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 100 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %tmp_dist_7, void @empty, i32 0, i32 0, void @empty_9, i32 1, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 100 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 101 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tmp_dist_7, i64 666, i64 207, i64 1"   --->   Operation 101 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 102 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %tmp_dist_7"   --->   Operation 102 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 103 [1/1] (0.00ns)   --->   "%ofst_buff = alloca i64 1"   --->   Operation 103 'alloca' 'ofst_buff' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_2P_URAM">   --->   Core 95 'RAM_2P_URAM' <Latency = 1> <II = 1> <Delay = 2.03> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 49152> <RAM>
+ST_1 : Operation 104 [1/1] (0.00ns)   --->   "%resWrite_assign = alloca i64 1"   --->   Operation 104 'alloca' 'resWrite_assign' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 105 [1/1] (0.00ns)   --->   "%mem_req_buff_V_0 = alloca i64 1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:298]   --->   Operation 105 'alloca' 'mem_req_buff_V_0' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 2048> <RAM>
+ST_1 : Operation 106 [1/1] (0.00ns)   --->   "%mem_req_buff_V_1 = alloca i64 1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:298]   --->   Operation 106 'alloca' 'mem_req_buff_V_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 2048> <RAM>
+ST_1 : Operation 107 [1/1] (0.00ns)   --->   "%n_tuple_0 = alloca i64 1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:392]   --->   Operation 107 'alloca' 'n_tuple_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 108 [1/1] (0.00ns)   --->   "%n_tuple_1 = alloca i64 1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:393]   --->   Operation 108 'alloca' 'n_tuple_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 109 [1/1] (0.00ns)   --->   "%CSR_V_cast = zext i33 %CSR_V_read"   --->   Operation 109 'zext' 'CSR_V_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 110 [1/1] (0.00ns)   --->   "%CSR_E_cast = zext i33 %CSR_E_read"   --->   Operation 110 'zext' 'CSR_E_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 111 [1/1] (0.00ns)   --->   "%glbl_d_cast10 = zext i33 %glbl_d_read"   --->   Operation 111 'zext' 'glbl_d_cast10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 112 [1/1] (0.00ns)   --->   "%store_ln0 = store i1 %resWrite_read, i1 %resWrite_assign"   --->   Operation 112 'store' 'store_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 113 [1/1] (0.00ns)   --->   "%specmemcore_ln295 = specmemcore void @_ssdm_op_SpecMemCore, i64 %ofst_buff, i64 666, i64 24, i64 1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:295]   --->   Operation 113 'specmemcore' 'specmemcore_ln295' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 114 [1/1] (0.00ns)   --->   "%specmemcore_ln299 = specmemcore void @_ssdm_op_SpecMemCore, i32 %mem_req_buff_V_0, i64 666, i64 22, i64 18446744073709551615" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:299]   --->   Operation 114 'specmemcore' 'specmemcore_ln299' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 115 [1/1] (0.00ns)   --->   "%specmemcore_ln300 = specmemcore void @_ssdm_op_SpecMemCore, i32 %mem_req_buff_V_1, i64 666, i64 22, i64 18446744073709551615" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:300]   --->   Operation 115 'specmemcore' 'specmemcore_ln300' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 116 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i21 @_ssdm_op_PartSelect.i21.i32.i32.i32, i32 %N_Vertex_read, i32 11, i32 31" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:306]   --->   Operation 116 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 117 [1/1] (0.00ns)   --->   "%zext_ln306 = zext i21 %trunc_ln" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:306]   --->   Operation 117 'zext' 'zext_ln306' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 118 [1/1] (0.00ns)   --->   "%trunc_ln1 = partselect i27 @_ssdm_op_PartSelect.i27.i32.i32.i32, i32 %N_Vertex_read, i32 5, i32 31" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:307]   --->   Operation 118 'partselect' 'trunc_ln1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 119 [1/1] (0.00ns)   --->   "%zext_ln307 = zext i27 %trunc_ln1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:307]   --->   Operation 119 'zext' 'zext_ln307' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 120 [1/1] (0.85ns)   --->   "%rlt_tail_idx = add i28 %zext_ln307, i28 1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:307]   --->   Operation 120 'add' 'rlt_tail_idx' <Predicate = true> <Delay = 0.85> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 121 [1/1] (0.00ns)   --->   "%write_ln309 = write void @_ssdm_op_Write.ap_none.volatile.i1P0A, i1 %rd_start, i1 0" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:309]   --->   Operation 121 'write' 'write_ln309' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 122 [1/1] (0.00ns)   --->   "%write_ln310 = write void @_ssdm_op_Write.ap_none.volatile.i1P0A, i1 %wr_start, i1 0" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:310]   --->   Operation 122 'write' 'write_ln310' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 123 [1/1] (0.00ns)   --->   "%write_ln311 = write void @_ssdm_op_Write.ap_none.volatile.i1P0A, i1 %launch_recv, i1 0" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:311]   --->   Operation 123 'write' 'write_ln311' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 124 [1/1] (0.00ns)   --->   "%resWrite_assign_load = load i1 %resWrite_assign" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:316]   --->   Operation 124 'load' 'resWrite_assign_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 125 [1/1] (0.00ns)   --->   "%glblIterIdx_read = read i16 @_ssdm_op_Read.ap_none.i16P0A, i16 %glblIterIdx" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:344]   --->   Operation 125 'read' 'glblIterIdx_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 126 [1/1] (0.00ns)   --->   "%br_ln316 = br i1 %resWrite_assign_load, void, void %.lr.ph" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:316]   --->   Operation 126 'br' 'br_ln316' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 127 [1/1] (0.67ns)   --->   "%icmp_ln352 = icmp_eq  i16 %glblIterIdx_read, i16 0" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:352]   --->   Operation 127 'icmp' 'icmp_ln352' <Predicate = (!resWrite_assign_load)> <Delay = 0.67> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 128 [1/1] (0.00ns)   --->   "%br_ln352 = br i1 %icmp_ln352, void %.critedge, void %arrayidx5968.case.0.preheader" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:352]   --->   Operation 128 'br' 'br_ln352' <Predicate = (!resWrite_assign_load)> <Delay = 0.00>
+ST_1 : Operation 129 [1/1] (0.38ns)   --->   "%br_ln0 = br void %arrayidx5968.case.0"   --->   Operation 129 'br' 'br_ln0' <Predicate = (!resWrite_assign_load & icmp_ln352)> <Delay = 0.38>
+ST_1 : Operation 130 [1/1] (0.66ns)   --->   "%icmp_ln318 = icmp_eq  i15 %empty_155, i15 0" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:318]   --->   Operation 130 'icmp' 'icmp_ln318' <Predicate = (resWrite_assign_load)> <Delay = 0.66> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 131 [1/1] (0.00ns)   --->   "%write_ln321 = write void @_ssdm_op_Write.ap_none.volatile.i64P0A, i64 %wr_baseAddr, i64 %glbl_d_cast10" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:321]   --->   Operation 131 'write' 'write_ln321' <Predicate = (resWrite_assign_load)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 132 [1/1] (0.00ns)   --->   "%write_ln384 = write void @_ssdm_op_Write.ap_none.volatile.i1P0A, i1 %launch_recv, i1 1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:384]   --->   Operation 132 'write' 'write_ln384' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 133 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 133 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 1> <Delay = 2.28>
+ST_3 : Operation 134 [1/1] (0.00ns)   --->   "%i_4 = phi i13 %i_5, void %arrayidx5968.case.0.split, i13 0, void %arrayidx5968.case.0.preheader"   --->   Operation 134 'phi' 'i_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 135 [1/1] (0.75ns)   --->   "%i_5 = add i13 %i_4, i13 1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:354]   --->   Operation 135 'add' 'i_5' <Predicate = true> <Delay = 0.75> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 136 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 136 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 137 [1/1] (0.64ns)   --->   "%icmp_ln354 = icmp_eq  i13 %i_4, i13 4096" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:354]   --->   Operation 137 'icmp' 'icmp_ln354' <Predicate = true> <Delay = 0.64> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 138 [1/1] (0.00ns)   --->   "%empty_157 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 4096, i64 4096, i64 4096"   --->   Operation 138 'speclooptripcount' 'empty_157' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 139 [1/1] (0.00ns)   --->   "%br_ln354 = br i1 %icmp_ln354, void %arrayidx5968.case.0.split, void" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:354]   --->   Operation 139 'br' 'br_ln354' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 140 [1/1] (0.00ns)   --->   "%idxprom58 = zext i13 %i_4" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:354]   --->   Operation 140 'zext' 'idxprom58' <Predicate = (!icmp_ln354)> <Delay = 0.00>
+ST_3 : Operation 141 [1/1] (0.00ns)   --->   "%tmp_dist_0_addr = getelementptr i64 %tmp_dist_0, i64 0, i64 %idxprom58" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 141 'getelementptr' 'tmp_dist_0_addr' <Predicate = (!icmp_ln354)> <Delay = 0.00>
+ST_3 : Operation 142 [2/2] (1.64ns)   --->   "%store_ln358 = store i64 18446744073709551615, i12 %tmp_dist_0_addr" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 142 'store' 'store_ln358' <Predicate = (!icmp_ln354)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_3 : Operation 143 [1/1] (0.00ns)   --->   "%tmp_dist_1_addr = getelementptr i64 %tmp_dist_1, i64 0, i64 %idxprom58" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 143 'getelementptr' 'tmp_dist_1_addr' <Predicate = (!icmp_ln354)> <Delay = 0.00>
+ST_3 : Operation 144 [2/2] (1.64ns)   --->   "%store_ln358 = store i64 18446744073709551615, i12 %tmp_dist_1_addr" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 144 'store' 'store_ln358' <Predicate = (!icmp_ln354)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_3 : Operation 145 [1/1] (0.00ns)   --->   "%tmp_dist_2_addr = getelementptr i64 %tmp_dist_2, i64 0, i64 %idxprom58" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 145 'getelementptr' 'tmp_dist_2_addr' <Predicate = (!icmp_ln354)> <Delay = 0.00>
+ST_3 : Operation 146 [2/2] (1.64ns)   --->   "%store_ln358 = store i64 18446744073709551615, i12 %tmp_dist_2_addr" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 146 'store' 'store_ln358' <Predicate = (!icmp_ln354)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_3 : Operation 147 [1/1] (0.00ns)   --->   "%tmp_dist_3_addr = getelementptr i64 %tmp_dist_3, i64 0, i64 %idxprom58" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 147 'getelementptr' 'tmp_dist_3_addr' <Predicate = (!icmp_ln354)> <Delay = 0.00>
+ST_3 : Operation 148 [2/2] (1.64ns)   --->   "%store_ln358 = store i64 18446744073709551615, i12 %tmp_dist_3_addr" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 148 'store' 'store_ln358' <Predicate = (!icmp_ln354)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_3 : Operation 149 [1/1] (0.00ns)   --->   "%tmp_dist_4_addr = getelementptr i64 %tmp_dist_4, i64 0, i64 %idxprom58" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 149 'getelementptr' 'tmp_dist_4_addr' <Predicate = (!icmp_ln354)> <Delay = 0.00>
+ST_3 : Operation 150 [2/2] (1.64ns)   --->   "%store_ln358 = store i64 18446744073709551615, i12 %tmp_dist_4_addr" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 150 'store' 'store_ln358' <Predicate = (!icmp_ln354)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_3 : Operation 151 [1/1] (0.00ns)   --->   "%tmp_dist_5_addr = getelementptr i64 %tmp_dist_5, i64 0, i64 %idxprom58" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 151 'getelementptr' 'tmp_dist_5_addr' <Predicate = (!icmp_ln354)> <Delay = 0.00>
+ST_3 : Operation 152 [2/2] (1.64ns)   --->   "%store_ln358 = store i64 18446744073709551615, i12 %tmp_dist_5_addr" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 152 'store' 'store_ln358' <Predicate = (!icmp_ln354)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_3 : Operation 153 [1/1] (0.00ns)   --->   "%tmp_dist_6_addr = getelementptr i64 %tmp_dist_6, i64 0, i64 %idxprom58" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 153 'getelementptr' 'tmp_dist_6_addr' <Predicate = (!icmp_ln354)> <Delay = 0.00>
+ST_3 : Operation 154 [2/2] (1.64ns)   --->   "%store_ln358 = store i64 18446744073709551615, i12 %tmp_dist_6_addr" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 154 'store' 'store_ln358' <Predicate = (!icmp_ln354)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_3 : Operation 155 [1/1] (0.00ns)   --->   "%tmp_dist_7_addr = getelementptr i64 %tmp_dist_7, i64 0, i64 %idxprom58" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 155 'getelementptr' 'tmp_dist_7_addr' <Predicate = (!icmp_ln354)> <Delay = 0.00>
+ST_3 : Operation 156 [2/2] (1.64ns)   --->   "%store_ln358 = store i64 18446744073709551615, i12 %tmp_dist_7_addr" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 156 'store' 'store_ln358' <Predicate = (!icmp_ln354)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+
+State 4 <SV = 2> <Delay = 1.64>
+ST_4 : Operation 157 [1/1] (0.00ns)   --->   "%specloopname_ln354 = specloopname void @_ssdm_op_SpecLoopName, void @empty_18" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:354]   --->   Operation 157 'specloopname' 'specloopname_ln354' <Predicate = (!icmp_ln354)> <Delay = 0.00>
+ST_4 : Operation 158 [1/2] (1.64ns)   --->   "%store_ln358 = store i64 18446744073709551615, i12 %tmp_dist_0_addr" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 158 'store' 'store_ln358' <Predicate = (!icmp_ln354)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_4 : Operation 159 [1/2] (1.64ns)   --->   "%store_ln358 = store i64 18446744073709551615, i12 %tmp_dist_1_addr" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 159 'store' 'store_ln358' <Predicate = (!icmp_ln354)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_4 : Operation 160 [1/2] (1.64ns)   --->   "%store_ln358 = store i64 18446744073709551615, i12 %tmp_dist_2_addr" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 160 'store' 'store_ln358' <Predicate = (!icmp_ln354)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_4 : Operation 161 [1/2] (1.64ns)   --->   "%store_ln358 = store i64 18446744073709551615, i12 %tmp_dist_3_addr" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 161 'store' 'store_ln358' <Predicate = (!icmp_ln354)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_4 : Operation 162 [1/2] (1.64ns)   --->   "%store_ln358 = store i64 18446744073709551615, i12 %tmp_dist_4_addr" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 162 'store' 'store_ln358' <Predicate = (!icmp_ln354)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_4 : Operation 163 [1/2] (1.64ns)   --->   "%store_ln358 = store i64 18446744073709551615, i12 %tmp_dist_5_addr" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 163 'store' 'store_ln358' <Predicate = (!icmp_ln354)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_4 : Operation 164 [1/2] (1.64ns)   --->   "%store_ln358 = store i64 18446744073709551615, i12 %tmp_dist_6_addr" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 164 'store' 'store_ln358' <Predicate = (!icmp_ln354)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_4 : Operation 165 [1/2] (1.64ns)   --->   "%store_ln358 = store i64 18446744073709551615, i12 %tmp_dist_7_addr" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358]   --->   Operation 165 'store' 'store_ln358' <Predicate = (!icmp_ln354)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_4 : Operation 166 [1/1] (0.00ns)   --->   "%br_ln0 = br void %arrayidx5968.case.0"   --->   Operation 166 'br' 'br_ln0' <Predicate = (!icmp_ln354)> <Delay = 0.00>
+
+State 5 <SV = 2> <Delay = 3.25>
+ST_5 : Operation 167 [1/1] (0.00ns)   --->   "%zext_ln366 = zext i5 %empty_154" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:366]   --->   Operation 167 'zext' 'zext_ln366' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 168 [1/1] (0.00ns)   --->   "%zext_ln366_1 = zext i5 %empty_154" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:366]   --->   Operation 168 'zext' 'zext_ln366_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 169 [1/1] (0.58ns)   --->   "%icmp_ln366 = icmp_eq  i8 %zext_ln366_1, i8 %peID_read" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:366]   --->   Operation 169 'icmp' 'icmp_ln366' <Predicate = true> <Delay = 0.58> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 170 [1/1] (0.00ns)   --->   "%br_ln366 = br i1 %icmp_ln366, void %arrayidx97516.exit, void %_ifconv" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:366]   --->   Operation 170 'br' 'br_ln366' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 171 [1/1] (0.82ns)   --->   "%sub_ln368 = sub i23 %empty, i23 %zext_ln366" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:368]   --->   Operation 171 'sub' 'sub_ln368' <Predicate = (icmp_ln366)> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 172 [1/1] (0.00ns)   --->   "%rootBank = partselect i3 @_ssdm_op_PartSelect.i3.i23.i32.i32, i23 %sub_ln368, i32 5, i32 7" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:369]   --->   Operation 172 'partselect' 'rootBank' <Predicate = (icmp_ln366)> <Delay = 0.00>
+ST_5 : Operation 173 [1/1] (0.00ns)   --->   "%rangeOfst = partselect i3 @_ssdm_op_PartSelect.i3.i23.i32.i32, i23 %sub_ln368, i32 8, i32 10" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:370]   --->   Operation 173 'partselect' 'rangeOfst' <Predicate = (icmp_ln366)> <Delay = 0.00>
+ST_5 : Operation 174 [1/1] (0.00ns)   --->   "%shl_ln4 = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i3.i3, i3 %rangeOfst, i3 0" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:377]   --->   Operation 174 'bitconcatenate' 'shl_ln4' <Predicate = (icmp_ln366)> <Delay = 0.00>
+ST_5 : Operation 175 [1/1] (0.00ns)   --->   "%zext_ln377 = zext i6 %shl_ln4" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:377]   --->   Operation 175 'zext' 'zext_ln377' <Predicate = (icmp_ln366)> <Delay = 0.00>
+ST_5 : Operation 176 [1/1] (0.70ns)   --->   "%add_ln377 = add i7 %zext_ln377, i7 8" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:377]   --->   Operation 176 'add' 'add_ln377' <Predicate = (icmp_ln366)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 177 [1/1] (0.00ns)   --->   "%tmp_6 = bitselect i1 @_ssdm_op_BitSelect.i1.i7.i32, i7 %add_ln377, i32 6"   --->   Operation 177 'bitselect' 'tmp_6' <Predicate = (icmp_ln366)> <Delay = 0.00>
+ST_5 : Operation 178 [1/1] (0.70ns)   --->   "%sub_ln684 = sub i6 56, i6 %shl_ln4"   --->   Operation 178 'sub' 'sub_ln684' <Predicate = (icmp_ln366)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 179 [1/1] (0.00ns)   --->   "%zext_ln684 = zext i6 %sub_ln684"   --->   Operation 179 'zext' 'zext_ln684' <Predicate = (icmp_ln366)> <Delay = 0.00>
+ST_5 : Operation 180 [1/1] (0.70ns)   --->   "%add_ln684 = add i7 %zext_ln377, i7 74"   --->   Operation 180 'add' 'add_ln684' <Predicate = (icmp_ln366)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 181 [1/1] (0.30ns)   --->   "%W_ref1 = select i1 %tmp_6, i7 %add_ln684, i7 %zext_ln684"   --->   Operation 181 'select' 'W_ref1' <Predicate = (icmp_ln366)> <Delay = 0.30> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 182 [1/1] (0.49ns)   --->   "%icmp_ln684 = icmp_ne  i3 %rangeOfst, i3 0"   --->   Operation 182 'icmp' 'icmp_ln684' <Predicate = (icmp_ln366)> <Delay = 0.49> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 183 [1/1] (0.70ns)   --->   "%sub_ln684_1 = sub i7 2, i7 %zext_ln377"   --->   Operation 183 'sub' 'sub_ln684_1' <Predicate = (icmp_ln366)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 184 [1/1] (0.30ns)   --->   "%W_ref2 = select i1 %icmp_ln684, i7 %zext_ln377, i7 %sub_ln684_1"   --->   Operation 184 'select' 'W_ref2' <Predicate = (icmp_ln366)> <Delay = 0.30> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 185 [1/1] (0.00ns)   --->   "%sext_ln307_1 = sext i7 %W_ref2"   --->   Operation 185 'sext' 'sext_ln307_1' <Predicate = (icmp_ln366)> <Delay = 0.00>
+ST_5 : Operation 186 [1/1] (0.00ns)   --->   "%tmp_7 = bitselect i1 @_ssdm_op_BitSelect.i1.i7.i32, i7 %add_ln377, i32 6"   --->   Operation 186 'bitselect' 'tmp_7' <Predicate = (icmp_ln366)> <Delay = 0.00>
+ST_5 : Operation 187 [1/1] (0.00ns)   --->   "%zext_ln674_1 = zext i1 %tmp_7"   --->   Operation 187 'zext' 'zext_ln674_1' <Predicate = (icmp_ln366)> <Delay = 0.00>
+ST_5 : Operation 188 [1/1] (0.34ns)   --->   "%icmp_ln674 = icmp_ne  i26 %zext_ln674_1, i26 0"   --->   Operation 188 'icmp' 'icmp_ln674' <Predicate = (icmp_ln366)> <Delay = 0.34> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 189 [1/1] (0.70ns)   --->   "%add_ln674 = add i7 %zext_ln377, i7 73"   --->   Operation 189 'add' 'add_ln674' <Predicate = (icmp_ln366)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 190 [1/1] (0.70ns)   --->   "%sub_ln674_2 = sub i7 55, i7 %zext_ln377"   --->   Operation 190 'sub' 'sub_ln674_2' <Predicate = (icmp_ln366)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 191 [1/1] (0.00ns) (grouped into LUT with out node sub_ln674_3)   --->   "%select_ln674 = select i1 %icmp_ln674, i7 %add_ln674, i7 %sub_ln674_2"   --->   Operation 191 'select' 'select_ln674' <Predicate = (icmp_ln366)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 192 [1/1] (0.70ns) (out node of the LUT)   --->   "%sub_ln674_3 = sub i7 63, i7 %select_ln674"   --->   Operation 192 'sub' 'sub_ln674_3' <Predicate = (icmp_ln366)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 193 [1/1] (0.70ns)   --->   "%add_ln312 = add i7 %W_ref1, i7 7"   --->   Operation 193 'add' 'add_ln312' <Predicate = (icmp_ln366)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 194 [1/1] (0.00ns)   --->   "%tmp_8 = partselect i4 @_ssdm_op_PartSelect.i4.i7.i32.i32, i7 %add_ln312, i32 3, i32 6"   --->   Operation 194 'partselect' 'tmp_8' <Predicate = (icmp_ln366)> <Delay = 0.00>
+ST_5 : Operation 195 [1/1] (0.65ns)   --->   "%icmp_ln312 = icmp_ult  i4 %tmp_8, i4 1"   --->   Operation 195 'icmp' 'icmp_ln312' <Predicate = (icmp_ln366)> <Delay = 0.65> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 196 [1/1] (0.00ns)   --->   "%sext_ln312 = sext i7 %add_ln312"   --->   Operation 196 'sext' 'sext_ln312' <Predicate = (icmp_ln366)> <Delay = 0.00>
+ST_5 : Operation 197 [1/1] (0.70ns)   --->   "%add_ln312_1 = add i8 %sext_ln312, i8 %sext_ln307_1"   --->   Operation 197 'add' 'add_ln312_1' <Predicate = (icmp_ln366)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 198 [1/1] (0.49ns)   --->   "%icmp_ln372 = icmp_eq  i3 %rangeOfst, i3 7" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:372]   --->   Operation 198 'icmp' 'icmp_ln372' <Predicate = (icmp_ln366)> <Delay = 0.49> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 199 [1/1] (0.49ns)   --->   "%icmp_ln372_1 = icmp_eq  i3 %rangeOfst, i3 0" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:372]   --->   Operation 199 'icmp' 'icmp_ln372_1' <Predicate = (icmp_ln366)> <Delay = 0.49> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 200 [1/1] (0.00ns)   --->   "%lshr_ln = partselect i12 @_ssdm_op_PartSelect.i12.i23.i32.i32, i23 %sub_ln368, i32 11, i32 22" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 200 'partselect' 'lshr_ln' <Predicate = (icmp_ln366)> <Delay = 0.00>
+
+State 6 <SV = 3> <Delay = 3.63>
+ST_6 : Operation 201 [1/1] (0.00ns)   --->   "%sext_ln307 = sext i7 %W_ref2"   --->   Operation 201 'sext' 'sext_ln307' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 202 [1/1] (0.70ns)   --->   "%sub_ln674 = sub i7 64, i7 %zext_ln377"   --->   Operation 202 'sub' 'sub_ln674' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 203 [1/1] (0.00ns) (grouped into LUT with out node and_ln312_3)   --->   "%zext_ln674 = zext i7 %sub_ln674"   --->   Operation 203 'zext' 'zext_ln674' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 204 [1/1] (0.00ns) (grouped into LUT with out node and_ln312_3)   --->   "%p_Result_16 = lshr i64 18446744073709551615, i64 %zext_ln674"   --->   Operation 204 'lshr' 'p_Result_16' <Predicate = true> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 205 [1/1] (0.70ns)   --->   "%sub_ln674_1 = sub i7 55, i7 %zext_ln377"   --->   Operation 205 'sub' 'sub_ln674_1' <Predicate = (icmp_ln674)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 206 [1/1] (0.00ns) (grouped into LUT with out node p_Result_17)   --->   "%select_ln674_1 = select i1 %icmp_ln674, i7 %sub_ln674_1, i7 %add_ln377"   --->   Operation 206 'select' 'select_ln674_1' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 207 [1/1] (0.00ns) (grouped into LUT with out node p_Result_17)   --->   "%zext_ln674_2 = zext i7 %select_ln674_1"   --->   Operation 207 'zext' 'zext_ln674_2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 208 [1/1] (0.00ns) (grouped into LUT with out node p_Result_17)   --->   "%zext_ln674_3 = zext i7 %sub_ln674_3"   --->   Operation 208 'zext' 'zext_ln674_3' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 209 [1/1] (0.00ns) (grouped into LUT with out node p_Result_17)   --->   "%lshr_ln674 = lshr i64 18446744073709551615, i64 %zext_ln674_2"   --->   Operation 209 'lshr' 'lshr_ln674' <Predicate = true> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 210 [1/1] (0.00ns) (grouped into LUT with out node p_Result_17)   --->   "%lshr_ln674_1 = lshr i64 18446744073709551615, i64 %zext_ln674_3"   --->   Operation 210 'lshr' 'lshr_ln674_1' <Predicate = true> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 211 [1/1] (0.66ns) (out node of the LUT)   --->   "%p_Result_17 = and i64 %lshr_ln674, i64 %lshr_ln674_1"   --->   Operation 211 'and' 'p_Result_17' <Predicate = true> <Delay = 0.66> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 212 [1/1] (0.00ns) (grouped into LUT with out node and_ln312)   --->   "%select_ln312 = select i1 %icmp_ln312, i7 %add_ln312, i7 8"   --->   Operation 212 'select' 'select_ln312' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 213 [1/1] (0.70ns)   --->   "%sub_ln312 = sub i7 64, i7 %W_ref1"   --->   Operation 213 'sub' 'sub_ln312' <Predicate = (!icmp_ln312)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 214 [1/1] (0.00ns) (grouped into LUT with out node and_ln312)   --->   "%select_ln312_1 = select i1 %icmp_ln312, i7 63, i7 %sub_ln312"   --->   Operation 214 'select' 'select_ln312_1' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 215 [1/1] (0.00ns) (grouped into LUT with out node and_ln312)   --->   "%zext_ln312 = zext i7 %select_ln312"   --->   Operation 215 'zext' 'zext_ln312' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 216 [1/1] (0.00ns) (grouped into LUT with out node and_ln312)   --->   "%zext_ln312_1 = zext i7 %select_ln312_1"   --->   Operation 216 'zext' 'zext_ln312_1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 217 [1/1] (0.00ns) (grouped into LUT with out node p_Result_18)   --->   "%trunc_ln312 = trunc i64 %p_Result_17"   --->   Operation 217 'trunc' 'trunc_ln312' <Predicate = (icmp_ln312)> <Delay = 0.00>
+ST_6 : Operation 218 [1/1] (0.00ns) (grouped into LUT with out node p_Result_18)   --->   "%st = bitconcatenate i72 @_ssdm_op_BitConcatenate.i72.i9.i63, i9 %trunc_ln312, i63 0"   --->   Operation 218 'bitconcatenate' 'st' <Predicate = (icmp_ln312)> <Delay = 0.00>
+ST_6 : Operation 219 [1/1] (0.00ns)   --->   "%sf = bitconcatenate i72 @_ssdm_op_BitConcatenate.i72.i64.i8, i64 %p_Result_17, i8 0"   --->   Operation 219 'bitconcatenate' 'sf' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 220 [1/1] (0.00ns) (grouped into LUT with out node p_Result_18)   --->   "%select_ln312_2 = select i1 %icmp_ln312, i72 %st, i72 %sf"   --->   Operation 220 'select' 'select_ln312_2' <Predicate = (icmp_ln312)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 221 [1/1] (0.00ns) (grouped into LUT with out node p_Result_18)   --->   "%tmp_9 = partselect i72 @llvm.part.select.i72, i72 %select_ln312_2, i32 71, i32 0"   --->   Operation 221 'partselect' 'tmp_9' <Predicate = (icmp_ln312)> <Delay = 0.00>
+ST_6 : Operation 222 [1/1] (0.00ns) (grouped into LUT with out node p_Result_18)   --->   "%select_ln312_3 = select i1 %icmp_ln312, i72 %tmp_9, i72 %sf"   --->   Operation 222 'select' 'select_ln312_3' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 223 [1/1] (0.00ns) (grouped into LUT with out node and_ln312)   --->   "%shl_ln312 = shl i72 4722366482869645213695, i72 %zext_ln312"   --->   Operation 223 'shl' 'shl_ln312' <Predicate = true> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 224 [1/1] (0.00ns) (grouped into LUT with out node and_ln312)   --->   "%lshr_ln312 = lshr i72 4722366482869645213695, i72 %zext_ln312_1"   --->   Operation 224 'lshr' 'lshr_ln312' <Predicate = true> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 225 [1/1] (0.66ns) (out node of the LUT)   --->   "%and_ln312 = and i72 %shl_ln312, i72 %lshr_ln312"   --->   Operation 225 'and' 'and_ln312' <Predicate = true> <Delay = 0.66> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 226 [1/1] (0.37ns) (out node of the LUT)   --->   "%p_Result_18 = and i72 %select_ln312_3, i72 %and_ln312"   --->   Operation 226 'and' 'p_Result_18' <Predicate = true> <Delay = 0.37> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 227 [1/1] (0.70ns)   --->   "%add_ln310 = add i7 %W_ref2, i7 127"   --->   Operation 227 'add' 'add_ln310' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 228 [1/1] (0.00ns)   --->   "%sext_ln310 = sext i7 %add_ln310"   --->   Operation 228 'sext' 'sext_ln310' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 229 [1/1] (0.00ns) (grouped into LUT with out node and_ln312_3)   --->   "%zext_ln310 = zext i64 %p_Result_16"   --->   Operation 229 'zext' 'zext_ln310' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 230 [1/1] (0.70ns)   --->   "%sub_ln310 = sub i8 135, i8 %sext_ln310"   --->   Operation 230 'sub' 'sub_ln310' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 231 [1/1] (0.00ns) (grouped into LUT with out node and_ln312_3)   --->   "%zext_ln310_1 = zext i8 %sub_ln310"   --->   Operation 231 'zext' 'zext_ln310_1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 232 [1/1] (0.00ns) (grouped into LUT with out node and_ln312_3)   --->   "%lshr_ln310 = lshr i136 87112285931760246646623899502532662132735, i136 %zext_ln310_1"   --->   Operation 232 'lshr' 'lshr_ln310' <Predicate = true> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 233 [1/1] (0.00ns) (grouped into LUT with out node and_ln312_3)   --->   "%p_Result_19 = and i136 %zext_ln310, i136 %lshr_ln310"   --->   Operation 233 'and' 'p_Result_19' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 234 [1/1] (0.00ns)   --->   "%sext_ln312_1 = sext i8 %add_ln312_1"   --->   Operation 234 'sext' 'sext_ln312_1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 235 [1/1] (0.58ns)   --->   "%icmp_ln312_1 = icmp_ugt  i32 %sext_ln307, i32 %sext_ln312_1"   --->   Operation 235 'icmp' 'icmp_ln312_1' <Predicate = true> <Delay = 0.58> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 236 [1/1] (0.00ns)   --->   "%sext_ln312_2 = sext i7 %W_ref2"   --->   Operation 236 'sext' 'sext_ln312_2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 237 [1/1] (0.00ns) (grouped into LUT with out node shl_ln312_1)   --->   "%zext_ln312_2 = zext i72 %p_Result_18"   --->   Operation 237 'zext' 'zext_ln312_2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 238 [1/1] (0.70ns)   --->   "%sub_ln312_1 = sub i8 135, i8 %sext_ln312_2"   --->   Operation 238 'sub' 'sub_ln312_1' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 239 [1/1] (0.00ns) (grouped into LUT with out node sub_ln312_2)   --->   "%select_ln312_4 = select i1 %icmp_ln312_1, i8 %sext_ln312_2, i8 %add_ln312_1"   --->   Operation 239 'select' 'select_ln312_4' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 240 [1/1] (0.00ns) (grouped into LUT with out node and_ln312_2)   --->   "%select_ln312_5 = select i1 %icmp_ln312_1, i8 %add_ln312_1, i8 %sext_ln312_2"   --->   Operation 240 'select' 'select_ln312_5' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 241 [1/1] (0.00ns) (grouped into LUT with out node shl_ln312_1)   --->   "%select_ln312_6 = select i1 %icmp_ln312_1, i8 %sub_ln312_1, i8 %sext_ln312_2"   --->   Operation 241 'select' 'select_ln312_6' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 242 [1/1] (0.70ns) (out node of the LUT)   --->   "%sub_ln312_2 = sub i8 135, i8 %select_ln312_4"   --->   Operation 242 'sub' 'sub_ln312_2' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 243 [1/1] (0.00ns) (grouped into LUT with out node shl_ln312_1)   --->   "%zext_ln312_3 = zext i8 %select_ln312_6"   --->   Operation 243 'zext' 'zext_ln312_3' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 244 [1/1] (0.00ns) (grouped into LUT with out node and_ln312_2)   --->   "%zext_ln312_4 = zext i8 %select_ln312_5"   --->   Operation 244 'zext' 'zext_ln312_4' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 245 [1/1] (0.00ns) (grouped into LUT with out node and_ln312_2)   --->   "%zext_ln312_5 = zext i8 %sub_ln312_2"   --->   Operation 245 'zext' 'zext_ln312_5' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 246 [1/1] (1.11ns) (out node of the LUT)   --->   "%shl_ln312_1 = shl i136 %zext_ln312_2, i136 %zext_ln312_3"   --->   Operation 246 'shl' 'shl_ln312_1' <Predicate = true> <Delay = 1.11> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 247 [1/1] (0.00ns) (grouped into LUT with out node trunc_ln371)   --->   "%tmp_12 = partselect i136 @llvm.part.select.i136, i136 %shl_ln312_1, i32 135, i32 0"   --->   Operation 247 'partselect' 'tmp_12' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 248 [1/1] (0.00ns) (grouped into LUT with out node trunc_ln371)   --->   "%select_ln312_7 = select i1 %icmp_ln312_1, i136 %tmp_12, i136 %shl_ln312_1"   --->   Operation 248 'select' 'select_ln312_7' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 249 [1/1] (0.00ns) (grouped into LUT with out node and_ln312_2)   --->   "%shl_ln312_2 = shl i136 87112285931760246646623899502532662132735, i136 %zext_ln312_4"   --->   Operation 249 'shl' 'shl_ln312_2' <Predicate = true> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 250 [1/1] (0.00ns) (grouped into LUT with out node and_ln312_2)   --->   "%lshr_ln312_1 = lshr i136 87112285931760246646623899502532662132735, i136 %zext_ln312_5"   --->   Operation 250 'lshr' 'lshr_ln312_1' <Predicate = true> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 251 [1/1] (0.70ns) (out node of the LUT)   --->   "%and_ln312_2 = and i136 %shl_ln312_2, i136 %lshr_ln312_1"   --->   Operation 251 'and' 'and_ln312_2' <Predicate = true> <Delay = 0.70> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 252 [1/1] (0.00ns) (grouped into LUT with out node and_ln312_3)   --->   "%xor_ln312 = xor i136 %and_ln312_2, i136 18446744073709551615"   --->   Operation 252 'xor' 'xor_ln312' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 253 [1/1] (0.70ns) (out node of the LUT)   --->   "%and_ln312_3 = and i136 %p_Result_19, i136 %xor_ln312"   --->   Operation 253 'and' 'and_ln312_3' <Predicate = true> <Delay = 0.70> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 254 [1/1] (0.00ns) (grouped into LUT with out node trunc_ln371)   --->   "%and_ln312_4 = and i136 %select_ln312_7, i136 %and_ln312_2"   --->   Operation 254 'and' 'and_ln312_4' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 255 [1/1] (0.00ns) (grouped into LUT with out node trunc_ln371)   --->   "%p_Result_20 = or i136 %and_ln312_3, i136 %and_ln312_4"   --->   Operation 255 'or' 'p_Result_20' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 256 [1/1] (0.35ns) (out node of the LUT)   --->   "%trunc_ln371 = trunc i136 %p_Result_20"   --->   Operation 256 'trunc' 'trunc_ln371' <Predicate = true> <Delay = 0.35>
+ST_6 : Operation 257 [1/1] (0.00ns) (grouped into LUT with out node wrVal)   --->   "%select_ln372 = select i1 %icmp_ln372_1, i64 18446744073709551360, i64 72057594037927935" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:372]   --->   Operation 257 'select' 'select_ln372' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 258 [1/1] (0.00ns) (grouped into LUT with out node wrVal)   --->   "%or_ln372 = or i1 %icmp_ln372_1, i1 %icmp_ln372" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:372]   --->   Operation 258 'or' 'or_ln372' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 259 [1/1] (0.41ns) (out node of the LUT)   --->   "%wrVal = select i1 %or_ln372, i64 %select_ln372, i64 %trunc_ln371" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:372]   --->   Operation 259 'select' 'wrVal' <Predicate = true> <Delay = 0.41> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 7 <SV = 4> <Delay = 1.64>
+ST_7 : Operation 260 [1/1] (0.00ns)   --->   "%zext_ln379 = zext i12 %lshr_ln" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 260 'zext' 'zext_ln379' <Predicate = (icmp_ln366)> <Delay = 0.00>
+ST_7 : Operation 261 [1/1] (0.63ns)   --->   "%switch_ln379 = switch i3 %rootBank, void %arrayidx97516.case.0, i3 7, void %arrayidx97516.case.7, i3 1, void %arrayidx97516.case.1, i3 2, void %arrayidx97516.case.2, i3 3, void %arrayidx97516.case.3, i3 4, void %arrayidx97516.case.4, i3 5, void %arrayidx97516.case.5, i3 6, void %arrayidx97516.case.6" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 261 'switch' 'switch_ln379' <Predicate = (icmp_ln366)> <Delay = 0.63>
+ST_7 : Operation 262 [1/1] (0.00ns)   --->   "%tmp_dist_6_addr_1 = getelementptr i64 %tmp_dist_6, i64 0, i64 %zext_ln379" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 262 'getelementptr' 'tmp_dist_6_addr_1' <Predicate = (icmp_ln366 & rootBank == 6)> <Delay = 0.00>
+ST_7 : Operation 263 [1/1] (1.64ns)   --->   "%store_ln379 = store i64 %wrVal, i12 %tmp_dist_6_addr_1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 263 'store' 'store_ln379' <Predicate = (icmp_ln366 & rootBank == 6)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_7 : Operation 264 [1/1] (0.00ns)   --->   "%br_ln379 = br void %arrayidx97516.exit" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 264 'br' 'br_ln379' <Predicate = (icmp_ln366 & rootBank == 6)> <Delay = 0.00>
+ST_7 : Operation 265 [1/1] (0.00ns)   --->   "%tmp_dist_5_addr_1 = getelementptr i64 %tmp_dist_5, i64 0, i64 %zext_ln379" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 265 'getelementptr' 'tmp_dist_5_addr_1' <Predicate = (icmp_ln366 & rootBank == 5)> <Delay = 0.00>
+ST_7 : Operation 266 [1/1] (1.64ns)   --->   "%store_ln379 = store i64 %wrVal, i12 %tmp_dist_5_addr_1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 266 'store' 'store_ln379' <Predicate = (icmp_ln366 & rootBank == 5)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_7 : Operation 267 [1/1] (0.00ns)   --->   "%br_ln379 = br void %arrayidx97516.exit" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 267 'br' 'br_ln379' <Predicate = (icmp_ln366 & rootBank == 5)> <Delay = 0.00>
+ST_7 : Operation 268 [1/1] (0.00ns)   --->   "%tmp_dist_4_addr_1 = getelementptr i64 %tmp_dist_4, i64 0, i64 %zext_ln379" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 268 'getelementptr' 'tmp_dist_4_addr_1' <Predicate = (icmp_ln366 & rootBank == 4)> <Delay = 0.00>
+ST_7 : Operation 269 [1/1] (1.64ns)   --->   "%store_ln379 = store i64 %wrVal, i12 %tmp_dist_4_addr_1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 269 'store' 'store_ln379' <Predicate = (icmp_ln366 & rootBank == 4)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_7 : Operation 270 [1/1] (0.00ns)   --->   "%br_ln379 = br void %arrayidx97516.exit" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 270 'br' 'br_ln379' <Predicate = (icmp_ln366 & rootBank == 4)> <Delay = 0.00>
+ST_7 : Operation 271 [1/1] (0.00ns)   --->   "%tmp_dist_3_addr_1 = getelementptr i64 %tmp_dist_3, i64 0, i64 %zext_ln379" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 271 'getelementptr' 'tmp_dist_3_addr_1' <Predicate = (icmp_ln366 & rootBank == 3)> <Delay = 0.00>
+ST_7 : Operation 272 [1/1] (1.64ns)   --->   "%store_ln379 = store i64 %wrVal, i12 %tmp_dist_3_addr_1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 272 'store' 'store_ln379' <Predicate = (icmp_ln366 & rootBank == 3)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_7 : Operation 273 [1/1] (0.00ns)   --->   "%br_ln379 = br void %arrayidx97516.exit" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 273 'br' 'br_ln379' <Predicate = (icmp_ln366 & rootBank == 3)> <Delay = 0.00>
+ST_7 : Operation 274 [1/1] (0.00ns)   --->   "%tmp_dist_2_addr_1 = getelementptr i64 %tmp_dist_2, i64 0, i64 %zext_ln379" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 274 'getelementptr' 'tmp_dist_2_addr_1' <Predicate = (icmp_ln366 & rootBank == 2)> <Delay = 0.00>
+ST_7 : Operation 275 [1/1] (1.64ns)   --->   "%store_ln379 = store i64 %wrVal, i12 %tmp_dist_2_addr_1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 275 'store' 'store_ln379' <Predicate = (icmp_ln366 & rootBank == 2)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_7 : Operation 276 [1/1] (0.00ns)   --->   "%br_ln379 = br void %arrayidx97516.exit" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 276 'br' 'br_ln379' <Predicate = (icmp_ln366 & rootBank == 2)> <Delay = 0.00>
+ST_7 : Operation 277 [1/1] (0.00ns)   --->   "%tmp_dist_1_addr_1 = getelementptr i64 %tmp_dist_1, i64 0, i64 %zext_ln379" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 277 'getelementptr' 'tmp_dist_1_addr_1' <Predicate = (icmp_ln366 & rootBank == 1)> <Delay = 0.00>
+ST_7 : Operation 278 [1/1] (1.64ns)   --->   "%store_ln379 = store i64 %wrVal, i12 %tmp_dist_1_addr_1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 278 'store' 'store_ln379' <Predicate = (icmp_ln366 & rootBank == 1)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_7 : Operation 279 [1/1] (0.00ns)   --->   "%br_ln379 = br void %arrayidx97516.exit" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 279 'br' 'br_ln379' <Predicate = (icmp_ln366 & rootBank == 1)> <Delay = 0.00>
+ST_7 : Operation 280 [1/1] (0.00ns)   --->   "%tmp_dist_7_addr_1 = getelementptr i64 %tmp_dist_7, i64 0, i64 %zext_ln379" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 280 'getelementptr' 'tmp_dist_7_addr_1' <Predicate = (icmp_ln366 & rootBank == 7)> <Delay = 0.00>
+ST_7 : Operation 281 [1/1] (1.64ns)   --->   "%store_ln379 = store i64 %wrVal, i12 %tmp_dist_7_addr_1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 281 'store' 'store_ln379' <Predicate = (icmp_ln366 & rootBank == 7)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_7 : Operation 282 [1/1] (0.00ns)   --->   "%br_ln379 = br void %arrayidx97516.exit" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 282 'br' 'br_ln379' <Predicate = (icmp_ln366 & rootBank == 7)> <Delay = 0.00>
+ST_7 : Operation 283 [1/1] (0.00ns)   --->   "%tmp_dist_0_addr_1 = getelementptr i64 %tmp_dist_0, i64 0, i64 %zext_ln379" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 283 'getelementptr' 'tmp_dist_0_addr_1' <Predicate = (icmp_ln366 & rootBank == 0)> <Delay = 0.00>
+ST_7 : Operation 284 [1/1] (1.64ns)   --->   "%store_ln379 = store i64 %wrVal, i12 %tmp_dist_0_addr_1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 284 'store' 'store_ln379' <Predicate = (icmp_ln366 & rootBank == 0)> <Delay = 1.64> <CoreInst = "RAM_1P">   --->   Core 88 'RAM_1P' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4096> <RAM>
+ST_7 : Operation 285 [1/1] (0.00ns)   --->   "%br_ln379 = br void %arrayidx97516.exit" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379]   --->   Operation 285 'br' 'br_ln379' <Predicate = (icmp_ln366 & rootBank == 0)> <Delay = 0.00>
+ST_7 : Operation 286 [1/1] (0.00ns)   --->   "%write_ln387 = write void @_ssdm_op_Write.ap_none.volatile.i64P0A, i64 %rd_baseAddr, i64 %CSR_V_cast" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:387]   --->   Operation 286 'write' 'write_ln387' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 287 [1/1] (0.00ns)   --->   "%trunc_ln3 = partselect i20 @_ssdm_op_PartSelect.i20.i32.i32.i32, i32 %N_Vertex_read, i32 7, i32 26" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:388]   --->   Operation 287 'partselect' 'trunc_ln3' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 288 [1/1] (0.80ns)   --->   "%add_ln388 = add i20 %trunc_ln3, i20 2" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:388]   --->   Operation 288 'add' 'add_ln388' <Predicate = true> <Delay = 0.80> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 5> <Delay = 2.84>
+ST_8 : Operation 289 [2/2] (2.84ns)   --->   "%call_ln388 = call void @BuffOfst, i32 %rd_req_V, i1 %rd_start, i64 %ofst_buff, i128 %rd_port_V_data_V, i16 %rd_port_V_keep_V, i16 %rd_port_V_strb_V, i1 %rd_port_V_last_V, i20 %add_ln388" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:388]   --->   Operation 289 'call' 'call_ln388' <Predicate = true> <Delay = 2.84> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 6> <Delay = 0.81>
+ST_9 : Operation 290 [1/1] (0.00ns)   --->   "%write_ln384 = write void @_ssdm_op_Write.ap_none.volatile.i1P0A, i1 %launch_recv, i1 1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:384]   --->   Operation 290 'write' 'write_ln384' <Predicate = (icmp_ln352)> <Delay = 0.00>
+ST_9 : Operation 291 [1/2] (0.00ns)   --->   "%call_ln388 = call void @BuffOfst, i32 %rd_req_V, i1 %rd_start, i64 %ofst_buff, i128 %rd_port_V_data_V, i16 %rd_port_V_keep_V, i16 %rd_port_V_strb_V, i1 %rd_port_V_last_V, i20 %add_ln388" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:388]   --->   Operation 291 'call' 'call_ln388' <Predicate = (icmp_ln352)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 292 [1/1] (0.00ns)   --->   "%br_ln389 = br void" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:389]   --->   Operation 292 'br' 'br_ln389' <Predicate = (icmp_ln352)> <Delay = 0.00>
+ST_9 : Operation 293 [1/1] (0.00ns)   --->   "%write_ln390 = write void @_ssdm_op_Write.ap_none.volatile.i64P0A, i64 %rd_baseAddr, i64 %CSR_E_cast" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:390]   --->   Operation 293 'write' 'write_ln390' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 294 [1/1] (0.00ns)   --->   "%store_ln392 = store i16 0, i16 %n_tuple_0" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:392]   --->   Operation 294 'store' 'store_ln392' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 295 [1/1] (0.00ns)   --->   "%store_ln393 = store i16 0, i16 %n_tuple_1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:393]   --->   Operation 295 'store' 'store_ln393' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 296 [1/1] (0.81ns)   --->   "%add105 = add i22 %zext_ln306, i22 2" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:306]   --->   Operation 296 'add' 'add105' <Predicate = true> <Delay = 0.81> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 297 [1/1] (0.38ns)   --->   "%br_ln395 = br void" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:395]   --->   Operation 297 'br' 'br_ln395' <Predicate = true> <Delay = 0.38>
+
+State 10 <SV = 7> <Delay = 2.95>
+ST_10 : Operation 298 [1/1] (0.00ns)   --->   "%i_6 = phi i22 0, void, i22 %i_7, void"   --->   Operation 298 'phi' 'i_6' <Predicate = (!resWrite_assign_load)> <Delay = 0.00>
+ST_10 : Operation 299 [1/1] (0.82ns)   --->   "%i_7 = add i22 %i_6, i22 1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:395]   --->   Operation 299 'add' 'i_7' <Predicate = (!resWrite_assign_load)> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 300 [1/1] (0.00ns)   --->   "%trunc_ln395 = trunc i22 %i_6" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:395]   --->   Operation 300 'trunc' 'trunc_ln395' <Predicate = (!resWrite_assign_load)> <Delay = 0.00>
+ST_10 : Operation 301 [1/1] (0.74ns)   --->   "%icmp_ln395 = icmp_eq  i22 %i_6, i22 %add105" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:395]   --->   Operation 301 'icmp' 'icmp_ln395' <Predicate = (!resWrite_assign_load)> <Delay = 0.74> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 302 [1/1] (0.00ns)   --->   "%empty_158 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 2, i64 18446744073709551615, i64 0"   --->   Operation 302 'speclooptripcount' 'empty_158' <Predicate = (!resWrite_assign_load)> <Delay = 0.00>
+ST_10 : Operation 303 [1/1] (0.00ns)   --->   "%br_ln395 = br i1 %icmp_ln395, void %.split12, void %.loopexit.loopexit" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:395]   --->   Operation 303 'br' 'br_ln395' <Predicate = (!resWrite_assign_load)> <Delay = 0.00>
+ST_10 : Operation 304 [1/1] (0.00ns)   --->   "%specloopname_ln395 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:395]   --->   Operation 304 'specloopname' 'specloopname_ln395' <Predicate = (!resWrite_assign_load & !icmp_ln395)> <Delay = 0.00>
+ST_10 : Operation 305 [1/1] (0.00ns)   --->   "%br_ln397 = br i1 %trunc_ln395, void, void" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:397]   --->   Operation 305 'br' 'br_ln397' <Predicate = (!resWrite_assign_load & !icmp_ln395)> <Delay = 0.00>
+ST_10 : Operation 306 [1/1] (0.00ns)   --->   "%n_tuple_1_load = load i16 %n_tuple_1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:398]   --->   Operation 306 'load' 'n_tuple_1_load' <Predicate = (!resWrite_assign_load & !icmp_ln395 & !trunc_ln395)> <Delay = 0.00>
+ST_10 : Operation 307 [2/2] (2.20ns)   --->   "%call_ln398 = call void @feed_network, i32 %rd_req_V, i1 %rd_start, i64 %tmp_dist_0, i64 %tmp_dist_1, i64 %tmp_dist_2, i64 %tmp_dist_3, i64 %tmp_dist_4, i64 %tmp_dist_5, i64 %tmp_dist_6, i64 %tmp_dist_7, i32 %sw_data_0_V, i32 %sw_data_1_V, i32 %sw_data_2_V, i32 %sw_data_3_V, i128 %rd_port_V_data_V, i16 %rd_port_V_keep_V, i16 %rd_port_V_strb_V, i1 %rd_port_V_last_V, i16 %n_tuple_1_load, i32 %mem_req_buff_V_1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:398]   --->   Operation 307 'call' 'call_ln398' <Predicate = (!resWrite_assign_load & !icmp_ln395 & !trunc_ln395)> <Delay = 2.20> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 308 [2/2] (0.38ns)   --->   "%call_ln400 = call void @gen_access_tuple, i64 %ofst_buff, i28 %rlt_tail_idx, i22 %i_6, i16 %n_tuple_0, i32 %mem_req_buff_V_0" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:400]   --->   Operation 308 'call' 'call_ln400' <Predicate = (!resWrite_assign_load & !icmp_ln395 & !trunc_ln395)> <Delay = 0.38> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 309 [1/1] (0.00ns)   --->   "%n_tuple_0_load = load i16 %n_tuple_0" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:402]   --->   Operation 309 'load' 'n_tuple_0_load' <Predicate = (!resWrite_assign_load & !icmp_ln395 & trunc_ln395)> <Delay = 0.00>
+ST_10 : Operation 310 [2/2] (2.20ns)   --->   "%call_ln402 = call void @feed_network, i32 %rd_req_V, i1 %rd_start, i64 %tmp_dist_0, i64 %tmp_dist_1, i64 %tmp_dist_2, i64 %tmp_dist_3, i64 %tmp_dist_4, i64 %tmp_dist_5, i64 %tmp_dist_6, i64 %tmp_dist_7, i32 %sw_data_0_V, i32 %sw_data_1_V, i32 %sw_data_2_V, i32 %sw_data_3_V, i128 %rd_port_V_data_V, i16 %rd_port_V_keep_V, i16 %rd_port_V_strb_V, i1 %rd_port_V_last_V, i16 %n_tuple_0_load, i32 %mem_req_buff_V_0" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:402]   --->   Operation 310 'call' 'call_ln402' <Predicate = (!resWrite_assign_load & !icmp_ln395 & trunc_ln395)> <Delay = 2.20> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 311 [2/2] (0.38ns)   --->   "%call_ln404 = call void @gen_access_tuple, i64 %ofst_buff, i28 %rlt_tail_idx, i22 %i_6, i16 %n_tuple_1, i32 %mem_req_buff_V_1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:404]   --->   Operation 311 'call' 'call_ln404' <Predicate = (!resWrite_assign_load & !icmp_ln395 & trunc_ln395)> <Delay = 0.38> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 312 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.loopexit"   --->   Operation 312 'br' 'br_ln0' <Predicate = (!resWrite_assign_load & icmp_ln395)> <Delay = 0.00>
+ST_10 : Operation 313 [1/1] (0.00ns)   --->   "%ret_ln407 = ret" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:407]   --->   Operation 313 'ret' 'ret_ln407' <Predicate = (icmp_ln395) | (resWrite_assign_load)> <Delay = 0.00>
+
+State 11 <SV = 8> <Delay = 1.95>
+ST_11 : Operation 314 [1/2] (0.63ns)   --->   "%call_ln398 = call void @feed_network, i32 %rd_req_V, i1 %rd_start, i64 %tmp_dist_0, i64 %tmp_dist_1, i64 %tmp_dist_2, i64 %tmp_dist_3, i64 %tmp_dist_4, i64 %tmp_dist_5, i64 %tmp_dist_6, i64 %tmp_dist_7, i32 %sw_data_0_V, i32 %sw_data_1_V, i32 %sw_data_2_V, i32 %sw_data_3_V, i128 %rd_port_V_data_V, i16 %rd_port_V_keep_V, i16 %rd_port_V_strb_V, i1 %rd_port_V_last_V, i16 %n_tuple_1_load, i32 %mem_req_buff_V_1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:398]   --->   Operation 314 'call' 'call_ln398' <Predicate = (!trunc_ln395)> <Delay = 0.63> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 315 [1/2] (1.95ns)   --->   "%call_ln400 = call void @gen_access_tuple, i64 %ofst_buff, i28 %rlt_tail_idx, i22 %i_6, i16 %n_tuple_0, i32 %mem_req_buff_V_0" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:400]   --->   Operation 315 'call' 'call_ln400' <Predicate = (!trunc_ln395)> <Delay = 1.95> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 316 [1/1] (0.00ns)   --->   "%br_ln401 = br void" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:401]   --->   Operation 316 'br' 'br_ln401' <Predicate = (!trunc_ln395)> <Delay = 0.00>
+ST_11 : Operation 317 [1/2] (0.63ns)   --->   "%call_ln402 = call void @feed_network, i32 %rd_req_V, i1 %rd_start, i64 %tmp_dist_0, i64 %tmp_dist_1, i64 %tmp_dist_2, i64 %tmp_dist_3, i64 %tmp_dist_4, i64 %tmp_dist_5, i64 %tmp_dist_6, i64 %tmp_dist_7, i32 %sw_data_0_V, i32 %sw_data_1_V, i32 %sw_data_2_V, i32 %sw_data_3_V, i128 %rd_port_V_data_V, i16 %rd_port_V_keep_V, i16 %rd_port_V_strb_V, i1 %rd_port_V_last_V, i16 %n_tuple_0_load, i32 %mem_req_buff_V_0" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:402]   --->   Operation 317 'call' 'call_ln402' <Predicate = (trunc_ln395)> <Delay = 0.63> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 318 [1/2] (1.95ns)   --->   "%call_ln404 = call void @gen_access_tuple, i64 %ofst_buff, i28 %rlt_tail_idx, i22 %i_6, i16 %n_tuple_1, i32 %mem_req_buff_V_1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:404]   --->   Operation 318 'call' 'call_ln404' <Predicate = (trunc_ln395)> <Delay = 1.95> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 319 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 319 'br' 'br_ln0' <Predicate = (trunc_ln395)> <Delay = 0.00>
+ST_11 : Operation 320 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 320 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+State 12 <SV = 1> <Delay = 1.02>
+ST_12 : Operation 321 [1/1] (0.00ns)   --->   "%trunc_ln2 = partselect i16 @_ssdm_op_PartSelect.i16.i32.i32.i32, i32 %N_Vertex_read, i32 15, i32 30" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:318]   --->   Operation 321 'partselect' 'trunc_ln2' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 322 [1/1] (0.78ns)   --->   "%add_ln318 = add i16 %trunc_ln2, i16 1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:318]   --->   Operation 322 'add' 'add_ln318' <Predicate = (!icmp_ln318)> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 323 [1/1] (0.24ns)   --->   "%n_wr_iter = select i1 %icmp_ln318, i16 %trunc_ln2, i16 %add_ln318" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:318]   --->   Operation 323 'select' 'n_wr_iter' <Predicate = true> <Delay = 0.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_12 : Operation 324 [1/1] (0.00ns)   --->   "%shl_ln320 = shl i16 %n_wr_iter, i16 6" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:320]   --->   Operation 324 'shl' 'shl_ln320' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 325 [1/1] (0.00ns)   --->   "%write_ln320 = write void @_ssdm_op_Write.ap_none.volatile.i16P0A, i16 %wr_len, i16 %shl_ln320" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:320]   --->   Operation 325 'write' 'write_ln320' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 326 [1/1] (0.00ns)   --->   "%write_ln322 = write void @_ssdm_op_Write.ap_none.volatile.i1P0A, i1 %wr_start, i1 1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:322]   --->   Operation 326 'write' 'write_ln322' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 327 [1/1] (0.38ns)   --->   "%br_ln323 = br void" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:323]   --->   Operation 327 'br' 'br_ln323' <Predicate = true> <Delay = 0.38>
+
+State 13 <SV = 2> <Delay = 0.89>
+ST_13 : Operation 328 [1/1] (0.00ns)   --->   "%i = phi i16 0, void %.lr.ph, i16 %i_3, void %.split9"   --->   Operation 328 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 329 [1/1] (0.78ns)   --->   "%i_3 = add i16 %i, i16 1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:323]   --->   Operation 329 'add' 'i_3' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 330 [1/1] (0.67ns)   --->   "%icmp_ln323 = icmp_eq  i16 %i, i16 %n_wr_iter" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:323]   --->   Operation 330 'icmp' 'icmp_ln323' <Predicate = true> <Delay = 0.67> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 331 [1/1] (0.00ns)   --->   "%br_ln323 = br i1 %icmp_ln323, void %.split9, void %._crit_edge.loopexit" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:323]   --->   Operation 331 'br' 'br_ln323' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 332 [1/1] (0.00ns)   --->   "%trunc_ln325 = trunc i16 %i" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:325]   --->   Operation 332 'trunc' 'trunc_ln325' <Predicate = (!icmp_ln323)> <Delay = 0.00>
+ST_13 : Operation 333 [2/2] (0.00ns)   --->   "%call_ln325 = call void @WrDist, i64 %tmp_dist_0, i64 %tmp_dist_1, i64 %tmp_dist_2, i64 %tmp_dist_3, i64 %tmp_dist_4, i64 %tmp_dist_5, i64 %tmp_dist_6, i64 %tmp_dist_7, i128 %wr_port_V_data_V, i16 %wr_port_V_keep_V, i16 %wr_port_V_strb_V, i1 %wr_port_V_last_V, i8 %trunc_ln325" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:325]   --->   Operation 333 'call' 'call_ln325' <Predicate = (!icmp_ln323)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 334 [1/1] (0.00ns)   --->   "%write_ln327 = write void @_ssdm_op_Write.ap_none.volatile.i1P0A, i1 %wr_start, i1 0" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:327]   --->   Operation 334 'write' 'write_ln327' <Predicate = (icmp_ln323)> <Delay = 0.00>
+ST_13 : Operation 335 [1/1] (0.00ns)   --->   "%write_ln330 = write void @_ssdm_op_Write.ap_none.volatile.i16P0A, i16 %wr_len, i16 1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:330]   --->   Operation 335 'write' 'write_ln330' <Predicate = (icmp_ln323)> <Delay = 0.00>
+ST_13 : Operation 336 [1/1] (0.00ns)   --->   "%zext_ln1346 = zext i33 %glbl_d_read"   --->   Operation 336 'zext' 'zext_ln1346' <Predicate = (icmp_ln323)> <Delay = 0.00>
+ST_13 : Operation 337 [1/1] (0.89ns)   --->   "%ret = add i34 %zext_ln1346, i34 258048"   --->   Operation 337 'add' 'ret' <Predicate = (icmp_ln323)> <Delay = 0.89> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 338 [1/1] (0.00ns)   --->   "%zext_ln534 = zext i34 %ret"   --->   Operation 338 'zext' 'zext_ln534' <Predicate = (icmp_ln323)> <Delay = 0.00>
+ST_13 : Operation 339 [1/1] (0.00ns)   --->   "%write_ln331 = write void @_ssdm_op_Write.ap_none.volatile.i64P0A, i64 %wr_baseAddr, i64 %zext_ln534" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:331]   --->   Operation 339 'write' 'write_ln331' <Predicate = (icmp_ln323)> <Delay = 0.00>
+ST_13 : Operation 340 [1/1] (0.58ns)   --->   "%icmp_ln332 = icmp_eq  i8 %peID_read, i8 0" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:332]   --->   Operation 340 'icmp' 'icmp_ln332' <Predicate = (icmp_ln323)> <Delay = 0.58> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 341 [1/1] (0.00ns)   --->   "%br_ln332 = br i1 %icmp_ln332, void %.loopexit, void %.preheader.preheader" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:332]   --->   Operation 341 'br' 'br_ln332' <Predicate = (icmp_ln323)> <Delay = 0.00>
+ST_13 : Operation 342 [1/1] (0.38ns)   --->   "%br_ln334 = br void %.preheader" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:334]   --->   Operation 342 'br' 'br_ln334' <Predicate = (icmp_ln323 & icmp_ln332)> <Delay = 0.38>
+
+State 14 <SV = 3> <Delay = 1.64>
+ST_14 : Operation 343 [1/1] (0.00ns)   --->   "%specloopname_ln323 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:323]   --->   Operation 343 'specloopname' 'specloopname_ln323' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 344 [1/2] (1.64ns)   --->   "%call_ln325 = call void @WrDist, i64 %tmp_dist_0, i64 %tmp_dist_1, i64 %tmp_dist_2, i64 %tmp_dist_3, i64 %tmp_dist_4, i64 %tmp_dist_5, i64 %tmp_dist_6, i64 %tmp_dist_7, i128 %wr_port_V_data_V, i16 %wr_port_V_keep_V, i16 %wr_port_V_strb_V, i1 %wr_port_V_last_V, i8 %trunc_ln325" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:325]   --->   Operation 344 'call' 'call_ln325' <Predicate = true> <Delay = 1.64> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 345 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 345 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+State 15 <SV = 3> <Delay = 0.70>
+ST_15 : Operation 346 [1/1] (0.00ns)   --->   "%cnt_oot = phi i7 %add_ln334, void %0, i7 0, void %.preheader.preheader" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:334]   --->   Operation 346 'phi' 'cnt_oot' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 347 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i7.i32, i7 %cnt_oot, i32 6" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:334]   --->   Operation 347 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 348 [1/1] (0.00ns)   --->   "%empty_156 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 32, i64 32, i64 32"   --->   Operation 348 'speclooptripcount' 'empty_156' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 349 [1/1] (0.00ns)   --->   "%br_ln334 = br i1 %tmp, void %0, void" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:334]   --->   Operation 349 'br' 'br_ln334' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 350 [1/1] (0.70ns)   --->   "%add_ln334 = add i7 %cnt_oot, i7 2" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:334]   --->   Operation 350 'add' 'add_ln334' <Predicate = (!tmp)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 351 [1/1] (0.00ns)   --->   "%v2_V = read i32 @_ssdm_op_Read.ap_none.volatile.i32P0A, i32 %cycle_cnt" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:344]   --->   Operation 351 'read' 'v2_V' <Predicate = (tmp)> <Delay = 0.00>
+ST_15 : Operation 352 [1/1] (0.00ns)   --->   "%p_Result_s = bitconcatenate i112 @_ssdm_op_BitConcatenate.i112.i16.i64.i32, i16 %glblIterIdx_read, i64 0, i32 %v2_V"   --->   Operation 352 'bitconcatenate' 'p_Result_s' <Predicate = (tmp)> <Delay = 0.00>
+ST_15 : Operation 353 [1/1] (0.00ns)   --->   "%zext_ln312_6 = zext i112 %p_Result_s"   --->   Operation 353 'zext' 'zext_ln312_6' <Predicate = (tmp)> <Delay = 0.00>
+ST_15 : Operation 354 [2/2] (0.00ns)   --->   "%write_ln304 = write void @_ssdm_op_Write.axis.volatile.i128P0A.i16P0A.i16P0A.i1P0A, i128 %wr_port_V_data_V, i16 %wr_port_V_keep_V, i16 %wr_port_V_strb_V, i1 %wr_port_V_last_V, i128 %zext_ln312_6, i16 0, i16 0, i1 0"   --->   Operation 354 'write' 'write_ln304' <Predicate = (tmp)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 16 <SV = 4> <Delay = 0.00>
+ST_16 : Operation 355 [1/1] (0.00ns)   --->   "%specloopname_ln334 = specloopname void @_ssdm_op_SpecLoopName, void @empty_1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:334]   --->   Operation 355 'specloopname' 'specloopname_ln334' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 356 [1/1] (0.00ns)   --->   "%rbegin = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_3" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:334]   --->   Operation 356 'specregionbegin' 'rbegin' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 357 [1/1] (0.00ns)   --->   "%wait_ln338 = wait void @_ssdm_op_Wait, i32 1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:338]   --->   Operation 357 'wait' 'wait_ln338' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 358 [1/1] (0.00ns)   --->   "%specprotocol_ln340 = specprotocol void @_ssdm_op_SpecProtocol, i64 1, void @empty_9" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:340]   --->   Operation 358 'specprotocol' 'specprotocol_ln340' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 359 [1/1] (0.00ns)   --->   "%rend = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_3, i32 %rbegin" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:340]   --->   Operation 359 'specregionend' 'rend' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 360 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.preheader"   --->   Operation 360 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+State 17 <SV = 4> <Delay = 0.00>
+ST_17 : Operation 361 [1/1] (0.00ns)   --->   "%write_ln343 = write void @_ssdm_op_Write.ap_none.volatile.i1P0A, i1 %wr_start, i1 1" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:343]   --->   Operation 361 'write' 'write_ln343' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 362 [1/2] (0.00ns)   --->   "%write_ln304 = write void @_ssdm_op_Write.axis.volatile.i128P0A.i16P0A.i16P0A.i1P0A, i128 %wr_port_V_data_V, i16 %wr_port_V_keep_V, i16 %wr_port_V_strb_V, i1 %wr_port_V_last_V, i128 %zext_ln312_6, i16 0, i16 0, i1 0"   --->   Operation 362 'write' 'write_ln304' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_17 : Operation 363 [1/1] (0.00ns)   --->   "%br_ln346 = br void %.loopexit" [/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:346]   --->   Operation 363 'br' 'br_ln346' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 1.35ns.
+
+ <State 1>: 0.85ns
+The critical path consists of the following:
+	wire read on port 'N_Vertex' [40]  (0 ns)
+	'add' operation ('rlt_tail_idx', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:307) [139]  (0.85 ns)
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 2.29ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:354) [155]  (0 ns)
+	'getelementptr' operation ('tmp_dist_0_addr', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358) [164]  (0 ns)
+	'store' operation ('store_ln358', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358) of constant 18446744073709551615 on array 'tmp_dist_0' [165]  (1.65 ns)
+	blocking operation 0.64 ns on control path)
+
+ <State 4>: 1.65ns
+The critical path consists of the following:
+	'store' operation ('store_ln358', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:358) of constant 18446744073709551615 on array 'tmp_dist_0' [165]  (1.65 ns)
+
+ <State 5>: 3.25ns
+The critical path consists of the following:
+	'sub' operation ('sub_ln368', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:368) [187]  (0.827 ns)
+	'add' operation ('add_ln377', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:377) [192]  (0.706 ns)
+	'select' operation ('W_ref1') [197]  (0.308 ns)
+	'add' operation ('add_ln312') [220]  (0.706 ns)
+	'add' operation ('add_ln312_1') [246]  (0.706 ns)
+
+ <State 6>: 3.63ns
+The critical path consists of the following:
+	'sub' operation ('sub_ln674_1') [210]  (0.706 ns)
+	'select' operation ('select_ln674_1') [213]  (0 ns)
+	'lshr' operation ('lshr_ln674') [217]  (0 ns)
+	'and' operation ('__Result__') [219]  (0.666 ns)
+	'select' operation ('select_ln312_3') [233]  (0 ns)
+	'and' operation ('__Result__') [237]  (0.374 ns)
+	'shl' operation ('shl_ln312_1') [259]  (1.11 ns)
+	'select' operation ('select_ln312_7') [261]  (0 ns)
+	'and' operation ('and_ln312_4') [267]  (0 ns)
+	'or' operation ('__Result__') [268]  (0 ns)
+	'select' operation ('wrVal', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:372) [274]  (0.411 ns)
+	blocking operation 0.359 ns on control path)
+
+ <State 7>: 1.65ns
+The critical path consists of the following:
+	'getelementptr' operation ('tmp_dist_6_addr_1', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379) [279]  (0 ns)
+	'store' operation ('store_ln379', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:379) of variable 'wrVal', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:372 on array 'tmp_dist_6' [280]  (1.65 ns)
+
+ <State 8>: 2.85ns
+The critical path consists of the following:
+	'call' operation ('call_ln388', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:388) to 'BuffOfst' [315]  (2.85 ns)
+
+ <State 9>: 0.815ns
+The critical path consists of the following:
+	'add' operation ('add105', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:306) [321]  (0.815 ns)
+
+ <State 10>: 2.95ns
+The critical path consists of the following:
+	'load' operation ('n_tuple_1_load', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:398) on local variable 'n_tuple_1', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:393 [334]  (0 ns)
+	'call' operation ('call_ln398', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:398) to 'feed_network' [335]  (2.21 ns)
+	blocking operation 0.745 ns on control path)
+
+ <State 11>: 1.96ns
+The critical path consists of the following:
+	'call' operation ('call_ln400', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:400) to 'gen_access_tuple' [336]  (1.96 ns)
+
+ <State 12>: 1.03ns
+The critical path consists of the following:
+	'add' operation ('add_ln318', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:318) [350]  (0.785 ns)
+	'select' operation ('n_wr_iter', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:318) [351]  (0.243 ns)
+
+ <State 13>: 0.89ns
+The critical path consists of the following:
+	'add' operation ('ret') [371]  (0.89 ns)
+
+ <State 14>: 1.65ns
+The critical path consists of the following:
+	'call' operation ('call_ln325', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:325) to 'WrDist' [365]  (1.65 ns)
+
+ <State 15>: 0.706ns
+The critical path consists of the following:
+	'phi' operation ('cnt_oot', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:334) with incoming values : ('add_ln334', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:334) [379]  (0 ns)
+	'add' operation ('add_ln334', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/scatter/bfs_scatter.cpp:334) [384]  (0.706 ns)
+
+ <State 16>: 0ns
+The critical path consists of the following:
+
+ <State 17>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

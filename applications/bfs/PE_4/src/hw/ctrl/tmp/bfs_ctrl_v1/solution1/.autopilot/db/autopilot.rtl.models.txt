@@ -1,2 +1,0 @@
-BFS_PE
-BFS_Ctrl_4X1_VER1

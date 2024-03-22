@@ -1,0 +1,3340 @@
+{
+  "Top": "BFS_Ctrl_32X1_VER1",
+  "RtlTop": "BFS_Ctrl_32X1_VER1",
+  "RtlPrefix": "",
+  "RtlSubPrefix": "BFS_Ctrl_32X1_VER1_",
+  "SourceLanguage": "cpp",
+  "HostMachineBits": "64",
+  "FunctionProtocol": "ap_ctrl_hs",
+  "ResetStyle": "control",
+  "Target": {
+    "Family": "virtexuplushbm",
+    "Device": "xcu280",
+    "Package": "-fsvh2892",
+    "Speed": "-2L-e",
+    "Triple": "fpga64-xilinx-none"
+  },
+  "Args": {
+    "dummyParam": {
+      "index": "0",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "dummyParam",
+          "name": "dummyParam",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "N_Vertex": {
+      "index": "1",
+      "direction": "in",
+      "srcType": "unsigned int const ",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "N_Vertex",
+          "name": "N_Vertex",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "resWrite": {
+      "index": "2",
+      "direction": "out",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "resWrite",
+          "name": "resWrite",
+          "usage": "data",
+          "direction": "out"
+        }]
+    },
+    "glblIterIdx": {
+      "index": "3",
+      "direction": "out",
+      "srcType": "unsigned short*",
+      "srcSize": "16",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "glblIterIdx",
+          "name": "glblIterIdx",
+          "usage": "data",
+          "direction": "out"
+        }]
+    },
+    "cnt_scatter_0": {
+      "index": "4",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_0",
+          "name": "cnt_scatter_0",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_1": {
+      "index": "5",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_1",
+          "name": "cnt_scatter_1",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_2": {
+      "index": "6",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_2",
+          "name": "cnt_scatter_2",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_3": {
+      "index": "7",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_3",
+          "name": "cnt_scatter_3",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_4": {
+      "index": "8",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_4",
+          "name": "cnt_scatter_4",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_5": {
+      "index": "9",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_5",
+          "name": "cnt_scatter_5",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_6": {
+      "index": "10",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_6",
+          "name": "cnt_scatter_6",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_7": {
+      "index": "11",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_7",
+          "name": "cnt_scatter_7",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_8": {
+      "index": "12",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_8",
+          "name": "cnt_scatter_8",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_9": {
+      "index": "13",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_9",
+          "name": "cnt_scatter_9",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_10": {
+      "index": "14",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_10",
+          "name": "cnt_scatter_10",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_11": {
+      "index": "15",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_11",
+          "name": "cnt_scatter_11",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_12": {
+      "index": "16",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_12",
+          "name": "cnt_scatter_12",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_13": {
+      "index": "17",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_13",
+          "name": "cnt_scatter_13",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_14": {
+      "index": "18",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_14",
+          "name": "cnt_scatter_14",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_15": {
+      "index": "19",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_15",
+          "name": "cnt_scatter_15",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_16": {
+      "index": "20",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_16",
+          "name": "cnt_scatter_16",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_17": {
+      "index": "21",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_17",
+          "name": "cnt_scatter_17",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_18": {
+      "index": "22",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_18",
+          "name": "cnt_scatter_18",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_19": {
+      "index": "23",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_19",
+          "name": "cnt_scatter_19",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_20": {
+      "index": "24",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_20",
+          "name": "cnt_scatter_20",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_21": {
+      "index": "25",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_21",
+          "name": "cnt_scatter_21",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_22": {
+      "index": "26",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_22",
+          "name": "cnt_scatter_22",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_23": {
+      "index": "27",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_23",
+          "name": "cnt_scatter_23",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_24": {
+      "index": "28",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_24",
+          "name": "cnt_scatter_24",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_25": {
+      "index": "29",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_25",
+          "name": "cnt_scatter_25",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_26": {
+      "index": "30",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_26",
+          "name": "cnt_scatter_26",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_27": {
+      "index": "31",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_27",
+          "name": "cnt_scatter_27",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_28": {
+      "index": "32",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_28",
+          "name": "cnt_scatter_28",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_29": {
+      "index": "33",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_29",
+          "name": "cnt_scatter_29",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_30": {
+      "index": "34",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_30",
+          "name": "cnt_scatter_30",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_scatter_31": {
+      "index": "35",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_scatter_31",
+          "name": "cnt_scatter_31",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_0": {
+      "index": "36",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_0",
+          "name": "cnt_gather_0",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_1": {
+      "index": "37",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_1",
+          "name": "cnt_gather_1",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_2": {
+      "index": "38",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_2",
+          "name": "cnt_gather_2",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_3": {
+      "index": "39",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_3",
+          "name": "cnt_gather_3",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_4": {
+      "index": "40",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_4",
+          "name": "cnt_gather_4",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_5": {
+      "index": "41",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_5",
+          "name": "cnt_gather_5",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_6": {
+      "index": "42",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_6",
+          "name": "cnt_gather_6",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_7": {
+      "index": "43",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_7",
+          "name": "cnt_gather_7",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_8": {
+      "index": "44",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_8",
+          "name": "cnt_gather_8",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_9": {
+      "index": "45",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_9",
+          "name": "cnt_gather_9",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_10": {
+      "index": "46",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_10",
+          "name": "cnt_gather_10",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_11": {
+      "index": "47",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_11",
+          "name": "cnt_gather_11",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_12": {
+      "index": "48",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_12",
+          "name": "cnt_gather_12",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_13": {
+      "index": "49",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_13",
+          "name": "cnt_gather_13",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_14": {
+      "index": "50",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_14",
+          "name": "cnt_gather_14",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_15": {
+      "index": "51",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_15",
+          "name": "cnt_gather_15",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_16": {
+      "index": "52",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_16",
+          "name": "cnt_gather_16",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_17": {
+      "index": "53",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_17",
+          "name": "cnt_gather_17",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_18": {
+      "index": "54",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_18",
+          "name": "cnt_gather_18",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_19": {
+      "index": "55",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_19",
+          "name": "cnt_gather_19",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_20": {
+      "index": "56",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_20",
+          "name": "cnt_gather_20",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_21": {
+      "index": "57",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_21",
+          "name": "cnt_gather_21",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_22": {
+      "index": "58",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_22",
+          "name": "cnt_gather_22",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_23": {
+      "index": "59",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_23",
+          "name": "cnt_gather_23",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_24": {
+      "index": "60",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_24",
+          "name": "cnt_gather_24",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_25": {
+      "index": "61",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_25",
+          "name": "cnt_gather_25",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_26": {
+      "index": "62",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_26",
+          "name": "cnt_gather_26",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_27": {
+      "index": "63",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_27",
+          "name": "cnt_gather_27",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_28": {
+      "index": "64",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_28",
+          "name": "cnt_gather_28",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_29": {
+      "index": "65",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_29",
+          "name": "cnt_gather_29",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_30": {
+      "index": "66",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_30",
+          "name": "cnt_gather_30",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "cnt_gather_31": {
+      "index": "67",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "cnt_gather_31",
+          "name": "cnt_gather_31",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_0": {
+      "index": "68",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_0",
+          "name": "exist_0",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_1": {
+      "index": "69",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_1",
+          "name": "exist_1",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_2": {
+      "index": "70",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_2",
+          "name": "exist_2",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_3": {
+      "index": "71",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_3",
+          "name": "exist_3",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_4": {
+      "index": "72",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_4",
+          "name": "exist_4",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_5": {
+      "index": "73",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_5",
+          "name": "exist_5",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_6": {
+      "index": "74",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_6",
+          "name": "exist_6",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_7": {
+      "index": "75",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_7",
+          "name": "exist_7",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_8": {
+      "index": "76",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_8",
+          "name": "exist_8",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_9": {
+      "index": "77",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_9",
+          "name": "exist_9",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_10": {
+      "index": "78",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_10",
+          "name": "exist_10",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_11": {
+      "index": "79",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_11",
+          "name": "exist_11",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_12": {
+      "index": "80",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_12",
+          "name": "exist_12",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_13": {
+      "index": "81",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_13",
+          "name": "exist_13",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_14": {
+      "index": "82",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_14",
+          "name": "exist_14",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_15": {
+      "index": "83",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_15",
+          "name": "exist_15",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_16": {
+      "index": "84",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_16",
+          "name": "exist_16",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_17": {
+      "index": "85",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_17",
+          "name": "exist_17",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_18": {
+      "index": "86",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_18",
+          "name": "exist_18",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_19": {
+      "index": "87",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_19",
+          "name": "exist_19",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_20": {
+      "index": "88",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_20",
+          "name": "exist_20",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_21": {
+      "index": "89",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_21",
+          "name": "exist_21",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_22": {
+      "index": "90",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_22",
+          "name": "exist_22",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_23": {
+      "index": "91",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_23",
+          "name": "exist_23",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_24": {
+      "index": "92",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_24",
+          "name": "exist_24",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_25": {
+      "index": "93",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_25",
+          "name": "exist_25",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_26": {
+      "index": "94",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_26",
+          "name": "exist_26",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_27": {
+      "index": "95",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_27",
+          "name": "exist_27",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_28": {
+      "index": "96",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_28",
+          "name": "exist_28",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_29": {
+      "index": "97",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_29",
+          "name": "exist_29",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_30": {
+      "index": "98",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_30",
+          "name": "exist_30",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "exist_31": {
+      "index": "99",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "exist_31",
+          "name": "exist_31",
+          "usage": "data",
+          "direction": "in"
+        }]
+    }
+  },
+  "HlsSolution": {
+    "FlowTarget": "vivado",
+    "DirectiveTcl": ["set_directive_top BFS_Ctrl_32X1_VER1 -name BFS_Ctrl_32X1_VER1"],
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "KernelName": "BFS_Ctrl_32X1_VER1"
+  },
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "5",
+    "Uncertainty": "1.35",
+    "IsCombinational": "0",
+    "II": "x",
+    "Latency": "undef"
+  },
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 5.000 [get_ports ap_clk]"]},
+  "Ipx": {
+    "Vendor": "xilinx.com",
+    "Library": "hls",
+    "Name": "BFS_Ctrl_32X1_VER1",
+    "Version": "1.0",
+    "DisplayName": "Bfs_ctrl_32x1_ver1",
+    "Revision": "",
+    "Description": "An IP generated by Vitis HLS",
+    "Taxonomy": "\/VITIS_HLS_IP",
+    "AutoFamilySupport": "",
+    "ZipFile": "xilinx_com_hls_BFS_Ctrl_32X1_VER1_1_0.zip"
+  },
+  "Files": {
+    "CSource": ["\/Orion\/BackEnd\/ArtifactEvaluation\/BFS_BF\/PE_32\/src\/hw\/ctrl\/tmp\/bfs_ctrl.cpp"],
+    "Vhdl": [
+      "impl\/vhdl\/BFS_Ctrl_32X1_VER1_BFS_PE.vhd",
+      "impl\/vhdl\/BFS_Ctrl_32X1_VER1.vhd"
+    ],
+    "Verilog": [
+      "impl\/verilog\/BFS_Ctrl_32X1_VER1_BFS_PE.v",
+      "impl\/verilog\/BFS_Ctrl_32X1_VER1.v"
+    ],
+    "IpMisc": ["impl\/misc\/logo.png"],
+    "DesignXml": ".autopilot\/db\/BFS_Ctrl_32X1_VER1.design.xml",
+    "DebugDir": ".debug",
+    "ProtoInst": ["\/Orion\/BackEnd\/ArtifactEvaluation\/BFS_BF\/PE_32\/src\/hw\/ctrl\/tmp\/bfs_ctrl_v1\/solution1\/.debug\/BFS_Ctrl_32X1_VER1.protoinst"]
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "Ip": []
+  },
+  "Interfaces": {
+    "ap_clk": {
+      "type": "clock",
+      "busTypeName": "clock",
+      "mode": "slave",
+      "busParams": {"ASSOCIATED_RESET": "ap_rst"},
+      "portMap": {"ap_clk": "CLK"},
+      "ports": ["ap_clk"]
+    },
+    "ap_ctrl": {
+      "type": "ap_ctrl",
+      "busTypeName": "acc_handshake",
+      "mode": "slave",
+      "portMap": {
+        "ap_start": "start",
+        "ap_done": "done",
+        "ap_idle": "idle",
+        "ap_ready": "ready"
+      },
+      "ports": [
+        "ap_done",
+        "ap_idle",
+        "ap_ready",
+        "ap_start"
+      ]
+    },
+    "ap_rst": {
+      "type": "reset",
+      "busTypeName": "reset",
+      "mode": "slave",
+      "busParams": {"POLARITY": "ACTIVE_HIGH"},
+      "portMap": {"ap_rst": "RST"},
+      "ports": ["ap_rst"]
+    },
+    "cnt_gather_0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_0": "DATA"},
+      "ports": ["cnt_gather_0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_0"
+        }]
+    },
+    "cnt_gather_1": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_1": "DATA"},
+      "ports": ["cnt_gather_1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_1"
+        }]
+    },
+    "cnt_gather_2": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_2": "DATA"},
+      "ports": ["cnt_gather_2"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_2"
+        }]
+    },
+    "cnt_gather_3": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_3": "DATA"},
+      "ports": ["cnt_gather_3"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_3"
+        }]
+    },
+    "cnt_gather_4": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_4": "DATA"},
+      "ports": ["cnt_gather_4"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_4"
+        }]
+    },
+    "cnt_gather_5": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_5": "DATA"},
+      "ports": ["cnt_gather_5"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_5"
+        }]
+    },
+    "cnt_gather_6": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_6": "DATA"},
+      "ports": ["cnt_gather_6"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_6"
+        }]
+    },
+    "cnt_gather_7": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_7": "DATA"},
+      "ports": ["cnt_gather_7"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_7"
+        }]
+    },
+    "cnt_gather_8": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_8": "DATA"},
+      "ports": ["cnt_gather_8"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_8"
+        }]
+    },
+    "cnt_gather_9": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_9": "DATA"},
+      "ports": ["cnt_gather_9"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_9"
+        }]
+    },
+    "cnt_gather_10": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_10": "DATA"},
+      "ports": ["cnt_gather_10"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_10"
+        }]
+    },
+    "cnt_gather_11": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_11": "DATA"},
+      "ports": ["cnt_gather_11"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_11"
+        }]
+    },
+    "cnt_gather_12": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_12": "DATA"},
+      "ports": ["cnt_gather_12"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_12"
+        }]
+    },
+    "cnt_gather_13": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_13": "DATA"},
+      "ports": ["cnt_gather_13"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_13"
+        }]
+    },
+    "cnt_gather_14": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_14": "DATA"},
+      "ports": ["cnt_gather_14"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_14"
+        }]
+    },
+    "cnt_gather_15": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_15": "DATA"},
+      "ports": ["cnt_gather_15"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_15"
+        }]
+    },
+    "cnt_gather_16": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_16": "DATA"},
+      "ports": ["cnt_gather_16"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_16"
+        }]
+    },
+    "cnt_gather_17": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_17": "DATA"},
+      "ports": ["cnt_gather_17"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_17"
+        }]
+    },
+    "cnt_gather_18": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_18": "DATA"},
+      "ports": ["cnt_gather_18"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_18"
+        }]
+    },
+    "cnt_gather_19": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_19": "DATA"},
+      "ports": ["cnt_gather_19"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_19"
+        }]
+    },
+    "cnt_gather_20": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_20": "DATA"},
+      "ports": ["cnt_gather_20"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_20"
+        }]
+    },
+    "cnt_gather_21": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_21": "DATA"},
+      "ports": ["cnt_gather_21"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_21"
+        }]
+    },
+    "cnt_gather_22": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_22": "DATA"},
+      "ports": ["cnt_gather_22"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_22"
+        }]
+    },
+    "cnt_gather_23": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_23": "DATA"},
+      "ports": ["cnt_gather_23"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_23"
+        }]
+    },
+    "cnt_gather_24": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_24": "DATA"},
+      "ports": ["cnt_gather_24"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_24"
+        }]
+    },
+    "cnt_gather_25": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_25": "DATA"},
+      "ports": ["cnt_gather_25"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_25"
+        }]
+    },
+    "cnt_gather_26": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_26": "DATA"},
+      "ports": ["cnt_gather_26"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_26"
+        }]
+    },
+    "cnt_gather_27": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_27": "DATA"},
+      "ports": ["cnt_gather_27"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_27"
+        }]
+    },
+    "cnt_gather_28": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_28": "DATA"},
+      "ports": ["cnt_gather_28"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_28"
+        }]
+    },
+    "cnt_gather_29": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_29": "DATA"},
+      "ports": ["cnt_gather_29"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_29"
+        }]
+    },
+    "cnt_gather_30": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_30": "DATA"},
+      "ports": ["cnt_gather_30"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_30"
+        }]
+    },
+    "cnt_gather_31": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_gather_31": "DATA"},
+      "ports": ["cnt_gather_31"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_gather_31"
+        }]
+    },
+    "cnt_scatter_0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_0": "DATA"},
+      "ports": ["cnt_scatter_0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_0"
+        }]
+    },
+    "cnt_scatter_1": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_1": "DATA"},
+      "ports": ["cnt_scatter_1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_1"
+        }]
+    },
+    "cnt_scatter_2": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_2": "DATA"},
+      "ports": ["cnt_scatter_2"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_2"
+        }]
+    },
+    "cnt_scatter_3": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_3": "DATA"},
+      "ports": ["cnt_scatter_3"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_3"
+        }]
+    },
+    "cnt_scatter_4": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_4": "DATA"},
+      "ports": ["cnt_scatter_4"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_4"
+        }]
+    },
+    "cnt_scatter_5": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_5": "DATA"},
+      "ports": ["cnt_scatter_5"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_5"
+        }]
+    },
+    "cnt_scatter_6": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_6": "DATA"},
+      "ports": ["cnt_scatter_6"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_6"
+        }]
+    },
+    "cnt_scatter_7": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_7": "DATA"},
+      "ports": ["cnt_scatter_7"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_7"
+        }]
+    },
+    "cnt_scatter_8": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_8": "DATA"},
+      "ports": ["cnt_scatter_8"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_8"
+        }]
+    },
+    "cnt_scatter_9": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_9": "DATA"},
+      "ports": ["cnt_scatter_9"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_9"
+        }]
+    },
+    "cnt_scatter_10": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_10": "DATA"},
+      "ports": ["cnt_scatter_10"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_10"
+        }]
+    },
+    "cnt_scatter_11": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_11": "DATA"},
+      "ports": ["cnt_scatter_11"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_11"
+        }]
+    },
+    "cnt_scatter_12": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_12": "DATA"},
+      "ports": ["cnt_scatter_12"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_12"
+        }]
+    },
+    "cnt_scatter_13": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_13": "DATA"},
+      "ports": ["cnt_scatter_13"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_13"
+        }]
+    },
+    "cnt_scatter_14": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_14": "DATA"},
+      "ports": ["cnt_scatter_14"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_14"
+        }]
+    },
+    "cnt_scatter_15": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_15": "DATA"},
+      "ports": ["cnt_scatter_15"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_15"
+        }]
+    },
+    "cnt_scatter_16": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_16": "DATA"},
+      "ports": ["cnt_scatter_16"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_16"
+        }]
+    },
+    "cnt_scatter_17": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_17": "DATA"},
+      "ports": ["cnt_scatter_17"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_17"
+        }]
+    },
+    "cnt_scatter_18": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_18": "DATA"},
+      "ports": ["cnt_scatter_18"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_18"
+        }]
+    },
+    "cnt_scatter_19": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_19": "DATA"},
+      "ports": ["cnt_scatter_19"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_19"
+        }]
+    },
+    "cnt_scatter_20": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_20": "DATA"},
+      "ports": ["cnt_scatter_20"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_20"
+        }]
+    },
+    "cnt_scatter_21": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_21": "DATA"},
+      "ports": ["cnt_scatter_21"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_21"
+        }]
+    },
+    "cnt_scatter_22": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_22": "DATA"},
+      "ports": ["cnt_scatter_22"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_22"
+        }]
+    },
+    "cnt_scatter_23": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_23": "DATA"},
+      "ports": ["cnt_scatter_23"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_23"
+        }]
+    },
+    "cnt_scatter_24": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_24": "DATA"},
+      "ports": ["cnt_scatter_24"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_24"
+        }]
+    },
+    "cnt_scatter_25": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_25": "DATA"},
+      "ports": ["cnt_scatter_25"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_25"
+        }]
+    },
+    "cnt_scatter_26": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_26": "DATA"},
+      "ports": ["cnt_scatter_26"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_26"
+        }]
+    },
+    "cnt_scatter_27": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_27": "DATA"},
+      "ports": ["cnt_scatter_27"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_27"
+        }]
+    },
+    "cnt_scatter_28": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_28": "DATA"},
+      "ports": ["cnt_scatter_28"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_28"
+        }]
+    },
+    "cnt_scatter_29": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_29": "DATA"},
+      "ports": ["cnt_scatter_29"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_29"
+        }]
+    },
+    "cnt_scatter_30": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_30": "DATA"},
+      "ports": ["cnt_scatter_30"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_30"
+        }]
+    },
+    "cnt_scatter_31": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"cnt_scatter_31": "DATA"},
+      "ports": ["cnt_scatter_31"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "cnt_scatter_31"
+        }]
+    },
+    "dummyParam": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"dummyParam": "DATA"},
+      "ports": ["dummyParam"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "dummyParam"
+        }]
+    },
+    "exist_0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_0": "DATA"},
+      "ports": ["exist_0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_0"
+        }]
+    },
+    "exist_1": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_1": "DATA"},
+      "ports": ["exist_1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_1"
+        }]
+    },
+    "exist_2": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_2": "DATA"},
+      "ports": ["exist_2"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_2"
+        }]
+    },
+    "exist_3": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_3": "DATA"},
+      "ports": ["exist_3"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_3"
+        }]
+    },
+    "exist_4": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_4": "DATA"},
+      "ports": ["exist_4"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_4"
+        }]
+    },
+    "exist_5": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_5": "DATA"},
+      "ports": ["exist_5"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_5"
+        }]
+    },
+    "exist_6": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_6": "DATA"},
+      "ports": ["exist_6"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_6"
+        }]
+    },
+    "exist_7": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_7": "DATA"},
+      "ports": ["exist_7"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_7"
+        }]
+    },
+    "exist_8": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_8": "DATA"},
+      "ports": ["exist_8"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_8"
+        }]
+    },
+    "exist_9": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_9": "DATA"},
+      "ports": ["exist_9"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_9"
+        }]
+    },
+    "exist_10": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_10": "DATA"},
+      "ports": ["exist_10"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_10"
+        }]
+    },
+    "exist_11": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_11": "DATA"},
+      "ports": ["exist_11"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_11"
+        }]
+    },
+    "exist_12": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_12": "DATA"},
+      "ports": ["exist_12"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_12"
+        }]
+    },
+    "exist_13": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_13": "DATA"},
+      "ports": ["exist_13"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_13"
+        }]
+    },
+    "exist_14": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_14": "DATA"},
+      "ports": ["exist_14"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_14"
+        }]
+    },
+    "exist_15": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_15": "DATA"},
+      "ports": ["exist_15"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_15"
+        }]
+    },
+    "exist_16": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_16": "DATA"},
+      "ports": ["exist_16"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_16"
+        }]
+    },
+    "exist_17": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_17": "DATA"},
+      "ports": ["exist_17"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_17"
+        }]
+    },
+    "exist_18": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_18": "DATA"},
+      "ports": ["exist_18"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_18"
+        }]
+    },
+    "exist_19": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_19": "DATA"},
+      "ports": ["exist_19"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_19"
+        }]
+    },
+    "exist_20": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_20": "DATA"},
+      "ports": ["exist_20"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_20"
+        }]
+    },
+    "exist_21": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_21": "DATA"},
+      "ports": ["exist_21"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_21"
+        }]
+    },
+    "exist_22": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_22": "DATA"},
+      "ports": ["exist_22"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_22"
+        }]
+    },
+    "exist_23": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_23": "DATA"},
+      "ports": ["exist_23"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_23"
+        }]
+    },
+    "exist_24": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_24": "DATA"},
+      "ports": ["exist_24"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_24"
+        }]
+    },
+    "exist_25": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_25": "DATA"},
+      "ports": ["exist_25"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_25"
+        }]
+    },
+    "exist_26": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_26": "DATA"},
+      "ports": ["exist_26"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_26"
+        }]
+    },
+    "exist_27": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_27": "DATA"},
+      "ports": ["exist_27"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_27"
+        }]
+    },
+    "exist_28": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_28": "DATA"},
+      "ports": ["exist_28"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_28"
+        }]
+    },
+    "exist_29": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_29": "DATA"},
+      "ports": ["exist_29"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_29"
+        }]
+    },
+    "exist_30": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_30": "DATA"},
+      "ports": ["exist_30"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_30"
+        }]
+    },
+    "exist_31": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"exist_31": "DATA"},
+      "ports": ["exist_31"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "exist_31"
+        }]
+    },
+    "glblIterIdx": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "16",
+      "portMap": {"glblIterIdx": "DATA"},
+      "ports": ["glblIterIdx"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "1",
+          "argName": "glblIterIdx"
+        }]
+    },
+    "N_Vertex": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"N_Vertex": "DATA"},
+      "ports": ["N_Vertex"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "N_Vertex"
+        }]
+    },
+    "resWrite": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "1",
+      "portMap": {"resWrite": "DATA"},
+      "ports": ["resWrite"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "1",
+          "argName": "resWrite"
+        }]
+    }
+  },
+  "RtlPorts": {
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_start": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_done": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_idle": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_ready": {
+      "dir": "out",
+      "width": "1"
+    },
+    "dummyParam": {
+      "dir": "in",
+      "width": "1"
+    },
+    "N_Vertex": {
+      "dir": "in",
+      "width": "32"
+    },
+    "resWrite": {
+      "dir": "out",
+      "width": "1"
+    },
+    "glblIterIdx": {
+      "dir": "out",
+      "width": "16"
+    },
+    "cnt_scatter_0": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_1": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_2": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_3": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_4": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_5": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_6": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_7": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_8": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_9": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_10": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_11": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_12": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_13": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_14": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_15": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_16": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_17": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_18": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_19": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_20": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_21": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_22": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_23": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_24": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_25": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_26": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_27": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_28": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_29": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_30": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_scatter_31": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_0": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_1": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_2": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_3": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_4": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_5": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_6": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_7": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_8": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_9": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_10": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_11": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_12": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_13": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_14": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_15": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_16": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_17": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_18": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_19": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_20": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_21": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_22": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_23": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_24": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_25": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_26": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_27": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_28": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_29": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_30": {
+      "dir": "in",
+      "width": "32"
+    },
+    "cnt_gather_31": {
+      "dir": "in",
+      "width": "32"
+    },
+    "exist_0": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_1": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_2": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_3": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_4": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_5": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_6": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_7": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_8": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_9": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_10": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_11": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_12": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_13": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_14": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_15": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_16": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_17": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_18": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_19": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_20": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_21": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_22": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_23": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_24": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_25": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_26": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_27": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_28": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_29": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_30": {
+      "dir": "in",
+      "width": "1"
+    },
+    "exist_31": {
+      "dir": "in",
+      "width": "1"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {
+      "ModuleName": "BFS_Ctrl_32X1_VER1",
+      "Instances": [{
+          "ModuleName": "BFS_PE",
+          "InstanceName": "grp_BFS_PE_fu_862"
+        }]
+    },
+    "Info": {
+      "BFS_PE": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "BFS_Ctrl_32X1_VER1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      }
+    },
+    "Metrics": {
+      "BFS_PE": {
+        "Latency": {
+          "LatencyBest": "1",
+          "LatencyAvg": "1",
+          "LatencyWorst": "1",
+          "PipelineII": "1",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "5.00",
+          "Uncertainty": "1.35",
+          "Estimate": "0.000"
+        },
+        "Area": {
+          "FF": "2",
+          "AVAIL_FF": "2607360",
+          "UTIL_FF": "~0",
+          "LUT": "14",
+          "AVAIL_LUT": "1303680",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4032",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "9024",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "960",
+          "UTIL_URAM": "0"
+        }
+      },
+      "BFS_Ctrl_32X1_VER1": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "5.00",
+          "Uncertainty": "1.35",
+          "Estimate": "3.201"
+        },
+        "Loops": [{
+            "Name": "MainLoop",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "",
+            "PipelineDepth": "",
+            "Loops": [{
+                "Name": "waitId0",
+                "TripCount": "",
+                "Latency": "",
+                "PipelineII": "2",
+                "PipelineDepth": "2"
+              }]
+          }],
+        "Area": {
+          "FF": "238",
+          "AVAIL_FF": "2607360",
+          "UTIL_FF": "~0",
+          "LUT": "2285",
+          "AVAIL_LUT": "1303680",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4032",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "9024",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "960",
+          "UTIL_URAM": "0"
+        }
+      }
+    }
+  },
+  "GenerateBdFiles": "0",
+  "GenData": {
+    "DataVersion": "0.2",
+    "Time": "2024-03-22 20:13:48 HKT",
+    "ToolName": "vivado_hls",
+    "ToolVersion": "2020.2"
+  }
+}

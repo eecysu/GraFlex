@@ -34,7 +34,7 @@ with open(fn, 'w') as tclFile:
     for i in range(nMemChannel):
         nArgs = pointerArgsEntry["N_Args"]
         for j in range(nArgs):
-            ptrPortName = pointerArgsEntry["Name_Arg_"+str(j)] + "_" + str(i) # CSR_V_0
+            ptrPortName = pointerArgsEntry["Name_Arg_"+str(j)] + "_" + str(i) + " " # CSR_V_0
             os.system('sed -i "{},$ s/([ ]*{}/( {}[32:0]/g" {}'.format(startLineNo, ptrPortName, ptrPortName, hdlFile))
 
     ''' Run synthesis and generate Xilinx Object file (*.xo) '''

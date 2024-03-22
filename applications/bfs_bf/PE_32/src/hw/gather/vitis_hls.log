@@ -1,0 +1,92 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /opt/Xilinx/Vitis_HLS/2020.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'chunyou' on host 'coldsun' (Linux_x86_64 version 5.15.0-101-generic) on Fri Mar 22 20:14:01 HKT 2024
+INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
+INFO: [HLS 200-10] In directory '/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather'
+Sourcing Tcl script '/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/run_hls.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset bfs_gather_v1 
+INFO: [HLS 200-10] Creating and opening project '/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1'.
+INFO: [HLS 200-1510] Running: set_top BFS_Gather 
+INFO: [HLS 200-1510] Running: add_files /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp 
+INFO: [HLS 200-10] Adding design file '/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution '/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1'.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xcu280-fsvh2892-2L-e 
+INFO: [HLS 200-10] Setting target device to 'xcu280-fsvh2892-2L-e'
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 167.074 MB.
+INFO: [HLS 200-10] Analyzing design file '/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1.77 seconds. CPU system time: 0.22 seconds. Elapsed time: 1.42 seconds; current allocated memory: 168.676 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t*)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:34:33)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t*)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:83:33)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t*)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:76:33)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t*)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:69:33)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t*)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:62:33)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t*)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:55:33)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t*)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:48:33)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t*)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:41:33)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.46 seconds. CPU system time: 0.14 seconds. Elapsed time: 1.62 seconds; current allocated memory: 169.057 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 169.059 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 174.830 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 182.423 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 210.308 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 207.511 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'BFS_Gather' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'BFS_Gather' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'BFS_Gather'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 3, function 'BFS_Gather'
+WARNING: [HLS 200-871] Estimated clock period (4.37156ns) exceeds the target (target clock period: 5ns, clock uncertainty: 1.35ns, effective delay budget: 3.65ns).
+Resolution: For help on HLS 200-871 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'BFS_Gather' consists of the following:	wire read on port 'peID' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:3) [17]  (0 ns)
+	'sub' operation ('ret') [23]  (0.833 ns)
+	'sub' operation ('sub_ln1364') [26]  (0.827 ns)
+	'sub' operation ('sub_ln1364_1') [28]  (0.775 ns)
+	'select' operation ('rltDstIdx') [30]  (0.292 ns)
+	'getelementptr' operation ('tmp_dist_addr', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:27) [34]  (0 ns)
+	'load' operation ('tmp_dist_load', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:27) on array 'tmp_dist' [35]  (1.65 ns)
+
+Resolution: For help on HLS 200-1016 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 208.148 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 208.752 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'BFS_Gather' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Gather/peID' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Gather/sw_data' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Gather/exist' to 'ap_none' (register, both mode).
+WARNING: [RTGEN 206-101] Port 'exist' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Gather/tmp_dist' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'BFS_Gather' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Cannot apply register mode option on port exist. It is not an AXI-Stream interface.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'BFS_Gather'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 209.580 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.39 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.41 seconds; current allocated memory: 218.626 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for BFS_Gather.
+INFO: [VLOG 209-307] Generating Verilog RTL for BFS_Gather.
+INFO: [HLS 200-789] **** Estimated Fmax: 228.75 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3.99 seconds. CPU system time: 0.4 seconds. Elapsed time: 3.83 seconds; current allocated memory: 218.741 MB.
+INFO: [HLS 200-112] Total CPU user time: 4.96 seconds. Total CPU system time: 0.68 seconds. Total elapsed time: 4.64 seconds; peak allocated memory: 218.626 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Fri Mar 22 20:14:06 2024...

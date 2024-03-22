@@ -121,7 +121,7 @@ def autoExportIP(bspConfig, sysConfig, clkIPList, fn):
             for i in range(nPeGroup):
                 for j in range(nPePerGrp):
                     instName = "prop_" + signalName + "_" + str(i) + "_" + str(j)
-                    tclFile.write("create_bd_cell -type ip -vlnv user.org:user:dff_4d:1.0 " + instName + "\n")
+                    tclFile.write("create_bd_cell -type ip -vlnv user.org:user:dff_2d:1.0 " + instName + "\n")
                     tclFile.write("set_property -dict [list CONFIG.DATA_WIDTH {" + str(signalBw) + "}] [get_bd_cells " + instName + "]\n")
                     clkIPList.append(instName)
 
@@ -150,11 +150,13 @@ def autoExportIP(bspConfig, sysConfig, clkIPList, fn):
                             instName = "prop_" + signalName + "_" + str(i) + "_" + str(j)
                             tclFile.write("create_bd_cell -type ip -vlnv user.org:user:dff_4d:1.0 " + instName + "\n")
                             tclFile.write("set_property -dict [list CONFIG.DATA_WIDTH {" + str(signalBw) + "}] [get_bd_cells " + instName + "]\n")
+                            clkIPList.append(instName)
                         elif signalLatchType == "Or":
                             assert signalBw==1, "GraFlex Error: Non-boolean feedback signal cannot be or-latched"
-                            instName = "or_latch_" + signalName + "_" + str(i) + "_" + str(j)
-                            tclFile.write("create_bd_cell -type ip -vlnv user.org:user:OrLatch:1.0 " + instName + "\n")
-                        clkIPList.append(instName)
+                            latchInstName = "or_latch_" + signalName + "_" + str(i) + "_" + str(j)
+                            tclFile.write("create_bd_cell -type ip -vlnv user.org:user:OrLatch:1.0 " + latchInstName + "\n")
+                            clkIPList.append(latchInstName)
+
 
         # (7) on-chip RAMs
         for i in range(nPeGroup):
@@ -633,7 +635,7 @@ def autoConnectIP(bspConfig, sysConfig, clkIPList, fn):
                             tclFile.write("connect_bd_net [get_bd_pins " +ctrlName+ "/" +signalName + "_" + str(idx) + \
                                         "] [get_bd_pins " +instName+ "/d]\n")
                         elif signalLatchType == 'Or':
-                            hdrName  = "StartHdr_" + str(idx) 
+                            hdrName  = "StartHdr_" + str(idx)
                             instName = "or_latch_" + signalName + "_" + str(i) + "_" + str(j)
                             tclFile.write("connect_bd_net [get_bd_pins " +peName+ "/" +signalName+ "] [get_bd_pins " +instName+ "/din]\n")
                             tclFile.write("connect_bd_net [get_bd_pins " +ctrlName+ "/" +signalName + "_" + str(idx) + \

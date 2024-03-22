@@ -20,6 +20,20 @@ GraFlex: Flexible Graph Processing on FPGAs through Customized Scalable Intercon
 ### Hardware
 - AMD Xilinx Alveo U280 Acceleration Board
 
+## Quick Start (Check the GraFlex_AutoDemo.mp4 video for example)
+Try GraFlex with the BFS example (Bellman-Ford, 2 PEs)
+### Step 1: Generate Tcl Scripts for Automation
+`cd <path_to>/GraFlex/applications/bfs_bf/PE_2`\
+`export PYTHONPATH=<path_to>/GraFlex/automation`\
+`python auto_backend.py`
+
+### Step 2: Invoke Tcl Scripts from Vivado
+`vivado -source autoTcl/auto_backend.tcl`
+
+### Step 3: Wait for Vivado to Finish Synthesis and Generate Compilable Object (.xo)
+### Step 4: Compile the Object with Vitis v++
+Check applications/bfs_bf/PE_2/xo2xclbin for example
+
 ## Artifact Evaluation
 Current release is not fully stable. To access the graph datasets and directly reproduce the results, please visit the following Zenodo link:
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10450444.svg)](https://doi.org/10.5281/zenodo.10450444)

@@ -1,0 +1,485 @@
+INFO-FLOW: Workspace /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1 opened at Fri Mar 22 20:14:01 HKT 2024
+Execute       send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -default_interface 
+Execute       get_config_interface -m_axi_offset 
+Execute       get_config_rtl -register_reset_num 
+Execute     set_part xcu280-fsvh2892-2L-e 
+INFO: [HLS 200-1510] Running: set_part xcu280-fsvh2892-2L-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/opt/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/opt/Xilinx/Vivado/2020.2/data:/opt/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcu280-fsvh2892-2L-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2020.2/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 0.59 sec.
+Execute       ap_part_info -name xcu280-fsvh2892-2L-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcu280:-fsvh2892:-2L-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcu280-fsvh2892-2L-e 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data resources 
+Execute         config_chip_info -resource {SLICE 162960} {LUT 1303680} {FF 2607360} {DSP 9024} {BRAM 4032} {URAM 960} {SLR 3} 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcu280:-fsvh2892:-2L-e 
+Execute         import_lib /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO: [HLS 200-10] Setting target device to 'xcu280-fsvh2892-2L-e'
+Execute       ap_part_info -name xcu280-fsvh2892-2L-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.68 sec.
+Execute     create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+Execute       ap_set_clock -name default -period 5 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+Execute     csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute       get_config_compile -effort 
+Execute       get_config_compile -enable_clang39 
+Execute       get_config_compile -g 
+Execute       get_config_compile -ng 
+Execute       get_config_compile -opt_fp 
+Execute       get_config_compile -skip_cdt 
+Execute       get_config_compile -skip_syncheck 
+Execute       get_config_compile -skip_transform 
+Execute       get_config_compile -keep_printf 
+Execute       elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 167.074 MB.
+INFO: [HLS 200-10] Analyzing design file '/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute         get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp as C++
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp -foptimization-record-file=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/clang.bfs_gather.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0 -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/39 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/bfs_gather.pp.0.cpp > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/clang.bfs_gather.cpp.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/clang.bfs_gather.cpp.err.log 
+INFO-FLOW: Done: GCC PP 39 time: 0 seconds per iteration
+Execute         set_directive_top BFS_Gather -name=BFS_Gather 
+INFO-FLOW: Setting directive 'TOP' name=BFS_Gather 
+INFO-FLOW: Setting directive 'TOP' name=BFS_Gather 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO-FLOW: Setting directive 'TOP' name=BFS_Gather 
+Execute         list_core -type functional_unit 
+Execute         clang_tidy xilinx-systemc-detector /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/bfs_gather.pp.0.cpp std=gnu++14 -target fpga  -directive=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/.systemc_flag -fix-errors /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/bfs_gather.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command         clang_tidy done; 0.17 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute         clang_tidy xilinx-directive2pragma /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/bfs_gather.pp.0.cpp std=gnu++14 -target fpga  -directive=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/all.directive.json -fix-errors /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/bfs_gather.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command         clang_tidy done; 0.26 sec.
+Execute         clang_tidy xilinx-constantarray-param,xilinx-remove-assert /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/bfs_gather.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/bfs_gather.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command         clang_tidy done; 0.28 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.5 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+Execute         clang_tidy -errorcheck xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/bfs_gather.pp.0.cpp std=gnu++14 -target fpga  
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/clang-tidy.bfs_gather.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/bfs_gather.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/clang-tidy.bfs_gather.pp.0.cpp.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/clang-tidy.bfs_gather.pp.0.cpp.err.log 
+Command           ap_eval done; 0.32 sec.
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Command         clang_tidy done; 0.32 sec.
+Execute         get_config_dataflow -strict_mode 
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/xilinx-dataflow-lawyer.bfs_gather.pp.0.cpp.diag.yml /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/bfs_gather.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/xilinx-dataflow-lawyer.bfs_gather.pp.0.cpp.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/xilinx-dataflow-lawyer.bfs_gather.pp.0.cpp.err.log 
+Command         ap_eval done; 0.15 sec.
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/clang.bfs_gather.pp.0.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/bfs_gather.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/bfs_gather.bc > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/clang.bfs_gather.pp.0.cpp.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/clang.bfs_gather.pp.0.cpp.err.log 
+Command         ap_eval done; 0.18 sec.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1.77 seconds. CPU system time: 0.22 seconds. Elapsed time: 1.42 seconds; current allocated memory: 168.676 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute         run_link_or_opt -out /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.0.bc -args  "/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/bfs_gather.g.bc"  
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/bfs_gather.g.bc -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.0.bc > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.err.log 
+INFO-FLOW: 
+Execute         run_link_or_opt -opt -out /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.1.lower.bc -args /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.diag.yml /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.1.lower.bc > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.err.log 
+INFO-FLOW: 
+INFO-FLOW: Linking math bc lib
+Execute         run_link_or_opt -out /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.2.m1.bc -args /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.2.m1.bc > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.err.log 
+Command           ap_eval done; 1.04 sec.
+INFO-FLOW: 
+Command         run_link_or_opt done; 1.04 sec.
+Execute         run_link_or_opt -opt -out /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=BFS_Gather -reflow-float-conversion 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.diag.yml /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=BFS_Gather -reflow-float-conversion -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.3.fpc.bc > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.err.log 
+Command           ap_eval done; 0.36 sec.
+INFO-FLOW: 
+Command         run_link_or_opt done; 0.36 sec.
+Execute         run_link_or_opt -out /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.4.m2.bc -args /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.4.m2.bc > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.err.log 
+INFO-FLOW: 
+Execute         run_link_or_opt -opt -out /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=BFS_Gather 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.diag.yml /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=BFS_Gather -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.5.gdce.bc > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.err.log 
+INFO-FLOW: 
+Execute         get_solution -flow_target 
+Execute         get_config_export -xo 
+Execute         get_config_export -format 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_interface -default_slave_interface 
+Execute         get_solution -flow_target 
+Execute         get_config_export -xo 
+Execute         get_config_export -format 
+Execute         get_config_interface -m_axi_offset 
+Execute         get_config_interface -m_axi_latency 
+Execute         get_config_interface -m_axi_alignment_byte_size 
+Execute         get_config_interface -m_axi_min_bitwidth 
+Execute         get_config_interface -m_axi_max_bitwidth 
+Execute         get_config_interface -m_axi_max_widen_bitwidth 
+Execute         get_config_interface -m_axi_num_read_outstanding 
+Execute         get_config_interface -m_axi_num_write_outstanding 
+Execute         get_config_interface -m_axi_max_read_burst_length 
+Execute         get_config_interface -m_axi_max_write_burst_length 
+Execute         get_config_interface -m_axi_min_bitwidth 
+Execute         get_config_interface -m_axi_max_bitwidth 
+Execute         get_config_interface -m_axi_latency 
+Execute         get_config_interface -m_axi_min_bitwidth 
+Execute         get_config_interface -m_axi_max_bitwidth 
+Execute         get_config_interface -m_axi_max_widen_bitwidth 
+Execute         get_config_interface -m_axi_auto_max_ports 
+Execute         get_config_interface -m_axi_num_read_outstanding 
+Execute         get_config_interface -m_axi_num_write_outstanding 
+Execute         get_config_interface -m_axi_max_read_burst_length 
+Execute         get_config_interface -m_axi_max_write_burst_length 
+Execute         get_config_interface -s_axilite_data64 
+Execute         get_config_interface -m_axi_alignment_byte_size 
+Execute         get_config_compile -pragma_strict_mode 
+Execute         get_config_compile -pipeline_style 
+Execute         send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute         is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/clang.a.g.ld.0.bc.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=BFS_Gather -mllvm -hls-db-dir -mllvm /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=off -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -assume-maxi-align=0 -mllvm -no-unaligned-maxi-accesses -mllvm -reflow-pipeline-style-llvm-setting=0 -mllvm -disable-inlined-alloca-merging=true -x ir /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.lto.bc > /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/clang.a.g.ld.0.bc.out.log 2> /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/clang.a.g.ld.0.bc.err.log 
+Command         ap_eval done; 0.11 sec.
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t*)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:34:33)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t*)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:83:33)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t*)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:76:33)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t*)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:69:33)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t*)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:62:33)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t*)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:55:33)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t*)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:48:33)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uints' into 'BFS_Gather(unsigned char, unsigned int volatile*, bool volatile*, dpkt_t*)' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:41:33)
+INFO-FLOW: DBG:CMD: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.46 seconds. CPU system time: 0.14 seconds. Elapsed time: 1.62 seconds; current allocated memory: 169.057 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 169.059 MB.
+Execute         opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute           cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute           transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top BFS_Gather -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.0.bc -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 174.830 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute           transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.1.bc -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute           transform -syn-check /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.2.prechk.bc -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 182.423 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.g.1.bc to /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute           transform -hls -tmp /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.o.1.bc -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO-FLOW: Presyn 2...
+Execute           transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.o.1.tmp.bc -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 210.308 MB.
+Execute           get_config_compile -enable_loop_extract 
+Execute           get_config_compile -disable_auto_rewind 
+Execute           get_config_compile -enable_auto_rewind 
+INFO-FLOW: Building ssdm...
+Execute           transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin2 -bitwidthmin2 -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.o.2.bc -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 207.511 MB.
+INFO-FLOW: Finish building internal data model.
+Command         opt_and_import_c done; 0.22 sec.
+Command       elaborate done; 3.26 sec.
+Execute       autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'BFS_Gather' ...
+Execute         ap_set_top_model BFS_Gather 
+Execute         get_model_list BFS_Gather -filter all-wo-channel -topdown 
+Execute         preproc_iomode -model BFS_Gather 
+Execute         get_model_list BFS_Gather -filter all-wo-channel 
+INFO-FLOW: Model list for configure: BFS_Gather
+INFO-FLOW: Configuring Module : BFS_Gather ...
+Execute         set_default_model BFS_Gather 
+Execute         apply_spec_resource_limit BFS_Gather 
+INFO-FLOW: Model list for preprocess: BFS_Gather
+INFO-FLOW: Preprocessing Module: BFS_Gather ...
+Execute         set_default_model BFS_Gather 
+Execute         cdfg_preprocess -model BFS_Gather 
+Execute         rtl_gen_preprocess BFS_Gather 
+INFO-FLOW: Model list for synthesis: BFS_Gather
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'BFS_Gather' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model BFS_Gather 
+Execute         schedule -model BFS_Gather 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'BFS_Gather'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 3, function 'BFS_Gather'
+WARNING: [HLS 200-871] Estimated clock period (4.37156ns) exceeds the target (target clock period: 5ns, clock uncertainty: 1.35ns, effective delay budget: 3.65ns).
+WARNING: [HLS 200-1016] The critical path in module 'BFS_Gather' consists of the following:	wire read on port 'peID' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:3) [17]  (0 ns)
+	'sub' operation ('ret') [23]  (0.833 ns)
+	'sub' operation ('sub_ln1364') [26]  (0.827 ns)
+	'sub' operation ('sub_ln1364_1') [28]  (0.775 ns)
+	'select' operation ('rltDstIdx') [30]  (0.292 ns)
+	'getelementptr' operation ('tmp_dist_addr', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:27) [34]  (0 ns)
+	'load' operation ('tmp_dist_load', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather.cpp:27) on array 'tmp_dist' [35]  (1.65 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 208.148 MB.
+Execute         syn_report -verbosereport -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.verbose.sched.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         db_write -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.sched.adb -f 
+INFO-FLOW: Finish scheduling BFS_Gather.
+Execute         set_default_model BFS_Gather 
+Execute         bind -model BFS_Gather 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 208.752 MB.
+Execute         syn_report -verbosereport -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.verbose.bind.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         db_write -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.bind.adb -f 
+INFO-FLOW: Finish binding BFS_Gather.
+Execute         get_model_list BFS_Gather -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute         rtl_gen_preprocess BFS_Gather 
+INFO-FLOW: Model list for RTL generation: BFS_Gather
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'BFS_Gather' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         create_rtl_model BFS_Gather -top_prefix  -sub_prefix BFS_Gather_ -mg_file /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Gather/peID' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Gather/sw_data' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Gather/exist' to 'ap_none' (register, both mode).
+WARNING: [RTGEN 206-101] Port 'exist' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Gather/tmp_dist' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'BFS_Gather' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Cannot apply register mode option on port exist. It is not an AXI-Stream interface.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'BFS_Gather'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 209.580 MB.
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.rtl_wrap.cfg.tcl 
+Execute         gen_rtl BFS_Gather -istop -style xilinx -f -lang vhdl -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/syn/vhdl/BFS_Gather 
+Execute         gen_rtl BFS_Gather -istop -style xilinx -f -lang vlog -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/syn/verilog/BFS_Gather 
+Execute         syn_report -csynth -model BFS_Gather -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/syn/report/BFS_Gather_csynth.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         syn_report -rtlxml -model BFS_Gather -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/syn/report/BFS_Gather_csynth.xml 
+Execute           get_solution -flow_target
+Execute             get_solution -flow_target 
+Execute         syn_report -verbosereport -model BFS_Gather -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.verbose.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         db_write -model BFS_Gather -f -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.adb 
+Execute         gen_tb_info BFS_Gather -p /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather 
+Execute         export_constraint_db -f -tool general -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.constraint.tcl 
+Execute         syn_report -designview -model BFS_Gather -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.design.xml 
+Execute         syn_report -csynthDesign -model BFS_Gather -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/syn/report/csynth.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         get_config_rtl -disable_wave_debug 
+Execute         syn_report -wcfg -model BFS_Gather -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather_dataflow_ana.wcfg 
+Execute         syn_report -protoinst -model BFS_Gather -o /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.protoinst 
+Execute         get_config_debug -directory 
+Execute         sc_get_clocks BFS_Gather 
+Execute         get_config_export -vivado_clock 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         sc_get_portdomain BFS_Gather 
+INFO-FLOW: Model list for RTL component generation: BFS_Gather
+INFO-FLOW: Handling components in module [BFS_Gather] ... 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.compgen.tcl 
+INFO-FLOW: Append model BFS_Gather
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: BFS_Gather
+INFO-FLOW: To file: write model BFS_Gather
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute         get_top 
+Execute         get_config_export -ipname 
+Execute         get_config_export -xo 
+Execute         get_config_export -format 
+Execute         get_config_rtl -module_auto_prefix 
+INFO-FLOW: DBG:CMD:   auto_impl: set ipname to top (module_auto_prefix): BFS_Gather
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1
+Execute         get_solution -flow_target 
+Execute         get_config_export -xo 
+Execute         get_config_export -format 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/global.setting.tcl
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=5.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.compgen.tcl 
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1
+Execute         get_solution -flow_target 
+Execute         get_config_export -xo 
+Execute         get_config_export -format 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/global.setting.tcl
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=BFS_Gather xml_exists=0
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.rtl_wrap.cfg.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.rtl_wrap.cfg.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.rtl_wrap.cfg.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.tbgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.compgen.tcl 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.tbgen.tcl 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute           ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.compgen.tcl 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.constraint.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=10
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=4
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=1 #gSsdmPorts=10
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/top-io-be.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.tbgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.rtl_wrap.cfg.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.compgen.dataonly.tcl 
+Execute         get_config_export -format 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.tbgen.tcl 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data names -quiet 
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info -quiet 
+Execute         get_solution -flow_target 
+Execute         get_config_rtl -kernel_profile 
+Execute         get_config_rtl -kernel_profile 
+Execute         get_config_rtl -stall_sig_gen 
+Execute         get_config_rtl -profile 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.constraint.tcl 
+Execute         sc_get_clocks BFS_Gather 
+Execute         source /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/global.setting.tcl 
+Execute         get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.39 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.41 seconds; current allocated memory: 218.626 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for BFS_Gather.
+INFO: [VLOG 209-307] Generating Verilog RTL for BFS_Gather.
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report append design.xml content design_xml=/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/gather/bfs_gather_v1/solution1/.autopilot/db/BFS_Gather.design.xml
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report json2reportxml
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report done
+Execute         syn_report -model BFS_Gather -printsummary 
+INFO: [HLS 200-789] **** Estimated Fmax: 228.75 MHz
+Command       autosyn done; 0.57 sec.
+Command     csynth_design done; 3.83 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3.99 seconds. CPU system time: 0.4 seconds. Elapsed time: 3.83 seconds; current allocated memory: 218.741 MB.
+Execute     cleanup_all 

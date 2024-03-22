@@ -1,0 +1,166 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcu280-fsvh2892-2L-e 
+INFO: [HLS 200-10] Setting target device to 'xcu280-fsvh2892-2L-e'
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 167.043 MB.
+INFO: [HLS 200-10] Analyzing design file '/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/ctrl/tmp/bfs_ctrl.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1.55 seconds. CPU system time: 0.23 seconds. Elapsed time: 1.23 seconds; current allocated memory: 168.659 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.61 seconds. CPU system time: 0.17 seconds. Elapsed time: 1.78 seconds; current allocated memory: 169.782 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 169.783 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 171.721 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 171.088 MB.
+INFO: [XFORM 203-510] Pipelining loop 'waitId0' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/ctrl/tmp/bfs_ctrl.cpp:180) in function 'BFS_Ctrl_32X1_VER1' automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'BFS_Ctrl_32X1_VER1' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/ctrl/tmp/bfs_ctrl.cpp:16)...62 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.73 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.74 seconds; current allocated memory: 192.870 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'MainLoop' (/Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/ctrl/tmp/bfs_ctrl.cpp:174:15) in function 'BFS_Ctrl_32X1_VER1' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.36 seconds. CPU system time: 0 seconds. Elapsed time: 0.35 seconds; current allocated memory: 197.921 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'BFS_Ctrl_32X1_VER1' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'BFS_PE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 198.276 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 198.350 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'BFS_Ctrl_32X1_VER1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'waitId0'.
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln184', /Orion/BackEnd/ArtifactEvaluation/BFS_BF/PE_32/src/hw/ctrl/tmp/bfs_ctrl.cpp:184)) in the first pipeline iteration (II = 1 cycles).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 2, loop 'waitId0'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.22 seconds. CPU system time: 0 seconds. Elapsed time: 0.22 seconds; current allocated memory: 199.371 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 201.030 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'BFS_PE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'BFS_PE'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 201.139 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'BFS_Ctrl_32X1_VER1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/dummyParam' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/N_Vertex' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/resWrite' to 'ap_none' (register, both mode).
+WARNING: [RTGEN 206-101] Port 'resWrite' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/glblIterIdx' to 'ap_none' (register, both mode).
+WARNING: [RTGEN 206-101] Port 'glblIterIdx' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_4' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_5' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_6' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_7' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_8' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_9' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_10' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_11' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_12' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_13' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_14' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_15' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_16' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_17' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_18' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_19' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_20' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_21' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_22' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_23' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_24' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_25' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_26' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_27' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_28' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_29' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_30' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_scatter_31' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_4' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_5' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_6' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_7' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_8' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_9' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_10' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_11' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_12' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_13' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_14' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_15' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_16' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_17' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_18' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_19' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_20' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_21' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_22' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_23' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_24' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_25' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_26' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_27' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_28' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_29' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_30' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/cnt_gather_31' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_4' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_5' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_6' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_7' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_8' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_9' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_10' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_11' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_12' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_13' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_14' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_15' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_16' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_17' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_18' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_19' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_20' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_21' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_22' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_23' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_24' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_25' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_26' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_27' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_28' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_29' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_30' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'BFS_Ctrl_32X1_VER1/exist_31' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'BFS_Ctrl_32X1_VER1' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101]

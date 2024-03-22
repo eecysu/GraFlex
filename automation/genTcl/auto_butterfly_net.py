@@ -530,20 +530,20 @@ def packButterfly(sysConfig, typeList, tclFn, fn):
 
             if pktWidth > 32:
                 if impl == "BRAM36":
-                    fullTH = 512 - 4*(idx+1)
+                    fullTH = 508 - 4*(idx+1)
                     instPfxName += "36_W"
                 elif impl == "LUT":
                     fullTH = max(32-4*(idx+1), 24)
                     instPfxName += "_LUT_W"
             else:
                 if impl == "BRAM36":
-                    fullTH = 512 - 4*(idx+1)
+                    fullTH = 508 - 4*(idx+1)
                     instPfxName += "36"
                 elif impl == "BRAM18":
-                    fullTH = 512 - 4*(idx+1)
+                    fullTH = 508 - 4*(idx+1)
                     instPfxName += "18"
                 elif impl == "LUT":
-                    fullTH = max(32-4*(idx+1), 24)
+                    fullTH = max(30-4*(idx+1), 24)
                     instPfxName += "_LUT"
 
             instName = instPfxName + "_" + str(idx) + "_0"
