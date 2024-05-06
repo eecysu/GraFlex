@@ -40,3 +40,15 @@ Current release is not fully stable. To access the graph datasets and directly r
 <!---
 > [GraFlex_FPGA24_AE](https://hkustconnect-my.sharepoint.com/:f:/g/personal/csuae_connect_ust_hk/EupDPx5WCC9Auo7X8-OhTXsBLQWv4-FL87pnrYbjh2VXhA?e=Qffsfd)
 --->
+
+## Cite this work
+If you use this work in your paper, please cite our work [here](https://dl.acm.org/doi/10.1145/3626202.3637573).
+```
+@inproceedings{su2024graflex,
+  title={GraFlex: Flexible Graph Processing on FPGAs through Customized Scalable Interconnection Network},
+  author={Su, Chunyou and Du, Linfeng and Liang, Tingyuan and Lin, Zhe and Wang, Maolin and Sinha, Sharad and Zhang, Wei},
+  booktitle={Proceedings of the 2024 ACM/SIGDA International Symposium on Field Programmable Gate Arrays},
+  pages={143--153},
+  year={2024}
+}
+```
